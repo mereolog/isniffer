@@ -1,0 +1,186 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_category_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_category_subsumed_to_thing
+% SZS output start Proof for type_category_subsumed_to_thing
+fof(f1023,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f757,f817,f829,f909,f949,f998,f1004,f1014,f1019,f1022])).
+fof(f1022,plain,(
+  spl59_1 | ~spl59_78 | ~spl59_94),
+  inference(avatar_contradiction_clause,[],[f1021])).
+fof(f1021,plain,(
+  $false | (spl59_1 | ~spl59_78 | ~spl59_94)),
+  inference(subsumption_resolution,[],[f1020,f1018])).
+fof(f1018,plain,(
+  type_(xyz) | ~spl59_94),
+  inference(avatar_component_clause,[],[f1017])).
+fof(f1017,plain,(
+  spl59_94 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_94])])).
+fof(f1020,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_78)),
+  inference(resolution,[],[f948,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f948,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_78),
+  inference(avatar_component_clause,[],[f947])).
+fof(f947,plain,(
+  spl59_78 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_78])])).
+fof(f1019,plain,(
+  spl59_94 | ~spl59_30 | ~spl59_93),
+  inference(avatar_split_clause,[],[f1015,f1012,f755,f1017])).
+fof(f755,plain,(
+  spl59_30 <=> ! [X0] : (~endurantType(X0) | type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_30])])).
+fof(f1012,plain,(
+  spl59_93 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_93])])).
+fof(f1015,plain,(
+  type_(xyz) | (~spl59_30 | ~spl59_93)),
+  inference(resolution,[],[f1013,f756])).
+fof(f756,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) ) | ~spl59_30),
+  inference(avatar_component_clause,[],[f755])).
+fof(f1013,plain,(
+  endurantType(xyz) | ~spl59_93),
+  inference(avatar_component_clause,[],[f1012])).
+fof(f1014,plain,(
+  spl59_93 | ~spl59_68 | ~spl59_91),
+  inference(avatar_split_clause,[],[f1010,f1002,f907,f1012])).
+fof(f907,plain,(
+  spl59_68 <=> ! [X0] : (endurantType(X0) | ~nonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_68])])).
+fof(f1002,plain,(
+  spl59_91 <=> nonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_91])])).
+fof(f1010,plain,(
+  endurantType(xyz) | (~spl59_68 | ~spl59_91)),
+  inference(resolution,[],[f908,f1003])).
+fof(f1003,plain,(
+  nonSortal(xyz) | ~spl59_91),
+  inference(avatar_component_clause,[],[f1002])).
+fof(f908,plain,(
+  ( ! [X0] : (~nonSortal(X0) | endurantType(X0)) ) | ~spl59_68),
+  inference(avatar_component_clause,[],[f907])).
+fof(f1004,plain,(
+  spl59_91 | ~spl59_48 | ~spl59_90),
+  inference(avatar_split_clause,[],[f1000,f996,f827,f1002])).
+fof(f827,plain,(
+  spl59_48 <=> ! [X0] : (nonSortal(X0) | ~rigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_48])])).
+fof(f996,plain,(
+  spl59_90 <=> rigidNonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f1000,plain,(
+  nonSortal(xyz) | (~spl59_48 | ~spl59_90)),
+  inference(resolution,[],[f828,f997])).
+fof(f997,plain,(
+  rigidNonSortal(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f996])).
+fof(f828,plain,(
+  ( ! [X0] : (~rigidNonSortal(X0) | nonSortal(X0)) ) | ~spl59_48),
+  inference(avatar_component_clause,[],[f827])).
+fof(f998,plain,(
+  spl59_90 | ~spl59_2 | ~spl59_45),
+  inference(avatar_split_clause,[],[f994,f815,f643,f996])).
+fof(f643,plain,(
+  spl59_2 <=> category(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f815,plain,(
+  spl59_45 <=> ! [X0] : (~category(X0) | rigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_45])])).
+fof(f994,plain,(
+  rigidNonSortal(xyz) | (~spl59_2 | ~spl59_45)),
+  inference(resolution,[],[f816,f644])).
+fof(f644,plain,(
+  category(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f816,plain,(
+  ( ! [X0] : (~category(X0) | rigidNonSortal(X0)) ) | ~spl59_45),
+  inference(avatar_component_clause,[],[f815])).
+fof(f949,plain,(
+  spl59_78),
+  inference(avatar_split_clause,[],[f552,f947])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f909,plain,(
+  spl59_68),
+  inference(avatar_split_clause,[],[f532,f907])).
+fof(f532,plain,(
+  ( ! [X0] : (endurantType(X0) | ~nonSortal(X0)) )),
+  inference(cnf_transformation,[],[f34])).
+fof(f34,axiom,(
+  ! [X0] : ((nonSortal(X0) | sortal(X0)) <=> endurantType(X0))),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',ax_endurantType_taxonomy_properties)).
+fof(f829,plain,(
+  spl59_48),
+  inference(avatar_split_clause,[],[f424,f827])).
+fof(f424,plain,(
+  ( ! [X0] : (nonSortal(X0) | ~rigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f161])).
+fof(f161,plain,(
+  ! [X0] : (rigidNonSortal(X0) <=> (nonSortal(X0) & rigid(X0)))),
+  inference(rectify,[],[f65])).
+fof(f65,axiom,(
+  ! [X8] : (rigidNonSortal(X8) <=> (nonSortal(X8) & rigid(X8)))),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',ax_rigidNonSortalsAreRigidAndNonSortal_xx)).
+fof(f817,plain,(
+  spl59_45),
+  inference(avatar_split_clause,[],[f418,f815])).
+fof(f418,plain,(
+  ( ! [X0] : (~category(X0) | rigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f44])).
+fof(f44,axiom,(
+  ! [X0] : (rigidNonSortal(X0) <=> category(X0))),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',ax_rigidNonSortal_taxonomy)).
+fof(f757,plain,(
+  spl59_30),
+  inference(avatar_split_clause,[],[f352,f755])).
+fof(f352,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f241])).
+fof(f241,plain,(
+  ! [X0] : (type_(X0) | (~perdurantType(X0) & ~endurantType(X0)))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0] : ((perdurantType(X0) | endurantType(X0)) => type_(X0))),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',ax_type_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  category(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  category(xyz)),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_category_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_category_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.013 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.02 s

@@ -1,0 +1,387 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on ci_dolce_ab_dif_@_3 for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 54242
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on ci_dolce_ab_dif_@_3 for (258ds)
+TRYING [1]
+TRYING [2]
+TRYING [3]
+TRYING [4]
+TRYING [5]
+TRYING [6]
+TRYING [7]
+TRYING [8]
+TRYING [9]
+TRYING [10]
+TRYING [11]
+TRYING [12]
+TRYING [13]
+TRYING [14]
+TRYING [15]
+TRYING [16]
+TRYING [17]
+TRYING [18]
+TRYING [19]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 1215204
+% Time elapsed: 25.900 s
+% ------------------------------
+% ------------------------------
+% ott-4_4_awrs=decay:awrsf=64:add=off:afr=on:afp=40000:afq=1.0:amm=off:bs=on:gs=on:gsaa=from_current:gsem=on:irw=on:lma=on:nm=64:newcnf=on:nwc=1:sac=on:sp=frequency:updr=off_36 on ci_dolce_ab_dif_@_3 for (36ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 30447
+% Time elapsed: 3.700 s
+% ------------------------------
+% ------------------------------
+% ott+10_128_av=off:bs=on:gsp=on:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_231 on ci_dolce_ab_dif_@_3 for (231ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_dolce_ab_dif_@_3
+% SZS output start Proof for ci_dolce_ab_dif_@_3
+fof(f83246,plain,(
+  $false),
+  inference(subsumption_resolution,[],[f82909,f80366])).
+fof(f80366,plain,(
+  p(sK20(xyz,zyx),sK20(xyz,zyx))),
+  inference(unit_resulting_resolution,[],[f80199,f658])).
+fof(f658,plain,(
+  ( ! [X0] : (p(X0,X0) | ~ab(X0)) )),
+  inference(cnf_transformation,[],[f384])).
+fof(f384,plain,(
+  ! [X0] : (p(X0,X0) | (~pd(X0) & ~ab(X0)))),
+  inference(ennf_transformation,[],[f182])).
+fof(f182,plain,(
+  ! [X0] : ((pd(X0) | ab(X0)) => p(X0,X0))),
+  inference(rectify,[],[f52])).
+fof(f52,axiom,(
+  ! [X57] : ((pd(X57) | ab(X57)) => p(X57,X57))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f80199,plain,(
+  ab(sK20(xyz,zyx))),
+  inference(unit_resulting_resolution,[],[f604,f606,f79840,f27117])).
+fof(f27117,plain,(
+  ( ! [X24,X25] : (~p(X24,X25) | ab(sK20(X25,X24)) | X24 = X25 | ~ab(X25)) )),
+  inference(subsumption_resolution,[],[f27043,f733])).
+fof(f733,plain,(
+  ( ! [X0,X1] : (~p(X0,X1) | ~ab(X1) | ab(X0)) )),
+  inference(cnf_transformation,[],[f534])).
+fof(f534,plain,(
+  ! [X0,X1] : (((ab(X0) | ~ab(X1)) & (ab(X1) | ~ab(X0))) | ~p(X0,X1))),
+  inference(nnf_transformation,[],[f394])).
+fof(f394,plain,(
+  ! [X0,X1] : ((ab(X0) <=> ab(X1)) | ~p(X0,X1))),
+  inference(ennf_transformation,[],[f213])).
+fof(f213,plain,(
+  ! [X0,X1] : (p(X0,X1) => (ab(X0) <=> ab(X1)))),
+  inference(flattening,[],[f212])).
+fof(f212,plain,(
+  ! [X0] : ! [X1] : (p(X0,X1) => (ab(X0) <=> ab(X1)))),
+  inference(rectify,[],[f48])).
+fof(f48,axiom,(
+  ! [X49] : ! [X50] : (p(X49,X50) => (ab(X49) <=> ab(X50)))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f27043,plain,(
+  ( ! [X24,X25] : (~ab(X24) | ~ab(X25) | ab(sK20(X25,X24)) | X24 = X25 | ~p(X24,X25)) )),
+  inference(resolution,[],[f27028,f753])).
+fof(f753,plain,(
+  ( ! [X0,X1] : (~p(X1,X0) | X0 = X1 | ~p(X0,X1)) )),
+  inference(cnf_transformation,[],[f413])).
+fof(f413,plain,(
+  ! [X0,X1] : (X0 = X1 | ~p(X1,X0) | ~p(X0,X1))),
+  inference(flattening,[],[f412])).
+fof(f412,plain,(
+  ! [X0,X1] : (X0 = X1 | (~p(X1,X0) | ~p(X0,X1)))),
+  inference(ennf_transformation,[],[f239])).
+fof(f239,plain,(
+  ! [X0,X1] : ((p(X1,X0) & p(X0,X1)) => X0 = X1)),
+  inference(flattening,[],[f238])).
+fof(f238,plain,(
+  ! [X0] : ! [X1] : ((p(X1,X0) & p(X0,X1)) => X0 = X1)),
+  inference(rectify,[],[f53])).
+fof(f53,axiom,(
+  ! [X58] : ! [X59] : ((p(X59,X58) & p(X58,X59)) => X58 = X59)),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f27028,plain,(
+  ( ! [X6,X7] : (p(X6,X7) | ~ab(X7) | ~ab(X6) | ab(sK20(X6,X7))) )),
+  inference(subsumption_resolution,[],[f27018,f629])).
+fof(f629,plain,(
+  ( ! [X0] : (~pd(X0) | ~ab(X0)) )),
+  inference(cnf_transformation,[],[f361])).
+fof(f361,plain,(
+  ! [X0] : (~pd(X0) | ~ab(X0))),
+  inference(ennf_transformation,[],[f158])).
+fof(f158,plain,(
+  ~? [X0] : (pd(X0) & ab(X0))),
+  inference(rectify,[],[f22])).
+fof(f22,axiom,(
+  ~? [X21] : (pd(X21) & ab(X21))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f27018,plain,(
+  ( ! [X6,X7] : (p(X6,X7) | ~ab(X7) | ~ab(X6) | ab(sK20(X6,X7)) | pd(X6)) )),
+  inference(resolution,[],[f748,f883])).
+fof(f883,plain,(
+  ( ! [X2,X0,X1] : (~dif(X2,X0,X1) | ab(X2) | pd(X0)) )),
+  inference(cnf_transformation,[],[f602])).
+fof(f602,plain,(
+  ! [X0,X1,X2] : ((dif(X2,X0,X1) | ((ov(sK34(X0,X1,X2),X1) | ~p(sK34(X0,X1,X2),X0) | ~p(sK34(X0,X1,X2),X2)) & ((~ov(sK34(X0,X1,X2),X1) & p(sK34(X0,X1,X2),X0)) | p(sK34(X0,X1,X2),X2))) | ((~pd(X1) | ~pd(X0) | ~pd(X2)) & (~ab(X1) | ~ab(X0) | ~ab(X2)))) & ((! [X4] : ((p(X4,X2) | ov(X4,X1) | ~p(X4,X0)) & ((~ov(X4,X1) & p(X4,X0)) | ~p(X4,X2))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))) | ~dif(X2,X0,X1)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK34])],[f600,f601])).
+fof(f601,plain,(
+  ! [X0,X1,X2] : (? [X3] : ((ov(X3,X1) | ~p(X3,X0) | ~p(X3,X2)) & ((~ov(X3,X1) & p(X3,X0)) | p(X3,X2))) => ((ov(sK34(X0,X1,X2),X1) | ~p(sK34(X0,X1,X2),X0) | ~p(sK34(X0,X1,X2),X2)) & ((~ov(sK34(X0,X1,X2),X1) & p(sK34(X0,X1,X2),X0)) | p(sK34(X0,X1,X2),X2))))),
+  introduced(choice_axiom,[])).
+fof(f600,plain,(
+  ! [X0,X1,X2] : ((dif(X2,X0,X1) | ? [X3] : ((ov(X3,X1) | ~p(X3,X0) | ~p(X3,X2)) & ((~ov(X3,X1) & p(X3,X0)) | p(X3,X2))) | ((~pd(X1) | ~pd(X0) | ~pd(X2)) & (~ab(X1) | ~ab(X0) | ~ab(X2)))) & ((! [X4] : ((p(X4,X2) | ov(X4,X1) | ~p(X4,X0)) & ((~ov(X4,X1) & p(X4,X0)) | ~p(X4,X2))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))) | ~dif(X2,X0,X1)))),
+  inference(rectify,[],[f599])).
+fof(f599,plain,(
+  ! [X0,X1,X2] : ((dif(X2,X0,X1) | ? [X3] : ((ov(X3,X1) | ~p(X3,X0) | ~p(X3,X2)) & ((~ov(X3,X1) & p(X3,X0)) | p(X3,X2))) | ((~pd(X1) | ~pd(X0) | ~pd(X2)) & (~ab(X1) | ~ab(X0) | ~ab(X2)))) & ((! [X3] : ((p(X3,X2) | ov(X3,X1) | ~p(X3,X0)) & ((~ov(X3,X1) & p(X3,X0)) | ~p(X3,X2))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))) | ~dif(X2,X0,X1)))),
+  inference(flattening,[],[f598])).
+fof(f598,plain,(
+  ! [X0,X1,X2] : ((dif(X2,X0,X1) | (? [X3] : (((ov(X3,X1) | ~p(X3,X0)) | ~p(X3,X2)) & ((~ov(X3,X1) & p(X3,X0)) | p(X3,X2))) | ((~pd(X1) | ~pd(X0) | ~pd(X2)) & (~ab(X1) | ~ab(X0) | ~ab(X2))))) & ((! [X3] : ((p(X3,X2) | (ov(X3,X1) | ~p(X3,X0))) & ((~ov(X3,X1) & p(X3,X0)) | ~p(X3,X2))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))) | ~dif(X2,X0,X1)))),
+  inference(nnf_transformation,[],[f331])).
+fof(f331,plain,(
+  ! [X0,X1,X2] : (dif(X2,X0,X1) <=> (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(flattening,[],[f330])).
+fof(f330,plain,(
+  ! [X0] : ! [X1] : ! [X2] : (dif(X2,X0,X1) <=> (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(rectify,[],[f60])).
+fof(f60,axiom,(
+  ! [X76] : ! [X77] : ! [X78] : (dif(X78,X76,X77) <=> (! [X79] : (p(X79,X78) <=> (~ov(X79,X77) & p(X79,X76))) & ((pd(X77) & pd(X76) & pd(X78)) | (ab(X77) & ab(X76) & ab(X78)))))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f748,plain,(
+  ( ! [X0,X1] : (dif(sK20(X0,X1),X0,X1) | p(X0,X1) | ~ab(X1) | ~ab(X0)) )),
+  inference(cnf_transformation,[],[f541])).
+fof(f541,plain,(
+  ! [X0,X1] : (dif(sK20(X0,X1),X0,X1) | p(X0,X1) | ~ab(X1) | ~ab(X0))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK20])],[f403,f540])).
+fof(f540,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) => dif(sK20(X0,X1),X0,X1))),
+  introduced(choice_axiom,[])).
+fof(f403,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) | p(X0,X1) | ~ab(X1) | ~ab(X0))),
+  inference(flattening,[],[f402])).
+fof(f402,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) | (p(X0,X1) | ~ab(X1) | ~ab(X0)))),
+  inference(ennf_transformation,[],[f229])).
+fof(f229,plain,(
+  ! [X0,X1] : ((~p(X0,X1) & ab(X1) & ab(X0)) => ? [X2] : dif(X2,X0,X1))),
+  inference(flattening,[],[f228])).
+fof(f228,plain,(
+  ! [X0] : ! [X1] : ((~p(X0,X1) & ab(X1) & ab(X0)) => ? [X2] : dif(X2,X0,X1))),
+  inference(rectify,[],[f61])).
+fof(f61,axiom,(
+  ! [X80] : ! [X81] : ((~p(X80,X81) & ab(X81) & ab(X80)) => ? [X82] : dif(X82,X80,X81))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f79840,plain,(
+  p(zyx,xyz)),
+  inference(subsumption_resolution,[],[f79839,f605])).
+fof(f605,plain,(
+  ab(zyx)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ab(zyx)),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',axiom233)).
+fof(f79839,plain,(
+  ~ab(zyx) | p(zyx,xyz)),
+  inference(duplicate_literal_removal,[],[f79834])).
+fof(f79834,plain,(
+  ~ab(zyx) | p(zyx,xyz) | p(zyx,xyz) | ~ab(zyx)),
+  inference(resolution,[],[f79802,f63329])).
+fof(f63329,plain,(
+  ( ! [X1] : (~ov(sK20(X1,xyz),zyx) | p(X1,xyz) | ~ab(X1)) )),
+  inference(subsumption_resolution,[],[f63306,f27181])).
+fof(f27181,plain,(
+  ( ! [X4] : (p(X4,xyz) | ~ab(X4) | ab(sK20(X4,xyz))) )),
+  inference(subsumption_resolution,[],[f27173,f629])).
+fof(f27173,plain,(
+  ( ! [X4] : (~ab(X4) | p(X4,xyz) | ab(sK20(X4,xyz)) | pd(X4)) )),
+  inference(resolution,[],[f27029,f883])).
+fof(f27029,plain,(
+  ( ! [X22] : (dif(sK20(X22,xyz),X22,zyx) | ~ab(X22) | p(X22,xyz)) )),
+  inference(subsumption_resolution,[],[f27026,f604])).
+fof(f27026,plain,(
+  ( ! [X22] : (p(X22,xyz) | ~ab(xyz) | ~ab(X22) | dif(sK20(X22,xyz),X22,zyx)) )),
+  inference(resolution,[],[f748,f901])).
+fof(f901,plain,(
+  ( ! [X0,X1] : (~dif(X0,X1,xyz) | dif(X0,X1,zyx)) )),
+  inference(cnf_transformation,[],[f603])).
+fof(f603,plain,(
+  ! [X0,X1] : ((dif(X0,X1,xyz) | ~dif(X0,X1,zyx)) & (dif(X0,X1,zyx) | ~dif(X0,X1,xyz)))),
+  inference(nnf_transformation,[],[f338])).
+fof(f338,plain,(
+  ! [X0,X1] : (dif(X0,X1,xyz) <=> dif(X0,X1,zyx))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X1,X2] : (dif(X1,X2,xyz) <=> dif(X1,X2,zyx))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',axiom238)).
+fof(f63306,plain,(
+  ( ! [X1] : (~ab(X1) | p(X1,xyz) | ~ov(sK20(X1,xyz),zyx) | ~ab(sK20(X1,xyz))) )),
+  inference(resolution,[],[f27241,f658])).
+fof(f27241,plain,(
+  ( ! [X0,X1] : (~p(X1,sK20(X0,xyz)) | ~ab(X0) | p(X0,xyz) | ~ov(X1,zyx)) )),
+  inference(resolution,[],[f27179,f918])).
+fof(f918,plain,(
+  ( ! [X2,X1,X4] : (~sP42(X2,X1) | ~p(X4,X2) | ~ov(X4,X1)) )),
+  inference(general_splitting,[],[f890,f917_D])).
+fof(f917,plain,(
+  ( ! [X2,X0,X1] : (~dif(X2,X0,X1) | sP42(X2,X1)) )),
+  inference(cnf_transformation,[],[f917_D])).
+fof(f917_D,plain,(
+  ( ! [X1,X2] : (( ! [X0] : ~dif(X2,X0,X1) ) <=> ~sP42(X2,X1)) )),
+  introduced(general_splitting_component_introduction,[new_symbols(naming,[sP42])])).
+fof(f890,plain,(
+  ( ! [X2,X0,X1,X4] : (~ov(X4,X1) | ~p(X4,X2) | ~dif(X2,X0,X1)) )),
+  inference(cnf_transformation,[],[f602])).
+fof(f27179,plain,(
+  ( ! [X10] : (sP42(sK20(X10,xyz),zyx) | p(X10,xyz) | ~ab(X10)) )),
+  inference(resolution,[],[f27029,f917])).
+fof(f79802,plain,(
+  ( ! [X2] : (ov(sK20(X2,xyz),X2) | ~ab(X2) | p(X2,xyz)) )),
+  inference(subsumption_resolution,[],[f79771,f27181])).
+fof(f79771,plain,(
+  ( ! [X2] : (~ab(X2) | ov(sK20(X2,xyz),X2) | p(X2,xyz) | ~ab(sK20(X2,xyz))) )),
+  inference(resolution,[],[f64412,f658])).
+fof(f64412,plain,(
+  ( ! [X16,X15] : (~p(sK20(X15,xyz),X16) | ~ab(X15) | ov(X16,X15) | p(X15,xyz)) )),
+  inference(resolution,[],[f64385,f781])).
+fof(f781,plain,(
+  ( ! [X2,X0,X1] : (~p(X2,X1) | ov(X0,X1) | ~p(X2,X0)) )),
+  inference(cnf_transformation,[],[f572])).
+fof(f572,plain,(
+  ! [X0,X1] : ((ov(X0,X1) | ! [X2] : (~p(X2,X1) | ~p(X2,X0))) & ((p(sK29(X0,X1),X1) & p(sK29(X0,X1),X0)) | ~ov(X0,X1)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK29])],[f570,f571])).
+fof(f571,plain,(
+  ! [X0,X1] : (? [X3] : (p(X3,X1) & p(X3,X0)) => (p(sK29(X0,X1),X1) & p(sK29(X0,X1),X0)))),
+  introduced(choice_axiom,[])).
+fof(f570,plain,(
+  ! [X0,X1] : ((ov(X0,X1) | ! [X2] : (~p(X2,X1) | ~p(X2,X0))) & (? [X3] : (p(X3,X1) & p(X3,X0)) | ~ov(X0,X1)))),
+  inference(rectify,[],[f569])).
+fof(f569,plain,(
+  ! [X0,X1] : ((ov(X0,X1) | ! [X2] : (~p(X2,X1) | ~p(X2,X0))) & (? [X2] : (p(X2,X1) & p(X2,X0)) | ~ov(X0,X1)))),
+  inference(nnf_transformation,[],[f253])).
+fof(f253,plain,(
+  ! [X0,X1] : (ov(X0,X1) <=> ? [X2] : (p(X2,X1) & p(X2,X0)))),
+  inference(flattening,[],[f252])).
+fof(f252,plain,(
+  ! [X0] : ! [X1] : (ov(X0,X1) <=> ? [X2] : (p(X2,X1) & p(X2,X0)))),
+  inference(rectify,[],[f56])).
+fof(f56,axiom,(
+  ! [X65] : ! [X66] : (ov(X65,X66) <=> ? [X67] : (p(X67,X66) & p(X67,X65)))),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',sos)).
+fof(f64385,plain,(
+  ( ! [X1] : (p(sK20(X1,xyz),X1) | p(X1,xyz) | ~ab(X1)) )),
+  inference(subsumption_resolution,[],[f64362,f27181])).
+fof(f64362,plain,(
+  ( ! [X1] : (~ab(X1) | p(X1,xyz) | p(sK20(X1,xyz),X1) | ~ab(sK20(X1,xyz))) )),
+  inference(resolution,[],[f27242,f658])).
+fof(f27242,plain,(
+  ( ! [X0,X1] : (~p(X1,sK20(X0,xyz)) | ~ab(X0) | p(X0,xyz) | p(X1,X0)) )),
+  inference(resolution,[],[f27180,f920])).
+fof(f920,plain,(
+  ( ! [X2,X0,X4] : (~sP43(X0,X2) | ~p(X4,X2) | p(X4,X0)) )),
+  inference(general_splitting,[],[f889,f919_D])).
+fof(f919,plain,(
+  ( ! [X2,X0,X1] : (~dif(X2,X0,X1) | sP43(X0,X2)) )),
+  inference(cnf_transformation,[],[f919_D])).
+fof(f919_D,plain,(
+  ( ! [X2,X0] : (( ! [X1] : ~dif(X2,X0,X1) ) <=> ~sP43(X0,X2)) )),
+  introduced(general_splitting_component_introduction,[new_symbols(naming,[sP43])])).
+fof(f889,plain,(
+  ( ! [X2,X0,X1,X4] : (p(X4,X0) | ~p(X4,X2) | ~dif(X2,X0,X1)) )),
+  inference(cnf_transformation,[],[f602])).
+fof(f27180,plain,(
+  ( ! [X11] : (sP43(X11,sK20(X11,xyz)) | p(X11,xyz) | ~ab(X11)) )),
+  inference(resolution,[],[f27029,f919])).
+fof(f606,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',diff233)).
+fof(f604,plain,(
+  ab(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  ab(xyz)),
+  file('outputs/dolce/cis/ci_dolce_ab_dif_@_3.in',axiom232)).
+fof(f82909,plain,(
+  ~p(sK20(xyz,zyx),sK20(xyz,zyx))),
+  inference(unit_resulting_resolution,[],[f80265,f80268,f781])).
+fof(f80268,plain,(
+  p(sK20(xyz,zyx),xyz)),
+  inference(unit_resulting_resolution,[],[f604,f79849,f70452])).
+fof(f70452,plain,(
+  ( ! [X1] : (p(sK20(X1,zyx),X1) | p(X1,zyx) | ~ab(X1)) )),
+  inference(subsumption_resolution,[],[f70427,f27464])).
+fof(f27464,plain,(
+  ( ! [X4] : (p(X4,zyx) | ~ab(X4) | ab(sK20(X4,zyx))) )),
+  inference(subsumption_resolution,[],[f27456,f629])).
+fof(f27456,plain,(
+  ( ! [X4] : (~ab(X4) | p(X4,zyx) | ab(sK20(X4,zyx)) | pd(X4)) )),
+  inference(resolution,[],[f27030,f883])).
+fof(f27030,plain,(
+  ( ! [X23] : (dif(sK20(X23,zyx),X23,xyz) | ~ab(X23) | p(X23,zyx)) )),
+  inference(subsumption_resolution,[],[f27027,f605])).
+fof(f27027,plain,(
+  ( ! [X23] : (p(X23,zyx) | ~ab(zyx) | ~ab(X23) | dif(sK20(X23,zyx),X23,xyz)) )),
+  inference(resolution,[],[f748,f902])).
+fof(f902,plain,(
+  ( ! [X0,X1] : (~dif(X0,X1,zyx) | dif(X0,X1,xyz)) )),
+  inference(cnf_transformation,[],[f603])).
+fof(f70427,plain,(
+  ( ! [X1] : (~ab(X1) | p(X1,zyx) | p(sK20(X1,zyx),X1) | ~ab(sK20(X1,zyx))) )),
+  inference(resolution,[],[f27525,f658])).
+fof(f27525,plain,(
+  ( ! [X0,X1] : (~p(X1,sK20(X0,zyx)) | ~ab(X0) | p(X0,zyx) | p(X1,X0)) )),
+  inference(resolution,[],[f27463,f920])).
+fof(f27463,plain,(
+  ( ! [X11] : (sP43(X11,sK20(X11,zyx)) | p(X11,zyx) | ~ab(X11)) )),
+  inference(resolution,[],[f27030,f919])).
+fof(f79849,plain,(
+  ~p(xyz,zyx)),
+  inference(unit_resulting_resolution,[],[f606,f79840,f753])).
+fof(f80265,plain,(
+  ~ov(sK20(xyz,zyx),xyz)),
+  inference(unit_resulting_resolution,[],[f604,f79849,f69321])).
+fof(f69321,plain,(
+  ( ! [X1] : (~ov(sK20(X1,zyx),xyz) | p(X1,zyx) | ~ab(X1)) )),
+  inference(subsumption_resolution,[],[f69296,f27464])).
+fof(f69296,plain,(
+  ( ! [X1] : (~ab(X1) | p(X1,zyx) | ~ov(sK20(X1,zyx),xyz) | ~ab(sK20(X1,zyx))) )),
+  inference(resolution,[],[f27524,f658])).
+fof(f27524,plain,(
+  ( ! [X0,X1] : (~p(X1,sK20(X0,zyx)) | ~ab(X0) | p(X0,zyx) | ~ov(X1,xyz)) )),
+  inference(resolution,[],[f27462,f918])).
+fof(f27462,plain,(
+  ( ! [X10] : (sP42(sK20(X10,zyx),xyz) | p(X10,zyx) | ~ab(X10)) )),
+  inference(resolution,[],[f27030,f917])).
+% SZS output end Proof for ci_dolce_ab_dif_@_3
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 41321
+% Time elapsed: 1.653 s
+% ------------------------------
+% ------------------------------
+% Success in time 34.572 s

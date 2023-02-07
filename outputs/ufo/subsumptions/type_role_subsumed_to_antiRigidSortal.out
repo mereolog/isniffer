@@ -1,0 +1,72 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_role_subsumed_to_antiRigidSortal for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_role_subsumed_to_antiRigidSortal
+% SZS output start Proof for type_role_subsumed_to_antiRigidSortal
+fof(f982,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f846,f981])).
+fof(f981,plain,(
+  spl59_1 | ~spl59_2 | ~spl59_52),
+  inference(avatar_contradiction_clause,[],[f980])).
+fof(f980,plain,(
+  $false | (spl59_1 | ~spl59_2 | ~spl59_52)),
+  inference(subsumption_resolution,[],[f979,f641])).
+fof(f641,plain,(
+  ~antiRigidSortal(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> antiRigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f979,plain,(
+  antiRigidSortal(xyz) | (~spl59_2 | ~spl59_52)),
+  inference(resolution,[],[f845,f645])).
+fof(f645,plain,(
+  role(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_2 <=> role(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f845,plain,(
+  ( ! [X0] : (~role(X0) | antiRigidSortal(X0)) ) | ~spl59_52),
+  inference(avatar_component_clause,[],[f844])).
+fof(f844,plain,(
+  spl59_52 <=> ! [X0] : (antiRigidSortal(X0) | ~role(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_52])])).
+fof(f846,plain,(
+  spl59_52),
+  inference(avatar_split_clause,[],[f508,f844])).
+fof(f508,plain,(
+  ( ! [X0] : (antiRigidSortal(X0) | ~role(X0)) )),
+  inference(cnf_transformation,[],[f40])).
+fof(f40,axiom,(
+  ! [X0] : ((role(X0) | phase(X0)) <=> antiRigidSortal(X0))),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_antiRigidSortal.in',ax_antiRigidSortal_taxonomy)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  role(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  role(xyz)),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_antiRigidSortal.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~antiRigidSortal(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~antiRigidSortal(xyz)),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_antiRigidSortal.in',axiom2)).
+% SZS output end Proof for type_role_subsumed_to_antiRigidSortal
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.018 s

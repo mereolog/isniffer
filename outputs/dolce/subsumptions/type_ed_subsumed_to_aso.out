@@ -1,0 +1,1455 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_ed_subsumed_to_aso for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 50148
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on type_ed_subsumed_to_aso for (258ds)
+TRYING [1]
+TRYING [2]
+TRYING [3]
+TRYING [4]
+Finite Model Found!
+% SZS status Satisfiable for type_ed_subsumed_to_aso
+% SZS output start FiniteModel for type_ed_subsumed_to_aso
+tff(declare_$i,type,$i:$tType).
+tff(declare_$i1,type,xyz:$i).
+tff(declare_$i2,type,fmb_$i_2:$i).
+tff(declare_$i3,type,fmb_$i_3:$i).
+tff(declare_$i4,type,fmb_$i_4:$i).
+tff(finite_domain,axiom,
+      ! [X:$i] : (
+         X = xyz | X = fmb_$i_2 | X = fmb_$i_3 | X = fmb_$i_4
+      ) ).
+
+tff(distinct_domain,axiom,
+         xyz != fmb_$i_2 & xyz != fmb_$i_3 & xyz != fmb_$i_4 & fmb_$i_2 != fmb_$i_3 & fmb_$i_2 != fmb_$i_4 & 
+         fmb_$i_3 != fmb_$i_4
+).
+
+tff(declare_bool,type,$o:$tType).
+tff(declare_bool1,type,fmb_bool_1:$o).
+tff(finite_domain,axiom,
+      ! [X:$o] : (
+         X = fmb_bool_1
+      ) ).
+
+tff(declare_ab,type,ab: $i > $o ).
+tff(predicate_ab,axiom,
+           ~ab(xyz)
+         & ~ab(fmb_$i_2)
+         & ~ab(fmb_$i_3)
+         & ab(fmb_$i_4)
+
+).
+
+tff(declare_ed,type,ed: $i > $o ).
+tff(predicate_ed,axiom,
+           ed(xyz)
+         & ~ed(fmb_$i_2)
+         & ~ed(fmb_$i_3)
+         & ~ed(fmb_$i_4)
+
+).
+
+tff(declare_pd,type,pd: $i > $o ).
+tff(predicate_pd,axiom,
+           ~pd(xyz)
+         & pd(fmb_$i_2)
+         & ~pd(fmb_$i_3)
+         & ~pd(fmb_$i_4)
+
+).
+
+tff(declare_q,type,q: $i > $o ).
+tff(predicate_q,axiom,
+           ~q(xyz)
+         & ~q(fmb_$i_2)
+         & q(fmb_$i_3)
+         & ~q(fmb_$i_4)
+
+).
+
+tff(declare_pt,type,pt: $i > $o ).
+tff(predicate_pt,axiom,
+           pt(xyz)
+         & pt(fmb_$i_2)
+         & pt(fmb_$i_3)
+         & pt(fmb_$i_4)
+
+).
+
+tff(declare_as,type,as: $i > $o ).
+tff(predicate_as,axiom,
+           as(xyz)
+         & ~as(fmb_$i_2)
+         & ~as(fmb_$i_3)
+         & ~as(fmb_$i_4)
+
+).
+
+tff(declare_nped,type,nped: $i > $o ).
+tff(predicate_nped,axiom,
+           ~nped(xyz)
+         & ~nped(fmb_$i_2)
+         & ~nped(fmb_$i_3)
+         & ~nped(fmb_$i_4)
+
+).
+
+tff(declare_ped,type,ped: $i > $o ).
+tff(predicate_ped,axiom,
+           ~ped(xyz)
+         & ~ped(fmb_$i_2)
+         & ~ped(fmb_$i_3)
+         & ~ped(fmb_$i_4)
+
+).
+
+tff(declare_pro,type,pro: $i > $o ).
+tff(predicate_pro,axiom,
+           ~pro(xyz)
+         & ~pro(fmb_$i_2)
+         & ~pro(fmb_$i_3)
+         & ~pro(fmb_$i_4)
+
+).
+
+tff(declare_st,type,st: $i > $o ).
+tff(predicate_st,axiom,
+           ~st(xyz)
+         & ~st(fmb_$i_2)
+         & ~st(fmb_$i_3)
+         & ~st(fmb_$i_4)
+
+).
+
+tff(declare_stv,type,stv: $i > $o ).
+tff(predicate_stv,axiom,
+           ~stv(xyz)
+         & ~stv(fmb_$i_2)
+         & ~stv(fmb_$i_3)
+         & ~stv(fmb_$i_4)
+
+).
+
+tff(declare_ev,type,ev: $i > $o ).
+tff(predicate_ev,axiom,
+           ~ev(xyz)
+         & ev(fmb_$i_2)
+         & ~ev(fmb_$i_3)
+         & ~ev(fmb_$i_4)
+
+).
+
+tff(declare_aq,type,aq: $i > $o ).
+tff(predicate_aq,axiom,
+           ~aq(xyz)
+         & ~aq(fmb_$i_2)
+         & ~aq(fmb_$i_3)
+         & ~aq(fmb_$i_4)
+
+).
+
+tff(declare_pq,type,pq: $i > $o ).
+tff(predicate_pq,axiom,
+           ~pq(xyz)
+         & ~pq(fmb_$i_2)
+         & ~pq(fmb_$i_3)
+         & ~pq(fmb_$i_4)
+
+).
+
+tff(declare_tq,type,tq: $i > $o ).
+tff(predicate_tq,axiom,
+           ~tq(xyz)
+         & ~tq(fmb_$i_2)
+         & tq(fmb_$i_3)
+         & ~tq(fmb_$i_4)
+
+).
+
+tff(declare_acc,type,acc: $i > $o ).
+tff(predicate_acc,axiom,
+           ~acc(xyz)
+         & ~acc(fmb_$i_2)
+         & ~acc(fmb_$i_3)
+         & ~acc(fmb_$i_4)
+
+).
+
+tff(declare_ach,type,ach: $i > $o ).
+tff(predicate_ach,axiom,
+           ~ach(xyz)
+         & ach(fmb_$i_2)
+         & ~ach(fmb_$i_3)
+         & ~ach(fmb_$i_4)
+
+).
+
+tff(declare_apo,type,apo: $i > $o ).
+tff(predicate_apo,axiom,
+           ~apo(xyz)
+         & ~apo(fmb_$i_2)
+         & ~apo(fmb_$i_3)
+         & ~apo(fmb_$i_4)
+
+).
+
+tff(declare_napo,type,napo: $i > $o ).
+tff(predicate_napo,axiom,
+           ~napo(xyz)
+         & ~napo(fmb_$i_2)
+         & ~napo(fmb_$i_3)
+         & ~napo(fmb_$i_4)
+
+).
+
+tff(declare_pob,type,pob: $i > $o ).
+tff(predicate_pob,axiom,
+           ~pob(xyz)
+         & ~pob(fmb_$i_2)
+         & ~pob(fmb_$i_3)
+         & ~pob(fmb_$i_4)
+
+).
+
+tff(declare_sag,type,sag: $i > $o ).
+tff(predicate_sag,axiom,
+%         sag(xyz) undefined in model
+%         sag(fmb_$i_2) undefined in model
+%         sag(fmb_$i_3) undefined in model
+%         sag(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_sc,type,sc: $i > $o ).
+tff(predicate_sc,axiom,
+%         sc(xyz) undefined in model
+%         sc(fmb_$i_2) undefined in model
+%         sc(fmb_$i_3) undefined in model
+%         sc(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_aso,type,aso: $i > $o ).
+tff(predicate_aso,axiom,
+%         aso(xyz) undefined in model
+%         aso(fmb_$i_2) undefined in model
+%         aso(fmb_$i_3) undefined in model
+%         aso(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_naso,type,naso: $i > $o ).
+tff(predicate_naso,axiom,
+           ~naso(xyz)
+         & ~naso(fmb_$i_2)
+         & ~naso(fmb_$i_3)
+         & ~naso(fmb_$i_4)
+
+).
+
+tff(declare_sob,type,sob: $i > $o ).
+tff(predicate_sob,axiom,
+%         sob(xyz) undefined in model
+%         sob(fmb_$i_2) undefined in model
+%         sob(fmb_$i_3) undefined in model
+%         sob(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_c,type,c: $i > $o ).
+tff(predicate_c,axiom,
+           ~c(xyz)
+         & ~c(fmb_$i_2)
+         & ~c(fmb_$i_3)
+         & ~c(fmb_$i_4)
+
+).
+
+tff(declare_arc,type,arc: $i > $o ).
+tff(predicate_arc,axiom,
+           ~arc(xyz)
+         & ~arc(fmb_$i_2)
+         & ~arc(fmb_$i_3)
+         & ~arc(fmb_$i_4)
+
+).
+
+tff(declare_mob,type,mob: $i > $o ).
+tff(predicate_mob,axiom,
+%         mob(xyz) undefined in model
+%         mob(fmb_$i_2) undefined in model
+%         mob(fmb_$i_3) undefined in model
+%         mob(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_npob,type,npob: $i > $o ).
+tff(predicate_npob,axiom,
+%         npob(xyz) undefined in model
+%         npob(fmb_$i_2) undefined in model
+%         npob(fmb_$i_3) undefined in model
+%         npob(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_ar,type,ar: $i > $o ).
+tff(predicate_ar,axiom,
+           ~ar(xyz)
+         & ~ar(fmb_$i_2)
+         & ~ar(fmb_$i_3)
+         & ~ar(fmb_$i_4)
+
+).
+
+tff(declare_pr,type,pr: $i > $o ).
+tff(predicate_pr,axiom,
+           ~pr(xyz)
+         & ~pr(fmb_$i_2)
+         & ~pr(fmb_$i_3)
+         & ~pr(fmb_$i_4)
+
+).
+
+tff(declare_tr,type,tr: $i > $o ).
+tff(predicate_tr,axiom,
+           ~tr(xyz)
+         & ~tr(fmb_$i_2)
+         & ~tr(fmb_$i_3)
+         & tr(fmb_$i_4)
+
+).
+
+tff(declare_r,type,r: $i > $o ).
+tff(predicate_r,axiom,
+           ~r(xyz)
+         & ~r(fmb_$i_2)
+         & ~r(fmb_$i_3)
+         & r(fmb_$i_4)
+
+).
+
+tff(declare_f,type,f: $i > $o ).
+tff(predicate_f,axiom,
+           ~f(xyz)
+         & ~f(fmb_$i_2)
+         & ~f(fmb_$i_3)
+         & ~f(fmb_$i_4)
+
+).
+
+tff(declare_m,type,m: $i > $o ).
+tff(predicate_m,axiom,
+           ~m(xyz)
+         & ~m(fmb_$i_2)
+         & ~m(fmb_$i_3)
+         & ~m(fmb_$i_4)
+
+).
+
+tff(declare_s,type,s: $i > $o ).
+tff(predicate_s,axiom,
+           ~s(xyz)
+         & ~s(fmb_$i_2)
+         & ~s(fmb_$i_3)
+         & ~s(fmb_$i_4)
+
+).
+
+tff(declare_sl,type,sl: $i > $o ).
+tff(predicate_sl,axiom,
+           ~sl(xyz)
+         & ~sl(fmb_$i_2)
+         & ~sl(fmb_$i_3)
+         & ~sl(fmb_$i_4)
+
+).
+
+tff(declare_t,type,t: $i > $o ).
+tff(predicate_t,axiom,
+           ~t(xyz)
+         & ~t(fmb_$i_2)
+         & ~t(fmb_$i_3)
+         & t(fmb_$i_4)
+
+).
+
+tff(declare_tl,type,tl: $i > $o ).
+tff(predicate_tl,axiom,
+           ~tl(xyz)
+         & ~tl(fmb_$i_2)
+         & tl(fmb_$i_3)
+         & ~tl(fmb_$i_4)
+
+).
+
+tff(declare_p,type,p: $i * $i > $o ).
+tff(predicate_p,axiom,
+           ~p(xyz,xyz)
+         & ~p(xyz,fmb_$i_2)
+         & ~p(xyz,fmb_$i_3)
+         & ~p(xyz,fmb_$i_4)
+         & ~p(fmb_$i_2,xyz)
+         & p(fmb_$i_2,fmb_$i_2)
+         & ~p(fmb_$i_2,fmb_$i_3)
+         & ~p(fmb_$i_2,fmb_$i_4)
+         & ~p(fmb_$i_3,xyz)
+         & ~p(fmb_$i_3,fmb_$i_2)
+         & ~p(fmb_$i_3,fmb_$i_3)
+         & ~p(fmb_$i_3,fmb_$i_4)
+         & ~p(fmb_$i_4,xyz)
+         & ~p(fmb_$i_4,fmb_$i_2)
+         & ~p(fmb_$i_4,fmb_$i_3)
+         & p(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_pp,type,pp: $i * $i > $o ).
+tff(predicate_pp,axiom,
+           ~pp(xyz,xyz)
+         & ~pp(xyz,fmb_$i_2)
+         & ~pp(xyz,fmb_$i_3)
+         & ~pp(xyz,fmb_$i_4)
+         & ~pp(fmb_$i_2,xyz)
+         & ~pp(fmb_$i_2,fmb_$i_2)
+         & ~pp(fmb_$i_2,fmb_$i_3)
+         & ~pp(fmb_$i_2,fmb_$i_4)
+         & ~pp(fmb_$i_3,xyz)
+         & ~pp(fmb_$i_3,fmb_$i_2)
+         & ~pp(fmb_$i_3,fmb_$i_3)
+         & ~pp(fmb_$i_3,fmb_$i_4)
+         & ~pp(fmb_$i_4,xyz)
+         & ~pp(fmb_$i_4,fmb_$i_2)
+         & ~pp(fmb_$i_4,fmb_$i_3)
+         & ~pp(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_ov,type,ov: $i * $i > $o ).
+tff(predicate_ov,axiom,
+           ~ov(xyz,xyz)
+         & ~ov(xyz,fmb_$i_2)
+         & ~ov(xyz,fmb_$i_3)
+         & ~ov(xyz,fmb_$i_4)
+         & ~ov(fmb_$i_2,xyz)
+         & ov(fmb_$i_2,fmb_$i_2)
+         & ~ov(fmb_$i_2,fmb_$i_3)
+         & ~ov(fmb_$i_2,fmb_$i_4)
+         & ~ov(fmb_$i_3,xyz)
+         & ~ov(fmb_$i_3,fmb_$i_2)
+         & ~ov(fmb_$i_3,fmb_$i_3)
+         & ~ov(fmb_$i_3,fmb_$i_4)
+         & ~ov(fmb_$i_4,xyz)
+         & ~ov(fmb_$i_4,fmb_$i_2)
+         & ~ov(fmb_$i_4,fmb_$i_3)
+         & ov(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_at,type,at: $i > $o ).
+tff(predicate_at,axiom,
+           ~at(xyz)
+%         at(fmb_$i_2) undefined in model
+         & ~at(fmb_$i_3)
+%         at(fmb_$i_4) undefined in model
+
+).
+
+tff(declare_atp,type,atp: $i * $i > $o ).
+tff(predicate_atp,axiom,
+%         atp(xyz,xyz) undefined in model
+%         atp(xyz,fmb_$i_2) undefined in model
+%         atp(xyz,fmb_$i_3) undefined in model
+%         atp(xyz,fmb_$i_4) undefined in model
+%         atp(fmb_$i_2,xyz) undefined in model
+%         atp(fmb_$i_2,fmb_$i_2) undefined in model
+%         atp(fmb_$i_2,fmb_$i_3) undefined in model
+%         atp(fmb_$i_2,fmb_$i_4) undefined in model
+%         atp(fmb_$i_3,xyz) undefined in model
+%         atp(fmb_$i_3,fmb_$i_2) undefined in model
+%         atp(fmb_$i_3,fmb_$i_3) undefined in model
+%         atp(fmb_$i_3,fmb_$i_4) undefined in model
+%         atp(fmb_$i_4,xyz) undefined in model
+%         atp(fmb_$i_4,fmb_$i_2) undefined in model
+%         atp(fmb_$i_4,fmb_$i_3) undefined in model
+%         atp(fmb_$i_4,fmb_$i_4) undefined in model
+
+).
+
+tff(declare_sum,type,sum: $i * $i * $i > $o ).
+tff(predicate_sum,axiom,
+           ~sum(xyz,xyz,xyz)
+         & ~sum(xyz,xyz,fmb_$i_2)
+         & ~sum(xyz,xyz,fmb_$i_3)
+         & ~sum(xyz,xyz,fmb_$i_4)
+         & ~sum(xyz,fmb_$i_2,xyz)
+         & ~sum(xyz,fmb_$i_2,fmb_$i_2)
+         & ~sum(xyz,fmb_$i_2,fmb_$i_3)
+         & ~sum(xyz,fmb_$i_2,fmb_$i_4)
+         & ~sum(xyz,fmb_$i_3,xyz)
+         & ~sum(xyz,fmb_$i_3,fmb_$i_2)
+         & ~sum(xyz,fmb_$i_3,fmb_$i_3)
+         & ~sum(xyz,fmb_$i_3,fmb_$i_4)
+         & ~sum(xyz,fmb_$i_4,xyz)
+         & ~sum(xyz,fmb_$i_4,fmb_$i_2)
+         & ~sum(xyz,fmb_$i_4,fmb_$i_3)
+         & ~sum(xyz,fmb_$i_4,fmb_$i_4)
+         & ~sum(fmb_$i_2,xyz,xyz)
+         & ~sum(fmb_$i_2,xyz,fmb_$i_2)
+         & ~sum(fmb_$i_2,xyz,fmb_$i_3)
+         & ~sum(fmb_$i_2,xyz,fmb_$i_4)
+         & ~sum(fmb_$i_2,fmb_$i_2,xyz)
+         & sum(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~sum(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~sum(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~sum(fmb_$i_2,fmb_$i_3,xyz)
+         & ~sum(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~sum(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~sum(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~sum(fmb_$i_2,fmb_$i_4,xyz)
+         & ~sum(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~sum(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~sum(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~sum(fmb_$i_3,xyz,xyz)
+         & ~sum(fmb_$i_3,xyz,fmb_$i_2)
+         & ~sum(fmb_$i_3,xyz,fmb_$i_3)
+         & ~sum(fmb_$i_3,xyz,fmb_$i_4)
+         & ~sum(fmb_$i_3,fmb_$i_2,xyz)
+         & ~sum(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~sum(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~sum(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~sum(fmb_$i_3,fmb_$i_3,xyz)
+         & ~sum(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~sum(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~sum(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~sum(fmb_$i_3,fmb_$i_4,xyz)
+         & ~sum(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~sum(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~sum(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~sum(fmb_$i_4,xyz,xyz)
+         & ~sum(fmb_$i_4,xyz,fmb_$i_2)
+         & ~sum(fmb_$i_4,xyz,fmb_$i_3)
+         & ~sum(fmb_$i_4,xyz,fmb_$i_4)
+         & ~sum(fmb_$i_4,fmb_$i_2,xyz)
+         & ~sum(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~sum(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~sum(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~sum(fmb_$i_4,fmb_$i_3,xyz)
+         & ~sum(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~sum(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~sum(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~sum(fmb_$i_4,fmb_$i_4,xyz)
+         & ~sum(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~sum(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & sum(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_dif,type,dif: $i * $i * $i > $o ).
+tff(predicate_dif,axiom,
+           ~dif(xyz,xyz,xyz)
+         & ~dif(xyz,xyz,fmb_$i_2)
+         & ~dif(xyz,xyz,fmb_$i_3)
+         & ~dif(xyz,xyz,fmb_$i_4)
+         & ~dif(xyz,fmb_$i_2,xyz)
+         & ~dif(xyz,fmb_$i_2,fmb_$i_2)
+         & ~dif(xyz,fmb_$i_2,fmb_$i_3)
+         & ~dif(xyz,fmb_$i_2,fmb_$i_4)
+         & ~dif(xyz,fmb_$i_3,xyz)
+         & ~dif(xyz,fmb_$i_3,fmb_$i_2)
+         & ~dif(xyz,fmb_$i_3,fmb_$i_3)
+         & ~dif(xyz,fmb_$i_3,fmb_$i_4)
+         & ~dif(xyz,fmb_$i_4,xyz)
+         & ~dif(xyz,fmb_$i_4,fmb_$i_2)
+         & ~dif(xyz,fmb_$i_4,fmb_$i_3)
+         & ~dif(xyz,fmb_$i_4,fmb_$i_4)
+         & ~dif(fmb_$i_2,xyz,xyz)
+         & ~dif(fmb_$i_2,xyz,fmb_$i_2)
+         & ~dif(fmb_$i_2,xyz,fmb_$i_3)
+         & ~dif(fmb_$i_2,xyz,fmb_$i_4)
+         & ~dif(fmb_$i_2,fmb_$i_2,xyz)
+         & ~dif(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~dif(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~dif(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~dif(fmb_$i_2,fmb_$i_3,xyz)
+         & ~dif(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~dif(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~dif(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~dif(fmb_$i_2,fmb_$i_4,xyz)
+         & ~dif(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~dif(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~dif(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~dif(fmb_$i_3,xyz,xyz)
+         & ~dif(fmb_$i_3,xyz,fmb_$i_2)
+         & ~dif(fmb_$i_3,xyz,fmb_$i_3)
+         & ~dif(fmb_$i_3,xyz,fmb_$i_4)
+         & ~dif(fmb_$i_3,fmb_$i_2,xyz)
+         & ~dif(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~dif(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~dif(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~dif(fmb_$i_3,fmb_$i_3,xyz)
+         & ~dif(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~dif(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~dif(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~dif(fmb_$i_3,fmb_$i_4,xyz)
+         & ~dif(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~dif(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~dif(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~dif(fmb_$i_4,xyz,xyz)
+         & ~dif(fmb_$i_4,xyz,fmb_$i_2)
+         & ~dif(fmb_$i_4,xyz,fmb_$i_3)
+         & ~dif(fmb_$i_4,xyz,fmb_$i_4)
+         & ~dif(fmb_$i_4,fmb_$i_2,xyz)
+         & ~dif(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~dif(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~dif(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~dif(fmb_$i_4,fmb_$i_3,xyz)
+         & ~dif(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~dif(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~dif(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~dif(fmb_$i_4,fmb_$i_4,xyz)
+         & ~dif(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~dif(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~dif(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_pre,type,pre: $i * $i > $o ).
+tff(predicate_pre,axiom,
+           ~pre(xyz,xyz)
+         & ~pre(xyz,fmb_$i_2)
+         & ~pre(xyz,fmb_$i_3)
+         & pre(xyz,fmb_$i_4)
+         & ~pre(fmb_$i_2,xyz)
+         & ~pre(fmb_$i_2,fmb_$i_2)
+         & ~pre(fmb_$i_2,fmb_$i_3)
+         & pre(fmb_$i_2,fmb_$i_4)
+         & ~pre(fmb_$i_3,xyz)
+         & ~pre(fmb_$i_3,fmb_$i_2)
+         & ~pre(fmb_$i_3,fmb_$i_3)
+         & ~pre(fmb_$i_3,fmb_$i_4)
+         & ~pre(fmb_$i_4,xyz)
+         & ~pre(fmb_$i_4,fmb_$i_2)
+         & ~pre(fmb_$i_4,fmb_$i_3)
+         & ~pre(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_tp,type,tp: $i * $i * $i > $o ).
+tff(predicate_tp,axiom,
+           ~tp(xyz,xyz,xyz)
+         & ~tp(xyz,xyz,fmb_$i_2)
+         & ~tp(xyz,xyz,fmb_$i_3)
+         & tp(xyz,xyz,fmb_$i_4)
+         & ~tp(xyz,fmb_$i_2,xyz)
+         & ~tp(xyz,fmb_$i_2,fmb_$i_2)
+         & ~tp(xyz,fmb_$i_2,fmb_$i_3)
+         & ~tp(xyz,fmb_$i_2,fmb_$i_4)
+         & ~tp(xyz,fmb_$i_3,xyz)
+         & ~tp(xyz,fmb_$i_3,fmb_$i_2)
+         & ~tp(xyz,fmb_$i_3,fmb_$i_3)
+         & ~tp(xyz,fmb_$i_3,fmb_$i_4)
+         & ~tp(xyz,fmb_$i_4,xyz)
+         & ~tp(xyz,fmb_$i_4,fmb_$i_2)
+         & ~tp(xyz,fmb_$i_4,fmb_$i_3)
+         & ~tp(xyz,fmb_$i_4,fmb_$i_4)
+         & ~tp(fmb_$i_2,xyz,xyz)
+         & ~tp(fmb_$i_2,xyz,fmb_$i_2)
+         & ~tp(fmb_$i_2,xyz,fmb_$i_3)
+         & ~tp(fmb_$i_2,xyz,fmb_$i_4)
+         & ~tp(fmb_$i_2,fmb_$i_2,xyz)
+         & ~tp(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~tp(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~tp(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~tp(fmb_$i_2,fmb_$i_3,xyz)
+         & ~tp(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~tp(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~tp(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~tp(fmb_$i_2,fmb_$i_4,xyz)
+         & ~tp(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~tp(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~tp(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~tp(fmb_$i_3,xyz,xyz)
+         & ~tp(fmb_$i_3,xyz,fmb_$i_2)
+         & ~tp(fmb_$i_3,xyz,fmb_$i_3)
+         & ~tp(fmb_$i_3,xyz,fmb_$i_4)
+         & ~tp(fmb_$i_3,fmb_$i_2,xyz)
+         & ~tp(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~tp(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~tp(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~tp(fmb_$i_3,fmb_$i_3,xyz)
+         & ~tp(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~tp(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~tp(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~tp(fmb_$i_3,fmb_$i_4,xyz)
+         & ~tp(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~tp(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~tp(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~tp(fmb_$i_4,xyz,xyz)
+         & ~tp(fmb_$i_4,xyz,fmb_$i_2)
+         & ~tp(fmb_$i_4,xyz,fmb_$i_3)
+         & ~tp(fmb_$i_4,xyz,fmb_$i_4)
+         & ~tp(fmb_$i_4,fmb_$i_2,xyz)
+         & ~tp(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~tp(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~tp(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~tp(fmb_$i_4,fmb_$i_3,xyz)
+         & ~tp(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~tp(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~tp(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~tp(fmb_$i_4,fmb_$i_4,xyz)
+         & ~tp(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~tp(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~tp(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_tov,type,tov: $i * $i * $i > $o ).
+tff(predicate_tov,axiom,
+           ~tov(xyz,xyz,xyz)
+         & ~tov(xyz,xyz,fmb_$i_2)
+         & ~tov(xyz,xyz,fmb_$i_3)
+         & tov(xyz,xyz,fmb_$i_4)
+         & ~tov(xyz,fmb_$i_2,xyz)
+         & ~tov(xyz,fmb_$i_2,fmb_$i_2)
+         & ~tov(xyz,fmb_$i_2,fmb_$i_3)
+         & ~tov(xyz,fmb_$i_2,fmb_$i_4)
+         & ~tov(xyz,fmb_$i_3,xyz)
+         & ~tov(xyz,fmb_$i_3,fmb_$i_2)
+         & ~tov(xyz,fmb_$i_3,fmb_$i_3)
+         & ~tov(xyz,fmb_$i_3,fmb_$i_4)
+         & ~tov(xyz,fmb_$i_4,xyz)
+         & ~tov(xyz,fmb_$i_4,fmb_$i_2)
+         & ~tov(xyz,fmb_$i_4,fmb_$i_3)
+         & ~tov(xyz,fmb_$i_4,fmb_$i_4)
+         & ~tov(fmb_$i_2,xyz,xyz)
+         & ~tov(fmb_$i_2,xyz,fmb_$i_2)
+         & ~tov(fmb_$i_2,xyz,fmb_$i_3)
+         & ~tov(fmb_$i_2,xyz,fmb_$i_4)
+         & ~tov(fmb_$i_2,fmb_$i_2,xyz)
+         & ~tov(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~tov(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~tov(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~tov(fmb_$i_2,fmb_$i_3,xyz)
+         & ~tov(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~tov(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~tov(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~tov(fmb_$i_2,fmb_$i_4,xyz)
+         & ~tov(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~tov(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~tov(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~tov(fmb_$i_3,xyz,xyz)
+         & ~tov(fmb_$i_3,xyz,fmb_$i_2)
+         & ~tov(fmb_$i_3,xyz,fmb_$i_3)
+         & ~tov(fmb_$i_3,xyz,fmb_$i_4)
+         & ~tov(fmb_$i_3,fmb_$i_2,xyz)
+         & ~tov(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~tov(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~tov(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~tov(fmb_$i_3,fmb_$i_3,xyz)
+         & ~tov(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~tov(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~tov(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~tov(fmb_$i_3,fmb_$i_4,xyz)
+         & ~tov(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~tov(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~tov(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~tov(fmb_$i_4,xyz,xyz)
+         & ~tov(fmb_$i_4,xyz,fmb_$i_2)
+         & ~tov(fmb_$i_4,xyz,fmb_$i_3)
+         & ~tov(fmb_$i_4,xyz,fmb_$i_4)
+         & ~tov(fmb_$i_4,fmb_$i_2,xyz)
+         & ~tov(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~tov(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~tov(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~tov(fmb_$i_4,fmb_$i_3,xyz)
+         & ~tov(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~tov(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~tov(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~tov(fmb_$i_4,fmb_$i_4,xyz)
+         & ~tov(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~tov(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~tov(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_tpp,type,tpp: $i * $i * $i > $o ).
+tff(predicate_tpp,axiom,
+           ~tpp(xyz,xyz,xyz)
+         & ~tpp(xyz,xyz,fmb_$i_2)
+         & ~tpp(xyz,xyz,fmb_$i_3)
+         & ~tpp(xyz,xyz,fmb_$i_4)
+         & ~tpp(xyz,fmb_$i_2,xyz)
+         & ~tpp(xyz,fmb_$i_2,fmb_$i_2)
+         & ~tpp(xyz,fmb_$i_2,fmb_$i_3)
+         & ~tpp(xyz,fmb_$i_2,fmb_$i_4)
+         & ~tpp(xyz,fmb_$i_3,xyz)
+         & ~tpp(xyz,fmb_$i_3,fmb_$i_2)
+         & ~tpp(xyz,fmb_$i_3,fmb_$i_3)
+         & ~tpp(xyz,fmb_$i_3,fmb_$i_4)
+         & ~tpp(xyz,fmb_$i_4,xyz)
+         & ~tpp(xyz,fmb_$i_4,fmb_$i_2)
+         & ~tpp(xyz,fmb_$i_4,fmb_$i_3)
+         & ~tpp(xyz,fmb_$i_4,fmb_$i_4)
+         & ~tpp(fmb_$i_2,xyz,xyz)
+         & ~tpp(fmb_$i_2,xyz,fmb_$i_2)
+         & ~tpp(fmb_$i_2,xyz,fmb_$i_3)
+         & ~tpp(fmb_$i_2,xyz,fmb_$i_4)
+         & ~tpp(fmb_$i_2,fmb_$i_2,xyz)
+         & ~tpp(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~tpp(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~tpp(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~tpp(fmb_$i_2,fmb_$i_3,xyz)
+         & ~tpp(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~tpp(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~tpp(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~tpp(fmb_$i_2,fmb_$i_4,xyz)
+         & ~tpp(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~tpp(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~tpp(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~tpp(fmb_$i_3,xyz,xyz)
+         & ~tpp(fmb_$i_3,xyz,fmb_$i_2)
+         & ~tpp(fmb_$i_3,xyz,fmb_$i_3)
+         & ~tpp(fmb_$i_3,xyz,fmb_$i_4)
+         & ~tpp(fmb_$i_3,fmb_$i_2,xyz)
+         & ~tpp(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~tpp(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~tpp(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~tpp(fmb_$i_3,fmb_$i_3,xyz)
+         & ~tpp(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~tpp(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~tpp(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~tpp(fmb_$i_3,fmb_$i_4,xyz)
+         & ~tpp(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~tpp(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~tpp(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~tpp(fmb_$i_4,xyz,xyz)
+         & ~tpp(fmb_$i_4,xyz,fmb_$i_2)
+         & ~tpp(fmb_$i_4,xyz,fmb_$i_3)
+         & ~tpp(fmb_$i_4,xyz,fmb_$i_4)
+         & ~tpp(fmb_$i_4,fmb_$i_2,xyz)
+         & ~tpp(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~tpp(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~tpp(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~tpp(fmb_$i_4,fmb_$i_3,xyz)
+         & ~tpp(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~tpp(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~tpp(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~tpp(fmb_$i_4,fmb_$i_4,xyz)
+         & ~tpp(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~tpp(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~tpp(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_tat,type,tat: $i * $i > $o ).
+tff(predicate_tat,axiom,
+           ~tat(xyz,xyz)
+         & ~tat(xyz,fmb_$i_2)
+         & ~tat(xyz,fmb_$i_3)
+%         tat(xyz,fmb_$i_4) undefined in model
+         & ~tat(fmb_$i_2,xyz)
+         & ~tat(fmb_$i_2,fmb_$i_2)
+         & ~tat(fmb_$i_2,fmb_$i_3)
+         & ~tat(fmb_$i_2,fmb_$i_4)
+         & ~tat(fmb_$i_3,xyz)
+         & ~tat(fmb_$i_3,fmb_$i_2)
+         & ~tat(fmb_$i_3,fmb_$i_3)
+         & ~tat(fmb_$i_3,fmb_$i_4)
+         & ~tat(fmb_$i_4,xyz)
+         & ~tat(fmb_$i_4,fmb_$i_2)
+         & ~tat(fmb_$i_4,fmb_$i_3)
+         & ~tat(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_tatp,type,tatp: $i * $i * $i > $o ).
+tff(predicate_tatp,axiom,
+%         tatp(xyz,xyz,xyz) undefined in model
+%         tatp(xyz,xyz,fmb_$i_2) undefined in model
+%         tatp(xyz,xyz,fmb_$i_3) undefined in model
+%         tatp(xyz,xyz,fmb_$i_4) undefined in model
+%         tatp(xyz,fmb_$i_2,xyz) undefined in model
+%         tatp(xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         tatp(xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         tatp(xyz,fmb_$i_2,fmb_$i_4) undefined in model
+%         tatp(xyz,fmb_$i_3,xyz) undefined in model
+%         tatp(xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         tatp(xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         tatp(xyz,fmb_$i_3,fmb_$i_4) undefined in model
+%         tatp(xyz,fmb_$i_4,xyz) undefined in model
+%         tatp(xyz,fmb_$i_4,fmb_$i_2) undefined in model
+%         tatp(xyz,fmb_$i_4,fmb_$i_3) undefined in model
+%         tatp(xyz,fmb_$i_4,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_2,xyz,xyz) undefined in model
+%         tatp(fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_2,xyz,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_2,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_3,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_4,xyz) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_4,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_4,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_2,fmb_$i_4,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_3,xyz,xyz) undefined in model
+%         tatp(fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_3,xyz,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_2,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_3,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_4,xyz) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_4,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_4,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_3,fmb_$i_4,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_4,xyz,xyz) undefined in model
+%         tatp(fmb_$i_4,xyz,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_4,xyz,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_4,xyz,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_2,xyz) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_2,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_2,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_2,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_3,xyz) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_3,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_3,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_3,fmb_$i_4) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_4,xyz) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_4,fmb_$i_2) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_4,fmb_$i_3) undefined in model
+%         tatp(fmb_$i_4,fmb_$i_4,fmb_$i_4) undefined in model
+
+).
+
+tff(declare_tsum,type,tsum: $i * $i * $i > $o ).
+tff(predicate_tsum,axiom,
+           ~tsum(xyz,xyz,xyz)
+         & ~tsum(xyz,xyz,fmb_$i_2)
+         & ~tsum(xyz,xyz,fmb_$i_3)
+         & ~tsum(xyz,xyz,fmb_$i_4)
+         & ~tsum(xyz,fmb_$i_2,xyz)
+         & ~tsum(xyz,fmb_$i_2,fmb_$i_2)
+         & ~tsum(xyz,fmb_$i_2,fmb_$i_3)
+         & ~tsum(xyz,fmb_$i_2,fmb_$i_4)
+         & ~tsum(xyz,fmb_$i_3,xyz)
+         & ~tsum(xyz,fmb_$i_3,fmb_$i_2)
+         & ~tsum(xyz,fmb_$i_3,fmb_$i_3)
+         & ~tsum(xyz,fmb_$i_3,fmb_$i_4)
+         & ~tsum(xyz,fmb_$i_4,xyz)
+         & ~tsum(xyz,fmb_$i_4,fmb_$i_2)
+         & ~tsum(xyz,fmb_$i_4,fmb_$i_3)
+         & ~tsum(xyz,fmb_$i_4,fmb_$i_4)
+         & ~tsum(fmb_$i_2,xyz,xyz)
+         & ~tsum(fmb_$i_2,xyz,fmb_$i_2)
+         & ~tsum(fmb_$i_2,xyz,fmb_$i_3)
+         & ~tsum(fmb_$i_2,xyz,fmb_$i_4)
+         & ~tsum(fmb_$i_2,fmb_$i_2,xyz)
+         & ~tsum(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~tsum(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~tsum(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~tsum(fmb_$i_2,fmb_$i_3,xyz)
+         & ~tsum(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~tsum(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~tsum(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~tsum(fmb_$i_2,fmb_$i_4,xyz)
+         & ~tsum(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~tsum(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~tsum(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~tsum(fmb_$i_3,xyz,xyz)
+         & ~tsum(fmb_$i_3,xyz,fmb_$i_2)
+         & ~tsum(fmb_$i_3,xyz,fmb_$i_3)
+         & ~tsum(fmb_$i_3,xyz,fmb_$i_4)
+         & ~tsum(fmb_$i_3,fmb_$i_2,xyz)
+         & ~tsum(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~tsum(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~tsum(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~tsum(fmb_$i_3,fmb_$i_3,xyz)
+         & ~tsum(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~tsum(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~tsum(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~tsum(fmb_$i_3,fmb_$i_4,xyz)
+         & ~tsum(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~tsum(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~tsum(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~tsum(fmb_$i_4,xyz,xyz)
+         & ~tsum(fmb_$i_4,xyz,fmb_$i_2)
+         & ~tsum(fmb_$i_4,xyz,fmb_$i_3)
+         & ~tsum(fmb_$i_4,xyz,fmb_$i_4)
+         & ~tsum(fmb_$i_4,fmb_$i_2,xyz)
+         & ~tsum(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~tsum(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~tsum(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~tsum(fmb_$i_4,fmb_$i_3,xyz)
+         & ~tsum(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~tsum(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~tsum(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~tsum(fmb_$i_4,fmb_$i_4,xyz)
+         & ~tsum(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~tsum(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~tsum(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_temporalPart,type,temporalPart: $i * $i > $o ).
+tff(predicate_temporalPart,axiom,
+           ~temporalPart(xyz,xyz)
+         & ~temporalPart(xyz,fmb_$i_2)
+         & ~temporalPart(xyz,fmb_$i_3)
+         & ~temporalPart(xyz,fmb_$i_4)
+         & ~temporalPart(fmb_$i_2,xyz)
+         & temporalPart(fmb_$i_2,fmb_$i_2)
+         & ~temporalPart(fmb_$i_2,fmb_$i_3)
+         & ~temporalPart(fmb_$i_2,fmb_$i_4)
+         & ~temporalPart(fmb_$i_3,xyz)
+         & ~temporalPart(fmb_$i_3,fmb_$i_2)
+         & ~temporalPart(fmb_$i_3,fmb_$i_3)
+         & ~temporalPart(fmb_$i_3,fmb_$i_4)
+         & ~temporalPart(fmb_$i_4,xyz)
+         & ~temporalPart(fmb_$i_4,fmb_$i_2)
+         & ~temporalPart(fmb_$i_4,fmb_$i_3)
+         & ~temporalPart(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_k,type,k: $i * $i * $i > $o ).
+tff(predicate_k,axiom,
+           ~k(xyz,xyz,xyz)
+         & ~k(xyz,xyz,fmb_$i_2)
+         & ~k(xyz,xyz,fmb_$i_3)
+         & ~k(xyz,xyz,fmb_$i_4)
+         & ~k(xyz,fmb_$i_2,xyz)
+         & ~k(xyz,fmb_$i_2,fmb_$i_2)
+         & ~k(xyz,fmb_$i_2,fmb_$i_3)
+         & ~k(xyz,fmb_$i_2,fmb_$i_4)
+         & ~k(xyz,fmb_$i_3,xyz)
+         & ~k(xyz,fmb_$i_3,fmb_$i_2)
+         & ~k(xyz,fmb_$i_3,fmb_$i_3)
+         & ~k(xyz,fmb_$i_3,fmb_$i_4)
+         & ~k(xyz,fmb_$i_4,xyz)
+         & ~k(xyz,fmb_$i_4,fmb_$i_2)
+         & ~k(xyz,fmb_$i_4,fmb_$i_3)
+         & ~k(xyz,fmb_$i_4,fmb_$i_4)
+         & ~k(fmb_$i_2,xyz,xyz)
+         & ~k(fmb_$i_2,xyz,fmb_$i_2)
+         & ~k(fmb_$i_2,xyz,fmb_$i_3)
+         & ~k(fmb_$i_2,xyz,fmb_$i_4)
+         & ~k(fmb_$i_2,fmb_$i_2,xyz)
+         & ~k(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~k(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~k(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~k(fmb_$i_2,fmb_$i_3,xyz)
+         & ~k(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~k(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~k(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~k(fmb_$i_2,fmb_$i_4,xyz)
+         & ~k(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~k(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~k(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~k(fmb_$i_3,xyz,xyz)
+         & ~k(fmb_$i_3,xyz,fmb_$i_2)
+         & ~k(fmb_$i_3,xyz,fmb_$i_3)
+         & ~k(fmb_$i_3,xyz,fmb_$i_4)
+         & ~k(fmb_$i_3,fmb_$i_2,xyz)
+         & ~k(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~k(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~k(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~k(fmb_$i_3,fmb_$i_3,xyz)
+         & ~k(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~k(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~k(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~k(fmb_$i_3,fmb_$i_4,xyz)
+         & ~k(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~k(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~k(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~k(fmb_$i_4,xyz,xyz)
+         & ~k(fmb_$i_4,xyz,fmb_$i_2)
+         & ~k(fmb_$i_4,xyz,fmb_$i_3)
+         & ~k(fmb_$i_4,xyz,fmb_$i_4)
+         & ~k(fmb_$i_4,fmb_$i_2,xyz)
+         & ~k(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~k(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~k(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~k(fmb_$i_4,fmb_$i_3,xyz)
+         & ~k(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~k(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~k(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~k(fmb_$i_4,fmb_$i_4,xyz)
+         & ~k(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~k(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~k(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_pc,type,pc: $i * $i * $i > $o ).
+tff(predicate_pc,axiom,
+           ~pc(xyz,xyz,xyz)
+         & ~pc(xyz,xyz,fmb_$i_2)
+         & ~pc(xyz,xyz,fmb_$i_3)
+         & ~pc(xyz,xyz,fmb_$i_4)
+         & ~pc(xyz,fmb_$i_2,xyz)
+         & ~pc(xyz,fmb_$i_2,fmb_$i_2)
+         & ~pc(xyz,fmb_$i_2,fmb_$i_3)
+         & pc(xyz,fmb_$i_2,fmb_$i_4)
+         & ~pc(xyz,fmb_$i_3,xyz)
+         & ~pc(xyz,fmb_$i_3,fmb_$i_2)
+         & ~pc(xyz,fmb_$i_3,fmb_$i_3)
+         & ~pc(xyz,fmb_$i_3,fmb_$i_4)
+         & ~pc(xyz,fmb_$i_4,xyz)
+         & ~pc(xyz,fmb_$i_4,fmb_$i_2)
+         & ~pc(xyz,fmb_$i_4,fmb_$i_3)
+         & ~pc(xyz,fmb_$i_4,fmb_$i_4)
+         & ~pc(fmb_$i_2,xyz,xyz)
+         & ~pc(fmb_$i_2,xyz,fmb_$i_2)
+         & ~pc(fmb_$i_2,xyz,fmb_$i_3)
+         & ~pc(fmb_$i_2,xyz,fmb_$i_4)
+         & ~pc(fmb_$i_2,fmb_$i_2,xyz)
+         & ~pc(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~pc(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~pc(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~pc(fmb_$i_2,fmb_$i_3,xyz)
+         & ~pc(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~pc(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~pc(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~pc(fmb_$i_2,fmb_$i_4,xyz)
+         & ~pc(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~pc(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~pc(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~pc(fmb_$i_3,xyz,xyz)
+         & ~pc(fmb_$i_3,xyz,fmb_$i_2)
+         & ~pc(fmb_$i_3,xyz,fmb_$i_3)
+         & ~pc(fmb_$i_3,xyz,fmb_$i_4)
+         & ~pc(fmb_$i_3,fmb_$i_2,xyz)
+         & ~pc(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~pc(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~pc(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~pc(fmb_$i_3,fmb_$i_3,xyz)
+         & ~pc(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~pc(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~pc(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~pc(fmb_$i_3,fmb_$i_4,xyz)
+         & ~pc(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~pc(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~pc(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~pc(fmb_$i_4,xyz,xyz)
+         & ~pc(fmb_$i_4,xyz,fmb_$i_2)
+         & ~pc(fmb_$i_4,xyz,fmb_$i_3)
+         & ~pc(fmb_$i_4,xyz,fmb_$i_4)
+         & ~pc(fmb_$i_4,fmb_$i_2,xyz)
+         & ~pc(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~pc(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~pc(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~pc(fmb_$i_4,fmb_$i_3,xyz)
+         & ~pc(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~pc(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~pc(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~pc(fmb_$i_4,fmb_$i_4,xyz)
+         & ~pc(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~pc(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~pc(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_dqt,type,dqt: $i * $i > $o ).
+tff(predicate_dqt,axiom,
+           ~dqt(xyz,xyz)
+         & ~dqt(xyz,fmb_$i_2)
+         & ~dqt(xyz,fmb_$i_3)
+         & ~dqt(xyz,fmb_$i_4)
+         & ~dqt(fmb_$i_2,xyz)
+         & ~dqt(fmb_$i_2,fmb_$i_2)
+         & ~dqt(fmb_$i_2,fmb_$i_3)
+         & ~dqt(fmb_$i_2,fmb_$i_4)
+         & ~dqt(fmb_$i_3,xyz)
+         & dqt(fmb_$i_3,fmb_$i_2)
+         & ~dqt(fmb_$i_3,fmb_$i_3)
+         & ~dqt(fmb_$i_3,fmb_$i_4)
+         & ~dqt(fmb_$i_4,xyz)
+         & ~dqt(fmb_$i_4,fmb_$i_2)
+         & ~dqt(fmb_$i_4,fmb_$i_3)
+         & ~dqt(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_ql,type,ql: $i * $i > $o ).
+tff(predicate_ql,axiom,
+           ~ql(xyz,xyz)
+         & ~ql(xyz,fmb_$i_2)
+         & ~ql(xyz,fmb_$i_3)
+         & ~ql(xyz,fmb_$i_4)
+         & ~ql(fmb_$i_2,xyz)
+         & ~ql(fmb_$i_2,fmb_$i_2)
+         & ~ql(fmb_$i_2,fmb_$i_3)
+         & ~ql(fmb_$i_2,fmb_$i_4)
+         & ~ql(fmb_$i_3,xyz)
+         & ~ql(fmb_$i_3,fmb_$i_2)
+         & ~ql(fmb_$i_3,fmb_$i_3)
+         & ~ql(fmb_$i_3,fmb_$i_4)
+         & ~ql(fmb_$i_4,xyz)
+         & ~ql(fmb_$i_4,fmb_$i_2)
+         & ql(fmb_$i_4,fmb_$i_3)
+         & ~ql(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_tql,type,tql: $i * $i * $i > $o ).
+tff(predicate_tql,axiom,
+           ~tql(xyz,xyz,xyz)
+         & ~tql(xyz,xyz,fmb_$i_2)
+         & ~tql(xyz,xyz,fmb_$i_3)
+         & ~tql(xyz,xyz,fmb_$i_4)
+         & ~tql(xyz,fmb_$i_2,xyz)
+         & ~tql(xyz,fmb_$i_2,fmb_$i_2)
+         & ~tql(xyz,fmb_$i_2,fmb_$i_3)
+         & ~tql(xyz,fmb_$i_2,fmb_$i_4)
+         & ~tql(xyz,fmb_$i_3,xyz)
+         & ~tql(xyz,fmb_$i_3,fmb_$i_2)
+         & ~tql(xyz,fmb_$i_3,fmb_$i_3)
+         & ~tql(xyz,fmb_$i_3,fmb_$i_4)
+         & ~tql(xyz,fmb_$i_4,xyz)
+         & ~tql(xyz,fmb_$i_4,fmb_$i_2)
+         & ~tql(xyz,fmb_$i_4,fmb_$i_3)
+         & ~tql(xyz,fmb_$i_4,fmb_$i_4)
+         & ~tql(fmb_$i_2,xyz,xyz)
+         & ~tql(fmb_$i_2,xyz,fmb_$i_2)
+         & ~tql(fmb_$i_2,xyz,fmb_$i_3)
+         & ~tql(fmb_$i_2,xyz,fmb_$i_4)
+         & ~tql(fmb_$i_2,fmb_$i_2,xyz)
+         & ~tql(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~tql(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~tql(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~tql(fmb_$i_2,fmb_$i_3,xyz)
+         & ~tql(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~tql(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~tql(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~tql(fmb_$i_2,fmb_$i_4,xyz)
+         & ~tql(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~tql(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~tql(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~tql(fmb_$i_3,xyz,xyz)
+         & ~tql(fmb_$i_3,xyz,fmb_$i_2)
+         & ~tql(fmb_$i_3,xyz,fmb_$i_3)
+         & ~tql(fmb_$i_3,xyz,fmb_$i_4)
+         & ~tql(fmb_$i_3,fmb_$i_2,xyz)
+         & ~tql(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~tql(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~tql(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~tql(fmb_$i_3,fmb_$i_3,xyz)
+         & ~tql(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~tql(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~tql(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~tql(fmb_$i_3,fmb_$i_4,xyz)
+         & ~tql(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~tql(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~tql(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~tql(fmb_$i_4,xyz,xyz)
+         & ~tql(fmb_$i_4,xyz,fmb_$i_2)
+         & ~tql(fmb_$i_4,xyz,fmb_$i_3)
+         & ~tql(fmb_$i_4,xyz,fmb_$i_4)
+         & ~tql(fmb_$i_4,fmb_$i_2,xyz)
+         & ~tql(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~tql(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~tql(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~tql(fmb_$i_4,fmb_$i_3,xyz)
+         & ~tql(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~tql(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~tql(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~tql(fmb_$i_4,fmb_$i_4,xyz)
+         & ~tql(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~tql(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~tql(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_sd,type,sd: $i * $i > $o ).
+tff(predicate_sd,axiom,
+           sd(xyz,xyz)
+         & sd(xyz,fmb_$i_2)
+         & ~sd(xyz,fmb_$i_3)
+         & ~sd(xyz,fmb_$i_4)
+         & sd(fmb_$i_2,xyz)
+         & sd(fmb_$i_2,fmb_$i_2)
+         & ~sd(fmb_$i_2,fmb_$i_3)
+         & ~sd(fmb_$i_2,fmb_$i_4)
+         & ~sd(fmb_$i_3,xyz)
+         & ~sd(fmb_$i_3,fmb_$i_2)
+         & ~sd(fmb_$i_3,fmb_$i_3)
+         & ~sd(fmb_$i_3,fmb_$i_4)
+         & ~sd(fmb_$i_4,xyz)
+         & ~sd(fmb_$i_4,fmb_$i_2)
+         & ~sd(fmb_$i_4,fmb_$i_3)
+         & ~sd(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_cf,type,cf: $i * $i * $i > $o ).
+tff(predicate_cf,axiom,
+           ~cf(xyz,xyz,xyz)
+         & ~cf(xyz,xyz,fmb_$i_2)
+         & ~cf(xyz,xyz,fmb_$i_3)
+         & ~cf(xyz,xyz,fmb_$i_4)
+         & ~cf(xyz,fmb_$i_2,xyz)
+         & ~cf(xyz,fmb_$i_2,fmb_$i_2)
+         & ~cf(xyz,fmb_$i_2,fmb_$i_3)
+         & ~cf(xyz,fmb_$i_2,fmb_$i_4)
+         & ~cf(xyz,fmb_$i_3,xyz)
+         & ~cf(xyz,fmb_$i_3,fmb_$i_2)
+         & ~cf(xyz,fmb_$i_3,fmb_$i_3)
+         & ~cf(xyz,fmb_$i_3,fmb_$i_4)
+         & ~cf(xyz,fmb_$i_4,xyz)
+         & ~cf(xyz,fmb_$i_4,fmb_$i_2)
+         & ~cf(xyz,fmb_$i_4,fmb_$i_3)
+         & ~cf(xyz,fmb_$i_4,fmb_$i_4)
+         & ~cf(fmb_$i_2,xyz,xyz)
+         & ~cf(fmb_$i_2,xyz,fmb_$i_2)
+         & ~cf(fmb_$i_2,xyz,fmb_$i_3)
+         & ~cf(fmb_$i_2,xyz,fmb_$i_4)
+         & ~cf(fmb_$i_2,fmb_$i_2,xyz)
+         & ~cf(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~cf(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~cf(fmb_$i_2,fmb_$i_2,fmb_$i_4)
+         & ~cf(fmb_$i_2,fmb_$i_3,xyz)
+         & ~cf(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~cf(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~cf(fmb_$i_2,fmb_$i_3,fmb_$i_4)
+         & ~cf(fmb_$i_2,fmb_$i_4,xyz)
+         & ~cf(fmb_$i_2,fmb_$i_4,fmb_$i_2)
+         & ~cf(fmb_$i_2,fmb_$i_4,fmb_$i_3)
+         & ~cf(fmb_$i_2,fmb_$i_4,fmb_$i_4)
+         & ~cf(fmb_$i_3,xyz,xyz)
+         & ~cf(fmb_$i_3,xyz,fmb_$i_2)
+         & ~cf(fmb_$i_3,xyz,fmb_$i_3)
+         & ~cf(fmb_$i_3,xyz,fmb_$i_4)
+         & ~cf(fmb_$i_3,fmb_$i_2,xyz)
+         & ~cf(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~cf(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~cf(fmb_$i_3,fmb_$i_2,fmb_$i_4)
+         & ~cf(fmb_$i_3,fmb_$i_3,xyz)
+         & ~cf(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~cf(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+         & ~cf(fmb_$i_3,fmb_$i_3,fmb_$i_4)
+         & ~cf(fmb_$i_3,fmb_$i_4,xyz)
+         & ~cf(fmb_$i_3,fmb_$i_4,fmb_$i_2)
+         & ~cf(fmb_$i_3,fmb_$i_4,fmb_$i_3)
+         & ~cf(fmb_$i_3,fmb_$i_4,fmb_$i_4)
+         & ~cf(fmb_$i_4,xyz,xyz)
+         & ~cf(fmb_$i_4,xyz,fmb_$i_2)
+         & ~cf(fmb_$i_4,xyz,fmb_$i_3)
+         & ~cf(fmb_$i_4,xyz,fmb_$i_4)
+         & ~cf(fmb_$i_4,fmb_$i_2,xyz)
+         & ~cf(fmb_$i_4,fmb_$i_2,fmb_$i_2)
+         & ~cf(fmb_$i_4,fmb_$i_2,fmb_$i_3)
+         & ~cf(fmb_$i_4,fmb_$i_2,fmb_$i_4)
+         & ~cf(fmb_$i_4,fmb_$i_3,xyz)
+         & ~cf(fmb_$i_4,fmb_$i_3,fmb_$i_2)
+         & ~cf(fmb_$i_4,fmb_$i_3,fmb_$i_3)
+         & ~cf(fmb_$i_4,fmb_$i_3,fmb_$i_4)
+         & ~cf(fmb_$i_4,fmb_$i_4,xyz)
+         & ~cf(fmb_$i_4,fmb_$i_4,fmb_$i_2)
+         & ~cf(fmb_$i_4,fmb_$i_4,fmb_$i_3)
+         & ~cf(fmb_$i_4,fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_ds,type,ds: $i > $o ).
+tff(predicate_ds,axiom,
+           ~ds(xyz)
+         & ~ds(fmb_$i_2)
+         & ~ds(fmb_$i_3)
+         & ~ds(fmb_$i_4)
+
+).
+
+tff(declare_us,type,us: $i * $i > $o ).
+tff(predicate_us,axiom,
+           ~us(xyz,xyz)
+         & ~us(xyz,fmb_$i_2)
+         & ~us(xyz,fmb_$i_3)
+         & ~us(xyz,fmb_$i_4)
+         & ~us(fmb_$i_2,xyz)
+         & ~us(fmb_$i_2,fmb_$i_2)
+         & ~us(fmb_$i_2,fmb_$i_3)
+         & ~us(fmb_$i_2,fmb_$i_4)
+         & ~us(fmb_$i_3,xyz)
+         & ~us(fmb_$i_3,fmb_$i_2)
+         & ~us(fmb_$i_3,fmb_$i_3)
+         & ~us(fmb_$i_3,fmb_$i_4)
+         & ~us(fmb_$i_4,xyz)
+         & ~us(fmb_$i_4,fmb_$i_2)
+         & ~us(fmb_$i_4,fmb_$i_3)
+         & ~us(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_df,type,df: $i * $i > $o ).
+tff(predicate_df,axiom,
+           ~df(xyz,xyz)
+         & ~df(xyz,fmb_$i_2)
+         & ~df(xyz,fmb_$i_3)
+         & ~df(xyz,fmb_$i_4)
+         & ~df(fmb_$i_2,xyz)
+         & ~df(fmb_$i_2,fmb_$i_2)
+         & ~df(fmb_$i_2,fmb_$i_3)
+         & ~df(fmb_$i_2,fmb_$i_4)
+         & ~df(fmb_$i_3,xyz)
+         & ~df(fmb_$i_3,fmb_$i_2)
+         & ~df(fmb_$i_3,fmb_$i_3)
+         & ~df(fmb_$i_3,fmb_$i_4)
+         & ~df(fmb_$i_4,xyz)
+         & ~df(fmb_$i_4,fmb_$i_2)
+         & ~df(fmb_$i_4,fmb_$i_3)
+         & ~df(fmb_$i_4,fmb_$i_4)
+
+).
+
+tff(declare_fd,type,fd: $i > $o ).
+tff(predicate_fd,axiom,
+           ~fd(xyz)
+         & ~fd(fmb_$i_2)
+         & ~fd(fmb_$i_3)
+         & ~fd(fmb_$i_4)
+
+).
+
+tff(declare_rl,type,rl: $i > $o ).
+tff(predicate_rl,axiom,
+%         rl(xyz) undefined in model
+%         rl(fmb_$i_2) undefined in model
+%         rl(fmb_$i_3) undefined in model
+%         rl(fmb_$i_4) undefined in model
+
+).
+
+% SZS output end FiniteModel for type_ed_subsumed_to_aso
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 8699
+% Time elapsed: 0.022 s
+% ------------------------------
+% ------------------------------
+% Success in time 3.234 s

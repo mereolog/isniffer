@@ -1,0 +1,111 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_arc_subsumed_to_naso for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_arc_subsumed_to_naso
+% SZS output start Proof for type_arc_subsumed_to_naso
+fof(f865,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f668,f672,f744,f760,f861,f864])).
+fof(f864,plain,(
+  spl19_1 | ~spl19_24 | ~spl19_49),
+  inference(avatar_contradiction_clause,[],[f863])).
+fof(f863,plain,(
+  $false | (spl19_1 | ~spl19_24 | ~spl19_49)),
+  inference(subsumption_resolution,[],[f862,f667])).
+fof(f667,plain,(
+  ~naso(xyz) | spl19_1),
+  inference(avatar_component_clause,[],[f666])).
+fof(f666,plain,(
+  spl19_1 <=> naso(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl19_1])])).
+fof(f862,plain,(
+  naso(xyz) | (~spl19_24 | ~spl19_49)),
+  inference(resolution,[],[f759,f860])).
+fof(f860,plain,(
+  c(xyz) | ~spl19_49),
+  inference(avatar_component_clause,[],[f859])).
+fof(f859,plain,(
+  spl19_49 <=> c(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl19_49])])).
+fof(f759,plain,(
+  ( ! [X0] : (~c(X0) | naso(X0)) ) | ~spl19_24),
+  inference(avatar_component_clause,[],[f758])).
+fof(f758,plain,(
+  spl19_24 <=> ! [X0] : (~c(X0) | naso(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl19_24])])).
+fof(f861,plain,(
+  spl19_49 | ~spl19_2 | ~spl19_20),
+  inference(avatar_split_clause,[],[f857,f742,f670,f859])).
+fof(f670,plain,(
+  spl19_2 <=> arc(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl19_2])])).
+fof(f742,plain,(
+  spl19_20 <=> ! [X0] : (~arc(X0) | c(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl19_20])])).
+fof(f857,plain,(
+  c(xyz) | (~spl19_2 | ~spl19_20)),
+  inference(resolution,[],[f743,f671])).
+fof(f671,plain,(
+  arc(xyz) | ~spl19_2),
+  inference(avatar_component_clause,[],[f670])).
+fof(f743,plain,(
+  ( ! [X0] : (~arc(X0) | c(X0)) ) | ~spl19_20),
+  inference(avatar_component_clause,[],[f742])).
+fof(f760,plain,(
+  spl19_24),
+  inference(avatar_split_clause,[],[f517,f758])).
+fof(f517,plain,(
+  ( ! [X0] : (~c(X0) | naso(X0)) )),
+  inference(cnf_transformation,[],[f385])).
+fof(f385,plain,(
+  ! [X0] : (naso(X0) | ~c(X0))),
+  inference(ennf_transformation,[],[f174])).
+fof(f174,plain,(
+  ! [X0] : (c(X0) => naso(X0))),
+  inference(rectify,[],[f10])).
+fof(f10,axiom,(
+  ! [X9] : (c(X9) => naso(X9))),
+  file('outputs/dolce/subsumptions/type_arc_subsumed_to_naso.in',sos)).
+fof(f744,plain,(
+  spl19_20),
+  inference(avatar_split_clause,[],[f501,f742])).
+fof(f501,plain,(
+  ( ! [X0] : (~arc(X0) | c(X0)) )),
+  inference(cnf_transformation,[],[f374])).
+fof(f374,plain,(
+  ! [X0] : (c(X0) | ~arc(X0))),
+  inference(ennf_transformation,[],[f163])).
+fof(f163,plain,(
+  ! [X0] : (arc(X0) => c(X0))),
+  inference(rectify,[],[f11])).
+fof(f11,axiom,(
+  ! [X10] : (arc(X10) => c(X10))),
+  file('outputs/dolce/subsumptions/type_arc_subsumed_to_naso.in',sos)).
+fof(f672,plain,(
+  spl19_2),
+  inference(avatar_split_clause,[],[f474,f670])).
+fof(f474,plain,(
+  arc(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  arc(xyz)),
+  file('outputs/dolce/subsumptions/type_arc_subsumed_to_naso.in',axiom1)).
+fof(f668,plain,(
+  ~spl19_1),
+  inference(avatar_split_clause,[],[f473,f666])).
+fof(f473,plain,(
+  ~naso(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~naso(xyz)),
+  file('outputs/dolce/subsumptions/type_arc_subsumed_to_naso.in',axiom2)).
+% SZS output end Proof for type_arc_subsumed_to_naso
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.006 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.014 s

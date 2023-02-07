@@ -1,0 +1,138 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_objectKind_subsumed_to_sortal for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_objectKind_subsumed_to_sortal
+% SZS output start Proof for type_objectKind_subsumed_to_sortal
+fof(f1019,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f790,f846,f934,f993,f1014,f1018])).
+fof(f1018,plain,(
+  spl59_1 | ~spl59_37 | ~spl59_91),
+  inference(avatar_contradiction_clause,[],[f1017])).
+fof(f1017,plain,(
+  $false | (spl59_1 | ~spl59_37 | ~spl59_91)),
+  inference(subsumption_resolution,[],[f1015,f645])).
+fof(f645,plain,(
+  ~sortal(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> sortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1015,plain,(
+  sortal(xyz) | (~spl59_37 | ~spl59_91)),
+  inference(resolution,[],[f1013,f789])).
+fof(f789,plain,(
+  ( ! [X0] : (~rigidSortal(X0) | sortal(X0)) ) | ~spl59_37),
+  inference(avatar_component_clause,[],[f788])).
+fof(f788,plain,(
+  spl59_37 <=> ! [X0] : (sortal(X0) | ~rigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_37])])).
+fof(f1013,plain,(
+  rigidSortal(xyz) | ~spl59_91),
+  inference(avatar_component_clause,[],[f1012])).
+fof(f1012,plain,(
+  spl59_91 <=> rigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_91])])).
+fof(f1014,plain,(
+  spl59_91 | ~spl59_73 | ~spl59_87),
+  inference(avatar_split_clause,[],[f1010,f991,f932,f1012])).
+fof(f932,plain,(
+  spl59_73 <=> ! [X0] : (rigidSortal(X0) | ~kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_73])])).
+fof(f991,plain,(
+  spl59_87 <=> kind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f1010,plain,(
+  rigidSortal(xyz) | (~spl59_73 | ~spl59_87)),
+  inference(resolution,[],[f933,f992])).
+fof(f992,plain,(
+  kind(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f991])).
+fof(f933,plain,(
+  ( ! [X0] : (~kind(X0) | rigidSortal(X0)) ) | ~spl59_73),
+  inference(avatar_component_clause,[],[f932])).
+fof(f993,plain,(
+  spl59_87 | ~spl59_2 | ~spl59_51),
+  inference(avatar_split_clause,[],[f989,f844,f648,f991])).
+fof(f648,plain,(
+  spl59_2 <=> objectKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f844,plain,(
+  spl59_51 <=> ! [X0] : (~objectKind(X0) | kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_51])])).
+fof(f989,plain,(
+  kind(xyz) | (~spl59_2 | ~spl59_51)),
+  inference(resolution,[],[f845,f649])).
+fof(f649,plain,(
+  objectKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f845,plain,(
+  ( ! [X0] : (~objectKind(X0) | kind(X0)) ) | ~spl59_51),
+  inference(avatar_component_clause,[],[f844])).
+fof(f934,plain,(
+  spl59_73),
+  inference(avatar_split_clause,[],[f553,f932])).
+fof(f553,plain,(
+  ( ! [X0] : (rigidSortal(X0) | ~kind(X0)) )),
+  inference(cnf_transformation,[],[f38])).
+fof(f38,axiom,(
+  ! [X0] : ((subkind(X0) | kind(X0)) <=> rigidSortal(X0))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_sortal.in',ax_rigidSortal_taxonomy)).
+fof(f846,plain,(
+  spl59_51),
+  inference(avatar_split_clause,[],[f487,f844])).
+fof(f487,plain,(
+  ( ! [X0] : (~objectKind(X0) | kind(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & objectType(X0)) | ~objectKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (objectKind(X0) => (kind(X0) & objectType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (objectKind(X0) <=> (kind(X0) & objectType(X0)))),
+  inference(rectify,[],[f79])).
+fof(f79,axiom,(
+  ! [X8] : (objectKind(X8) <=> (kind(X8) & objectType(X8)))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_sortal.in',ax_objectKindDefinition_a45)).
+fof(f790,plain,(
+  spl59_37),
+  inference(avatar_split_clause,[],[f379,f788])).
+fof(f379,plain,(
+  ( ! [X0] : (sortal(X0) | ~rigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f149])).
+fof(f149,plain,(
+  ! [X0] : (rigidSortal(X0) <=> (sortal(X0) & rigid(X0)))),
+  inference(rectify,[],[f63])).
+fof(f63,axiom,(
+  ! [X8] : (rigidSortal(X8) <=> (sortal(X8) & rigid(X8)))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_sortal.in',ax_rigidSortalsAreRigidAndSortal_xx)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  objectKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  objectKind(xyz)),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_sortal.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~sortal(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~sortal(xyz)),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_sortal.in',axiom2)).
+% SZS output end Proof for type_objectKind_subsumed_to_sortal
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.019 s

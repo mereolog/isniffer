@@ -1,0 +1,1706 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_qualityKind_subsumed_to_phaseMixin for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 82642
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on type_qualityKind_subsumed_to_phaseMixin for (258ds)
+TRYING [1]
+TRYING [2]
+TRYING [3]
+Finite Model Found!
+% SZS status Satisfiable for type_qualityKind_subsumed_to_phaseMixin
+% SZS output start FiniteModel for type_qualityKind_subsumed_to_phaseMixin
+tff(declare_$i,type,$i:$tType).
+tff(declare_$i1,type,xyz:$i).
+tff(declare_$i2,type,fmb_$i_2:$i).
+tff(declare_$i3,type,fmb_$i_3:$i).
+tff(finite_domain,axiom,
+      ! [X:$i] : (
+         X = xyz | X = fmb_$i_2 | X = fmb_$i_3
+      ) ).
+
+tff(distinct_domain,axiom,
+         xyz != fmb_$i_2 & xyz != fmb_$i_3 & fmb_$i_2 != fmb_$i_3
+).
+
+tff(declare_bool,type,$o:$tType).
+tff(declare_bool1,type,fmb_bool_1:$o).
+tff(finite_domain,axiom,
+      ! [X:$o] : (
+         X = fmb_bool_1
+      ) ).
+
+tff(declare_type_,type,type_: $i > $o ).
+tff(predicate_type_,axiom,
+           type_(xyz)
+         & ~type_(fmb_$i_2)
+         & ~type_(fmb_$i_3)
+
+).
+
+tff(declare_individual,type,individual: $i > $o ).
+tff(predicate_individual,axiom,
+           ~individual(xyz)
+         & individual(fmb_$i_2)
+         & individual(fmb_$i_3)
+
+).
+
+tff(declare_thing,type,thing: $i > $o ).
+tff(predicate_thing,axiom,
+           thing(xyz)
+         & thing(fmb_$i_2)
+         & thing(fmb_$i_3)
+
+).
+
+tff(declare_concreteIndividual,type,concreteIndividual: $i > $o ).
+tff(predicate_concreteIndividual,axiom,
+           ~concreteIndividual(xyz)
+         & concreteIndividual(fmb_$i_2)
+         & ~concreteIndividual(fmb_$i_3)
+
+).
+
+tff(declare_abstractIndividual,type,abstractIndividual: $i > $o ).
+tff(predicate_abstractIndividual,axiom,
+           ~abstractIndividual(xyz)
+         & ~abstractIndividual(fmb_$i_2)
+         & abstractIndividual(fmb_$i_3)
+
+).
+
+tff(declare_endurant,type,endurant: $i > $o ).
+tff(predicate_endurant,axiom,
+           ~endurant(xyz)
+         & endurant(fmb_$i_2)
+         & ~endurant(fmb_$i_3)
+
+).
+
+tff(declare_perdurant,type,perdurant: $i > $o ).
+tff(predicate_perdurant,axiom,
+           ~perdurant(xyz)
+         & ~perdurant(fmb_$i_2)
+         & ~perdurant(fmb_$i_3)
+
+).
+
+tff(declare_endurantType,type,endurantType: $i > $o ).
+tff(predicate_endurantType,axiom,
+           endurantType(xyz)
+         & ~endurantType(fmb_$i_2)
+         & ~endurantType(fmb_$i_3)
+
+).
+
+tff(declare_perdurantType,type,perdurantType: $i > $o ).
+tff(predicate_perdurantType,axiom,
+           ~perdurantType(xyz)
+         & ~perdurantType(fmb_$i_2)
+         & ~perdurantType(fmb_$i_3)
+
+).
+
+tff(declare_quale,type,quale: $i > $o ).
+tff(predicate_quale,axiom,
+%         quale(xyz) undefined in model
+%         quale(fmb_$i_2) undefined in model
+%         quale(fmb_$i_3) undefined in model
+
+).
+
+tff(declare_set_,type,set_: $i > $o ).
+tff(predicate_set_,axiom,
+           ~set_(xyz)
+         & ~set_(fmb_$i_2)
+         & ~set_(fmb_$i_3)
+
+).
+
+tff(declare_world,type,world: $i > $o ).
+tff(predicate_world,axiom,
+           ~world(xyz)
+         & ~world(fmb_$i_2)
+         & world(fmb_$i_3)
+
+).
+
+tff(declare_qualityStructure,type,qualityStructure: $i > $o ).
+tff(predicate_qualityStructure,axiom,
+           ~qualityStructure(xyz)
+         & ~qualityStructure(fmb_$i_2)
+         & ~qualityStructure(fmb_$i_3)
+
+).
+
+tff(declare_qualityDimension,type,qualityDimension: $i > $o ).
+tff(predicate_qualityDimension,axiom,
+           ~qualityDimension(xyz)
+         & ~qualityDimension(fmb_$i_2)
+         & ~qualityDimension(fmb_$i_3)
+
+).
+
+tff(declare_qualitySpace,type,qualitySpace: $i > $o ).
+tff(predicate_qualitySpace,axiom,
+           ~qualitySpace(xyz)
+         & ~qualitySpace(fmb_$i_2)
+         & ~qualitySpace(fmb_$i_3)
+
+).
+
+tff(declare_substantial,type,substantial: $i > $o ).
+tff(predicate_substantial,axiom,
+           ~substantial(xyz)
+         & ~substantial(fmb_$i_2)
+         & ~substantial(fmb_$i_3)
+
+).
+
+tff(declare_moment,type,moment: $i > $o ).
+tff(predicate_moment,axiom,
+           ~moment(xyz)
+         & moment(fmb_$i_2)
+         & ~moment(fmb_$i_3)
+
+).
+
+tff(declare_object,type,object: $i > $o ).
+tff(predicate_object,axiom,
+           ~object(xyz)
+         & ~object(fmb_$i_2)
+         & ~object(fmb_$i_3)
+
+).
+
+tff(declare_collective,type,collective: $i > $o ).
+tff(predicate_collective,axiom,
+           ~collective(xyz)
+         & ~collective(fmb_$i_2)
+         & ~collective(fmb_$i_3)
+
+).
+
+tff(declare_quantity,type,quantity: $i > $o ).
+tff(predicate_quantity,axiom,
+           ~quantity(xyz)
+         & ~quantity(fmb_$i_2)
+         & ~quantity(fmb_$i_3)
+
+).
+
+tff(declare_intrinsicMoment,type,intrinsicMoment: $i > $o ).
+tff(predicate_intrinsicMoment,axiom,
+           ~intrinsicMoment(xyz)
+         & intrinsicMoment(fmb_$i_2)
+         & ~intrinsicMoment(fmb_$i_3)
+
+).
+
+tff(declare_relator,type,relator: $i > $o ).
+tff(predicate_relator,axiom,
+           ~relator(xyz)
+         & ~relator(fmb_$i_2)
+         & ~relator(fmb_$i_3)
+
+).
+
+tff(declare_quality,type,quality: $i > $o ).
+tff(predicate_quality,axiom,
+           ~quality(xyz)
+         & quality(fmb_$i_2)
+         & ~quality(fmb_$i_3)
+
+).
+
+tff(declare_mode,type,mode: $i > $o ).
+tff(predicate_mode,axiom,
+           ~mode(xyz)
+         & ~mode(fmb_$i_2)
+         & ~mode(fmb_$i_3)
+
+).
+
+tff(declare_externallyDependentMode,type,externallyDependentMode: $i > $o ).
+tff(predicate_externallyDependentMode,axiom,
+           ~externallyDependentMode(xyz)
+         & ~externallyDependentMode(fmb_$i_2)
+         & ~externallyDependentMode(fmb_$i_3)
+
+).
+
+tff(declare_quaIndividual,type,quaIndividual: $i > $o ).
+tff(predicate_quaIndividual,axiom,
+           ~quaIndividual(xyz)
+         & ~quaIndividual(fmb_$i_2)
+         & ~quaIndividual(fmb_$i_3)
+
+).
+
+tff(declare_substantialType,type,substantialType: $i > $o ).
+tff(predicate_substantialType,axiom,
+           ~substantialType(xyz)
+         & ~substantialType(fmb_$i_2)
+         & ~substantialType(fmb_$i_3)
+
+).
+
+tff(declare_momentType,type,momentType: $i > $o ).
+tff(predicate_momentType,axiom,
+           momentType(xyz)
+         & ~momentType(fmb_$i_2)
+         & ~momentType(fmb_$i_3)
+
+).
+
+tff(declare_objectType,type,objectType: $i > $o ).
+tff(predicate_objectType,axiom,
+           ~objectType(xyz)
+         & ~objectType(fmb_$i_2)
+         & ~objectType(fmb_$i_3)
+
+).
+
+tff(declare_collectiveType,type,collectiveType: $i > $o ).
+tff(predicate_collectiveType,axiom,
+           ~collectiveType(xyz)
+         & ~collectiveType(fmb_$i_2)
+         & ~collectiveType(fmb_$i_3)
+
+).
+
+tff(declare_quantityType,type,quantityType: $i > $o ).
+tff(predicate_quantityType,axiom,
+           ~quantityType(xyz)
+         & ~quantityType(fmb_$i_2)
+         & ~quantityType(fmb_$i_3)
+
+).
+
+tff(declare_intrinsicMomentType,type,intrinsicMomentType: $i > $o ).
+tff(predicate_intrinsicMomentType,axiom,
+           intrinsicMomentType(xyz)
+         & ~intrinsicMomentType(fmb_$i_2)
+         & ~intrinsicMomentType(fmb_$i_3)
+
+).
+
+tff(declare_relatorType,type,relatorType: $i > $o ).
+tff(predicate_relatorType,axiom,
+           ~relatorType(xyz)
+         & ~relatorType(fmb_$i_2)
+         & ~relatorType(fmb_$i_3)
+
+).
+
+tff(declare_qualityType,type,qualityType: $i > $o ).
+tff(predicate_qualityType,axiom,
+           qualityType(xyz)
+         & ~qualityType(fmb_$i_2)
+         & ~qualityType(fmb_$i_3)
+
+).
+
+tff(declare_modeType,type,modeType: $i > $o ).
+tff(predicate_modeType,axiom,
+           ~modeType(xyz)
+         & ~modeType(fmb_$i_2)
+         & ~modeType(fmb_$i_3)
+
+).
+
+tff(declare_sortal,type,sortal: $i > $o ).
+tff(predicate_sortal,axiom,
+           sortal(xyz)
+         & ~sortal(fmb_$i_2)
+         & ~sortal(fmb_$i_3)
+
+).
+
+tff(declare_nonSortal,type,nonSortal: $i > $o ).
+tff(predicate_nonSortal,axiom,
+           ~nonSortal(xyz)
+         & ~nonSortal(fmb_$i_2)
+         & ~nonSortal(fmb_$i_3)
+
+).
+
+tff(declare_rigidSortal,type,rigidSortal: $i > $o ).
+tff(predicate_rigidSortal,axiom,
+           rigidSortal(xyz)
+         & ~rigidSortal(fmb_$i_2)
+         & ~rigidSortal(fmb_$i_3)
+
+).
+
+tff(declare_antiRigidSortal,type,antiRigidSortal: $i > $o ).
+tff(predicate_antiRigidSortal,axiom,
+           ~antiRigidSortal(xyz)
+         & ~antiRigidSortal(fmb_$i_2)
+         & ~antiRigidSortal(fmb_$i_3)
+
+).
+
+tff(declare_kind,type,kind: $i > $o ).
+tff(predicate_kind,axiom,
+           kind(xyz)
+         & ~kind(fmb_$i_2)
+         & ~kind(fmb_$i_3)
+
+).
+
+tff(declare_subkind,type,subkind: $i > $o ).
+tff(predicate_subkind,axiom,
+           ~subkind(xyz)
+         & ~subkind(fmb_$i_2)
+         & ~subkind(fmb_$i_3)
+
+).
+
+tff(declare_phase,type,phase: $i > $o ).
+tff(predicate_phase,axiom,
+           ~phase(xyz)
+         & ~phase(fmb_$i_2)
+         & ~phase(fmb_$i_3)
+
+).
+
+tff(declare_role,type,role: $i > $o ).
+tff(predicate_role,axiom,
+           ~role(xyz)
+         & ~role(fmb_$i_2)
+         & ~role(fmb_$i_3)
+
+).
+
+tff(declare_rigidNonSortal,type,rigidNonSortal: $i > $o ).
+tff(predicate_rigidNonSortal,axiom,
+           ~rigidNonSortal(xyz)
+         & ~rigidNonSortal(fmb_$i_2)
+         & ~rigidNonSortal(fmb_$i_3)
+
+).
+
+tff(declare_semiRigidNonSortal,type,semiRigidNonSortal: $i > $o ).
+tff(predicate_semiRigidNonSortal,axiom,
+           ~semiRigidNonSortal(xyz)
+         & ~semiRigidNonSortal(fmb_$i_2)
+         & ~semiRigidNonSortal(fmb_$i_3)
+
+).
+
+tff(declare_antiRigidNonSortal,type,antiRigidNonSortal: $i > $o ).
+tff(predicate_antiRigidNonSortal,axiom,
+           ~antiRigidNonSortal(xyz)
+         & ~antiRigidNonSortal(fmb_$i_2)
+         & ~antiRigidNonSortal(fmb_$i_3)
+
+).
+
+tff(declare_category,type,category: $i > $o ).
+tff(predicate_category,axiom,
+           ~category(xyz)
+         & ~category(fmb_$i_2)
+         & ~category(fmb_$i_3)
+
+).
+
+tff(declare_mixin,type,mixin: $i > $o ).
+tff(predicate_mixin,axiom,
+           ~mixin(xyz)
+         & ~mixin(fmb_$i_2)
+         & ~mixin(fmb_$i_3)
+
+).
+
+tff(declare_phaseMixin,type,phaseMixin: $i > $o ).
+tff(predicate_phaseMixin,axiom,
+           ~phaseMixin(xyz)
+         & ~phaseMixin(fmb_$i_2)
+         & ~phaseMixin(fmb_$i_3)
+
+).
+
+tff(declare_roleMixin,type,roleMixin: $i > $o ).
+tff(predicate_roleMixin,axiom,
+           ~roleMixin(xyz)
+         & ~roleMixin(fmb_$i_2)
+         & ~roleMixin(fmb_$i_3)
+
+).
+
+tff(declare_iof,type,iof: $i * $i * $i > $o ).
+tff(predicate_iof,axiom,
+           ~iof(xyz,xyz,xyz)
+         & ~iof(xyz,xyz,fmb_$i_2)
+         & ~iof(xyz,xyz,fmb_$i_3)
+         & ~iof(xyz,fmb_$i_2,xyz)
+         & ~iof(xyz,fmb_$i_2,fmb_$i_2)
+         & ~iof(xyz,fmb_$i_2,fmb_$i_3)
+         & ~iof(xyz,fmb_$i_3,xyz)
+         & ~iof(xyz,fmb_$i_3,fmb_$i_2)
+         & ~iof(xyz,fmb_$i_3,fmb_$i_3)
+         & ~iof(fmb_$i_2,xyz,xyz)
+         & ~iof(fmb_$i_2,xyz,fmb_$i_2)
+         & iof(fmb_$i_2,xyz,fmb_$i_3)
+         & ~iof(fmb_$i_2,fmb_$i_2,xyz)
+         & ~iof(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~iof(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~iof(fmb_$i_2,fmb_$i_3,xyz)
+         & ~iof(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~iof(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~iof(fmb_$i_3,xyz,xyz)
+         & ~iof(fmb_$i_3,xyz,fmb_$i_2)
+         & ~iof(fmb_$i_3,xyz,fmb_$i_3)
+         & ~iof(fmb_$i_3,fmb_$i_2,xyz)
+         & ~iof(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~iof(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~iof(fmb_$i_3,fmb_$i_3,xyz)
+         & ~iof(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~iof(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_specializes,type,specializes: $i * $i > $o ).
+tff(predicate_specializes,axiom,
+           specializes(xyz,xyz)
+         & ~specializes(xyz,fmb_$i_2)
+         & ~specializes(xyz,fmb_$i_3)
+         & ~specializes(fmb_$i_2,xyz)
+         & ~specializes(fmb_$i_2,fmb_$i_2)
+         & ~specializes(fmb_$i_2,fmb_$i_3)
+         & ~specializes(fmb_$i_3,xyz)
+         & ~specializes(fmb_$i_3,fmb_$i_2)
+         & ~specializes(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_properSpecializes,type,properSpecializes: $i * $i > $o ).
+tff(predicate_properSpecializes,axiom,
+           ~properSpecializes(xyz,xyz)
+         & ~properSpecializes(xyz,fmb_$i_2)
+         & ~properSpecializes(xyz,fmb_$i_3)
+         & ~properSpecializes(fmb_$i_2,xyz)
+         & ~properSpecializes(fmb_$i_2,fmb_$i_2)
+         & ~properSpecializes(fmb_$i_2,fmb_$i_3)
+         & ~properSpecializes(fmb_$i_3,xyz)
+         & ~properSpecializes(fmb_$i_3,fmb_$i_2)
+         & ~properSpecializes(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_rigid,type,rigid: $i > $o ).
+tff(predicate_rigid,axiom,
+           rigid(xyz)
+         & ~rigid(fmb_$i_2)
+         & ~rigid(fmb_$i_3)
+
+).
+
+tff(declare_antiRigid,type,antiRigid: $i > $o ).
+tff(predicate_antiRigid,axiom,
+           ~antiRigid(xyz)
+         & ~antiRigid(fmb_$i_2)
+         & ~antiRigid(fmb_$i_3)
+
+).
+
+tff(declare_semiRigid,type,semiRigid: $i > $o ).
+tff(predicate_semiRigid,axiom,
+           ~semiRigid(xyz)
+         & ~semiRigid(fmb_$i_2)
+         & ~semiRigid(fmb_$i_3)
+
+).
+
+tff(declare_objectKind,type,objectKind: $i > $o ).
+tff(predicate_objectKind,axiom,
+           ~objectKind(xyz)
+         & ~objectKind(fmb_$i_2)
+         & ~objectKind(fmb_$i_3)
+
+).
+
+tff(declare_collectiveKind,type,collectiveKind: $i > $o ).
+tff(predicate_collectiveKind,axiom,
+           ~collectiveKind(xyz)
+         & ~collectiveKind(fmb_$i_2)
+         & ~collectiveKind(fmb_$i_3)
+
+).
+
+tff(declare_quantityKind,type,quantityKind: $i > $o ).
+tff(predicate_quantityKind,axiom,
+           ~quantityKind(xyz)
+         & ~quantityKind(fmb_$i_2)
+         & ~quantityKind(fmb_$i_3)
+
+).
+
+tff(declare_modeKind,type,modeKind: $i > $o ).
+tff(predicate_modeKind,axiom,
+           ~modeKind(xyz)
+         & ~modeKind(fmb_$i_2)
+         & ~modeKind(fmb_$i_3)
+
+).
+
+tff(declare_qualityKind,type,qualityKind: $i > $o ).
+tff(predicate_qualityKind,axiom,
+           qualityKind(xyz)
+         & ~qualityKind(fmb_$i_2)
+         & ~qualityKind(fmb_$i_3)
+
+).
+
+tff(declare_relatorKind,type,relatorKind: $i > $o ).
+tff(predicate_relatorKind,axiom,
+           ~relatorKind(xyz)
+         & ~relatorKind(fmb_$i_2)
+         & ~relatorKind(fmb_$i_3)
+
+).
+
+tff(declare_partOf,type,partOf: $i * $i > $o ).
+tff(predicate_partOf,axiom,
+           partOf(xyz,xyz)
+         & ~partOf(xyz,fmb_$i_2)
+         & ~partOf(xyz,fmb_$i_3)
+         & ~partOf(fmb_$i_2,xyz)
+         & partOf(fmb_$i_2,fmb_$i_2)
+         & ~partOf(fmb_$i_2,fmb_$i_3)
+         & ~partOf(fmb_$i_3,xyz)
+         & ~partOf(fmb_$i_3,fmb_$i_2)
+         & partOf(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_overlap,type,overlap: $i * $i > $o ).
+tff(predicate_overlap,axiom,
+           overlap(xyz,xyz)
+         & ~overlap(xyz,fmb_$i_2)
+         & ~overlap(xyz,fmb_$i_3)
+         & ~overlap(fmb_$i_2,xyz)
+         & overlap(fmb_$i_2,fmb_$i_2)
+         & ~overlap(fmb_$i_2,fmb_$i_3)
+         & ~overlap(fmb_$i_3,xyz)
+         & ~overlap(fmb_$i_3,fmb_$i_2)
+         & overlap(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_properPartOf,type,properPartOf: $i * $i > $o ).
+tff(predicate_properPartOf,axiom,
+           ~properPartOf(xyz,xyz)
+         & ~properPartOf(xyz,fmb_$i_2)
+         & ~properPartOf(xyz,fmb_$i_3)
+         & ~properPartOf(fmb_$i_2,xyz)
+         & ~properPartOf(fmb_$i_2,fmb_$i_2)
+         & ~properPartOf(fmb_$i_2,fmb_$i_3)
+         & ~properPartOf(fmb_$i_3,xyz)
+         & ~properPartOf(fmb_$i_3,fmb_$i_2)
+         & ~properPartOf(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_sum,type,sum: $i * $i * $i > $o ).
+tff(predicate_sum,axiom,
+           sum(xyz,xyz,xyz)
+         & ~sum(xyz,xyz,fmb_$i_2)
+         & ~sum(xyz,xyz,fmb_$i_3)
+         & ~sum(xyz,fmb_$i_2,xyz)
+         & ~sum(xyz,fmb_$i_2,fmb_$i_2)
+         & ~sum(xyz,fmb_$i_2,fmb_$i_3)
+         & ~sum(xyz,fmb_$i_3,xyz)
+         & ~sum(xyz,fmb_$i_3,fmb_$i_2)
+         & ~sum(xyz,fmb_$i_3,fmb_$i_3)
+         & ~sum(fmb_$i_2,xyz,xyz)
+         & ~sum(fmb_$i_2,xyz,fmb_$i_2)
+         & ~sum(fmb_$i_2,xyz,fmb_$i_3)
+         & ~sum(fmb_$i_2,fmb_$i_2,xyz)
+         & sum(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~sum(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~sum(fmb_$i_2,fmb_$i_3,xyz)
+         & ~sum(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~sum(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~sum(fmb_$i_3,xyz,xyz)
+         & ~sum(fmb_$i_3,xyz,fmb_$i_2)
+         & ~sum(fmb_$i_3,xyz,fmb_$i_3)
+         & ~sum(fmb_$i_3,fmb_$i_2,xyz)
+         & ~sum(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~sum(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~sum(fmb_$i_3,fmb_$i_3,xyz)
+         & ~sum(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & sum(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_functionsAs,type,functionsAs: $i * $i > $o ).
+tff(predicate_functionsAs,axiom,
+%         functionsAs(xyz,xyz) undefined in model
+%         functionsAs(xyz,fmb_$i_2) undefined in model
+%         functionsAs(xyz,fmb_$i_3) undefined in model
+%         functionsAs(fmb_$i_2,xyz) undefined in model
+%         functionsAs(fmb_$i_2,fmb_$i_2) undefined in model
+%         functionsAs(fmb_$i_2,fmb_$i_3) undefined in model
+%         functionsAs(fmb_$i_3,xyz) undefined in model
+%         functionsAs(fmb_$i_3,fmb_$i_2) undefined in model
+%         functionsAs(fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_gfd,type,gfd: $i * $i * $i > $o ).
+tff(predicate_gfd,axiom,
+%         gfd(xyz,xyz,xyz) undefined in model
+%         gfd(xyz,xyz,fmb_$i_2) undefined in model
+%         gfd(xyz,xyz,fmb_$i_3) undefined in model
+%         gfd(xyz,fmb_$i_2,xyz) undefined in model
+%         gfd(xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         gfd(xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         gfd(xyz,fmb_$i_3,xyz) undefined in model
+%         gfd(xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         gfd(xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         gfd(fmb_$i_2,xyz,xyz) undefined in model
+%         gfd(fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         gfd(fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         gfd(fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         gfd(fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         gfd(fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         gfd(fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         gfd(fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         gfd(fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         gfd(fmb_$i_3,xyz,xyz) undefined in model
+%         gfd(fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         gfd(fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         gfd(fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         gfd(fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         gfd(fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         gfd(fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         gfd(fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         gfd(fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_ifd,type,ifd: $i * $i * $i * $i * $i > $o ).
+tff(predicate_ifd,axiom,
+%         ifd(xyz,xyz,xyz,xyz,xyz) undefined in model
+%         ifd(xyz,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         ifd(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_componentOf,type,componentOf: $i * $i * $i * $i * $i > $o ).
+tff(predicate_componentOf,axiom,
+%         componentOf(xyz,xyz,xyz,xyz,xyz) undefined in model
+%         componentOf(xyz,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         componentOf(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_constitutedBy,type,constitutedBy: $i * $i * $i > $o ).
+tff(predicate_constitutedBy,axiom,
+           ~constitutedBy(xyz,xyz,xyz)
+         & ~constitutedBy(xyz,xyz,fmb_$i_2)
+         & ~constitutedBy(xyz,xyz,fmb_$i_3)
+         & ~constitutedBy(xyz,fmb_$i_2,xyz)
+         & ~constitutedBy(xyz,fmb_$i_2,fmb_$i_2)
+         & ~constitutedBy(xyz,fmb_$i_2,fmb_$i_3)
+         & ~constitutedBy(xyz,fmb_$i_3,xyz)
+         & ~constitutedBy(xyz,fmb_$i_3,fmb_$i_2)
+         & ~constitutedBy(xyz,fmb_$i_3,fmb_$i_3)
+         & ~constitutedBy(fmb_$i_2,xyz,xyz)
+         & ~constitutedBy(fmb_$i_2,xyz,fmb_$i_2)
+         & ~constitutedBy(fmb_$i_2,xyz,fmb_$i_3)
+         & ~constitutedBy(fmb_$i_2,fmb_$i_2,xyz)
+         & ~constitutedBy(fmb_$i_2,fmb_$i_2,fmb_$i_2)
+         & ~constitutedBy(fmb_$i_2,fmb_$i_2,fmb_$i_3)
+         & ~constitutedBy(fmb_$i_2,fmb_$i_3,xyz)
+         & ~constitutedBy(fmb_$i_2,fmb_$i_3,fmb_$i_2)
+         & ~constitutedBy(fmb_$i_2,fmb_$i_3,fmb_$i_3)
+         & ~constitutedBy(fmb_$i_3,xyz,xyz)
+         & ~constitutedBy(fmb_$i_3,xyz,fmb_$i_2)
+         & ~constitutedBy(fmb_$i_3,xyz,fmb_$i_3)
+         & ~constitutedBy(fmb_$i_3,fmb_$i_2,xyz)
+         & ~constitutedBy(fmb_$i_3,fmb_$i_2,fmb_$i_2)
+         & ~constitutedBy(fmb_$i_3,fmb_$i_2,fmb_$i_3)
+         & ~constitutedBy(fmb_$i_3,fmb_$i_3,xyz)
+         & ~constitutedBy(fmb_$i_3,fmb_$i_3,fmb_$i_2)
+         & ~constitutedBy(fmb_$i_3,fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_genericConstitutionalDependence,type,genericConstitutionalDependence: $i * $i > $o ).
+tff(predicate_genericConstitutionalDependence,axiom,
+           ~genericConstitutionalDependence(xyz,xyz)
+         & ~genericConstitutionalDependence(xyz,fmb_$i_2)
+         & ~genericConstitutionalDependence(xyz,fmb_$i_3)
+         & ~genericConstitutionalDependence(fmb_$i_2,xyz)
+         & ~genericConstitutionalDependence(fmb_$i_2,fmb_$i_2)
+         & ~genericConstitutionalDependence(fmb_$i_2,fmb_$i_3)
+         & ~genericConstitutionalDependence(fmb_$i_3,xyz)
+         & ~genericConstitutionalDependence(fmb_$i_3,fmb_$i_2)
+         & ~genericConstitutionalDependence(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_constitution,type,constitution: $i * $i * $i * $i * $i > $o ).
+tff(predicate_constitution,axiom,
+%         constitution(xyz,xyz,xyz,xyz,xyz) undefined in model
+%         constitution(xyz,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2,fmb_$i_3) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,xyz) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_2) undefined in model
+%         constitution(fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_exists,type,exists: $i * $i > $o ).
+tff(predicate_exists,axiom,
+           ~exists(xyz,xyz)
+         & ~exists(xyz,fmb_$i_2)
+         & ~exists(xyz,fmb_$i_3)
+         & ~exists(fmb_$i_2,xyz)
+         & ~exists(fmb_$i_2,fmb_$i_2)
+         & ~exists(fmb_$i_2,fmb_$i_3)
+         & ~exists(fmb_$i_3,xyz)
+         & ~exists(fmb_$i_3,fmb_$i_2)
+         & exists(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_existentiallyDependsOn,type,existentiallyDependsOn: $i * $i > $o ).
+tff(predicate_existentiallyDependsOn,axiom,
+           existentiallyDependsOn(xyz,xyz)
+         & existentiallyDependsOn(xyz,fmb_$i_2)
+         & existentiallyDependsOn(xyz,fmb_$i_3)
+         & existentiallyDependsOn(fmb_$i_2,xyz)
+         & existentiallyDependsOn(fmb_$i_2,fmb_$i_2)
+         & existentiallyDependsOn(fmb_$i_2,fmb_$i_3)
+         & ~existentiallyDependsOn(fmb_$i_3,xyz)
+         & ~existentiallyDependsOn(fmb_$i_3,fmb_$i_2)
+         & existentiallyDependsOn(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_existentiallyIndependentOf,type,existentiallyIndependentOf: $i * $i > $o ).
+tff(predicate_existentiallyIndependentOf,axiom,
+           ~existentiallyIndependentOf(xyz,xyz)
+         & ~existentiallyIndependentOf(xyz,fmb_$i_2)
+         & ~existentiallyIndependentOf(xyz,fmb_$i_3)
+         & ~existentiallyIndependentOf(fmb_$i_2,xyz)
+         & ~existentiallyIndependentOf(fmb_$i_2,fmb_$i_2)
+         & ~existentiallyIndependentOf(fmb_$i_2,fmb_$i_3)
+         & ~existentiallyIndependentOf(fmb_$i_3,xyz)
+         & ~existentiallyIndependentOf(fmb_$i_3,fmb_$i_2)
+         & ~existentiallyIndependentOf(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_inheresIn,type,inheresIn: $i * $i > $o ).
+tff(predicate_inheresIn,axiom,
+           ~inheresIn(xyz,xyz)
+         & ~inheresIn(xyz,fmb_$i_2)
+         & ~inheresIn(xyz,fmb_$i_3)
+         & inheresIn(fmb_$i_2,xyz)
+         & ~inheresIn(fmb_$i_2,fmb_$i_2)
+         & ~inheresIn(fmb_$i_2,fmb_$i_3)
+         & ~inheresIn(fmb_$i_3,xyz)
+         & ~inheresIn(fmb_$i_3,fmb_$i_2)
+         & ~inheresIn(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_momentOf,type,momentOf: $i * $i > $o ).
+tff(predicate_momentOf,axiom,
+           ~momentOf(xyz,xyz)
+         & ~momentOf(xyz,fmb_$i_2)
+         & ~momentOf(xyz,fmb_$i_3)
+         & momentOf(fmb_$i_2,xyz)
+         & ~momentOf(fmb_$i_2,fmb_$i_2)
+         & ~momentOf(fmb_$i_2,fmb_$i_3)
+         & ~momentOf(fmb_$i_3,xyz)
+         & ~momentOf(fmb_$i_3,fmb_$i_2)
+         & ~momentOf(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_ultimateBearerOf,type,ultimateBearerOf: $i * $i > $o ).
+tff(predicate_ultimateBearerOf,axiom,
+           ~ultimateBearerOf(xyz,xyz)
+         & ultimateBearerOf(xyz,fmb_$i_2)
+         & ~ultimateBearerOf(xyz,fmb_$i_3)
+         & ~ultimateBearerOf(fmb_$i_2,xyz)
+         & ~ultimateBearerOf(fmb_$i_2,fmb_$i_2)
+         & ~ultimateBearerOf(fmb_$i_2,fmb_$i_3)
+         & ~ultimateBearerOf(fmb_$i_3,xyz)
+         & ~ultimateBearerOf(fmb_$i_3,fmb_$i_2)
+         & ~ultimateBearerOf(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_externallyDependsOn,type,externallyDependsOn: $i * $i > $o ).
+tff(predicate_externallyDependsOn,axiom,
+           ~externallyDependsOn(xyz,xyz)
+         & ~externallyDependsOn(xyz,fmb_$i_2)
+         & ~externallyDependsOn(xyz,fmb_$i_3)
+         & externallyDependsOn(fmb_$i_2,xyz)
+         & externallyDependsOn(fmb_$i_2,fmb_$i_2)
+         & externallyDependsOn(fmb_$i_2,fmb_$i_3)
+         & externallyDependsOn(fmb_$i_3,xyz)
+         & externallyDependsOn(fmb_$i_3,fmb_$i_2)
+         & ~externallyDependsOn(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_foundedBy,type,foundedBy: $i * $i > $o ).
+tff(predicate_foundedBy,axiom,
+           ~foundedBy(xyz,xyz)
+         & ~foundedBy(xyz,fmb_$i_2)
+         & ~foundedBy(xyz,fmb_$i_3)
+         & ~foundedBy(fmb_$i_2,xyz)
+         & ~foundedBy(fmb_$i_2,fmb_$i_2)
+         & ~foundedBy(fmb_$i_2,fmb_$i_3)
+         & ~foundedBy(fmb_$i_3,xyz)
+         & ~foundedBy(fmb_$i_3,fmb_$i_2)
+         & ~foundedBy(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_quaIndividualOf,type,quaIndividualOf: $i * $i > $o ).
+tff(predicate_quaIndividualOf,axiom,
+           ~quaIndividualOf(xyz,xyz)
+         & ~quaIndividualOf(xyz,fmb_$i_2)
+         & ~quaIndividualOf(xyz,fmb_$i_3)
+         & ~quaIndividualOf(fmb_$i_2,xyz)
+         & ~quaIndividualOf(fmb_$i_2,fmb_$i_2)
+         & ~quaIndividualOf(fmb_$i_2,fmb_$i_3)
+         & ~quaIndividualOf(fmb_$i_3,xyz)
+         & ~quaIndividualOf(fmb_$i_3,fmb_$i_2)
+         & ~quaIndividualOf(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_mediates,type,mediates: $i * $i > $o ).
+tff(predicate_mediates,axiom,
+           ~mediates(xyz,xyz)
+         & ~mediates(xyz,fmb_$i_2)
+         & ~mediates(xyz,fmb_$i_3)
+         & ~mediates(fmb_$i_2,xyz)
+         & ~mediates(fmb_$i_2,fmb_$i_2)
+         & ~mediates(fmb_$i_2,fmb_$i_3)
+         & ~mediates(fmb_$i_3,xyz)
+         & ~mediates(fmb_$i_3,fmb_$i_2)
+         & ~mediates(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_characterizes,type,characterizes: $i * $i > $o ).
+tff(predicate_characterizes,axiom,
+%         characterizes(xyz,xyz) undefined in model
+%         characterizes(xyz,fmb_$i_2) undefined in model
+%         characterizes(xyz,fmb_$i_3) undefined in model
+%         characterizes(fmb_$i_2,xyz) undefined in model
+%         characterizes(fmb_$i_2,fmb_$i_2) undefined in model
+%         characterizes(fmb_$i_2,fmb_$i_3) undefined in model
+%         characterizes(fmb_$i_3,xyz) undefined in model
+%         characterizes(fmb_$i_3,fmb_$i_2) undefined in model
+%         characterizes(fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_associatedWith,type,associatedWith: $i * $i > $o ).
+tff(predicate_associatedWith,axiom,
+           ~associatedWith(xyz,xyz)
+         & ~associatedWith(xyz,fmb_$i_2)
+         & ~associatedWith(xyz,fmb_$i_3)
+         & ~associatedWith(fmb_$i_2,xyz)
+         & associatedWith(fmb_$i_2,fmb_$i_2)
+         & ~associatedWith(fmb_$i_2,fmb_$i_3)
+         & ~associatedWith(fmb_$i_3,xyz)
+         & associatedWith(fmb_$i_3,fmb_$i_2)
+         & associatedWith(fmb_$i_3,fmb_$i_3)
+
+).
+
+tff(declare_manifests,type,manifests: $i * $i > $o ).
+tff(predicate_manifests,axiom,
+%         manifests(xyz,xyz) undefined in model
+%         manifests(xyz,fmb_$i_2) undefined in model
+%         manifests(xyz,fmb_$i_3) undefined in model
+%         manifests(fmb_$i_2,xyz) undefined in model
+%         manifests(fmb_$i_2,fmb_$i_2) undefined in model
+%         manifests(fmb_$i_2,fmb_$i_3) undefined in model
+%         manifests(fmb_$i_3,xyz) undefined in model
+%         manifests(fmb_$i_3,fmb_$i_2) undefined in model
+%         manifests(fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_lifeOf,type,lifeOf: $i * $i > $o ).
+tff(predicate_lifeOf,axiom,
+%         lifeOf(xyz,xyz) undefined in model
+%         lifeOf(xyz,fmb_$i_2) undefined in model
+%         lifeOf(xyz,fmb_$i_3) undefined in model
+%         lifeOf(fmb_$i_2,xyz) undefined in model
+%         lifeOf(fmb_$i_2,fmb_$i_2) undefined in model
+%         lifeOf(fmb_$i_2,fmb_$i_3) undefined in model
+%         lifeOf(fmb_$i_3,xyz) undefined in model
+%         lifeOf(fmb_$i_3,fmb_$i_2) undefined in model
+%         lifeOf(fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+tff(declare_meets,type,meets: $i * $i > $o ).
+tff(predicate_meets,axiom,
+%         meets(xyz,xyz) undefined in model
+%         meets(xyz,fmb_$i_2) undefined in model
+%         meets(xyz,fmb_$i_3) undefined in model
+%         meets(fmb_$i_2,xyz) undefined in model
+%         meets(fmb_$i_2,fmb_$i_2) undefined in model
+%         meets(fmb_$i_2,fmb_$i_3) undefined in model
+%         meets(fmb_$i_3,xyz) undefined in model
+%         meets(fmb_$i_3,fmb_$i_2) undefined in model
+%         meets(fmb_$i_3,fmb_$i_3) undefined in model
+
+).
+
+% SZS output end FiniteModel for type_qualityKind_subsumed_to_phaseMixin
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 11385
+% Time elapsed: 0.053 s
+% ------------------------------
+% ------------------------------
+% Success in time 3.274 s

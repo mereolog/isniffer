@@ -1,0 +1,75 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_quaIndividual_subsumed_to_externallyDependentMode for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_quaIndividual_subsumed_to_externallyDependentMode
+% SZS output start Proof for type_quaIndividual_subsumed_to_externallyDependentMode
+fof(f974,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f742,f973])).
+fof(f973,plain,(
+  spl59_1 | ~spl59_2 | ~spl59_26),
+  inference(avatar_contradiction_clause,[],[f972])).
+fof(f972,plain,(
+  $false | (spl59_1 | ~spl59_2 | ~spl59_26)),
+  inference(subsumption_resolution,[],[f971,f641])).
+fof(f641,plain,(
+  ~externallyDependentMode(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> externallyDependentMode(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f971,plain,(
+  externallyDependentMode(xyz) | (~spl59_2 | ~spl59_26)),
+  inference(resolution,[],[f741,f645])).
+fof(f645,plain,(
+  quaIndividual(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_2 <=> quaIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f741,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | externallyDependentMode(X0)) ) | ~spl59_26),
+  inference(avatar_component_clause,[],[f740])).
+fof(f740,plain,(
+  spl59_26 <=> ! [X0] : (~quaIndividual(X0) | externallyDependentMode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_26])])).
+fof(f742,plain,(
+  spl59_26),
+  inference(avatar_split_clause,[],[f344,f740])).
+fof(f344,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | externallyDependentMode(X0)) )),
+  inference(cnf_transformation,[],[f235])).
+fof(f235,plain,(
+  ! [X0] : (externallyDependentMode(X0) | ~quaIndividual(X0))),
+  inference(ennf_transformation,[],[f25])).
+fof(f25,axiom,(
+  ! [X0] : (quaIndividual(X0) => externallyDependentMode(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_externallyDependentMode.in',ax_externallyDependentMode_taxonomy_quaIndividual)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  quaIndividual(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quaIndividual(xyz)),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_externallyDependentMode.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~externallyDependentMode(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~externallyDependentMode(xyz)),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_externallyDependentMode.in',axiom2)).
+% SZS output end Proof for type_quaIndividual_subsumed_to_externallyDependentMode
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.014 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.025 s

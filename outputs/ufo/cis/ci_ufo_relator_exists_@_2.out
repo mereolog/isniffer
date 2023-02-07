@@ -1,0 +1,202 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_2:1_add=large:afp=40000:afq=2.0:amm=sco:anc=none:br=off:cond=on:irw=on:nwc=1:sd=2:ss=axioms:st=2.0:sos=all:urr=on:updr=off_3 on ci_ufo_relator_exists_@_2 for (3ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 5884
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% dis+1010_10_afr=on:afp=100000:afq=2.0:amm=sco:anc=none:ep=RS:fde=unused:gs=on:nwc=1:sos=on:sac=on:sp=occurrence_2 on ci_ufo_relator_exists_@_2 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10746
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% ott+1010_5:4_av=off:bd=off:fde=none:irw=on:lma=on:nm=32:nwc=2.5:sd=2:ss=axioms:st=3.0:urr=on_5 on ci_ufo_relator_exists_@_2 for (5ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 1407
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+4_2_av=off:gs=on:gsem=on:lma=on:nm=16:nwc=1:sas=z3:stl=30:sos=on:urr=on_3 on ci_ufo_relator_exists_@_2 for (3ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6396
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_3:1_add=off:afr=on:afp=10000:afq=1.1:amm=off:bce=on:cond=on:ep=R:fsr=off:nm=16:nwc=1:stl=30:sos=all:sp=reverse_arity:updr=off_2 on ci_ufo_relator_exists_@_2 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6652
+% Time elapsed: 0.007 s
+% ------------------------------
+% ------------------------------
+% dis+1011_10_aac=none:add=large:afp=10000:afq=1.1:amm=off:anc=none:fsr=off:gs=on:gsem=off:irw=on:nm=6:newcnf=on:nwc=2.5:sp=reverse_arity:updr=off_2 on ci_ufo_relator_exists_@_2 for (2ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_ufo_relator_exists_@_2
+% SZS output start Proof for ci_ufo_relator_exists_@_2
+fof(f9837,plain,(
+  $false),
+  inference(global_subsumption,[],[f309,f9834])).
+fof(f9834,plain,(
+  ~relator(zyx)),
+  inference(resolution,[],[f9827,f520])).
+fof(f520,plain,(
+  ( ! [X0] : (properPartOf(sK39(X0),X0) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f264])).
+fof(f264,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : (properPartOf(X2,X0) | ? [X3] : (foundedBy(X1,X3) <~> foundedBy(X2,X3)) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0)) & ! [X4,X5] : ((! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | ~properPartOf(X5,X0) | ~properPartOf(X4,X0)) & ? [X7] : properPartOf(X7,X0)))),
+  inference(flattening,[],[f263])).
+fof(f263,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : (properPartOf(X2,X0) | (? [X3] : (foundedBy(X1,X3) <~> foundedBy(X2,X3)) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0))) & ! [X4,X5] : ((! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | (~properPartOf(X5,X0) | ~properPartOf(X4,X0))) & ? [X7] : properPartOf(X7,X0)))),
+  inference(ennf_transformation,[],[f171])).
+fof(f171,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : ((! [X3] : (foundedBy(X1,X3) <=> foundedBy(X2,X3)) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) => properPartOf(X2,X0)) & ! [X4,X5] : ((properPartOf(X5,X0) & properPartOf(X4,X0)) => (! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4))) & ? [X7] : properPartOf(X7,X0)))),
+  inference(rectify,[],[f124])).
+fof(f124,axiom,(
+  ! [X23] : (relator(X23) <=> (! [X24,X25] : ((! [X18] : (foundedBy(X24,X18) <=> foundedBy(X25,X18)) & existentiallyDependsOn(X25,X24) & existentiallyDependsOn(X24,X25) & quaIndividual(X25) & properPartOf(X24,X23)) => properPartOf(X25,X23)) & ! [X1,X3] : ((properPartOf(X3,X23) & properPartOf(X1,X23)) => (! [X14] : (foundedBy(X1,X14) <=> foundedBy(X3,X14)) & existentiallyDependsOn(X3,X1) & existentiallyDependsOn(X1,X3) & quaIndividual(X3) & quaIndividual(X1))) & ? [X0] : properPartOf(X0,X23)))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_dRelator_a81)).
+fof(f9827,plain,(
+  ~properPartOf(sK39(zyx),zyx)),
+  inference(resolution,[],[f9815,f638])).
+fof(f638,plain,(
+  ( ! [X0,X1] : (partOf(X0,X1) | ~properPartOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f91])).
+fof(f91,axiom,(
+  ! [X0,X1] : (properPartOf(X0,X1) <=> (~partOf(X1,X0) & partOf(X0,X1)))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_properPart_a52)).
+fof(f9815,plain,(
+  ~partOf(sK39(zyx),zyx)),
+  inference(resolution,[],[f9812,f347])).
+fof(f347,plain,(
+  ( ! [X0] : (partOf(X0,X0)) )),
+  inference(cnf_transformation,[],[f85])).
+fof(f85,axiom,(
+  ! [X0] : partOf(X0,X0)),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_reflexiveParthood)).
+fof(f9812,plain,(
+  ( ! [X0] : (~partOf(X0,sK39(zyx)) | ~partOf(X0,zyx)) )),
+  inference(resolution,[],[f9714,f309])).
+fof(f9714,plain,(
+  ( ! [X4,X5] : (~relator(X5) | ~partOf(X4,sK39(zyx)) | ~partOf(X4,X5)) )),
+  inference(resolution,[],[f9552,f322])).
+fof(f322,plain,(
+  ( ! [X0] : (~intrinsicMoment(X0) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f215])).
+fof(f215,plain,(
+  ! [X0] : (~relator(X0) | ~intrinsicMoment(X0))),
+  inference(ennf_transformation,[],[f21])).
+fof(f21,axiom,(
+  ~? [X0] : (relator(X0) & intrinsicMoment(X0))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_moment_partition)).
+fof(f9552,plain,(
+  ( ! [X3,X4] : (intrinsicMoment(X4) | ~partOf(X3,X4) | ~partOf(X3,sK39(zyx))) )),
+  inference(resolution,[],[f4504,f535])).
+fof(f535,plain,(
+  ( ! [X0] : (~mode(X0) | intrinsicMoment(X0)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_intrinsicMoment_taxonomy)).
+fof(f4504,plain,(
+  ( ! [X0,X1] : (mode(X0) | ~partOf(X1,sK39(zyx)) | ~partOf(X1,X0)) )),
+  inference(resolution,[],[f4503,f643])).
+fof(f643,plain,(
+  ( ! [X2,X0,X1] : (overlap(X0,X1) | ~partOf(X2,X1) | ~partOf(X2,X0)) )),
+  inference(cnf_transformation,[],[f184])).
+fof(f184,plain,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X2] : (partOf(X2,X1) & partOf(X2,X0)))),
+  inference(rectify,[],[f89])).
+fof(f89,axiom,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X3] : (partOf(X3,X1) & partOf(X3,X0)))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_overlappingWholes_a50)).
+fof(f4503,plain,(
+  ( ! [X3] : (~overlap(X3,sK39(zyx)) | mode(X3)) )),
+  inference(resolution,[],[f4471,f351])).
+fof(f351,plain,(
+  ( ! [X0] : (~externallyDependentMode(X0) | mode(X0)) )),
+  inference(cnf_transformation,[],[f231])).
+fof(f231,plain,(
+  ! [X0] : (mode(X0) | ~externallyDependentMode(X0))),
+  inference(ennf_transformation,[],[f24])).
+fof(f24,axiom,(
+  ! [X0] : (externallyDependentMode(X0) => mode(X0))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_mode_taxonomy_externallyDependentMode)).
+fof(f4471,plain,(
+  ( ! [X4] : (externallyDependentMode(X4) | ~overlap(X4,sK39(zyx))) )),
+  inference(resolution,[],[f4451,f636])).
+fof(f636,plain,(
+  ( ! [X2,X0,X1] : (~quaIndividualOf(X0,X1) | ~overlap(X2,X0) | externallyDependentMode(X2)) )),
+  inference(cnf_transformation,[],[f280])).
+fof(f280,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(ennf_transformation,[],[f183])).
+fof(f183,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X0,X3) => foundedBy(X2,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(rectify,[],[f121])).
+fof(f121,axiom,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X3] : (overlap(X3,X0) <=> (! [X14] : (foundedBy(X0,X14) => foundedBy(X3,X14)) & inheresIn(X3,X1) & externallyDependentMode(X3))))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_dQuaIndividualOf_a75)).
+fof(f4451,plain,(
+  quaIndividualOf(sK39(zyx),sK20(sK39(zyx)))),
+  inference(resolution,[],[f4449,f430])).
+fof(f430,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | quaIndividualOf(X0,sK20(X0))) )),
+  inference(cnf_transformation,[],[f122])).
+fof(f122,axiom,(
+  ! [X0] : (quaIndividual(X0) <=> ? [X1] : quaIndividualOf(X0,X1))),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',ax_dQuaIndividual_a76)).
+fof(f4449,plain,(
+  quaIndividual(sK39(zyx))),
+  inference(resolution,[],[f4444,f501])).
+fof(f501,plain,(
+  ( ! [X4,X5] : (~sP44(X5,X4) | quaIndividual(X5)) )),
+  inference(cnf_transformation,[],[f264])).
+fof(f4444,plain,(
+  sP44(sK39(zyx),sK39(zyx))),
+  inference(global_subsumption,[],[f309,f4440])).
+fof(f4440,plain,(
+  sP44(sK39(zyx),sK39(zyx)) | ~relator(zyx)),
+  inference(resolution,[],[f4437,f520])).
+fof(f4437,plain,(
+  ( ! [X0] : (~properPartOf(X0,zyx) | sP44(X0,sK39(zyx))) )),
+  inference(resolution,[],[f3572,f309])).
+fof(f3572,plain,(
+  ( ! [X0,X1] : (~relator(X1) | sP44(X0,sK39(X1)) | ~properPartOf(X0,X1)) )),
+  inference(duplicate_literal_removal,[],[f3570])).
+fof(f3570,plain,(
+  ( ! [X0,X1] : (~properPartOf(X0,X1) | sP44(X0,sK39(X1)) | ~relator(X1) | ~relator(X1)) )),
+  inference(resolution,[],[f519,f520])).
+fof(f519,plain,(
+  ( ! [X0,X4,X5] : (~properPartOf(X4,X0) | ~properPartOf(X5,X0) | sP44(X5,X4) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f264])).
+fof(f309,plain,(
+  relator(zyx)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  relator(zyx)),
+  file('outputs/ufo/cis/ci_ufo_relator_exists_@_2.in',axiom4143)).
+% SZS output end Proof for ci_ufo_relator_exists_@_2
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 20596
+% Time elapsed: 0.168 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.201 s

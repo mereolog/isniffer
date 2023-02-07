@@ -1,0 +1,108 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_objectKind_subsumed_to_substantialType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_objectKind_subsumed_to_substantialType
+% SZS output start Proof for type_objectKind_subsumed_to_substantialType
+fof(f1001,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f842,f914,f987,f1000])).
+fof(f1000,plain,(
+  spl59_1 | ~spl59_68 | ~spl59_86),
+  inference(avatar_contradiction_clause,[],[f999])).
+fof(f999,plain,(
+  $false | (spl59_1 | ~spl59_68 | ~spl59_86)),
+  inference(subsumption_resolution,[],[f998,f645])).
+fof(f645,plain,(
+  ~substantialType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> substantialType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f998,plain,(
+  substantialType(xyz) | (~spl59_68 | ~spl59_86)),
+  inference(resolution,[],[f913,f986])).
+fof(f986,plain,(
+  objectType(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f985])).
+fof(f985,plain,(
+  spl59_86 <=> objectType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f913,plain,(
+  ( ! [X0] : (~objectType(X0) | substantialType(X0)) ) | ~spl59_68),
+  inference(avatar_component_clause,[],[f912])).
+fof(f912,plain,(
+  spl59_68 <=> ! [X0] : (substantialType(X0) | ~objectType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_68])])).
+fof(f987,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_50),
+  inference(avatar_split_clause,[],[f983,f840,f648,f985])).
+fof(f648,plain,(
+  spl59_2 <=> objectKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f840,plain,(
+  spl59_50 <=> ! [X0] : (~objectKind(X0) | objectType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_50])])).
+fof(f983,plain,(
+  objectType(xyz) | (~spl59_2 | ~spl59_50)),
+  inference(resolution,[],[f841,f649])).
+fof(f649,plain,(
+  objectKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f841,plain,(
+  ( ! [X0] : (~objectKind(X0) | objectType(X0)) ) | ~spl59_50),
+  inference(avatar_component_clause,[],[f840])).
+fof(f914,plain,(
+  spl59_68),
+  inference(avatar_split_clause,[],[f546,f912])).
+fof(f546,plain,(
+  ( ! [X0] : (substantialType(X0) | ~objectType(X0)) )),
+  inference(cnf_transformation,[],[f28])).
+fof(f28,axiom,(
+  ! [X0] : ((quantityType(X0) | collectiveType(X0) | objectType(X0)) <=> substantialType(X0))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_substantialType.in',ax_substantialType_taxonomy)).
+fof(f842,plain,(
+  spl59_50),
+  inference(avatar_split_clause,[],[f486,f840])).
+fof(f486,plain,(
+  ( ! [X0] : (~objectKind(X0) | objectType(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & objectType(X0)) | ~objectKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (objectKind(X0) => (kind(X0) & objectType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (objectKind(X0) <=> (kind(X0) & objectType(X0)))),
+  inference(rectify,[],[f79])).
+fof(f79,axiom,(
+  ! [X8] : (objectKind(X8) <=> (kind(X8) & objectType(X8)))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_substantialType.in',ax_objectKindDefinition_a45)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  objectKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  objectKind(xyz)),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_substantialType.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~substantialType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~substantialType(xyz)),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_substantialType.in',axiom2)).
+% SZS output end Proof for type_objectKind_subsumed_to_substantialType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.02 s

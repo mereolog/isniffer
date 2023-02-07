@@ -1,0 +1,78 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_antiRigid_subsumed_to_endurantType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_antiRigid_subsumed_to_endurantType
+% SZS output start Proof for type_antiRigid_subsumed_to_endurantType
+fof(f976,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f834,f975])).
+fof(f975,plain,(
+  spl59_1 | ~spl59_2 | ~spl59_49),
+  inference(avatar_contradiction_clause,[],[f974])).
+fof(f974,plain,(
+  $false | (spl59_1 | ~spl59_2 | ~spl59_49)),
+  inference(subsumption_resolution,[],[f971,f641])).
+fof(f641,plain,(
+  ~endurantType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f971,plain,(
+  endurantType(xyz) | (~spl59_2 | ~spl59_49)),
+  inference(resolution,[],[f833,f645])).
+fof(f645,plain,(
+  antiRigid(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_2 <=> antiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f833,plain,(
+  ( ! [X0] : (~antiRigid(X0) | endurantType(X0)) ) | ~spl59_49),
+  inference(avatar_component_clause,[],[f832])).
+fof(f832,plain,(
+  spl59_49 <=> ! [X0] : (endurantType(X0) | ~antiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_49])])).
+fof(f834,plain,(
+  spl59_49),
+  inference(avatar_split_clause,[],[f483,f832])).
+fof(f483,plain,(
+  ( ! [X0] : (endurantType(X0) | ~antiRigid(X0)) )),
+  inference(cnf_transformation,[],[f264])).
+fof(f264,plain,(
+  ! [X0] : (antiRigid(X0) <=> (! [X1] : (? [X3] : (~iof(X1,X0,X3) & world(X3)) | ! [X2] : (~iof(X1,X0,X2) | ~world(X2))) & endurantType(X0)))),
+  inference(ennf_transformation,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (antiRigid(X0) <=> (! [X1] : (? [X2] : (iof(X1,X0,X2) & world(X2)) => ? [X3] : (~iof(X1,X0,X3) & world(X3))) & endurantType(X0)))),
+  inference(rectify,[],[f58])).
+fof(f58,axiom,(
+  ! [X8] : (antiRigid(X8) <=> (! [X0] : (? [X9] : (iof(X0,X8,X9) & world(X9)) => ? [X10] : (~iof(X0,X8,X10) & world(X10))) & endurantType(X8)))),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_endurantType.in',ax_dAntiRigid_a19)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  antiRigid(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  antiRigid(xyz)),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_endurantType.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~endurantType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~endurantType(xyz)),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_endurantType.in',axiom2)).
+% SZS output end Proof for type_antiRigid_subsumed_to_endurantType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.015 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.023 s

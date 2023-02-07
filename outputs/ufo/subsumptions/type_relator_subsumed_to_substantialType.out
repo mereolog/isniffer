@@ -1,0 +1,354 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_relator_subsumed_to_substantialType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_relator_subsumed_to_substantialType
+% SZS output start Proof for type_relator_subsumed_to_substantialType
+fof(f5954,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f658,f682,f746,f846,f1028,f1056,f1116,f1376,f1477,f1600,f2014,f2118,f3020,f4475,f4482,f5240,f5692,f5702,f5917,f5936,f5945,f5953])).
+fof(f5953,plain,(
+  spl59_351 | ~spl59_52 | ~spl59_760),
+  inference(avatar_split_clause,[],[f5951,f5943,f844,f2993])).
+fof(f2993,plain,(
+  spl59_351 <=> intrinsicMoment(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_351])])).
+fof(f844,plain,(
+  spl59_52 <=> ! [X0] : (intrinsicMoment(X0) | ~mode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_52])])).
+fof(f5943,plain,(
+  spl59_760 <=> mode(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_760])])).
+fof(f5951,plain,(
+  intrinsicMoment(xyz) | (~spl59_52 | ~spl59_760)),
+  inference(resolution,[],[f5944,f845])).
+fof(f845,plain,(
+  ( ! [X0] : (~mode(X0) | intrinsicMoment(X0)) ) | ~spl59_52),
+  inference(avatar_component_clause,[],[f844])).
+fof(f5944,plain,(
+  mode(xyz) | ~spl59_760),
+  inference(avatar_component_clause,[],[f5943])).
+fof(f5945,plain,(
+  spl59_760 | ~spl59_27 | ~spl59_759),
+  inference(avatar_split_clause,[],[f5941,f5934,f744,f5943])).
+fof(f744,plain,(
+  spl59_27 <=> ! [X0] : (~externallyDependentMode(X0) | mode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_27])])).
+fof(f5934,plain,(
+  spl59_759 <=> externallyDependentMode(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_759])])).
+fof(f5941,plain,(
+  mode(xyz) | (~spl59_27 | ~spl59_759)),
+  inference(resolution,[],[f5935,f745])).
+fof(f745,plain,(
+  ( ! [X0] : (~externallyDependentMode(X0) | mode(X0)) ) | ~spl59_27),
+  inference(avatar_component_clause,[],[f744])).
+fof(f5935,plain,(
+  externallyDependentMode(xyz) | ~spl59_759),
+  inference(avatar_component_clause,[],[f5934])).
+fof(f5936,plain,(
+  spl59_759 | ~spl59_2 | ~spl59_192 | ~spl59_758),
+  inference(avatar_split_clause,[],[f5920,f5915,f1475,f644,f5934])).
+fof(f644,plain,(
+  spl59_2 <=> relator(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f1475,plain,(
+  spl59_192 <=> ! [X0] : (partOf(sK39(X0),X0) | ~relator(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_192])])).
+fof(f5915,plain,(
+  spl59_758 <=> ! [X0] : (externallyDependentMode(X0) | ~partOf(sK39(xyz),X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_758])])).
+fof(f5920,plain,(
+  externallyDependentMode(xyz) | (~spl59_2 | ~spl59_192 | ~spl59_758)),
+  inference(subsumption_resolution,[],[f5918,f645])).
+fof(f645,plain,(
+  relator(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f5918,plain,(
+  externallyDependentMode(xyz) | ~relator(xyz) | (~spl59_192 | ~spl59_758)),
+  inference(resolution,[],[f5916,f1476])).
+fof(f1476,plain,(
+  ( ! [X0] : (partOf(sK39(X0),X0) | ~relator(X0)) ) | ~spl59_192),
+  inference(avatar_component_clause,[],[f1475])).
+fof(f5916,plain,(
+  ( ! [X0] : (~partOf(sK39(xyz),X0) | externallyDependentMode(X0)) ) | ~spl59_758),
+  inference(avatar_component_clause,[],[f5915])).
+fof(f5917,plain,(
+  spl59_758 | ~spl59_320 | ~spl59_724),
+  inference(avatar_split_clause,[],[f5708,f5700,f2116,f5915])).
+fof(f2116,plain,(
+  spl59_320 <=> ! [X0,X1] : (~partOf(X0,X1) | overlap(X1,X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_320])])).
+fof(f5700,plain,(
+  spl59_724 <=> ! [X2] : (~overlap(X2,sK39(xyz)) | externallyDependentMode(X2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_724])])).
+fof(f5708,plain,(
+  ( ! [X0] : (externallyDependentMode(X0) | ~partOf(sK39(xyz),X0)) ) | (~spl59_320 | ~spl59_724)),
+  inference(resolution,[],[f5701,f2117])).
+fof(f2117,plain,(
+  ( ! [X0,X1] : (overlap(X1,X0) | ~partOf(X0,X1)) ) | ~spl59_320),
+  inference(avatar_component_clause,[],[f2116])).
+fof(f5701,plain,(
+  ( ! [X2] : (~overlap(X2,sK39(xyz)) | externallyDependentMode(X2)) ) | ~spl59_724),
+  inference(avatar_component_clause,[],[f5700])).
+fof(f5702,plain,(
+  spl59_724 | ~spl59_2 | ~spl59_723),
+  inference(avatar_split_clause,[],[f5694,f5690,f644,f5700])).
+fof(f5690,plain,(
+  spl59_723 <=> ! [X6,X5] : (~relator(X5) | ~overlap(X6,sK39(X5)) | externallyDependentMode(X6))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_723])])).
+fof(f5694,plain,(
+  ( ! [X2] : (~overlap(X2,sK39(xyz)) | externallyDependentMode(X2)) ) | (~spl59_2 | ~spl59_723)),
+  inference(resolution,[],[f5691,f645])).
+fof(f5691,plain,(
+  ( ! [X6,X5] : (~relator(X5) | ~overlap(X6,sK39(X5)) | externallyDependentMode(X6)) ) | ~spl59_723),
+  inference(avatar_component_clause,[],[f5690])).
+fof(f5692,plain,(
+  spl59_723 | ~spl59_175 | ~spl59_663),
+  inference(avatar_split_clause,[],[f5243,f5238,f1374,f5690])).
+fof(f1374,plain,(
+  spl59_175 <=> ! [X2,X0,X1] : (externallyDependentMode(X2) | ~overlap(X2,X0) | ~quaIndividualOf(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_175])])).
+fof(f5238,plain,(
+  spl59_663 <=> ! [X6] : (~relator(X6) | quaIndividualOf(sK39(X6),sK18(sK39(X6))))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_663])])).
+fof(f5243,plain,(
+  ( ! [X6,X5] : (~relator(X5) | ~overlap(X6,sK39(X5)) | externallyDependentMode(X6)) ) | (~spl59_175 | ~spl59_663)),
+  inference(resolution,[],[f5239,f1375])).
+fof(f1375,plain,(
+  ( ! [X2,X0,X1] : (~quaIndividualOf(X0,X1) | ~overlap(X2,X0) | externallyDependentMode(X2)) ) | ~spl59_175),
+  inference(avatar_component_clause,[],[f1374])).
+fof(f5239,plain,(
+  ( ! [X6] : (quaIndividualOf(sK39(X6),sK18(sK39(X6))) | ~relator(X6)) ) | ~spl59_663),
+  inference(avatar_component_clause,[],[f5238])).
+fof(f5240,plain,(
+  spl59_663 | ~spl59_96 | ~spl59_558),
+  inference(avatar_split_clause,[],[f4489,f4480,f1026,f5238])).
+fof(f1026,plain,(
+  spl59_96 <=> ! [X0] : (quaIndividualOf(X0,sK18(X0)) | ~quaIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_96])])).
+fof(f4480,plain,(
+  spl59_558 <=> ! [X2] : (quaIndividual(sK39(X2)) | ~relator(X2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_558])])).
+fof(f4489,plain,(
+  ( ! [X6] : (~relator(X6) | quaIndividualOf(sK39(X6),sK18(sK39(X6)))) ) | (~spl59_96 | ~spl59_558)),
+  inference(resolution,[],[f4481,f1027])).
+fof(f1027,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | quaIndividualOf(X0,sK18(X0))) ) | ~spl59_96),
+  inference(avatar_component_clause,[],[f1026])).
+fof(f4481,plain,(
+  ( ! [X2] : (quaIndividual(sK39(X2)) | ~relator(X2)) ) | ~spl59_558),
+  inference(avatar_component_clause,[],[f4480])).
+fof(f4482,plain,(
+  spl59_558 | ~spl59_103 | ~spl59_557),
+  inference(avatar_split_clause,[],[f4478,f4473,f1054,f4480])).
+fof(f1054,plain,(
+  spl59_103 <=> ! [X0] : (properPartOf(sK39(X0),X0) | ~relator(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_103])])).
+fof(f4473,plain,(
+  spl59_557 <=> ! [X4,X3] : (~properPartOf(X3,X4) | quaIndividual(sK39(X4)) | ~relator(X4))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_557])])).
+fof(f4478,plain,(
+  ( ! [X2] : (quaIndividual(sK39(X2)) | ~relator(X2)) ) | (~spl59_103 | ~spl59_557)),
+  inference(duplicate_literal_removal,[],[f4477])).
+fof(f4477,plain,(
+  ( ! [X2] : (quaIndividual(sK39(X2)) | ~relator(X2) | ~relator(X2)) ) | (~spl59_103 | ~spl59_557)),
+  inference(resolution,[],[f4474,f1055])).
+fof(f1055,plain,(
+  ( ! [X0] : (properPartOf(sK39(X0),X0) | ~relator(X0)) ) | ~spl59_103),
+  inference(avatar_component_clause,[],[f1054])).
+fof(f4474,plain,(
+  ( ! [X3,X4] : (~properPartOf(X3,X4) | quaIndividual(sK39(X4)) | ~relator(X4)) ) | ~spl59_557),
+  inference(avatar_component_clause,[],[f4473])).
+fof(f4475,plain,(
+  spl59_557 | ~spl59_103 | ~spl59_301),
+  inference(avatar_split_clause,[],[f3433,f2012,f1054,f4473])).
+fof(f2012,plain,(
+  spl59_301 <=> ! [X5,X4,X0] : (~properPartOf(X4,X0) | ~properPartOf(X5,X0) | quaIndividual(X5) | ~relator(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_301])])).
+fof(f3433,plain,(
+  ( ! [X3,X4] : (~properPartOf(X3,X4) | quaIndividual(sK39(X4)) | ~relator(X4)) ) | (~spl59_103 | ~spl59_301)),
+  inference(duplicate_literal_removal,[],[f3432])).
+fof(f3432,plain,(
+  ( ! [X3,X4] : (~properPartOf(X3,X4) | quaIndividual(sK39(X4)) | ~relator(X4) | ~relator(X4)) ) | (~spl59_103 | ~spl59_301)),
+  inference(resolution,[],[f2013,f1055])).
+fof(f2013,plain,(
+  ( ! [X0,X4,X5] : (~properPartOf(X5,X0) | ~properPartOf(X4,X0) | quaIndividual(X5) | ~relator(X0)) ) | ~spl59_301),
+  inference(avatar_component_clause,[],[f2012])).
+fof(f3020,plain,(
+  ~spl59_2 | ~spl59_11 | ~spl59_351),
+  inference(avatar_contradiction_clause,[],[f3019])).
+fof(f3019,plain,(
+  $false | (~spl59_2 | ~spl59_11 | ~spl59_351)),
+  inference(subsumption_resolution,[],[f3018,f645])).
+fof(f3018,plain,(
+  ~relator(xyz) | (~spl59_11 | ~spl59_351)),
+  inference(resolution,[],[f2994,f681])).
+fof(f681,plain,(
+  ( ! [X0] : (~intrinsicMoment(X0) | ~relator(X0)) ) | ~spl59_11),
+  inference(avatar_component_clause,[],[f680])).
+fof(f680,plain,(
+  spl59_11 <=> ! [X0] : (~intrinsicMoment(X0) | ~relator(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_11])])).
+fof(f2994,plain,(
+  intrinsicMoment(xyz) | ~spl59_351),
+  inference(avatar_component_clause,[],[f2993])).
+fof(f2118,plain,(
+  spl59_320 | ~spl59_5 | ~spl59_217),
+  inference(avatar_split_clause,[],[f2110,f1598,f656,f2116])).
+fof(f656,plain,(
+  spl59_5 <=> ! [X0] : partOf(X0,X0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_5])])).
+fof(f1598,plain,(
+  spl59_217 <=> ! [X2,X0,X1] : (~partOf(X2,X0) | ~partOf(X2,X1) | overlap(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_217])])).
+fof(f2110,plain,(
+  ( ! [X0,X1] : (~partOf(X0,X1) | overlap(X1,X0)) ) | (~spl59_5 | ~spl59_217)),
+  inference(resolution,[],[f1599,f657])).
+fof(f657,plain,(
+  ( ! [X0] : (partOf(X0,X0)) ) | ~spl59_5),
+  inference(avatar_component_clause,[],[f656])).
+fof(f1599,plain,(
+  ( ! [X2,X0,X1] : (~partOf(X2,X1) | ~partOf(X2,X0) | overlap(X0,X1)) ) | ~spl59_217),
+  inference(avatar_component_clause,[],[f1598])).
+fof(f2014,plain,(
+  spl59_301),
+  inference(avatar_split_clause,[],[f485,f2012])).
+fof(f485,plain,(
+  ( ! [X0,X4,X5] : (~properPartOf(X4,X0) | ~properPartOf(X5,X0) | quaIndividual(X5) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f269])).
+fof(f269,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : (properPartOf(X2,X0) | ? [X3] : (foundedBy(X1,X3) <~> foundedBy(X2,X3)) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0)) & ! [X4,X5] : ((! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | ~properPartOf(X5,X0) | ~properPartOf(X4,X0)) & ? [X7] : properPartOf(X7,X0)))),
+  inference(flattening,[],[f268])).
+fof(f268,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : (properPartOf(X2,X0) | (? [X3] : (foundedBy(X1,X3) <~> foundedBy(X2,X3)) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0))) & ! [X4,X5] : ((! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | (~properPartOf(X5,X0) | ~properPartOf(X4,X0))) & ? [X7] : properPartOf(X7,X0)))),
+  inference(ennf_transformation,[],[f169])).
+fof(f169,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : ((! [X3] : (foundedBy(X1,X3) <=> foundedBy(X2,X3)) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) => properPartOf(X2,X0)) & ! [X4,X5] : ((properPartOf(X5,X0) & properPartOf(X4,X0)) => (! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4))) & ? [X7] : properPartOf(X7,X0)))),
+  inference(rectify,[],[f124])).
+fof(f124,axiom,(
+  ! [X23] : (relator(X23) <=> (! [X24,X25] : ((! [X18] : (foundedBy(X24,X18) <=> foundedBy(X25,X18)) & existentiallyDependsOn(X25,X24) & existentiallyDependsOn(X24,X25) & quaIndividual(X25) & properPartOf(X24,X23)) => properPartOf(X25,X23)) & ! [X1,X3] : ((properPartOf(X3,X23) & properPartOf(X1,X23)) => (! [X14] : (foundedBy(X1,X14) <=> foundedBy(X3,X14)) & existentiallyDependsOn(X3,X1) & existentiallyDependsOn(X1,X3) & quaIndividual(X3) & quaIndividual(X1))) & ? [X0] : properPartOf(X0,X23)))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_dRelator_a81)).
+fof(f1600,plain,(
+  spl59_217),
+  inference(avatar_split_clause,[],[f587,f1598])).
+fof(f587,plain,(
+  ( ! [X2,X0,X1] : (~partOf(X2,X0) | ~partOf(X2,X1) | overlap(X0,X1)) )),
+  inference(cnf_transformation,[],[f181])).
+fof(f181,plain,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X2] : (partOf(X2,X1) & partOf(X2,X0)))),
+  inference(rectify,[],[f89])).
+fof(f89,axiom,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X3] : (partOf(X3,X1) & partOf(X3,X0)))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_overlappingWholes_a50)).
+fof(f1477,plain,(
+  spl59_192 | ~spl59_103 | ~spl59_118),
+  inference(avatar_split_clause,[],[f1258,f1114,f1054,f1475])).
+fof(f1114,plain,(
+  spl59_118 <=> ! [X0,X1] : (partOf(X0,X1) | ~properPartOf(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_118])])).
+fof(f1258,plain,(
+  ( ! [X0] : (partOf(sK39(X0),X0) | ~relator(X0)) ) | (~spl59_103 | ~spl59_118)),
+  inference(resolution,[],[f1115,f1055])).
+fof(f1115,plain,(
+  ( ! [X0,X1] : (~properPartOf(X0,X1) | partOf(X0,X1)) ) | ~spl59_118),
+  inference(avatar_component_clause,[],[f1114])).
+fof(f1376,plain,(
+  spl59_175),
+  inference(avatar_split_clause,[],[f580,f1374])).
+fof(f580,plain,(
+  ( ! [X2,X0,X1] : (externallyDependentMode(X2) | ~overlap(X2,X0) | ~quaIndividualOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f281])).
+fof(f281,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(ennf_transformation,[],[f180])).
+fof(f180,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X0,X3) => foundedBy(X2,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(rectify,[],[f121])).
+fof(f121,axiom,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X3] : (overlap(X3,X0) <=> (! [X14] : (foundedBy(X0,X14) => foundedBy(X3,X14)) & inheresIn(X3,X1) & externallyDependentMode(X3))))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_dQuaIndividualOf_a75)).
+fof(f1116,plain,(
+  spl59_118),
+  inference(avatar_split_clause,[],[f582,f1114])).
+fof(f582,plain,(
+  ( ! [X0,X1] : (partOf(X0,X1) | ~properPartOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f91])).
+fof(f91,axiom,(
+  ! [X0,X1] : (properPartOf(X0,X1) <=> (~partOf(X1,X0) & partOf(X0,X1)))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_properPart_a52)).
+fof(f1056,plain,(
+  spl59_103),
+  inference(avatar_split_clause,[],[f498,f1054])).
+fof(f498,plain,(
+  ( ! [X0] : (properPartOf(sK39(X0),X0) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f269])).
+fof(f1028,plain,(
+  spl59_96),
+  inference(avatar_split_clause,[],[f401,f1026])).
+fof(f401,plain,(
+  ( ! [X0] : (quaIndividualOf(X0,sK18(X0)) | ~quaIndividual(X0)) )),
+  inference(cnf_transformation,[],[f122])).
+fof(f122,axiom,(
+  ! [X0] : (quaIndividual(X0) <=> ? [X1] : quaIndividualOf(X0,X1))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_dQuaIndividual_a76)).
+fof(f846,plain,(
+  spl59_52),
+  inference(avatar_split_clause,[],[f511,f844])).
+fof(f511,plain,(
+  ( ! [X0] : (intrinsicMoment(X0) | ~mode(X0)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_intrinsicMoment_taxonomy)).
+fof(f746,plain,(
+  spl59_27),
+  inference(avatar_split_clause,[],[f345,f744])).
+fof(f345,plain,(
+  ( ! [X0] : (~externallyDependentMode(X0) | mode(X0)) )),
+  inference(cnf_transformation,[],[f236])).
+fof(f236,plain,(
+  ! [X0] : (mode(X0) | ~externallyDependentMode(X0))),
+  inference(ennf_transformation,[],[f24])).
+fof(f24,axiom,(
+  ! [X0] : (externallyDependentMode(X0) => mode(X0))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_mode_taxonomy_externallyDependentMode)).
+fof(f682,plain,(
+  spl59_11),
+  inference(avatar_split_clause,[],[f318,f680])).
+fof(f318,plain,(
+  ( ! [X0] : (~intrinsicMoment(X0) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f220])).
+fof(f220,plain,(
+  ! [X0] : (~relator(X0) | ~intrinsicMoment(X0))),
+  inference(ennf_transformation,[],[f21])).
+fof(f21,axiom,(
+  ~? [X0] : (relator(X0) & intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_moment_partition)).
+fof(f658,plain,(
+  spl59_5),
+  inference(avatar_split_clause,[],[f342,f656])).
+fof(f342,plain,(
+  ( ! [X0] : (partOf(X0,X0)) )),
+  inference(cnf_transformation,[],[f85])).
+fof(f85,axiom,(
+  ! [X0] : partOf(X0,X0)),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',ax_reflexiveParthood)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  relator(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  relator(xyz)),
+  file('outputs/ufo/subsumptions/type_relator_subsumed_to_substantialType.in',axiom1)).
+% SZS output end Proof for type_relator_subsumed_to_substantialType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 10234
+% Time elapsed: 0.090 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.098 s

@@ -1,0 +1,78 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_npob_subsumed_to_nped for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_npob_subsumed_to_nped
+% SZS output start Proof for type_npob_subsumed_to_nped
+fof(f856,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f668,f672,f736,f855])).
+fof(f855,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_18),
+  inference(avatar_contradiction_clause,[],[f854])).
+fof(f854,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_18)),
+  inference(subsumption_resolution,[],[f853,f667])).
+fof(f667,plain,(
+  ~nped(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f666])).
+fof(f666,plain,(
+  spl18_1 <=> nped(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f853,plain,(
+  nped(xyz) | (~spl18_2 | ~spl18_18)),
+  inference(resolution,[],[f735,f671])).
+fof(f671,plain,(
+  npob(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f670])).
+fof(f670,plain,(
+  spl18_2 <=> npob(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f735,plain,(
+  ( ! [X0] : (~npob(X0) | nped(X0)) ) | ~spl18_18),
+  inference(avatar_component_clause,[],[f734])).
+fof(f734,plain,(
+  spl18_18 <=> ! [X0] : (~npob(X0) | nped(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_18])])).
+fof(f736,plain,(
+  spl18_18),
+  inference(avatar_split_clause,[],[f496,f734])).
+fof(f496,plain,(
+  ( ! [X0] : (~npob(X0) | nped(X0)) )),
+  inference(cnf_transformation,[],[f367])).
+fof(f367,plain,(
+  ! [X0] : (nped(X0) | ~npob(X0))),
+  inference(ennf_transformation,[],[f162])).
+fof(f162,plain,(
+  ! [X0] : (npob(X0) => nped(X0))),
+  inference(rectify,[],[f16])).
+fof(f16,axiom,(
+  ! [X15] : (npob(X15) => nped(X15))),
+  file('outputs/dolce/subsumptions/type_npob_subsumed_to_nped.in',sos)).
+fof(f672,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f467,f670])).
+fof(f467,plain,(
+  npob(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  npob(xyz)),
+  file('outputs/dolce/subsumptions/type_npob_subsumed_to_nped.in',axiom1)).
+fof(f668,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f466,f666])).
+fof(f466,plain,(
+  ~nped(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~nped(xyz)),
+  file('outputs/dolce/subsumptions/type_npob_subsumed_to_nped.in',axiom2)).
+% SZS output end Proof for type_npob_subsumed_to_nped
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.012 s

@@ -1,0 +1,78 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_r_subsumed_to_ab for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_r_subsumed_to_ab
+% SZS output start Proof for type_r_subsumed_to_ab
+fof(f854,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f666,f670,f734,f853])).
+fof(f853,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_18),
+  inference(avatar_contradiction_clause,[],[f852])).
+fof(f852,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_18)),
+  inference(subsumption_resolution,[],[f851,f665])).
+fof(f665,plain,(
+  ~ab(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f664])).
+fof(f664,plain,(
+  spl18_1 <=> ab(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f851,plain,(
+  ab(xyz) | (~spl18_2 | ~spl18_18)),
+  inference(resolution,[],[f733,f669])).
+fof(f669,plain,(
+  r(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f668])).
+fof(f668,plain,(
+  spl18_2 <=> r(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f733,plain,(
+  ( ! [X0] : (~r(X0) | ab(X0)) ) | ~spl18_18),
+  inference(avatar_component_clause,[],[f732])).
+fof(f732,plain,(
+  spl18_18 <=> ! [X0] : (~r(X0) | ab(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_18])])).
+fof(f734,plain,(
+  spl18_18),
+  inference(avatar_split_clause,[],[f500,f732])).
+fof(f500,plain,(
+  ( ! [X0] : (~r(X0) | ab(X0)) )),
+  inference(cnf_transformation,[],[f373])).
+fof(f373,plain,(
+  ! [X0] : (ab(X0) | ~r(X0))),
+  inference(ennf_transformation,[],[f162])).
+fof(f162,plain,(
+  ! [X0] : (r(X0) => ab(X0))),
+  inference(rectify,[],[f14])).
+fof(f14,axiom,(
+  ! [X13] : (r(X13) => ab(X13))),
+  file('outputs/dolce/subsumptions/type_r_subsumed_to_ab.in',sos)).
+fof(f670,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f474,f668])).
+fof(f474,plain,(
+  r(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  r(xyz)),
+  file('outputs/dolce/subsumptions/type_r_subsumed_to_ab.in',axiom1)).
+fof(f666,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f473,f664])).
+fof(f473,plain,(
+  ~ab(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~ab(xyz)),
+  file('outputs/dolce/subsumptions/type_r_subsumed_to_ab.in',axiom2)).
+% SZS output end Proof for type_r_subsumed_to_ab
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.007 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.014 s

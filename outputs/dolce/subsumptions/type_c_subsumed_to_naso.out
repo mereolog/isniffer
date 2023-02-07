@@ -1,0 +1,78 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_c_subsumed_to_naso for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_c_subsumed_to_naso
+% SZS output start Proof for type_c_subsumed_to_naso
+fof(f855,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f667,f671,f755,f854])).
+fof(f854,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_23),
+  inference(avatar_contradiction_clause,[],[f853])).
+fof(f853,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_23)),
+  inference(subsumption_resolution,[],[f852,f666])).
+fof(f666,plain,(
+  ~naso(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f665])).
+fof(f665,plain,(
+  spl18_1 <=> naso(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f852,plain,(
+  naso(xyz) | (~spl18_2 | ~spl18_23)),
+  inference(resolution,[],[f754,f670])).
+fof(f670,plain,(
+  c(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f669])).
+fof(f669,plain,(
+  spl18_2 <=> c(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f754,plain,(
+  ( ! [X0] : (~c(X0) | naso(X0)) ) | ~spl18_23),
+  inference(avatar_component_clause,[],[f753])).
+fof(f753,plain,(
+  spl18_23 <=> ! [X0] : (~c(X0) | naso(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_23])])).
+fof(f755,plain,(
+  spl18_23),
+  inference(avatar_split_clause,[],[f519,f753])).
+fof(f519,plain,(
+  ( ! [X0] : (~c(X0) | naso(X0)) )),
+  inference(cnf_transformation,[],[f386])).
+fof(f386,plain,(
+  ! [X0] : (naso(X0) | ~c(X0))),
+  inference(ennf_transformation,[],[f174])).
+fof(f174,plain,(
+  ! [X0] : (c(X0) => naso(X0))),
+  inference(rectify,[],[f10])).
+fof(f10,axiom,(
+  ! [X9] : (c(X9) => naso(X9))),
+  file('outputs/dolce/subsumptions/type_c_subsumed_to_naso.in',sos)).
+fof(f671,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f476,f669])).
+fof(f476,plain,(
+  c(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  c(xyz)),
+  file('outputs/dolce/subsumptions/type_c_subsumed_to_naso.in',axiom1)).
+fof(f667,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f475,f665])).
+fof(f475,plain,(
+  ~naso(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~naso(xyz)),
+  file('outputs/dolce/subsumptions/type_c_subsumed_to_naso.in',axiom2)).
+% SZS output end Proof for type_c_subsumed_to_naso
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.027 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.012 s

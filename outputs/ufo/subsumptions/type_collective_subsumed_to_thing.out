@@ -1,0 +1,180 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_collective_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_collective_subsumed_to_thing
+% SZS output start Proof for type_collective_subsumed_to_thing
+fof(f1006,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f849,f881,f901,f925,f937,f982,f987,f992,f997,f1005])).
+fof(f1005,plain,(
+  spl59_1 | ~spl59_75 | ~spl59_89),
+  inference(avatar_contradiction_clause,[],[f1004])).
+fof(f1004,plain,(
+  $false | (spl59_1 | ~spl59_75 | ~spl59_89)),
+  inference(subsumption_resolution,[],[f1003,f996])).
+fof(f996,plain,(
+  individual(xyz) | ~spl59_89),
+  inference(avatar_component_clause,[],[f995])).
+fof(f995,plain,(
+  spl59_89 <=> individual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_89])])).
+fof(f1003,plain,(
+  ~individual(xyz) | (spl59_1 | ~spl59_75)),
+  inference(resolution,[],[f936,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f936,plain,(
+  ( ! [X0] : (thing(X0) | ~individual(X0)) ) | ~spl59_75),
+  inference(avatar_component_clause,[],[f935])).
+fof(f935,plain,(
+  spl59_75 <=> ! [X0] : (thing(X0) | ~individual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_75])])).
+fof(f997,plain,(
+  spl59_89 | ~spl59_53 | ~spl59_88),
+  inference(avatar_split_clause,[],[f993,f990,f847,f995])).
+fof(f847,plain,(
+  spl59_53 <=> ! [X0] : (individual(X0) | ~concreteIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_53])])).
+fof(f990,plain,(
+  spl59_88 <=> concreteIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f993,plain,(
+  individual(xyz) | (~spl59_53 | ~spl59_88)),
+  inference(resolution,[],[f991,f848])).
+fof(f848,plain,(
+  ( ! [X0] : (~concreteIndividual(X0) | individual(X0)) ) | ~spl59_53),
+  inference(avatar_component_clause,[],[f847])).
+fof(f991,plain,(
+  concreteIndividual(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f990])).
+fof(f992,plain,(
+  spl59_88 | ~spl59_72 | ~spl59_87),
+  inference(avatar_split_clause,[],[f988,f985,f923,f990])).
+fof(f923,plain,(
+  spl59_72 <=> ! [X0] : (concreteIndividual(X0) | ~endurant(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f985,plain,(
+  spl59_87 <=> endurant(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f988,plain,(
+  concreteIndividual(xyz) | (~spl59_72 | ~spl59_87)),
+  inference(resolution,[],[f924,f986])).
+fof(f986,plain,(
+  endurant(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f985])).
+fof(f924,plain,(
+  ( ! [X0] : (~endurant(X0) | concreteIndividual(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f923])).
+fof(f987,plain,(
+  spl59_87 | ~spl59_61 | ~spl59_86),
+  inference(avatar_split_clause,[],[f983,f980,f879,f985])).
+fof(f879,plain,(
+  spl59_61 <=> ! [X0] : (endurant(X0) | ~substantial(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_61])])).
+fof(f980,plain,(
+  spl59_86 <=> substantial(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f983,plain,(
+  endurant(xyz) | (~spl59_61 | ~spl59_86)),
+  inference(resolution,[],[f981,f880])).
+fof(f880,plain,(
+  ( ! [X0] : (~substantial(X0) | endurant(X0)) ) | ~spl59_61),
+  inference(avatar_component_clause,[],[f879])).
+fof(f981,plain,(
+  substantial(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f980])).
+fof(f982,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_66),
+  inference(avatar_split_clause,[],[f978,f899,f643,f980])).
+fof(f643,plain,(
+  spl59_2 <=> collective(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f899,plain,(
+  spl59_66 <=> ! [X0] : (substantial(X0) | ~collective(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_66])])).
+fof(f978,plain,(
+  substantial(xyz) | (~spl59_2 | ~spl59_66)),
+  inference(resolution,[],[f900,f644])).
+fof(f644,plain,(
+  collective(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f900,plain,(
+  ( ! [X0] : (~collective(X0) | substantial(X0)) ) | ~spl59_66),
+  inference(avatar_component_clause,[],[f899])).
+fof(f937,plain,(
+  spl59_75),
+  inference(avatar_split_clause,[],[f553,f935])).
+fof(f553,plain,(
+  ( ! [X0] : (thing(X0) | ~individual(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f925,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f549,f923])).
+fof(f549,plain,(
+  ( ! [X0] : (concreteIndividual(X0) | ~endurant(X0)) )),
+  inference(cnf_transformation,[],[f5])).
+fof(f5,axiom,(
+  ! [X0] : ((perdurant(X0) | endurant(X0)) <=> concreteIndividual(X0))),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',ax_concreteIndividual_taxonomy)).
+fof(f901,plain,(
+  spl59_66),
+  inference(avatar_split_clause,[],[f535,f899])).
+fof(f535,plain,(
+  ( ! [X0] : (substantial(X0) | ~collective(X0)) )),
+  inference(cnf_transformation,[],[f18])).
+fof(f18,axiom,(
+  ! [X0] : ((quantity(X0) | collective(X0) | object(X0)) <=> substantial(X0))),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',ax_substantial_taxonomy)).
+fof(f881,plain,(
+  spl59_61),
+  inference(avatar_split_clause,[],[f525,f879])).
+fof(f525,plain,(
+  ( ! [X0] : (endurant(X0) | ~substantial(X0)) )),
+  inference(cnf_transformation,[],[f16])).
+fof(f16,axiom,(
+  ! [X0] : ((moment(X0) | substantial(X0)) <=> endurant(X0))),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',ax_endurant_taxonomy)).
+fof(f849,plain,(
+  spl59_53),
+  inference(avatar_split_clause,[],[f510,f847])).
+fof(f510,plain,(
+  ( ! [X0] : (individual(X0) | ~concreteIndividual(X0)) )),
+  inference(cnf_transformation,[],[f3])).
+fof(f3,axiom,(
+  ! [X0] : ((abstractIndividual(X0) | concreteIndividual(X0)) <=> individual(X0))),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',ax_individual_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  collective(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  collective(xyz)),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_collective_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_collective_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.018 s

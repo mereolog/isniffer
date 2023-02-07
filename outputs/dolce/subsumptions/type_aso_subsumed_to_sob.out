@@ -1,0 +1,81 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_aso_subsumed_to_sob for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_aso_subsumed_to_sob
+% SZS output start Proof for type_aso_subsumed_to_sob
+fof(f865,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f669,f673,f781,f864])).
+fof(f864,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_29),
+  inference(avatar_contradiction_clause,[],[f863])).
+fof(f863,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_29)),
+  inference(subsumption_resolution,[],[f862,f668])).
+fof(f668,plain,(
+  ~sob(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f667])).
+fof(f667,plain,(
+  spl18_1 <=> sob(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f862,plain,(
+  sob(xyz) | (~spl18_2 | ~spl18_29)),
+  inference(resolution,[],[f780,f672])).
+fof(f672,plain,(
+  aso(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f671])).
+fof(f671,plain,(
+  spl18_2 <=> aso(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f780,plain,(
+  ( ! [X0] : (~aso(X0) | sob(X0)) ) | ~spl18_29),
+  inference(avatar_component_clause,[],[f779])).
+fof(f779,plain,(
+  spl18_29 <=> ! [X0] : (~aso(X0) | sob(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_29])])).
+fof(f781,plain,(
+  spl18_29),
+  inference(avatar_split_clause,[],[f551,f779])).
+fof(f551,plain,(
+  ( ! [X0] : (~aso(X0) | sob(X0)) )),
+  inference(cnf_transformation,[],[f391])).
+fof(f391,plain,(
+  ! [X0] : (sob(X0) | (~naso(X0) & ~aso(X0)))),
+  inference(ennf_transformation,[],[f340])).
+fof(f340,plain,(
+  ! [X0] : ((naso(X0) | aso(X0)) => sob(X0))),
+  inference(unused_predicate_definition_removal,[],[f195])).
+fof(f195,plain,(
+  ! [X0] : ((naso(X0) | aso(X0)) <=> sob(X0))),
+  inference(rectify,[],[f9])).
+fof(f9,axiom,(
+  ! [X8] : ((naso(X8) | aso(X8)) <=> sob(X8))),
+  file('outputs/dolce/subsumptions/type_aso_subsumed_to_sob.in',sos)).
+fof(f673,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f472,f671])).
+fof(f472,plain,(
+  aso(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  aso(xyz)),
+  file('outputs/dolce/subsumptions/type_aso_subsumed_to_sob.in',axiom1)).
+fof(f669,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f471,f667])).
+fof(f471,plain,(
+  ~sob(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~sob(xyz)),
+  file('outputs/dolce/subsumptions/type_aso_subsumed_to_sob.in',axiom2)).
+% SZS output end Proof for type_aso_subsumed_to_sob
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.01 s

@@ -1,0 +1,114 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_pr_subsumed_to_ab for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_pr_subsumed_to_ab
+% SZS output start Proof for type_pr_subsumed_to_ab
+fof(f936,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f667,f671,f735,f783,f928,f935])).
+fof(f935,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_66),
+  inference(avatar_contradiction_clause,[],[f934])).
+fof(f934,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_66)),
+  inference(subsumption_resolution,[],[f933,f666])).
+fof(f666,plain,(
+  ~ab(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f665])).
+fof(f665,plain,(
+  spl18_1 <=> ab(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f933,plain,(
+  ab(xyz) | (~spl18_2 | ~spl18_66)),
+  inference(resolution,[],[f927,f670])).
+fof(f670,plain,(
+  pr(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f669])).
+fof(f669,plain,(
+  spl18_2 <=> pr(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f927,plain,(
+  ( ! [X0] : (~pr(X0) | ab(X0)) ) | ~spl18_66),
+  inference(avatar_component_clause,[],[f926])).
+fof(f926,plain,(
+  spl18_66 <=> ! [X0] : (~pr(X0) | ab(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_66])])).
+fof(f928,plain,(
+  spl18_66 | ~spl18_18 | ~spl18_30),
+  inference(avatar_split_clause,[],[f852,f781,f733,f926])).
+fof(f733,plain,(
+  spl18_18 <=> ! [X0] : (~r(X0) | ab(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_18])])).
+fof(f781,plain,(
+  spl18_30 <=> ! [X0] : (~pr(X0) | r(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_30])])).
+fof(f852,plain,(
+  ( ! [X0] : (~pr(X0) | ab(X0)) ) | (~spl18_18 | ~spl18_30)),
+  inference(resolution,[],[f782,f734])).
+fof(f734,plain,(
+  ( ! [X0] : (~r(X0) | ab(X0)) ) | ~spl18_18),
+  inference(avatar_component_clause,[],[f733])).
+fof(f782,plain,(
+  ( ! [X0] : (r(X0) | ~pr(X0)) ) | ~spl18_30),
+  inference(avatar_component_clause,[],[f781])).
+fof(f783,plain,(
+  spl18_30),
+  inference(avatar_split_clause,[],[f552,f781])).
+fof(f552,plain,(
+  ( ! [X0] : (~pr(X0) | r(X0)) )),
+  inference(cnf_transformation,[],[f396])).
+fof(f396,plain,(
+  ! [X0] : (r(X0) | (~tr(X0) & ~pr(X0) & ~ar(X0)))),
+  inference(ennf_transformation,[],[f338])).
+fof(f338,plain,(
+  ! [X0] : ((tr(X0) | pr(X0) | ar(X0)) => r(X0))),
+  inference(unused_predicate_definition_removal,[],[f196])).
+fof(f196,plain,(
+  ! [X0] : ((tr(X0) | pr(X0) | ar(X0)) <=> r(X0))),
+  inference(rectify,[],[f13])).
+fof(f13,axiom,(
+  ! [X12] : ((tr(X12) | pr(X12) | ar(X12)) <=> r(X12))),
+  file('outputs/dolce/subsumptions/type_pr_subsumed_to_ab.in',sos)).
+fof(f735,plain,(
+  spl18_18),
+  inference(avatar_split_clause,[],[f501,f733])).
+fof(f501,plain,(
+  ( ! [X0] : (~r(X0) | ab(X0)) )),
+  inference(cnf_transformation,[],[f373])).
+fof(f373,plain,(
+  ! [X0] : (ab(X0) | ~r(X0))),
+  inference(ennf_transformation,[],[f161])).
+fof(f161,plain,(
+  ! [X0] : (r(X0) => ab(X0))),
+  inference(rectify,[],[f14])).
+fof(f14,axiom,(
+  ! [X13] : (r(X13) => ab(X13))),
+  file('outputs/dolce/subsumptions/type_pr_subsumed_to_ab.in',sos)).
+fof(f671,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f476,f669])).
+fof(f476,plain,(
+  pr(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  pr(xyz)),
+  file('outputs/dolce/subsumptions/type_pr_subsumed_to_ab.in',axiom1)).
+fof(f667,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f475,f665])).
+fof(f475,plain,(
+  ~ab(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~ab(xyz)),
+  file('outputs/dolce/subsumptions/type_pr_subsumed_to_ab.in',axiom2)).
+% SZS output end Proof for type_pr_subsumed_to_ab
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6268
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.01 s

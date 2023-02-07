@@ -1,0 +1,334 @@
+% Running in auto input_syntax mode. Trying TPTP
+% lrs-11_12_av=off:nm=32:nwc=1.3:stl=30:sd=3:ss=axioms:sos=all_2 on ci_dolce_ab_sum_@_1 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 1535
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+2_3:1_add=large:afr=on:afp=10000:afq=1.1:amm=off:anc=none:er=known:fde=unused:gs=on:gsaa=from_current:gsem=on:lma=on:nm=32:newcnf=on:nwc=4:sas=z3:stl=30:sd=1:ss=axioms:st=5.0:sac=on:sp=occurrence:updr=off_2 on ci_dolce_ab_sum_@_1 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10490
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% dis+2_2:1_aac=none:afp=100000:afq=1.1:amm=sco:anc=none:bsr=on:fsr=off:gs=on:gsem=on:lcm=reverse:lma=on:nm=64:nwc=1:sos=on_6 on ci_dolce_ab_sum_@_1 for (6ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 11129
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% dis+1011_24_add=large:afr=on:afp=4000:afq=1.0:anc=none:bs=unit_only:bce=on:cond=fast:gs=on:nm=32:nwc=2.5:nicw=on:sp=occurrence:updr=off_39 on ci_dolce_ab_sum_@_1 for (39ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 61150
+% Time elapsed: 4.0000 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_5_add=large:afp=1000:afq=1.2:anc=none:fsr=off:irw=on:lma=on:nm=64:newcnf=on:nwc=1:stl=30:sd=3:ss=axioms:st=2.0:sos=on:sac=on:sp=reverse_arity:urr=on:updr=off_10 on ci_dolce_ab_sum_@_1 for (10ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6012
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% lrs+11_128_av=off:bsr=on:cond=on:gs=on:lcm=reverse:lma=on:nm=32:nwc=1:stl=30:sd=5:ss=axioms:st=3.0_1 on ci_dolce_ab_sum_@_1 for (1ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6012
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% ott+11_16_av=off:gs=on:gsem=on:irw=on:lma=on:nm=64:newcnf=on:nwc=1.3:sas=z3:sp=reverse_arity_14 on ci_dolce_ab_sum_@_1 for (14ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_dolce_ab_sum_@_1
+% SZS output start Proof for ci_dolce_ab_sum_@_1
+fof(f10849,plain,(
+  $false),
+  inference(subsumption_resolution,[],[f10848,f479])).
+fof(f479,plain,(
+  ab(zyx)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ab(zyx)),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',axiom233)).
+fof(f10848,plain,(
+  ~ab(zyx)),
+  inference(subsumption_resolution,[],[f10847,f478])).
+fof(f478,plain,(
+  ab(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  ab(xyz)),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',axiom232)).
+fof(f10847,plain,(
+  ~ab(xyz) | ~ab(zyx)),
+  inference(subsumption_resolution,[],[f10845,f8887])).
+fof(f8887,plain,(
+  ~p(zyx,xyz)),
+  inference(subsumption_resolution,[],[f8883,f480])).
+fof(f480,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',diff233)).
+fof(f8883,plain,(
+  ~p(zyx,xyz) | xyz = zyx),
+  inference(resolution,[],[f8683,f594])).
+fof(f594,plain,(
+  ( ! [X0,X1] : (~p(X1,X0) | ~p(X0,X1) | X0 = X1) )),
+  inference(cnf_transformation,[],[f425])).
+fof(f425,plain,(
+  ! [X0,X1] : (X0 = X1 | ~p(X1,X0) | ~p(X0,X1))),
+  inference(flattening,[],[f424])).
+fof(f424,plain,(
+  ! [X0,X1] : (X0 = X1 | (~p(X1,X0) | ~p(X0,X1)))),
+  inference(ennf_transformation,[],[f239])).
+fof(f239,plain,(
+  ! [X0,X1] : ((p(X1,X0) & p(X0,X1)) => X0 = X1)),
+  inference(flattening,[],[f238])).
+fof(f238,plain,(
+  ! [X0] : ! [X1] : ((p(X1,X0) & p(X0,X1)) => X0 = X1)),
+  inference(rectify,[],[f53])).
+fof(f53,axiom,(
+  ! [X58] : ! [X59] : ((p(X59,X58) & p(X58,X59)) => X58 = X59)),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f8683,plain,(
+  p(xyz,zyx)),
+  inference(subsumption_resolution,[],[f8682,f478])).
+fof(f8682,plain,(
+  ~ab(xyz) | p(xyz,zyx)),
+  inference(subsumption_resolution,[],[f8680,f479])).
+fof(f8680,plain,(
+  ~ab(zyx) | ~ab(xyz) | p(xyz,zyx)),
+  inference(duplicate_literal_removal,[],[f8675])).
+fof(f8675,plain,(
+  ~ab(zyx) | ~ab(xyz) | p(xyz,zyx) | ~ab(xyz) | p(xyz,zyx)),
+  inference(resolution,[],[f5424,f2987])).
+fof(f2987,plain,(
+  ( ! [X10] : (~ov(sK13(X10,zyx),xyz) | ~ab(X10) | p(X10,zyx)) )),
+  inference(subsumption_resolution,[],[f2984,f479])).
+fof(f2984,plain,(
+  ( ! [X10] : (~ov(sK13(X10,zyx),xyz) | ~ab(X10) | p(X10,zyx) | ~ab(zyx)) )),
+  inference(resolution,[],[f2966,f2230])).
+fof(f2230,plain,(
+  ( ! [X0,X1] : (~ov(sK13(X0,X1),X1) | ~ab(X0) | p(X0,X1) | ~ab(X1)) )),
+  inference(subsumption_resolution,[],[f2228,f1337])).
+fof(f1337,plain,(
+  ( ! [X21,X20] : (ab(sK13(X21,X20)) | p(X21,X20) | ~ab(X21) | ~ab(X20)) )),
+  inference(subsumption_resolution,[],[f1335,f500])).
+fof(f500,plain,(
+  ( ! [X0] : (~pd(X0) | ~ab(X0)) )),
+  inference(cnf_transformation,[],[f371])).
+fof(f371,plain,(
+  ! [X0] : (~pd(X0) | ~ab(X0))),
+  inference(ennf_transformation,[],[f158])).
+fof(f158,plain,(
+  ~? [X0] : (pd(X0) & ab(X0))),
+  inference(rectify,[],[f22])).
+fof(f22,axiom,(
+  ~? [X21] : (pd(X21) & ab(X21))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f1335,plain,(
+  ( ! [X21,X20] : (~ab(X20) | p(X21,X20) | ~ab(X21) | ab(sK13(X21,X20)) | pd(X21)) )),
+  inference(resolution,[],[f589,f681])).
+fof(f681,plain,(
+  ( ! [X2,X0,X1] : (~dif(X2,X0,X1) | ab(X2) | pd(X0)) )),
+  inference(cnf_transformation,[],[f471])).
+fof(f471,plain,(
+  ! [X0,X1,X2] : ((! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))) | ~dif(X2,X0,X1))),
+  inference(ennf_transformation,[],[f340])).
+fof(f340,plain,(
+  ! [X0,X1,X2] : (dif(X2,X0,X1) => (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(unused_predicate_definition_removal,[],[f331])).
+fof(f331,plain,(
+  ! [X0,X1,X2] : (dif(X2,X0,X1) <=> (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(flattening,[],[f330])).
+fof(f330,plain,(
+  ! [X0] : ! [X1] : ! [X2] : (dif(X2,X0,X1) <=> (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(rectify,[],[f60])).
+fof(f60,axiom,(
+  ! [X76] : ! [X77] : ! [X78] : (dif(X78,X76,X77) <=> (! [X79] : (p(X79,X78) <=> (~ov(X79,X77) & p(X79,X76))) & ((pd(X77) & pd(X76) & pd(X78)) | (ab(X77) & ab(X76) & ab(X78)))))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f589,plain,(
+  ( ! [X0,X1] : (dif(sK13(X0,X1),X0,X1) | ~ab(X1) | p(X0,X1) | ~ab(X0)) )),
+  inference(cnf_transformation,[],[f415])).
+fof(f415,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) | p(X0,X1) | ~ab(X1) | ~ab(X0))),
+  inference(flattening,[],[f414])).
+fof(f414,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) | (p(X0,X1) | ~ab(X1) | ~ab(X0)))),
+  inference(ennf_transformation,[],[f229])).
+fof(f229,plain,(
+  ! [X0,X1] : ((~p(X0,X1) & ab(X1) & ab(X0)) => ? [X2] : dif(X2,X0,X1))),
+  inference(flattening,[],[f228])).
+fof(f228,plain,(
+  ! [X0] : ! [X1] : ((~p(X0,X1) & ab(X1) & ab(X0)) => ? [X2] : dif(X2,X0,X1))),
+  inference(rectify,[],[f61])).
+fof(f61,axiom,(
+  ! [X80] : ! [X81] : ((~p(X80,X81) & ab(X81) & ab(X80)) => ? [X82] : dif(X82,X80,X81))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f2228,plain,(
+  ( ! [X0,X1] : (p(X0,X1) | ~ab(X0) | ~ov(sK13(X0,X1),X1) | ~ab(X1) | ~ab(sK13(X0,X1))) )),
+  inference(resolution,[],[f1327,f529])).
+fof(f529,plain,(
+  ( ! [X0] : (p(X0,X0) | ~ab(X0)) )),
+  inference(cnf_transformation,[],[f394])).
+fof(f394,plain,(
+  ! [X0] : (p(X0,X0) | (~pd(X0) & ~ab(X0)))),
+  inference(ennf_transformation,[],[f182])).
+fof(f182,plain,(
+  ! [X0] : ((pd(X0) | ab(X0)) => p(X0,X0))),
+  inference(rectify,[],[f52])).
+fof(f52,axiom,(
+  ! [X57] : ((pd(X57) | ab(X57)) => p(X57,X57))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f1327,plain,(
+  ( ! [X3,X4,X5] : (~p(X5,sK13(X4,X3)) | p(X4,X3) | ~ab(X4) | ~ov(X5,X3) | ~ab(X3)) )),
+  inference(resolution,[],[f589,f672])).
+fof(f672,plain,(
+  ( ! [X2,X3,X0,X1] : (~dif(X2,X0,X1) | ~ov(X3,X1) | ~p(X3,X2)) )),
+  inference(cnf_transformation,[],[f471])).
+fof(f2966,plain,(
+  ( ! [X1] : (ov(X1,zyx) | ~ov(X1,xyz)) )),
+  inference(resolution,[],[f2950,f660])).
+fof(f660,plain,(
+  ( ! [X2,X3,X0,X1] : (~sum(X2,X0,X1) | ov(X3,X2) | ~ov(X3,X0)) )),
+  inference(cnf_transformation,[],[f327])).
+fof(f327,plain,(
+  ! [X0,X1,X2] : (sum(X2,X0,X1) <=> (! [X3] : (ov(X3,X2) <=> (ov(X3,X1) | ov(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(flattening,[],[f326])).
+fof(f326,plain,(
+  ! [X0] : ! [X1] : ! [X2] : (sum(X2,X0,X1) <=> (! [X3] : (ov(X3,X2) <=> (ov(X3,X1) | ov(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(rectify,[],[f59])).
+fof(f59,axiom,(
+  ! [X72] : ! [X73] : ! [X74] : (sum(X74,X72,X73) <=> (! [X75] : (ov(X75,X74) <=> (ov(X75,X73) | ov(X75,X72))) & ((pd(X73) & pd(X72) & pd(X74)) | (ab(X73) & ab(X72) & ab(X74)))))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f2950,plain,(
+  sum(zyx,xyz,xyz)),
+  inference(resolution,[],[f2949,f687])).
+fof(f687,plain,(
+  ( ! [X0,X1] : (~sum(xyz,X0,X1) | sum(zyx,X0,X1)) )),
+  inference(cnf_transformation,[],[f338])).
+fof(f338,plain,(
+  ! [X0,X1] : (sum(xyz,X0,X1) <=> sum(zyx,X0,X1))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X2,X3] : (sum(xyz,X2,X3) <=> sum(zyx,X2,X3))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',axiom272)).
+fof(f2949,plain,(
+  sum(xyz,xyz,xyz)),
+  inference(subsumption_resolution,[],[f2948,f2937])).
+fof(f2937,plain,(
+  ov(sK18(xyz,xyz,xyz),xyz) | sum(xyz,xyz,xyz)),
+  inference(duplicate_literal_removal,[],[f2855])).
+fof(f2855,plain,(
+  ov(sK18(xyz,xyz,xyz),xyz) | ov(sK18(xyz,xyz,xyz),xyz) | sum(xyz,xyz,xyz)),
+  inference(resolution,[],[f2527,f478])).
+fof(f2527,plain,(
+  ( ! [X0] : (~ab(X0) | ov(sK18(X0,xyz,xyz),X0) | ov(sK18(X0,xyz,xyz),xyz) | sum(xyz,X0,xyz)) )),
+  inference(duplicate_literal_removal,[],[f2452])).
+fof(f2452,plain,(
+  ( ! [X0] : (~ab(X0) | ov(sK18(X0,xyz,xyz),X0) | ov(sK18(X0,xyz,xyz),xyz) | ov(sK18(X0,xyz,xyz),xyz) | sum(xyz,X0,xyz)) )),
+  inference(resolution,[],[f1949,f478])).
+fof(f1949,plain,(
+  ( ! [X0,X1] : (~ab(X1) | ~ab(X0) | ov(sK18(X0,X1,xyz),X0) | ov(sK18(X0,X1,xyz),X1) | ov(sK18(X0,X1,xyz),xyz) | sum(xyz,X0,X1)) )),
+  inference(resolution,[],[f658,f478])).
+fof(f658,plain,(
+  ( ! [X2,X0,X1] : (~ab(X2) | ~ab(X0) | ~ab(X1) | ov(sK18(X0,X1,X2),X0) | ov(sK18(X0,X1,X2),X1) | ov(sK18(X0,X1,X2),X2) | sum(X2,X0,X1)) )),
+  inference(cnf_transformation,[],[f327])).
+fof(f2948,plain,(
+  sum(xyz,xyz,xyz) | ~ov(sK18(xyz,xyz,xyz),xyz)),
+  inference(subsumption_resolution,[],[f2947,f478])).
+fof(f2947,plain,(
+  sum(xyz,xyz,xyz) | ~ab(xyz) | ~ov(sK18(xyz,xyz,xyz),xyz)),
+  inference(duplicate_literal_removal,[],[f2938])).
+fof(f2938,plain,(
+  sum(xyz,xyz,xyz) | ~ab(xyz) | ~ab(xyz) | ~ov(sK18(xyz,xyz,xyz),xyz) | ~ab(xyz) | sum(xyz,xyz,xyz)),
+  inference(resolution,[],[f2937,f657])).
+fof(f657,plain,(
+  ( ! [X2,X0,X1] : (~ov(sK18(X0,X1,X2),X2) | ~ab(X0) | ~ab(X1) | ~ov(sK18(X0,X1,X2),X1) | ~ab(X2) | sum(X2,X0,X1)) )),
+  inference(cnf_transformation,[],[f327])).
+fof(f5424,plain,(
+  ( ! [X4,X5] : (ov(sK13(X4,X5),X4) | ~ab(X5) | ~ab(X4) | p(X4,X5)) )),
+  inference(subsumption_resolution,[],[f5419,f1337])).
+fof(f5419,plain,(
+  ( ! [X4,X5] : (p(X4,X5) | ~ab(X5) | ~ab(X4) | ov(sK13(X4,X5),X4) | ~ab(sK13(X4,X5))) )),
+  inference(resolution,[],[f2095,f529])).
+fof(f2095,plain,(
+  ( ! [X10,X11,X12] : (~p(sK13(X10,X11),X12) | p(X10,X11) | ~ab(X11) | ~ab(X10) | ov(X12,X10)) )),
+  inference(resolution,[],[f2089,f599])).
+fof(f599,plain,(
+  ( ! [X2,X0,X1] : (~p(X2,X1) | ~p(X2,X0) | ov(X0,X1)) )),
+  inference(cnf_transformation,[],[f253])).
+fof(f253,plain,(
+  ! [X0,X1] : (ov(X0,X1) <=> ? [X2] : (p(X2,X1) & p(X2,X0)))),
+  inference(flattening,[],[f252])).
+fof(f252,plain,(
+  ! [X0] : ! [X1] : (ov(X0,X1) <=> ? [X2] : (p(X2,X1) & p(X2,X0)))),
+  inference(rectify,[],[f56])).
+fof(f56,axiom,(
+  ! [X65] : ! [X66] : (ov(X65,X66) <=> ? [X67] : (p(X67,X66) & p(X67,X65)))),
+  file('outputs/dolce/cis/ci_dolce_ab_sum_@_1.in',sos)).
+fof(f2089,plain,(
+  ( ! [X0,X1] : (p(sK13(X0,X1),X0) | ~ab(X0) | p(X0,X1) | ~ab(X1)) )),
+  inference(subsumption_resolution,[],[f2088,f1337])).
+fof(f2088,plain,(
+  ( ! [X0,X1] : (p(X0,X1) | ~ab(X0) | p(sK13(X0,X1),X0) | ~ab(X1) | ~ab(sK13(X0,X1))) )),
+  inference(resolution,[],[f1326,f529])).
+fof(f1326,plain,(
+  ( ! [X2,X0,X1] : (~p(X2,sK13(X1,X0)) | p(X1,X0) | ~ab(X1) | p(X2,X1) | ~ab(X0)) )),
+  inference(resolution,[],[f589,f671])).
+fof(f671,plain,(
+  ( ! [X2,X3,X0,X1] : (~dif(X2,X0,X1) | p(X3,X0) | ~p(X3,X2)) )),
+  inference(cnf_transformation,[],[f471])).
+fof(f10845,plain,(
+  p(zyx,xyz) | ~ab(xyz) | ~ab(zyx)),
+  inference(duplicate_literal_removal,[],[f10841])).
+fof(f10841,plain,(
+  p(zyx,xyz) | ~ab(xyz) | ~ab(zyx) | p(zyx,xyz) | ~ab(xyz)),
+  inference(resolution,[],[f8684,f2230])).
+fof(f8684,plain,(
+  ( ! [X5] : (ov(sK13(zyx,X5),xyz) | p(zyx,X5) | ~ab(X5)) )),
+  inference(subsumption_resolution,[],[f8678,f479])).
+fof(f8678,plain,(
+  ( ! [X5] : (~ab(X5) | ~ab(zyx) | p(zyx,X5) | ov(sK13(zyx,X5),xyz)) )),
+  inference(resolution,[],[f5424,f2977])).
+fof(f2977,plain,(
+  ( ! [X0] : (~ov(X0,zyx) | ov(X0,xyz)) )),
+  inference(duplicate_literal_removal,[],[f2965])).
+fof(f2965,plain,(
+  ( ! [X0] : (ov(X0,xyz) | ~ov(X0,zyx) | ov(X0,xyz)) )),
+  inference(resolution,[],[f2950,f659])).
+fof(f659,plain,(
+  ( ! [X2,X3,X0,X1] : (~sum(X2,X0,X1) | ov(X3,X1) | ~ov(X3,X2) | ov(X3,X0)) )),
+  inference(cnf_transformation,[],[f327])).
+% SZS output end Proof for ci_dolce_ab_sum_@_1
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 27760
+% Time elapsed: 0.417 s
+% ------------------------------
+% ------------------------------
+% Success in time 4.448 s

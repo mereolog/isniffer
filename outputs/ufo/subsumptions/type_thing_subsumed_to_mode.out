@@ -1,0 +1,574 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_thing_subsumed_to_mode for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 56033
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on type_thing_subsumed_to_mode for (258ds)
+TRYING [1]
+Finite Model Found!
+% SZS status Satisfiable for type_thing_subsumed_to_mode
+% SZS output start FiniteModel for type_thing_subsumed_to_mode
+tff(declare_$i,type,$i:$tType).
+tff(declare_$i1,type,xyz:$i).
+tff(finite_domain,axiom,
+      ! [X:$i] : (
+         X = xyz
+      ) ).
+
+tff(declare_bool,type,$o:$tType).
+tff(declare_bool1,type,fmb_bool_1:$o).
+tff(finite_domain,axiom,
+      ! [X:$o] : (
+         X = fmb_bool_1
+      ) ).
+
+tff(declare_type_,type,type_: $i > $o ).
+tff(predicate_type_,axiom,
+           ~type_(xyz)
+
+).
+
+tff(declare_individual,type,individual: $i > $o ).
+tff(predicate_individual,axiom,
+           individual(xyz)
+
+).
+
+tff(declare_thing,type,thing: $i > $o ).
+tff(predicate_thing,axiom,
+           thing(xyz)
+
+).
+
+tff(declare_concreteIndividual,type,concreteIndividual: $i > $o ).
+tff(predicate_concreteIndividual,axiom,
+           ~concreteIndividual(xyz)
+
+).
+
+tff(declare_abstractIndividual,type,abstractIndividual: $i > $o ).
+tff(predicate_abstractIndividual,axiom,
+           abstractIndividual(xyz)
+
+).
+
+tff(declare_endurant,type,endurant: $i > $o ).
+tff(predicate_endurant,axiom,
+           ~endurant(xyz)
+
+).
+
+tff(declare_perdurant,type,perdurant: $i > $o ).
+tff(predicate_perdurant,axiom,
+           ~perdurant(xyz)
+
+).
+
+tff(declare_endurantType,type,endurantType: $i > $o ).
+tff(predicate_endurantType,axiom,
+           ~endurantType(xyz)
+
+).
+
+tff(declare_perdurantType,type,perdurantType: $i > $o ).
+tff(predicate_perdurantType,axiom,
+           ~perdurantType(xyz)
+
+).
+
+tff(declare_quale,type,quale: $i > $o ).
+tff(predicate_quale,axiom,
+%         quale(xyz) undefined in model
+
+).
+
+tff(declare_set_,type,set_: $i > $o ).
+tff(predicate_set_,axiom,
+           ~set_(xyz)
+
+).
+
+tff(declare_world,type,world: $i > $o ).
+tff(predicate_world,axiom,
+           ~world(xyz)
+
+).
+
+tff(declare_qualityStructure,type,qualityStructure: $i > $o ).
+tff(predicate_qualityStructure,axiom,
+           ~qualityStructure(xyz)
+
+).
+
+tff(declare_qualityDimension,type,qualityDimension: $i > $o ).
+tff(predicate_qualityDimension,axiom,
+           ~qualityDimension(xyz)
+
+).
+
+tff(declare_qualitySpace,type,qualitySpace: $i > $o ).
+tff(predicate_qualitySpace,axiom,
+           ~qualitySpace(xyz)
+
+).
+
+tff(declare_substantial,type,substantial: $i > $o ).
+tff(predicate_substantial,axiom,
+           ~substantial(xyz)
+
+).
+
+tff(declare_moment,type,moment: $i > $o ).
+tff(predicate_moment,axiom,
+           ~moment(xyz)
+
+).
+
+tff(declare_object,type,object: $i > $o ).
+tff(predicate_object,axiom,
+           ~object(xyz)
+
+).
+
+tff(declare_collective,type,collective: $i > $o ).
+tff(predicate_collective,axiom,
+           ~collective(xyz)
+
+).
+
+tff(declare_quantity,type,quantity: $i > $o ).
+tff(predicate_quantity,axiom,
+           ~quantity(xyz)
+
+).
+
+tff(declare_intrinsicMoment,type,intrinsicMoment: $i > $o ).
+tff(predicate_intrinsicMoment,axiom,
+           ~intrinsicMoment(xyz)
+
+).
+
+tff(declare_relator,type,relator: $i > $o ).
+tff(predicate_relator,axiom,
+           ~relator(xyz)
+
+).
+
+tff(declare_quality,type,quality: $i > $o ).
+tff(predicate_quality,axiom,
+           ~quality(xyz)
+
+).
+
+tff(declare_mode,type,mode: $i > $o ).
+tff(predicate_mode,axiom,
+           ~mode(xyz)
+
+).
+
+tff(declare_externallyDependentMode,type,externallyDependentMode: $i > $o ).
+tff(predicate_externallyDependentMode,axiom,
+           ~externallyDependentMode(xyz)
+
+).
+
+tff(declare_quaIndividual,type,quaIndividual: $i > $o ).
+tff(predicate_quaIndividual,axiom,
+           ~quaIndividual(xyz)
+
+).
+
+tff(declare_substantialType,type,substantialType: $i > $o ).
+tff(predicate_substantialType,axiom,
+           ~substantialType(xyz)
+
+).
+
+tff(declare_momentType,type,momentType: $i > $o ).
+tff(predicate_momentType,axiom,
+           ~momentType(xyz)
+
+).
+
+tff(declare_objectType,type,objectType: $i > $o ).
+tff(predicate_objectType,axiom,
+           ~objectType(xyz)
+
+).
+
+tff(declare_collectiveType,type,collectiveType: $i > $o ).
+tff(predicate_collectiveType,axiom,
+           ~collectiveType(xyz)
+
+).
+
+tff(declare_quantityType,type,quantityType: $i > $o ).
+tff(predicate_quantityType,axiom,
+           ~quantityType(xyz)
+
+).
+
+tff(declare_intrinsicMomentType,type,intrinsicMomentType: $i > $o ).
+tff(predicate_intrinsicMomentType,axiom,
+           ~intrinsicMomentType(xyz)
+
+).
+
+tff(declare_relatorType,type,relatorType: $i > $o ).
+tff(predicate_relatorType,axiom,
+           ~relatorType(xyz)
+
+).
+
+tff(declare_qualityType,type,qualityType: $i > $o ).
+tff(predicate_qualityType,axiom,
+           ~qualityType(xyz)
+
+).
+
+tff(declare_modeType,type,modeType: $i > $o ).
+tff(predicate_modeType,axiom,
+           ~modeType(xyz)
+
+).
+
+tff(declare_sortal,type,sortal: $i > $o ).
+tff(predicate_sortal,axiom,
+           ~sortal(xyz)
+
+).
+
+tff(declare_nonSortal,type,nonSortal: $i > $o ).
+tff(predicate_nonSortal,axiom,
+           ~nonSortal(xyz)
+
+).
+
+tff(declare_rigidSortal,type,rigidSortal: $i > $o ).
+tff(predicate_rigidSortal,axiom,
+           ~rigidSortal(xyz)
+
+).
+
+tff(declare_antiRigidSortal,type,antiRigidSortal: $i > $o ).
+tff(predicate_antiRigidSortal,axiom,
+           ~antiRigidSortal(xyz)
+
+).
+
+tff(declare_kind,type,kind: $i > $o ).
+tff(predicate_kind,axiom,
+           ~kind(xyz)
+
+).
+
+tff(declare_subkind,type,subkind: $i > $o ).
+tff(predicate_subkind,axiom,
+           ~subkind(xyz)
+
+).
+
+tff(declare_phase,type,phase: $i > $o ).
+tff(predicate_phase,axiom,
+           ~phase(xyz)
+
+).
+
+tff(declare_role,type,role: $i > $o ).
+tff(predicate_role,axiom,
+           ~role(xyz)
+
+).
+
+tff(declare_rigidNonSortal,type,rigidNonSortal: $i > $o ).
+tff(predicate_rigidNonSortal,axiom,
+           ~rigidNonSortal(xyz)
+
+).
+
+tff(declare_semiRigidNonSortal,type,semiRigidNonSortal: $i > $o ).
+tff(predicate_semiRigidNonSortal,axiom,
+           ~semiRigidNonSortal(xyz)
+
+).
+
+tff(declare_antiRigidNonSortal,type,antiRigidNonSortal: $i > $o ).
+tff(predicate_antiRigidNonSortal,axiom,
+           ~antiRigidNonSortal(xyz)
+
+).
+
+tff(declare_category,type,category: $i > $o ).
+tff(predicate_category,axiom,
+           ~category(xyz)
+
+).
+
+tff(declare_mixin,type,mixin: $i > $o ).
+tff(predicate_mixin,axiom,
+           ~mixin(xyz)
+
+).
+
+tff(declare_phaseMixin,type,phaseMixin: $i > $o ).
+tff(predicate_phaseMixin,axiom,
+           ~phaseMixin(xyz)
+
+).
+
+tff(declare_roleMixin,type,roleMixin: $i > $o ).
+tff(predicate_roleMixin,axiom,
+           ~roleMixin(xyz)
+
+).
+
+tff(declare_iof,type,iof: $i * $i * $i > $o ).
+tff(predicate_iof,axiom,
+           ~iof(xyz,xyz,xyz)
+
+).
+
+tff(declare_specializes,type,specializes: $i * $i > $o ).
+tff(predicate_specializes,axiom,
+           ~specializes(xyz,xyz)
+
+).
+
+tff(declare_properSpecializes,type,properSpecializes: $i * $i > $o ).
+tff(predicate_properSpecializes,axiom,
+           ~properSpecializes(xyz,xyz)
+
+).
+
+tff(declare_rigid,type,rigid: $i > $o ).
+tff(predicate_rigid,axiom,
+           ~rigid(xyz)
+
+).
+
+tff(declare_antiRigid,type,antiRigid: $i > $o ).
+tff(predicate_antiRigid,axiom,
+           ~antiRigid(xyz)
+
+).
+
+tff(declare_semiRigid,type,semiRigid: $i > $o ).
+tff(predicate_semiRigid,axiom,
+           ~semiRigid(xyz)
+
+).
+
+tff(declare_objectKind,type,objectKind: $i > $o ).
+tff(predicate_objectKind,axiom,
+           ~objectKind(xyz)
+
+).
+
+tff(declare_collectiveKind,type,collectiveKind: $i > $o ).
+tff(predicate_collectiveKind,axiom,
+           ~collectiveKind(xyz)
+
+).
+
+tff(declare_quantityKind,type,quantityKind: $i > $o ).
+tff(predicate_quantityKind,axiom,
+           ~quantityKind(xyz)
+
+).
+
+tff(declare_modeKind,type,modeKind: $i > $o ).
+tff(predicate_modeKind,axiom,
+           ~modeKind(xyz)
+
+).
+
+tff(declare_qualityKind,type,qualityKind: $i > $o ).
+tff(predicate_qualityKind,axiom,
+           ~qualityKind(xyz)
+
+).
+
+tff(declare_relatorKind,type,relatorKind: $i > $o ).
+tff(predicate_relatorKind,axiom,
+           ~relatorKind(xyz)
+
+).
+
+tff(declare_partOf,type,partOf: $i * $i > $o ).
+tff(predicate_partOf,axiom,
+           partOf(xyz,xyz)
+
+).
+
+tff(declare_overlap,type,overlap: $i * $i > $o ).
+tff(predicate_overlap,axiom,
+           overlap(xyz,xyz)
+
+).
+
+tff(declare_properPartOf,type,properPartOf: $i * $i > $o ).
+tff(predicate_properPartOf,axiom,
+           ~properPartOf(xyz,xyz)
+
+).
+
+tff(declare_sum,type,sum: $i * $i * $i > $o ).
+tff(predicate_sum,axiom,
+           sum(xyz,xyz,xyz)
+
+).
+
+tff(declare_functionsAs,type,functionsAs: $i * $i > $o ).
+tff(predicate_functionsAs,axiom,
+%         functionsAs(xyz,xyz) undefined in model
+
+).
+
+tff(declare_gfd,type,gfd: $i * $i * $i > $o ).
+tff(predicate_gfd,axiom,
+%         gfd(xyz,xyz,xyz) undefined in model
+
+).
+
+tff(declare_ifd,type,ifd: $i * $i * $i * $i * $i > $o ).
+tff(predicate_ifd,axiom,
+%         ifd(xyz,xyz,xyz,xyz,xyz) undefined in model
+
+).
+
+tff(declare_componentOf,type,componentOf: $i * $i * $i * $i * $i > $o ).
+tff(predicate_componentOf,axiom,
+%         componentOf(xyz,xyz,xyz,xyz,xyz) undefined in model
+
+).
+
+tff(declare_constitutedBy,type,constitutedBy: $i * $i * $i > $o ).
+tff(predicate_constitutedBy,axiom,
+           ~constitutedBy(xyz,xyz,xyz)
+
+).
+
+tff(declare_genericConstitutionalDependence,type,genericConstitutionalDependence: $i * $i > $o ).
+tff(predicate_genericConstitutionalDependence,axiom,
+           ~genericConstitutionalDependence(xyz,xyz)
+
+).
+
+tff(declare_constitution,type,constitution: $i * $i * $i * $i * $i > $o ).
+tff(predicate_constitution,axiom,
+%         constitution(xyz,xyz,xyz,xyz,xyz) undefined in model
+
+).
+
+tff(declare_exists,type,exists: $i * $i > $o ).
+tff(predicate_exists,axiom,
+           ~exists(xyz,xyz)
+
+).
+
+tff(declare_existentiallyDependsOn,type,existentiallyDependsOn: $i * $i > $o ).
+tff(predicate_existentiallyDependsOn,axiom,
+           existentiallyDependsOn(xyz,xyz)
+
+).
+
+tff(declare_existentiallyIndependentOf,type,existentiallyIndependentOf: $i * $i > $o ).
+tff(predicate_existentiallyIndependentOf,axiom,
+           ~existentiallyIndependentOf(xyz,xyz)
+
+).
+
+tff(declare_inheresIn,type,inheresIn: $i * $i > $o ).
+tff(predicate_inheresIn,axiom,
+           ~inheresIn(xyz,xyz)
+
+).
+
+tff(declare_momentOf,type,momentOf: $i * $i > $o ).
+tff(predicate_momentOf,axiom,
+           ~momentOf(xyz,xyz)
+
+).
+
+tff(declare_ultimateBearerOf,type,ultimateBearerOf: $i * $i > $o ).
+tff(predicate_ultimateBearerOf,axiom,
+           ~ultimateBearerOf(xyz,xyz)
+
+).
+
+tff(declare_externallyDependsOn,type,externallyDependsOn: $i * $i > $o ).
+tff(predicate_externallyDependsOn,axiom,
+           ~externallyDependsOn(xyz,xyz)
+
+).
+
+tff(declare_foundedBy,type,foundedBy: $i * $i > $o ).
+tff(predicate_foundedBy,axiom,
+           ~foundedBy(xyz,xyz)
+
+).
+
+tff(declare_quaIndividualOf,type,quaIndividualOf: $i * $i > $o ).
+tff(predicate_quaIndividualOf,axiom,
+           ~quaIndividualOf(xyz,xyz)
+
+).
+
+tff(declare_mediates,type,mediates: $i * $i > $o ).
+tff(predicate_mediates,axiom,
+           ~mediates(xyz,xyz)
+
+).
+
+tff(declare_characterizes,type,characterizes: $i * $i > $o ).
+tff(predicate_characterizes,axiom,
+%         characterizes(xyz,xyz) undefined in model
+
+).
+
+tff(declare_associatedWith,type,associatedWith: $i * $i > $o ).
+tff(predicate_associatedWith,axiom,
+           associatedWith(xyz,xyz)
+
+).
+
+tff(declare_manifests,type,manifests: $i * $i > $o ).
+tff(predicate_manifests,axiom,
+%         manifests(xyz,xyz) undefined in model
+
+).
+
+tff(declare_lifeOf,type,lifeOf: $i * $i > $o ).
+tff(predicate_lifeOf,axiom,
+%         lifeOf(xyz,xyz) undefined in model
+
+).
+
+tff(declare_meets,type,meets: $i * $i > $o ).
+tff(predicate_meets,axiom,
+%         meets(xyz,xyz) undefined in model
+
+).
+
+% SZS output end FiniteModel for type_thing_subsumed_to_mode
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 6524
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+% Success in time 3.224 s

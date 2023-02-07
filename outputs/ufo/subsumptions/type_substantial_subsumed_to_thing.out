@@ -1,0 +1,153 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_substantial_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_substantial_subsumed_to_thing
+% SZS output start Proof for type_substantial_subsumed_to_thing
+fof(f1001,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f849,f913,f925,f937,f982,f987,f992,f1000])).
+fof(f1000,plain,(
+  spl59_1 | ~spl59_75 | ~spl59_88),
+  inference(avatar_contradiction_clause,[],[f999])).
+fof(f999,plain,(
+  $false | (spl59_1 | ~spl59_75 | ~spl59_88)),
+  inference(subsumption_resolution,[],[f998,f991])).
+fof(f991,plain,(
+  individual(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f990])).
+fof(f990,plain,(
+  spl59_88 <=> individual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f998,plain,(
+  ~individual(xyz) | (spl59_1 | ~spl59_75)),
+  inference(resolution,[],[f936,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f936,plain,(
+  ( ! [X0] : (thing(X0) | ~individual(X0)) ) | ~spl59_75),
+  inference(avatar_component_clause,[],[f935])).
+fof(f935,plain,(
+  spl59_75 <=> ! [X0] : (thing(X0) | ~individual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_75])])).
+fof(f992,plain,(
+  spl59_88 | ~spl59_53 | ~spl59_87),
+  inference(avatar_split_clause,[],[f988,f985,f847,f990])).
+fof(f847,plain,(
+  spl59_53 <=> ! [X0] : (individual(X0) | ~concreteIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_53])])).
+fof(f985,plain,(
+  spl59_87 <=> concreteIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f988,plain,(
+  individual(xyz) | (~spl59_53 | ~spl59_87)),
+  inference(resolution,[],[f986,f848])).
+fof(f848,plain,(
+  ( ! [X0] : (~concreteIndividual(X0) | individual(X0)) ) | ~spl59_53),
+  inference(avatar_component_clause,[],[f847])).
+fof(f986,plain,(
+  concreteIndividual(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f985])).
+fof(f987,plain,(
+  spl59_87 | ~spl59_72 | ~spl59_86),
+  inference(avatar_split_clause,[],[f983,f980,f923,f985])).
+fof(f923,plain,(
+  spl59_72 <=> ! [X0] : (concreteIndividual(X0) | ~endurant(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f980,plain,(
+  spl59_86 <=> endurant(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f983,plain,(
+  concreteIndividual(xyz) | (~spl59_72 | ~spl59_86)),
+  inference(resolution,[],[f924,f981])).
+fof(f981,plain,(
+  endurant(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f980])).
+fof(f924,plain,(
+  ( ! [X0] : (~endurant(X0) | concreteIndividual(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f923])).
+fof(f982,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_69),
+  inference(avatar_split_clause,[],[f978,f911,f643,f980])).
+fof(f643,plain,(
+  spl59_2 <=> substantial(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f911,plain,(
+  spl59_69 <=> ! [X0] : (endurant(X0) | ~substantial(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_69])])).
+fof(f978,plain,(
+  endurant(xyz) | (~spl59_2 | ~spl59_69)),
+  inference(resolution,[],[f912,f644])).
+fof(f644,plain,(
+  substantial(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f912,plain,(
+  ( ! [X0] : (~substantial(X0) | endurant(X0)) ) | ~spl59_69),
+  inference(avatar_component_clause,[],[f911])).
+fof(f937,plain,(
+  spl59_75),
+  inference(avatar_split_clause,[],[f553,f935])).
+fof(f553,plain,(
+  ( ! [X0] : (thing(X0) | ~individual(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_substantial_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f925,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f549,f923])).
+fof(f549,plain,(
+  ( ! [X0] : (concreteIndividual(X0) | ~endurant(X0)) )),
+  inference(cnf_transformation,[],[f5])).
+fof(f5,axiom,(
+  ! [X0] : ((perdurant(X0) | endurant(X0)) <=> concreteIndividual(X0))),
+  file('outputs/ufo/subsumptions/type_substantial_subsumed_to_thing.in',ax_concreteIndividual_taxonomy)).
+fof(f913,plain,(
+  spl59_69),
+  inference(avatar_split_clause,[],[f543,f911])).
+fof(f543,plain,(
+  ( ! [X0] : (endurant(X0) | ~substantial(X0)) )),
+  inference(cnf_transformation,[],[f16])).
+fof(f16,axiom,(
+  ! [X0] : ((moment(X0) | substantial(X0)) <=> endurant(X0))),
+  file('outputs/ufo/subsumptions/type_substantial_subsumed_to_thing.in',ax_endurant_taxonomy)).
+fof(f849,plain,(
+  spl59_53),
+  inference(avatar_split_clause,[],[f510,f847])).
+fof(f510,plain,(
+  ( ! [X0] : (individual(X0) | ~concreteIndividual(X0)) )),
+  inference(cnf_transformation,[],[f3])).
+fof(f3,axiom,(
+  ! [X0] : ((abstractIndividual(X0) | concreteIndividual(X0)) <=> individual(X0))),
+  file('outputs/ufo/subsumptions/type_substantial_subsumed_to_thing.in',ax_individual_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  substantial(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  substantial(xyz)),
+  file('outputs/ufo/subsumptions/type_substantial_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_substantial_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_substantial_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.013 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.02 s

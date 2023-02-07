@@ -1,0 +1,442 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_at_subsumed_to_stv for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 46694
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on type_at_subsumed_to_stv for (258ds)
+TRYING [1]
+Finite Model Found!
+% SZS status Satisfiable for type_at_subsumed_to_stv
+% SZS output start FiniteModel for type_at_subsumed_to_stv
+tff(declare_$i,type,$i:$tType).
+tff(declare_$i1,type,xyz:$i).
+tff(finite_domain,axiom,
+      ! [X:$i] : (
+         X = xyz
+      ) ).
+
+tff(declare_bool,type,$o:$tType).
+tff(declare_bool1,type,fmb_bool_1:$o).
+tff(finite_domain,axiom,
+      ! [X:$o] : (
+         X = fmb_bool_1
+      ) ).
+
+tff(declare_ab,type,ab: $i > $o ).
+tff(predicate_ab,axiom,
+           ab(xyz)
+
+).
+
+tff(declare_ed,type,ed: $i > $o ).
+tff(predicate_ed,axiom,
+           ~ed(xyz)
+
+).
+
+tff(declare_pd,type,pd: $i > $o ).
+tff(predicate_pd,axiom,
+           ~pd(xyz)
+
+).
+
+tff(declare_q,type,q: $i > $o ).
+tff(predicate_q,axiom,
+           ~q(xyz)
+
+).
+
+tff(declare_pt,type,pt: $i > $o ).
+tff(predicate_pt,axiom,
+           pt(xyz)
+
+).
+
+tff(declare_as,type,as: $i > $o ).
+tff(predicate_as,axiom,
+           ~as(xyz)
+
+).
+
+tff(declare_nped,type,nped: $i > $o ).
+tff(predicate_nped,axiom,
+           ~nped(xyz)
+
+).
+
+tff(declare_ped,type,ped: $i > $o ).
+tff(predicate_ped,axiom,
+           ~ped(xyz)
+
+).
+
+tff(declare_pro,type,pro: $i > $o ).
+tff(predicate_pro,axiom,
+           ~pro(xyz)
+
+).
+
+tff(declare_st,type,st: $i > $o ).
+tff(predicate_st,axiom,
+           ~st(xyz)
+
+).
+
+tff(declare_stv,type,stv: $i > $o ).
+tff(predicate_stv,axiom,
+           ~stv(xyz)
+
+).
+
+tff(declare_ev,type,ev: $i > $o ).
+tff(predicate_ev,axiom,
+           ~ev(xyz)
+
+).
+
+tff(declare_aq,type,aq: $i > $o ).
+tff(predicate_aq,axiom,
+           ~aq(xyz)
+
+).
+
+tff(declare_pq,type,pq: $i > $o ).
+tff(predicate_pq,axiom,
+           ~pq(xyz)
+
+).
+
+tff(declare_tq,type,tq: $i > $o ).
+tff(predicate_tq,axiom,
+           ~tq(xyz)
+
+).
+
+tff(declare_acc,type,acc: $i > $o ).
+tff(predicate_acc,axiom,
+           ~acc(xyz)
+
+).
+
+tff(declare_ach,type,ach: $i > $o ).
+tff(predicate_ach,axiom,
+           ~ach(xyz)
+
+).
+
+tff(declare_apo,type,apo: $i > $o ).
+tff(predicate_apo,axiom,
+           ~apo(xyz)
+
+).
+
+tff(declare_napo,type,napo: $i > $o ).
+tff(predicate_napo,axiom,
+           ~napo(xyz)
+
+).
+
+tff(declare_pob,type,pob: $i > $o ).
+tff(predicate_pob,axiom,
+           ~pob(xyz)
+
+).
+
+tff(declare_sag,type,sag: $i > $o ).
+tff(predicate_sag,axiom,
+%         sag(xyz) undefined in model
+
+).
+
+tff(declare_sc,type,sc: $i > $o ).
+tff(predicate_sc,axiom,
+%         sc(xyz) undefined in model
+
+).
+
+tff(declare_aso,type,aso: $i > $o ).
+tff(predicate_aso,axiom,
+%         aso(xyz) undefined in model
+
+).
+
+tff(declare_naso,type,naso: $i > $o ).
+tff(predicate_naso,axiom,
+           ~naso(xyz)
+
+).
+
+tff(declare_sob,type,sob: $i > $o ).
+tff(predicate_sob,axiom,
+%         sob(xyz) undefined in model
+
+).
+
+tff(declare_c,type,c: $i > $o ).
+tff(predicate_c,axiom,
+           ~c(xyz)
+
+).
+
+tff(declare_arc,type,arc: $i > $o ).
+tff(predicate_arc,axiom,
+           ~arc(xyz)
+
+).
+
+tff(declare_mob,type,mob: $i > $o ).
+tff(predicate_mob,axiom,
+%         mob(xyz) undefined in model
+
+).
+
+tff(declare_npob,type,npob: $i > $o ).
+tff(predicate_npob,axiom,
+%         npob(xyz) undefined in model
+
+).
+
+tff(declare_ar,type,ar: $i > $o ).
+tff(predicate_ar,axiom,
+           ~ar(xyz)
+
+).
+
+tff(declare_pr,type,pr: $i > $o ).
+tff(predicate_pr,axiom,
+           ~pr(xyz)
+
+).
+
+tff(declare_tr,type,tr: $i > $o ).
+tff(predicate_tr,axiom,
+           tr(xyz)
+
+).
+
+tff(declare_r,type,r: $i > $o ).
+tff(predicate_r,axiom,
+           r(xyz)
+
+).
+
+tff(declare_f,type,f: $i > $o ).
+tff(predicate_f,axiom,
+           ~f(xyz)
+
+).
+
+tff(declare_m,type,m: $i > $o ).
+tff(predicate_m,axiom,
+           ~m(xyz)
+
+).
+
+tff(declare_s,type,s: $i > $o ).
+tff(predicate_s,axiom,
+           ~s(xyz)
+
+).
+
+tff(declare_sl,type,sl: $i > $o ).
+tff(predicate_sl,axiom,
+           ~sl(xyz)
+
+).
+
+tff(declare_t,type,t: $i > $o ).
+tff(predicate_t,axiom,
+           t(xyz)
+
+).
+
+tff(declare_tl,type,tl: $i > $o ).
+tff(predicate_tl,axiom,
+           ~tl(xyz)
+
+).
+
+tff(declare_p,type,p: $i * $i > $o ).
+tff(predicate_p,axiom,
+           p(xyz,xyz)
+
+).
+
+tff(declare_pp,type,pp: $i * $i > $o ).
+tff(predicate_pp,axiom,
+           ~pp(xyz,xyz)
+
+).
+
+tff(declare_ov,type,ov: $i * $i > $o ).
+tff(predicate_ov,axiom,
+           ov(xyz,xyz)
+
+).
+
+tff(declare_at,type,at: $i > $o ).
+tff(predicate_at,axiom,
+           at(xyz)
+
+).
+
+tff(declare_atp,type,atp: $i * $i > $o ).
+tff(predicate_atp,axiom,
+%         atp(xyz,xyz) undefined in model
+
+).
+
+tff(declare_sum,type,sum: $i * $i * $i > $o ).
+tff(predicate_sum,axiom,
+           sum(xyz,xyz,xyz)
+
+).
+
+tff(declare_dif,type,dif: $i * $i * $i > $o ).
+tff(predicate_dif,axiom,
+           ~dif(xyz,xyz,xyz)
+
+).
+
+tff(declare_pre,type,pre: $i * $i > $o ).
+tff(predicate_pre,axiom,
+           ~pre(xyz,xyz)
+
+).
+
+tff(declare_tp,type,tp: $i * $i * $i > $o ).
+tff(predicate_tp,axiom,
+           ~tp(xyz,xyz,xyz)
+
+).
+
+tff(declare_tov,type,tov: $i * $i * $i > $o ).
+tff(predicate_tov,axiom,
+           ~tov(xyz,xyz,xyz)
+
+).
+
+tff(declare_tpp,type,tpp: $i * $i * $i > $o ).
+tff(predicate_tpp,axiom,
+           ~tpp(xyz,xyz,xyz)
+
+).
+
+tff(declare_tat,type,tat: $i * $i > $o ).
+tff(predicate_tat,axiom,
+           ~tat(xyz,xyz)
+
+).
+
+tff(declare_tatp,type,tatp: $i * $i * $i > $o ).
+tff(predicate_tatp,axiom,
+%         tatp(xyz,xyz,xyz) undefined in model
+
+).
+
+tff(declare_tsum,type,tsum: $i * $i * $i > $o ).
+tff(predicate_tsum,axiom,
+           ~tsum(xyz,xyz,xyz)
+
+).
+
+tff(declare_temporalPart,type,temporalPart: $i * $i > $o ).
+tff(predicate_temporalPart,axiom,
+           ~temporalPart(xyz,xyz)
+
+).
+
+tff(declare_k,type,k: $i * $i * $i > $o ).
+tff(predicate_k,axiom,
+           ~k(xyz,xyz,xyz)
+
+).
+
+tff(declare_pc,type,pc: $i * $i * $i > $o ).
+tff(predicate_pc,axiom,
+           ~pc(xyz,xyz,xyz)
+
+).
+
+tff(declare_dqt,type,dqt: $i * $i > $o ).
+tff(predicate_dqt,axiom,
+           ~dqt(xyz,xyz)
+
+).
+
+tff(declare_ql,type,ql: $i * $i > $o ).
+tff(predicate_ql,axiom,
+           ~ql(xyz,xyz)
+
+).
+
+tff(declare_tql,type,tql: $i * $i * $i > $o ).
+tff(predicate_tql,axiom,
+           ~tql(xyz,xyz,xyz)
+
+).
+
+tff(declare_sd,type,sd: $i * $i > $o ).
+tff(predicate_sd,axiom,
+           ~sd(xyz,xyz)
+
+).
+
+tff(declare_cf,type,cf: $i * $i * $i > $o ).
+tff(predicate_cf,axiom,
+           ~cf(xyz,xyz,xyz)
+
+).
+
+tff(declare_ds,type,ds: $i > $o ).
+tff(predicate_ds,axiom,
+           ~ds(xyz)
+
+).
+
+tff(declare_us,type,us: $i * $i > $o ).
+tff(predicate_us,axiom,
+           ~us(xyz,xyz)
+
+).
+
+tff(declare_df,type,df: $i * $i > $o ).
+tff(predicate_df,axiom,
+           ~df(xyz,xyz)
+
+).
+
+tff(declare_fd,type,fd: $i > $o ).
+tff(predicate_fd,axiom,
+           ~fd(xyz)
+
+).
+
+tff(declare_rl,type,rl: $i > $o ).
+tff(predicate_rl,axiom,
+%         rl(xyz) undefined in model
+
+).
+
+% SZS output end FiniteModel for type_at_subsumed_to_stv
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+% Success in time 3.213 s

@@ -1,0 +1,360 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on ci_ufo_kind_iof_@_2 for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_ufo_kind_iof_@_2
+% SZS output start Proof for ci_ufo_kind_iof_@_2
+fof(f5382,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f648,f652,f656,f764,f796,f816,f932,f992,f1012,f1035,f1048,f1084,f1356,f1370,f1426,f1430,f1862,f2907,f3372,f4427,f5357,f5381])).
+fof(f5381,plain,(
+  spl59_400 | ~spl59_1 | ~spl59_2 | spl59_3 | ~spl59_611 | ~spl59_724),
+  inference(avatar_split_clause,[],[f5377,f5355,f4425,f654,f650,f646,f2879])).
+fof(f2879,plain,(
+  spl59_400 <=> individual(zyx)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_400])])).
+fof(f646,plain,(
+  spl59_1 <=> kind(zyx)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f650,plain,(
+  spl59_2 <=> kind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f654,plain,(
+  spl59_3 <=> xyz = zyx),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_3])])).
+fof(f4425,plain,(
+  spl59_611 <=> iof(sK41(zyx),xyz,sK42(zyx))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_611])])).
+fof(f5355,plain,(
+  spl59_724 <=> ! [X2,X0,X1] : (~iof(sK41(X0),X1,X2) | ~kind(X0) | ~kind(X1) | X0 = X1 | individual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_724])])).
+fof(f5377,plain,(
+  individual(zyx) | (~spl59_1 | ~spl59_2 | spl59_3 | ~spl59_611 | ~spl59_724)),
+  inference(subsumption_resolution,[],[f5376,f655])).
+fof(f655,plain,(
+  xyz != zyx | spl59_3),
+  inference(avatar_component_clause,[],[f654])).
+fof(f5376,plain,(
+  xyz = zyx | individual(zyx) | (~spl59_1 | ~spl59_2 | ~spl59_611 | ~spl59_724)),
+  inference(subsumption_resolution,[],[f5375,f651])).
+fof(f651,plain,(
+  kind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f650])).
+fof(f5375,plain,(
+  ~kind(xyz) | xyz = zyx | individual(zyx) | (~spl59_1 | ~spl59_611 | ~spl59_724)),
+  inference(subsumption_resolution,[],[f5368,f647])).
+fof(f647,plain,(
+  kind(zyx) | ~spl59_1),
+  inference(avatar_component_clause,[],[f646])).
+fof(f5368,plain,(
+  ~kind(zyx) | ~kind(xyz) | xyz = zyx | individual(zyx) | (~spl59_611 | ~spl59_724)),
+  inference(resolution,[],[f5356,f4426])).
+fof(f4426,plain,(
+  iof(sK41(zyx),xyz,sK42(zyx)) | ~spl59_611),
+  inference(avatar_component_clause,[],[f4425])).
+fof(f5356,plain,(
+  ( ! [X2,X0,X1] : (~iof(sK41(X0),X1,X2) | ~kind(X0) | ~kind(X1) | X0 = X1 | individual(X0)) ) | ~spl59_724),
+  inference(avatar_component_clause,[],[f5355])).
+fof(f5357,plain,(
+  spl59_724 | ~spl59_168 | ~spl59_462),
+  inference(avatar_split_clause,[],[f3512,f3370,f1354,f5355])).
+fof(f1354,plain,(
+  spl59_168 <=> ! [X0] : (iof(sK41(X0),X0,sK42(X0)) | individual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_168])])).
+fof(f3370,plain,(
+  spl59_462 <=> ! [X4,X0,X3,X2,X1] : (~kind(X1) | ~iof(X0,X1,X2) | ~kind(X3) | ~iof(X0,X3,X4) | X1 = X3)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_462])])).
+fof(f3512,plain,(
+  ( ! [X2,X0,X1] : (~iof(sK41(X0),X1,X2) | ~kind(X0) | ~kind(X1) | X0 = X1 | individual(X0)) ) | (~spl59_168 | ~spl59_462)),
+  inference(resolution,[],[f3371,f1355])).
+fof(f1355,plain,(
+  ( ! [X0] : (iof(sK41(X0),X0,sK42(X0)) | individual(X0)) ) | ~spl59_168),
+  inference(avatar_component_clause,[],[f1354])).
+fof(f3371,plain,(
+  ( ! [X2,X3,X0,X1,X4] : (~iof(X0,X3,X4) | ~iof(X0,X1,X2) | ~kind(X3) | ~kind(X1) | X1 = X3) ) | ~spl59_462),
+  inference(avatar_component_clause,[],[f3370])).
+fof(f4427,plain,(
+  spl59_400 | spl59_611 | ~spl59_168 | ~spl59_184),
+  inference(avatar_split_clause,[],[f1639,f1424,f1354,f4425,f2879])).
+fof(f1424,plain,(
+  spl59_184 <=> ! [X0,X1] : (~iof(X0,zyx,X1) | iof(X0,xyz,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_184])])).
+fof(f1639,plain,(
+  iof(sK41(zyx),xyz,sK42(zyx)) | individual(zyx) | (~spl59_168 | ~spl59_184)),
+  inference(resolution,[],[f1425,f1355])).
+fof(f1425,plain,(
+  ( ! [X0,X1] : (~iof(X0,zyx,X1) | iof(X0,xyz,X1)) ) | ~spl59_184),
+  inference(avatar_component_clause,[],[f1424])).
+fof(f3372,plain,(
+  spl59_462),
+  inference(avatar_split_clause,[],[f644,f3370])).
+fof(f644,plain,(
+  ( ! [X2,X3,X0,X1,X4] : (~kind(X1) | ~iof(X0,X1,X2) | ~kind(X3) | ~iof(X0,X3,X4) | X1 = X3) )),
+  inference(subsumption_resolution,[],[f633,f630])).
+fof(f630,plain,(
+  ( ! [X2,X0,X1] : (~iof(X0,X1,X2) | world(X2)) )),
+  inference(cnf_transformation,[],[f291])).
+fof(f291,plain,(
+  ! [X0,X1,X2] : ((world(X2) & type_(X1)) | ~iof(X0,X1,X2))),
+  inference(ennf_transformation,[],[f48])).
+fof(f48,axiom,(
+  ! [X0,X1,X2] : (iof(X0,X1,X2) => (world(X2) & type_(X1)))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_dIof)).
+fof(f633,plain,(
+  ( ! [X2,X3,X0,X1,X4] : (~world(X2) | ~kind(X1) | ~iof(X0,X1,X2) | ~kind(X3) | ~iof(X0,X3,X4) | X1 = X3) )),
+  inference(cnf_transformation,[],[f297])).
+fof(f297,plain,(
+  ! [X0,X1,X2] : (! [X3,X4] : (X1 = X3 | ~iof(X0,X3,X4) | ~kind(X3)) | ~iof(X0,X1,X2) | ~kind(X1) | ~world(X2))),
+  inference(flattening,[],[f296])).
+fof(f296,plain,(
+  ! [X0,X1,X2] : (! [X3,X4] : (X1 = X3 | ~iof(X0,X3,X4) | ~kind(X3)) | (~iof(X0,X1,X2) | ~kind(X1) | ~world(X2)))),
+  inference(ennf_transformation,[],[f193])).
+fof(f193,plain,(
+  ! [X0,X1,X2] : ((iof(X0,X1,X2) & kind(X1) & world(X2)) => ~? [X3,X4] : (X1 != X3 & iof(X0,X3,X4) & kind(X3)))),
+  inference(rectify,[],[f61])).
+fof(f61,axiom,(
+  ! [X6,X11,X2] : ((iof(X6,X11,X2) & kind(X11) & world(X2)) => ~? [X12,X10] : (X11 != X12 & iof(X6,X12,X10) & kind(X12)))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_uniqueKind_a22)).
+fof(f2907,plain,(
+  ~spl59_107 | ~spl59_265 | ~spl59_400),
+  inference(avatar_contradiction_clause,[],[f2903])).
+fof(f2903,plain,(
+  $false | (~spl59_107 | ~spl59_265 | ~spl59_400)),
+  inference(subsumption_resolution,[],[f1861,f2889])).
+fof(f2889,plain,(
+  ( ! [X0,X1] : (~iof(X0,zyx,X1)) ) | (~spl59_107 | ~spl59_400)),
+  inference(resolution,[],[f2880,f1083])).
+fof(f1083,plain,(
+  ( ! [X2,X0,X1] : (~individual(X0) | ~iof(X1,X0,X2)) ) | ~spl59_107),
+  inference(avatar_component_clause,[],[f1082])).
+fof(f1082,plain,(
+  spl59_107 <=> ! [X2,X0,X1] : (~iof(X1,X0,X2) | ~individual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_107])])).
+fof(f2880,plain,(
+  individual(zyx) | ~spl59_400),
+  inference(avatar_component_clause,[],[f2879])).
+fof(f1861,plain,(
+  iof(sK46(xyz),zyx,sK47(xyz)) | ~spl59_265),
+  inference(avatar_component_clause,[],[f1860])).
+fof(f1860,plain,(
+  spl59_265 <=> iof(sK46(xyz),zyx,sK47(xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_265])])).
+fof(f1862,plain,(
+  spl59_265 | ~spl59_98 | ~spl59_171 | ~spl59_185),
+  inference(avatar_split_clause,[],[f1644,f1428,f1368,f1046,f1860])).
+fof(f1046,plain,(
+  spl59_98 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_98])])).
+fof(f1368,plain,(
+  spl59_171 <=> ! [X0] : (iof(sK46(X0),X0,sK47(X0)) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_171])])).
+fof(f1428,plain,(
+  spl59_185 <=> ! [X0,X1] : (iof(X0,zyx,X1) | ~iof(X0,xyz,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_185])])).
+fof(f1644,plain,(
+  iof(sK46(xyz),zyx,sK47(xyz)) | (~spl59_98 | ~spl59_171 | ~spl59_185)),
+  inference(subsumption_resolution,[],[f1643,f1047])).
+fof(f1047,plain,(
+  type_(xyz) | ~spl59_98),
+  inference(avatar_component_clause,[],[f1046])).
+fof(f1643,plain,(
+  iof(sK46(xyz),zyx,sK47(xyz)) | ~type_(xyz) | (~spl59_171 | ~spl59_185)),
+  inference(resolution,[],[f1429,f1369])).
+fof(f1369,plain,(
+  ( ! [X0] : (iof(sK46(X0),X0,sK47(X0)) | ~type_(X0)) ) | ~spl59_171),
+  inference(avatar_component_clause,[],[f1368])).
+fof(f1429,plain,(
+  ( ! [X0,X1] : (~iof(X0,xyz,X1) | iof(X0,zyx,X1)) ) | ~spl59_185),
+  inference(avatar_component_clause,[],[f1428])).
+fof(f1430,plain,(
+  spl59_185),
+  inference(avatar_split_clause,[],[f613,f1428])).
+fof(f613,plain,(
+  ( ! [X0,X1] : (iof(X0,zyx,X1) | ~iof(X0,xyz,X1)) )),
+  inference(cnf_transformation,[],[f188])).
+fof(f188,plain,(
+  ! [X0,X1] : (iof(X0,xyz,X1) <=> iof(X0,zyx,X1))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X31,X32] : (iof(X31,xyz,X32) <=> iof(X31,zyx,X32))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',axiom1719)).
+fof(f1426,plain,(
+  spl59_184),
+  inference(avatar_split_clause,[],[f612,f1424])).
+fof(f612,plain,(
+  ( ! [X0,X1] : (~iof(X0,zyx,X1) | iof(X0,xyz,X1)) )),
+  inference(cnf_transformation,[],[f188])).
+fof(f1370,plain,(
+  spl59_171),
+  inference(avatar_split_clause,[],[f504,f1368])).
+fof(f504,plain,(
+  ( ! [X0] : (iof(sK46(X0),X0,sK47(X0)) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f49])).
+fof(f49,axiom,(
+  ! [X0] : (type_(X0) <=> ? [X1,X2] : iof(X1,X0,X2))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_dType_a1)).
+fof(f1356,plain,(
+  spl59_168),
+  inference(avatar_split_clause,[],[f493,f1354])).
+fof(f493,plain,(
+  ( ! [X0] : (iof(sK41(X0),X0,sK42(X0)) | individual(X0)) )),
+  inference(cnf_transformation,[],[f270])).
+fof(f270,plain,(
+  ! [X0] : (individual(X0) <=> ! [X1,X2] : ~iof(X1,X0,X2))),
+  inference(ennf_transformation,[],[f50])).
+fof(f50,axiom,(
+  ! [X0] : (individual(X0) <=> ~? [X1,X2] : iof(X1,X0,X2))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_dIndividual_a2)).
+fof(f1084,plain,(
+  spl59_107),
+  inference(avatar_split_clause,[],[f494,f1082])).
+fof(f494,plain,(
+  ( ! [X2,X0,X1] : (~iof(X1,X0,X2) | ~individual(X0)) )),
+  inference(cnf_transformation,[],[f270])).
+fof(f1048,plain,(
+  spl59_98 | ~spl59_30 | ~spl59_95),
+  inference(avatar_split_clause,[],[f1036,f1033,f762,f1046])).
+fof(f762,plain,(
+  spl59_30 <=> ! [X0] : (~endurantType(X0) | type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_30])])).
+fof(f1033,plain,(
+  spl59_95 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_95])])).
+fof(f1036,plain,(
+  type_(xyz) | (~spl59_30 | ~spl59_95)),
+  inference(resolution,[],[f1034,f763])).
+fof(f763,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) ) | ~spl59_30),
+  inference(avatar_component_clause,[],[f762])).
+fof(f1034,plain,(
+  endurantType(xyz) | ~spl59_95),
+  inference(avatar_component_clause,[],[f1033])).
+fof(f1035,plain,(
+  spl59_95 | ~spl59_43 | ~spl59_90),
+  inference(avatar_split_clause,[],[f1013,f1010,f814,f1033])).
+fof(f814,plain,(
+  spl59_43 <=> ! [X0] : (endurantType(X0) | ~sortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_43])])).
+fof(f1010,plain,(
+  spl59_90 <=> sortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f1013,plain,(
+  endurantType(xyz) | (~spl59_43 | ~spl59_90)),
+  inference(resolution,[],[f1011,f815])).
+fof(f815,plain,(
+  ( ! [X0] : (~sortal(X0) | endurantType(X0)) ) | ~spl59_43),
+  inference(avatar_component_clause,[],[f814])).
+fof(f1011,plain,(
+  sortal(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f1010])).
+fof(f1012,plain,(
+  spl59_90 | ~spl59_38 | ~spl59_86),
+  inference(avatar_split_clause,[],[f993,f990,f794,f1010])).
+fof(f794,plain,(
+  spl59_38 <=> ! [X0] : (sortal(X0) | ~rigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_38])])).
+fof(f990,plain,(
+  spl59_86 <=> rigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f993,plain,(
+  sortal(xyz) | (~spl59_38 | ~spl59_86)),
+  inference(resolution,[],[f991,f795])).
+fof(f795,plain,(
+  ( ! [X0] : (~rigidSortal(X0) | sortal(X0)) ) | ~spl59_38),
+  inference(avatar_component_clause,[],[f794])).
+fof(f991,plain,(
+  rigidSortal(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f990])).
+fof(f992,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_72),
+  inference(avatar_split_clause,[],[f982,f930,f650,f990])).
+fof(f930,plain,(
+  spl59_72 <=> ! [X0] : (rigidSortal(X0) | ~kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f982,plain,(
+  rigidSortal(xyz) | (~spl59_2 | ~spl59_72)),
+  inference(resolution,[],[f931,f651])).
+fof(f931,plain,(
+  ( ! [X0] : (~kind(X0) | rigidSortal(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f930])).
+fof(f932,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f553,f930])).
+fof(f553,plain,(
+  ( ! [X0] : (rigidSortal(X0) | ~kind(X0)) )),
+  inference(cnf_transformation,[],[f38])).
+fof(f38,axiom,(
+  ! [X0] : ((subkind(X0) | kind(X0)) <=> rigidSortal(X0))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_rigidSortal_taxonomy)).
+fof(f816,plain,(
+  spl59_43),
+  inference(avatar_split_clause,[],[f414,f814])).
+fof(f414,plain,(
+  ( ! [X0] : (endurantType(X0) | ~sortal(X0)) )),
+  inference(cnf_transformation,[],[f159])).
+fof(f159,plain,(
+  ! [X0] : (sortal(X0) <=> (? [X1] : (specializes(X0,X1) & kind(X1)) & endurantType(X0)))),
+  inference(rectify,[],[f62])).
+fof(f62,axiom,(
+  ! [X13] : (sortal(X13) <=> (? [X11] : (specializes(X13,X11) & kind(X11)) & endurantType(X13)))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_dSortal_a23)).
+fof(f796,plain,(
+  spl59_38),
+  inference(avatar_split_clause,[],[f381,f794])).
+fof(f381,plain,(
+  ( ! [X0] : (sortal(X0) | ~rigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f152])).
+fof(f152,plain,(
+  ! [X0] : (rigidSortal(X0) <=> (sortal(X0) & rigid(X0)))),
+  inference(rectify,[],[f63])).
+fof(f63,axiom,(
+  ! [X8] : (rigidSortal(X8) <=> (sortal(X8) & rigid(X8)))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_rigidSortalsAreRigidAndSortal_xx)).
+fof(f764,plain,(
+  spl59_30),
+  inference(avatar_split_clause,[],[f359,f762])).
+fof(f359,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f245])).
+fof(f245,plain,(
+  ! [X0] : (type_(X0) | (~perdurantType(X0) & ~endurantType(X0)))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0] : ((perdurantType(X0) | endurantType(X0)) => type_(X0))),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',ax_type_taxonomy)).
+fof(f656,plain,(
+  ~spl59_3),
+  inference(avatar_split_clause,[],[f312,f654])).
+fof(f312,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',diff1709)).
+fof(f652,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f311,f650])).
+fof(f311,plain,(
+  kind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  kind(xyz)),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',axiom1708)).
+fof(f648,plain,(
+  spl59_1),
+  inference(avatar_split_clause,[],[f310,f646])).
+fof(f310,plain,(
+  kind(zyx)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  kind(zyx)),
+  file('outputs/ufo/cis/ci_ufo_kind_iof_@_2.in',axiom1709)).
+% SZS output end Proof for ci_ufo_kind_iof_@_2
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 9594
+% Time elapsed: 0.066 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.075 s

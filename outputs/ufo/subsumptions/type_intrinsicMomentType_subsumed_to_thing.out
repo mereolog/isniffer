@@ -1,0 +1,108 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_intrinsicMomentType_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_intrinsicMomentType_subsumed_to_thing
+% SZS output start Proof for type_intrinsicMomentType_subsumed_to_thing
+fof(f1003,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f833,f933,f982,f1002])).
+fof(f1002,plain,(
+  spl59_1 | ~spl59_74 | ~spl59_86),
+  inference(avatar_contradiction_clause,[],[f1001])).
+fof(f1001,plain,(
+  $false | (spl59_1 | ~spl59_74 | ~spl59_86)),
+  inference(subsumption_resolution,[],[f1000,f981])).
+fof(f981,plain,(
+  type_(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f980])).
+fof(f980,plain,(
+  spl59_86 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f1000,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_74)),
+  inference(resolution,[],[f932,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f932,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_74),
+  inference(avatar_component_clause,[],[f931])).
+fof(f931,plain,(
+  spl59_74 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_74])])).
+fof(f982,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_49),
+  inference(avatar_split_clause,[],[f978,f831,f643,f980])).
+fof(f643,plain,(
+  spl59_2 <=> intrinsicMomentType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f831,plain,(
+  spl59_49 <=> ! [X0] : (type_(X0) | ~intrinsicMomentType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_49])])).
+fof(f978,plain,(
+  type_(xyz) | (~spl59_2 | ~spl59_49)),
+  inference(resolution,[],[f832,f644])).
+fof(f644,plain,(
+  intrinsicMomentType(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f832,plain,(
+  ( ! [X0] : (~intrinsicMomentType(X0) | type_(X0)) ) | ~spl59_49),
+  inference(avatar_component_clause,[],[f831])).
+fof(f933,plain,(
+  spl59_74),
+  inference(avatar_split_clause,[],[f552,f931])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_intrinsicMomentType_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f833,plain,(
+  spl59_49),
+  inference(avatar_split_clause,[],[f480,f831])).
+fof(f480,plain,(
+  ( ! [X0] : (type_(X0) | ~intrinsicMomentType(X0)) )),
+  inference(cnf_transformation,[],[f263])).
+fof(f263,plain,(
+  ! [X0] : (intrinsicMomentType(X0) <=> (! [X1,X2] : (intrinsicMoment(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)))),
+  inference(flattening,[],[f262])).
+fof(f262,plain,(
+  ! [X0] : (intrinsicMomentType(X0) <=> (! [X1,X2] : (intrinsicMoment(X1) | (~iof(X1,X0,X2) | ~world(X2))) & type_(X0)))),
+  inference(ennf_transformation,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (intrinsicMomentType(X0) <=> (! [X1,X2] : ((iof(X1,X0,X2) & world(X2)) => intrinsicMoment(X1)) & type_(X0)))),
+  inference(rectify,[],[f75])).
+fof(f75,axiom,(
+  ! [X8] : (intrinsicMomentType(X8) <=> (! [X6,X2] : ((iof(X6,X8,X2) & world(X2)) => intrinsicMoment(X6)) & type_(X8)))),
+  file('outputs/ufo/subsumptions/type_intrinsicMomentType_subsumed_to_thing.in',ax_intrinsicMomentTypeDefinition_a44)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  intrinsicMomentType(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  intrinsicMomentType(xyz)),
+  file('outputs/ufo/subsumptions/type_intrinsicMomentType_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_intrinsicMomentType_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_intrinsicMomentType_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.014 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.022 s

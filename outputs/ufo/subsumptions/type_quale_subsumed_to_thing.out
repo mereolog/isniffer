@@ -1,0 +1,129 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_quale_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_quale_subsumed_to_thing
+% SZS output start Proof for type_quale_subsumed_to_thing
+fof(f1011,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f643,f647,f755,f863,f947,f992,f1002,f1010])).
+fof(f1010,plain,(
+  spl59_1 | ~spl59_77 | ~spl59_90),
+  inference(avatar_contradiction_clause,[],[f1009])).
+fof(f1009,plain,(
+  $false | (spl59_1 | ~spl59_77 | ~spl59_90)),
+  inference(subsumption_resolution,[],[f1008,f1001])).
+fof(f1001,plain,(
+  individual(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f1000])).
+fof(f1000,plain,(
+  spl59_90 <=> individual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f1008,plain,(
+  ~individual(xyz) | (spl59_1 | ~spl59_77)),
+  inference(resolution,[],[f946,f642])).
+fof(f642,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f641])).
+fof(f641,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f946,plain,(
+  ( ! [X0] : (thing(X0) | ~individual(X0)) ) | ~spl59_77),
+  inference(avatar_component_clause,[],[f945])).
+fof(f945,plain,(
+  spl59_77 <=> ! [X0] : (thing(X0) | ~individual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_77])])).
+fof(f1002,plain,(
+  spl59_90 | ~spl59_56 | ~spl59_88),
+  inference(avatar_split_clause,[],[f998,f990,f861,f1000])).
+fof(f861,plain,(
+  spl59_56 <=> ! [X0] : (individual(X0) | ~abstractIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_56])])).
+fof(f990,plain,(
+  spl59_88 <=> abstractIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f998,plain,(
+  individual(xyz) | (~spl59_56 | ~spl59_88)),
+  inference(resolution,[],[f862,f991])).
+fof(f991,plain,(
+  abstractIndividual(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f990])).
+fof(f862,plain,(
+  ( ! [X0] : (~abstractIndividual(X0) | individual(X0)) ) | ~spl59_56),
+  inference(avatar_component_clause,[],[f861])).
+fof(f992,plain,(
+  spl59_88 | ~spl59_2 | ~spl59_29),
+  inference(avatar_split_clause,[],[f988,f753,f645,f990])).
+fof(f645,plain,(
+  spl59_2 <=> quale(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f753,plain,(
+  spl59_29 <=> ! [X0] : (~quale(X0) | abstractIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_29])])).
+fof(f988,plain,(
+  abstractIndividual(xyz) | (~spl59_2 | ~spl59_29)),
+  inference(resolution,[],[f754,f646])).
+fof(f646,plain,(
+  quale(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f645])).
+fof(f754,plain,(
+  ( ! [X0] : (~quale(X0) | abstractIndividual(X0)) ) | ~spl59_29),
+  inference(avatar_component_clause,[],[f753])).
+fof(f947,plain,(
+  spl59_77),
+  inference(avatar_split_clause,[],[f555,f945])).
+fof(f555,plain,(
+  ( ! [X0] : (thing(X0) | ~individual(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_quale_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f863,plain,(
+  spl59_56),
+  inference(avatar_split_clause,[],[f513,f861])).
+fof(f513,plain,(
+  ( ! [X0] : (individual(X0) | ~abstractIndividual(X0)) )),
+  inference(cnf_transformation,[],[f3])).
+fof(f3,axiom,(
+  ! [X0] : ((abstractIndividual(X0) | concreteIndividual(X0)) <=> individual(X0))),
+  file('outputs/ufo/subsumptions/type_quale_subsumed_to_thing.in',ax_individual_taxonomy)).
+fof(f755,plain,(
+  spl59_29),
+  inference(avatar_split_clause,[],[f347,f753])).
+fof(f347,plain,(
+  ( ! [X0] : (~quale(X0) | abstractIndividual(X0)) )),
+  inference(cnf_transformation,[],[f235])).
+fof(f235,plain,(
+  ! [X0] : (abstractIndividual(X0) | ~quale(X0))),
+  inference(ennf_transformation,[],[f9])).
+fof(f9,axiom,(
+  ! [X0] : (quale(X0) => abstractIndividual(X0))),
+  file('outputs/ufo/subsumptions/type_quale_subsumed_to_thing.in',ax_abstractIndividual_taxonomy_quale)).
+fof(f647,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f304,f645])).
+fof(f304,plain,(
+  quale(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quale(xyz)),
+  file('outputs/ufo/subsumptions/type_quale_subsumed_to_thing.in',axiom1)).
+fof(f643,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f303,f641])).
+fof(f303,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_quale_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_quale_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.014 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.021 s

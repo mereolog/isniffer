@@ -1,0 +1,385 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_relatorType_subsumed_to_quantity for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 67802
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on type_relatorType_subsumed_to_quantity for (258ds)
+TRYING [1]
+TRYING [2]
+TRYING [3]
+TRYING [4]
+TRYING [5]
+TRYING [6]
+TRYING [7]
+TRYING [8]
+TRYING [9]
+TRYING [10]
+TRYING [11]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 1409657
+% Time elapsed: 25.900 s
+% ------------------------------
+% ------------------------------
+% ott-4_4_awrs=decay:awrsf=64:add=off:afr=on:afp=40000:afq=1.0:amm=off:bs=on:gs=on:gsaa=from_current:gsem=on:irw=on:lma=on:nm=64:newcnf=on:nwc=1:sac=on:sp=frequency:updr=off_36 on type_relatorType_subsumed_to_quantity for (36ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 69337
+% Time elapsed: 3.700 s
+% ------------------------------
+% ------------------------------
+% ott+10_128_av=off:bs=on:gsp=on:irw=on:lcm=predicate:lma=on:nm=0:nwc=1:sp=occurrence:urr=on:updr=off:uhcvi=on_231 on type_relatorType_subsumed_to_quantity for (231ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_relatorType_subsumed_to_quantity
+% SZS output start Proof for type_relatorType_subsumed_to_quantity
+fof(f7043,plain,(
+  $false),
+  inference(unit_resulting_resolution,[],[f567,f1201,f4103,f6216,f762])).
+fof(f762,plain,(
+  ( ! [X3,X0,X4] : (~iof(X3,X0,X4) | relator(X3) | ~world(X4) | ~relatorType(X0)) )),
+  inference(cnf_transformation,[],[f428])).
+fof(f428,plain,(
+  ! [X0] : ((relatorType(X0) | (~relator(sK37(X0)) & iof(sK37(X0),X0,sK38(X0)) & world(sK38(X0))) | ~type_(X0)) & ((! [X3,X4] : (relator(X3) | ~iof(X3,X0,X4) | ~world(X4)) & type_(X0)) | ~relatorType(X0)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK37,sK38])],[f426,f427])).
+fof(f427,plain,(
+  ! [X0] : (? [X1,X2] : (~relator(X1) & iof(X1,X0,X2) & world(X2)) => (~relator(sK37(X0)) & iof(sK37(X0),X0,sK38(X0)) & world(sK38(X0))))),
+  introduced(choice_axiom,[])).
+fof(f426,plain,(
+  ! [X0] : ((relatorType(X0) | ? [X1,X2] : (~relator(X1) & iof(X1,X0,X2) & world(X2)) | ~type_(X0)) & ((! [X3,X4] : (relator(X3) | ~iof(X3,X0,X4) | ~world(X4)) & type_(X0)) | ~relatorType(X0)))),
+  inference(rectify,[],[f425])).
+fof(f425,plain,(
+  ! [X0] : ((relatorType(X0) | ? [X1,X2] : (~relator(X1) & iof(X1,X0,X2) & world(X2)) | ~type_(X0)) & ((! [X1,X2] : (relator(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)) | ~relatorType(X0)))),
+  inference(flattening,[],[f424])).
+fof(f424,plain,(
+  ! [X0] : ((relatorType(X0) | (? [X1,X2] : (~relator(X1) & iof(X1,X0,X2) & world(X2)) | ~type_(X0))) & ((! [X1,X2] : (relator(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)) | ~relatorType(X0)))),
+  inference(nnf_transformation,[],[f256])).
+fof(f256,plain,(
+  ! [X0] : (relatorType(X0) <=> (! [X1,X2] : (relator(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)))),
+  inference(flattening,[],[f255])).
+fof(f255,plain,(
+  ! [X0] : (relatorType(X0) <=> (! [X1,X2] : (relator(X1) | (~iof(X1,X0,X2) | ~world(X2))) & type_(X0)))),
+  inference(ennf_transformation,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (relatorType(X0) <=> (! [X1,X2] : ((iof(X1,X0,X2) & world(X2)) => relator(X1)) & type_(X0)))),
+  inference(rectify,[],[f76])).
+fof(f76,axiom,(
+  ! [X8] : (relatorType(X8) <=> (! [X6,X2] : ((iof(X6,X8,X2) & world(X2)) => relator(X6)) & type_(X8)))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_relatorTypeDefinition_a44)).
+fof(f6216,plain,(
+  iof(sK10(xyz),xyz,sK11(xyz))),
+  inference(unit_resulting_resolution,[],[f1025,f1023,f662])).
+fof(f662,plain,(
+  ( ! [X0] : (iof(sK10(X0),X0,sK11(X0)) | intrinsicMomentType(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f354])).
+fof(f354,plain,(
+  ! [X0] : ((intrinsicMomentType(X0) | (~intrinsicMoment(sK10(X0)) & iof(sK10(X0),X0,sK11(X0)) & world(sK11(X0))) | ~type_(X0)) & ((! [X3,X4] : (intrinsicMoment(X3) | ~iof(X3,X0,X4) | ~world(X4)) & type_(X0)) | ~intrinsicMomentType(X0)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK10,sK11])],[f352,f353])).
+fof(f353,plain,(
+  ! [X0] : (? [X1,X2] : (~intrinsicMoment(X1) & iof(X1,X0,X2) & world(X2)) => (~intrinsicMoment(sK10(X0)) & iof(sK10(X0),X0,sK11(X0)) & world(sK11(X0))))),
+  introduced(choice_axiom,[])).
+fof(f352,plain,(
+  ! [X0] : ((intrinsicMomentType(X0) | ? [X1,X2] : (~intrinsicMoment(X1) & iof(X1,X0,X2) & world(X2)) | ~type_(X0)) & ((! [X3,X4] : (intrinsicMoment(X3) | ~iof(X3,X0,X4) | ~world(X4)) & type_(X0)) | ~intrinsicMomentType(X0)))),
+  inference(rectify,[],[f351])).
+fof(f351,plain,(
+  ! [X0] : ((intrinsicMomentType(X0) | ? [X1,X2] : (~intrinsicMoment(X1) & iof(X1,X0,X2) & world(X2)) | ~type_(X0)) & ((! [X1,X2] : (intrinsicMoment(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)) | ~intrinsicMomentType(X0)))),
+  inference(flattening,[],[f350])).
+fof(f350,plain,(
+  ! [X0] : ((intrinsicMomentType(X0) | (? [X1,X2] : (~intrinsicMoment(X1) & iof(X1,X0,X2) & world(X2)) | ~type_(X0))) & ((! [X1,X2] : (intrinsicMoment(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)) | ~intrinsicMomentType(X0)))),
+  inference(nnf_transformation,[],[f238])).
+fof(f238,plain,(
+  ! [X0] : (intrinsicMomentType(X0) <=> (! [X1,X2] : (intrinsicMoment(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)))),
+  inference(flattening,[],[f237])).
+fof(f237,plain,(
+  ! [X0] : (intrinsicMomentType(X0) <=> (! [X1,X2] : (intrinsicMoment(X1) | (~iof(X1,X0,X2) | ~world(X2))) & type_(X0)))),
+  inference(ennf_transformation,[],[f151])).
+fof(f151,plain,(
+  ! [X0] : (intrinsicMomentType(X0) <=> (! [X1,X2] : ((iof(X1,X0,X2) & world(X2)) => intrinsicMoment(X1)) & type_(X0)))),
+  inference(rectify,[],[f75])).
+fof(f75,axiom,(
+  ! [X8] : (intrinsicMomentType(X8) <=> (! [X6,X2] : ((iof(X6,X8,X2) & world(X2)) => intrinsicMoment(X6)) & type_(X8)))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_intrinsicMomentTypeDefinition_a44)).
+fof(f1023,plain,(
+  ~intrinsicMomentType(xyz)),
+  inference(unit_resulting_resolution,[],[f567,f576])).
+fof(f576,plain,(
+  ( ! [X0] : (~relatorType(X0) | ~intrinsicMomentType(X0)) )),
+  inference(cnf_transformation,[],[f210])).
+fof(f210,plain,(
+  ! [X0] : (~relatorType(X0) | ~intrinsicMomentType(X0))),
+  inference(ennf_transformation,[],[f31])).
+fof(f31,axiom,(
+  ~? [X0] : (relatorType(X0) & intrinsicMomentType(X0))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_momentType_partition)).
+fof(f1025,plain,(
+  type_(xyz)),
+  inference(unit_resulting_resolution,[],[f567,f761])).
+fof(f761,plain,(
+  ( ! [X0] : (~relatorType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f428])).
+fof(f4103,plain,(
+  ~relator(sK10(xyz))),
+  inference(unit_resulting_resolution,[],[f1337,f4101])).
+fof(f4101,plain,(
+  ( ! [X0] : (~relator(X0) | externallyDependentMode(X0)) )),
+  inference(duplicate_literal_removal,[],[f4096])).
+fof(f4096,plain,(
+  ( ! [X0] : (~relator(X0) | externallyDependentMode(X0) | ~relator(X0)) )),
+  inference(resolution,[],[f4094,f3614])).
+fof(f3614,plain,(
+  ( ! [X2] : (~sP84(sK36(X2)) | externallyDependentMode(X2) | ~relator(X2)) )),
+  inference(resolution,[],[f3607,f1009])).
+fof(f1009,plain,(
+  ( ! [X0,X5] : (~overlap(X5,X0) | externallyDependentMode(X5) | ~sP84(X0)) )),
+  inference(general_splitting,[],[f886,f1008_D])).
+fof(f1008,plain,(
+  ( ! [X0,X1] : (~quaIndividualOf(X0,X1) | sP84(X0)) )),
+  inference(cnf_transformation,[],[f1008_D])).
+fof(f1008_D,plain,(
+  ( ! [X0] : (( ! [X1] : ~quaIndividualOf(X0,X1) ) <=> ~sP84(X0)) )),
+  introduced(general_splitting_component_introduction,[new_symbols(naming,[sP84])])).
+fof(f886,plain,(
+  ( ! [X0,X1,X5] : (externallyDependentMode(X5) | ~overlap(X5,X0) | ~quaIndividualOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f518])).
+fof(f518,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | (((~foundedBy(sK55(X0,X1),sK56(X0,X1)) & foundedBy(X0,sK56(X0,X1))) | ~inheresIn(sK55(X0,X1),X1) | ~externallyDependentMode(sK55(X0,X1)) | ~overlap(sK55(X0,X1),X0)) & ((! [X4] : (foundedBy(sK55(X0,X1),X4) | ~foundedBy(X0,X4)) & inheresIn(sK55(X0,X1),X1) & externallyDependentMode(sK55(X0,X1))) | overlap(sK55(X0,X1),X0)))) & (! [X5] : ((overlap(X5,X0) | (~foundedBy(X5,sK57(X0,X5)) & foundedBy(X0,sK57(X0,X5))) | ~inheresIn(X5,X1) | ~externallyDependentMode(X5)) & ((! [X7] : (foundedBy(X5,X7) | ~foundedBy(X0,X7)) & inheresIn(X5,X1) & externallyDependentMode(X5)) | ~overlap(X5,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK55,sK56,sK57])],[f514,f517,f516,f515])).
+fof(f515,plain,(
+  ! [X0,X1] : (? [X2] : ((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2) | ~overlap(X2,X0)) & ((! [X4] : (foundedBy(X2,X4) | ~foundedBy(X0,X4)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0))) => ((? [X3] : (~foundedBy(sK55(X0,X1),X3) & foundedBy(X0,X3)) | ~inheresIn(sK55(X0,X1),X1) | ~externallyDependentMode(sK55(X0,X1)) | ~overlap(sK55(X0,X1),X0)) & ((! [X4] : (foundedBy(sK55(X0,X1),X4) | ~foundedBy(X0,X4)) & inheresIn(sK55(X0,X1),X1) & externallyDependentMode(sK55(X0,X1))) | overlap(sK55(X0,X1),X0))))),
+  introduced(choice_axiom,[])).
+fof(f516,plain,(
+  ! [X0,X1] : (? [X3] : (~foundedBy(sK55(X0,X1),X3) & foundedBy(X0,X3)) => (~foundedBy(sK55(X0,X1),sK56(X0,X1)) & foundedBy(X0,sK56(X0,X1))))),
+  introduced(choice_axiom,[])).
+fof(f517,plain,(
+  ! [X0,X5] : (? [X6] : (~foundedBy(X5,X6) & foundedBy(X0,X6)) => (~foundedBy(X5,sK57(X0,X5)) & foundedBy(X0,sK57(X0,X5))))),
+  introduced(choice_axiom,[])).
+fof(f514,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | ? [X2] : ((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2) | ~overlap(X2,X0)) & ((! [X4] : (foundedBy(X2,X4) | ~foundedBy(X0,X4)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0)))) & (! [X5] : ((overlap(X5,X0) | ? [X6] : (~foundedBy(X5,X6) & foundedBy(X0,X6)) | ~inheresIn(X5,X1) | ~externallyDependentMode(X5)) & ((! [X7] : (foundedBy(X5,X7) | ~foundedBy(X0,X7)) & inheresIn(X5,X1) & externallyDependentMode(X5)) | ~overlap(X5,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(rectify,[],[f513])).
+fof(f513,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | ? [X2] : ((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2) | ~overlap(X2,X0)) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0)))) & (! [X2] : ((overlap(X2,X0) | ? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2)) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | ~overlap(X2,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(flattening,[],[f512])).
+fof(f512,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | ? [X2] : (((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2)) | ~overlap(X2,X0)) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0)))) & (! [X2] : ((overlap(X2,X0) | (? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2))) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | ~overlap(X2,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(nnf_transformation,[],[f277])).
+fof(f277,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(ennf_transformation,[],[f180])).
+fof(f180,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X0,X3) => foundedBy(X2,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(rectify,[],[f121])).
+fof(f121,axiom,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X3] : (overlap(X3,X0) <=> (! [X14] : (foundedBy(X0,X14) => foundedBy(X3,X14)) & inheresIn(X3,X1) & externallyDependentMode(X3))))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_dQuaIndividualOf_a75)).
+fof(f3607,plain,(
+  ( ! [X1] : (overlap(X1,sK36(X1)) | ~relator(X1)) )),
+  inference(resolution,[],[f3515,f1167])).
+fof(f1167,plain,(
+  ( ! [X0] : (partOf(sK36(X0),X0) | ~relator(X0)) )),
+  inference(resolution,[],[f896,f724])).
+fof(f724,plain,(
+  ( ! [X0] : (properPartOf(sK36(X0),X0) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f423])).
+fof(f423,plain,(
+  ! [X0] : ((relator(X0) | (~properPartOf(sK31(X0),X0) & ! [X3] : ((foundedBy(sK30(X0),X3) | ~foundedBy(sK31(X0),X3)) & (foundedBy(sK31(X0),X3) | ~foundedBy(sK30(X0),X3))) & existentiallyDependsOn(sK31(X0),sK30(X0)) & existentiallyDependsOn(sK30(X0),sK31(X0)) & quaIndividual(sK31(X0)) & properPartOf(sK30(X0),X0)) | ((((~foundedBy(sK33(X0),sK34(X0)) | ~foundedBy(sK32(X0),sK34(X0))) & (foundedBy(sK33(X0),sK34(X0)) | foundedBy(sK32(X0),sK34(X0)))) | ~existentiallyDependsOn(sK33(X0),sK32(X0)) | ~existentiallyDependsOn(sK32(X0),sK33(X0)) | ~quaIndividual(sK33(X0)) | ~quaIndividual(sK32(X0))) & properPartOf(sK33(X0),X0) & properPartOf(sK32(X0),X0)) | ! [X7] : ~properPartOf(X7,X0)) & ((! [X8,X9] : (properPartOf(X9,X0) | ((~foundedBy(X9,sK35(X8,X9)) | ~foundedBy(X8,sK35(X8,X9))) & (foundedBy(X9,sK35(X8,X9)) | foundedBy(X8,sK35(X8,X9)))) | ~existentiallyDependsOn(X9,X8) | ~existentiallyDependsOn(X8,X9) | ~quaIndividual(X9) | ~properPartOf(X8,X0)) & ! [X11,X12] : ((! [X13] : ((foundedBy(X11,X13) | ~foundedBy(X12,X13)) & (foundedBy(X12,X13) | ~foundedBy(X11,X13))) & existentiallyDependsOn(X12,X11) & existentiallyDependsOn(X11,X12) & quaIndividual(X12) & quaIndividual(X11)) | ~properPartOf(X12,X0) | ~properPartOf(X11,X0)) & properPartOf(sK36(X0),X0)) | ~relator(X0)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK30,sK31,sK32,sK33,sK34,sK35,sK36])],[f417,f422,f421,f420,f419,f418])).
+fof(f418,plain,(
+  ! [X0] : (? [X1,X2] : (~properPartOf(X2,X0) & ! [X3] : ((foundedBy(X1,X3) | ~foundedBy(X2,X3)) & (foundedBy(X2,X3) | ~foundedBy(X1,X3))) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) => (~properPartOf(sK31(X0),X0) & ! [X3] : ((foundedBy(sK30(X0),X3) | ~foundedBy(sK31(X0),X3)) & (foundedBy(sK31(X0),X3) | ~foundedBy(sK30(X0),X3))) & existentiallyDependsOn(sK31(X0),sK30(X0)) & existentiallyDependsOn(sK30(X0),sK31(X0)) & quaIndividual(sK31(X0)) & properPartOf(sK30(X0),X0)))),
+  introduced(choice_axiom,[])).
+fof(f419,plain,(
+  ! [X0] : (? [X4,X5] : ((? [X6] : ((~foundedBy(X5,X6) | ~foundedBy(X4,X6)) & (foundedBy(X5,X6) | foundedBy(X4,X6))) | ~existentiallyDependsOn(X5,X4) | ~existentiallyDependsOn(X4,X5) | ~quaIndividual(X5) | ~quaIndividual(X4)) & properPartOf(X5,X0) & properPartOf(X4,X0)) => ((? [X6] : ((~foundedBy(sK33(X0),X6) | ~foundedBy(sK32(X0),X6)) & (foundedBy(sK33(X0),X6) | foundedBy(sK32(X0),X6))) | ~existentiallyDependsOn(sK33(X0),sK32(X0)) | ~existentiallyDependsOn(sK32(X0),sK33(X0)) | ~quaIndividual(sK33(X0)) | ~quaIndividual(sK32(X0))) & properPartOf(sK33(X0),X0) & properPartOf(sK32(X0),X0)))),
+  introduced(choice_axiom,[])).
+fof(f420,plain,(
+  ! [X0] : (? [X6] : ((~foundedBy(sK33(X0),X6) | ~foundedBy(sK32(X0),X6)) & (foundedBy(sK33(X0),X6) | foundedBy(sK32(X0),X6))) => ((~foundedBy(sK33(X0),sK34(X0)) | ~foundedBy(sK32(X0),sK34(X0))) & (foundedBy(sK33(X0),sK34(X0)) | foundedBy(sK32(X0),sK34(X0)))))),
+  introduced(choice_axiom,[])).
+fof(f421,plain,(
+  ! [X8,X9] : (? [X10] : ((~foundedBy(X9,X10) | ~foundedBy(X8,X10)) & (foundedBy(X9,X10) | foundedBy(X8,X10))) => ((~foundedBy(X9,sK35(X8,X9)) | ~foundedBy(X8,sK35(X8,X9))) & (foundedBy(X9,sK35(X8,X9)) | foundedBy(X8,sK35(X8,X9)))))),
+  introduced(choice_axiom,[])).
+fof(f422,plain,(
+  ! [X0] : (? [X14] : properPartOf(X14,X0) => properPartOf(sK36(X0),X0))),
+  introduced(choice_axiom,[])).
+fof(f417,plain,(
+  ! [X0] : ((relator(X0) | ? [X1,X2] : (~properPartOf(X2,X0) & ! [X3] : ((foundedBy(X1,X3) | ~foundedBy(X2,X3)) & (foundedBy(X2,X3) | ~foundedBy(X1,X3))) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) | ? [X4,X5] : ((? [X6] : ((~foundedBy(X5,X6) | ~foundedBy(X4,X6)) & (foundedBy(X5,X6) | foundedBy(X4,X6))) | ~existentiallyDependsOn(X5,X4) | ~existentiallyDependsOn(X4,X5) | ~quaIndividual(X5) | ~quaIndividual(X4)) & properPartOf(X5,X0) & properPartOf(X4,X0)) | ! [X7] : ~properPartOf(X7,X0)) & ((! [X8,X9] : (properPartOf(X9,X0) | ? [X10] : ((~foundedBy(X9,X10) | ~foundedBy(X8,X10)) & (foundedBy(X9,X10) | foundedBy(X8,X10))) | ~existentiallyDependsOn(X9,X8) | ~existentiallyDependsOn(X8,X9) | ~quaIndividual(X9) | ~properPartOf(X8,X0)) & ! [X11,X12] : ((! [X13] : ((foundedBy(X11,X13) | ~foundedBy(X12,X13)) & (foundedBy(X12,X13) | ~foundedBy(X11,X13))) & existentiallyDependsOn(X12,X11) & existentiallyDependsOn(X11,X12) & quaIndividual(X12) & quaIndividual(X11)) | ~properPartOf(X12,X0) | ~properPartOf(X11,X0)) & ? [X14] : properPartOf(X14,X0)) | ~relator(X0)))),
+  inference(rectify,[],[f416])).
+fof(f416,plain,(
+  ! [X0] : ((relator(X0) | ? [X1,X2] : (~properPartOf(X2,X0) & ! [X3] : ((foundedBy(X1,X3) | ~foundedBy(X2,X3)) & (foundedBy(X2,X3) | ~foundedBy(X1,X3))) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) | ? [X4,X5] : ((? [X6] : ((~foundedBy(X5,X6) | ~foundedBy(X4,X6)) & (foundedBy(X5,X6) | foundedBy(X4,X6))) | ~existentiallyDependsOn(X5,X4) | ~existentiallyDependsOn(X4,X5) | ~quaIndividual(X5) | ~quaIndividual(X4)) & properPartOf(X5,X0) & properPartOf(X4,X0)) | ! [X7] : ~properPartOf(X7,X0)) & ((! [X1,X2] : (properPartOf(X2,X0) | ? [X3] : ((~foundedBy(X2,X3) | ~foundedBy(X1,X3)) & (foundedBy(X2,X3) | foundedBy(X1,X3))) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0)) & ! [X4,X5] : ((! [X6] : ((foundedBy(X4,X6) | ~foundedBy(X5,X6)) & (foundedBy(X5,X6) | ~foundedBy(X4,X6))) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | ~properPartOf(X5,X0) | ~properPartOf(X4,X0)) & ? [X7] : properPartOf(X7,X0)) | ~relator(X0)))),
+  inference(flattening,[],[f415])).
+fof(f415,plain,(
+  ! [X0] : ((relator(X0) | (? [X1,X2] : (~properPartOf(X2,X0) & ! [X3] : ((foundedBy(X1,X3) | ~foundedBy(X2,X3)) & (foundedBy(X2,X3) | ~foundedBy(X1,X3))) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) | ? [X4,X5] : ((? [X6] : ((~foundedBy(X5,X6) | ~foundedBy(X4,X6)) & (foundedBy(X5,X6) | foundedBy(X4,X6))) | ~existentiallyDependsOn(X5,X4) | ~existentiallyDependsOn(X4,X5) | ~quaIndividual(X5) | ~quaIndividual(X4)) & properPartOf(X5,X0) & properPartOf(X4,X0)) | ! [X7] : ~properPartOf(X7,X0))) & ((! [X1,X2] : (properPartOf(X2,X0) | ? [X3] : ((~foundedBy(X2,X3) | ~foundedBy(X1,X3)) & (foundedBy(X2,X3) | foundedBy(X1,X3))) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0)) & ! [X4,X5] : ((! [X6] : ((foundedBy(X4,X6) | ~foundedBy(X5,X6)) & (foundedBy(X5,X6) | ~foundedBy(X4,X6))) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | ~properPartOf(X5,X0) | ~properPartOf(X4,X0)) & ? [X7] : properPartOf(X7,X0)) | ~relator(X0)))),
+  inference(nnf_transformation,[],[f254])).
+fof(f254,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : (properPartOf(X2,X0) | ? [X3] : (foundedBy(X1,X3) <~> foundedBy(X2,X3)) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0)) & ! [X4,X5] : ((! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | ~properPartOf(X5,X0) | ~properPartOf(X4,X0)) & ? [X7] : properPartOf(X7,X0)))),
+  inference(flattening,[],[f253])).
+fof(f253,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : (properPartOf(X2,X0) | (? [X3] : (foundedBy(X1,X3) <~> foundedBy(X2,X3)) | ~existentiallyDependsOn(X2,X1) | ~existentiallyDependsOn(X1,X2) | ~quaIndividual(X2) | ~properPartOf(X1,X0))) & ! [X4,X5] : ((! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4)) | (~properPartOf(X5,X0) | ~properPartOf(X4,X0))) & ? [X7] : properPartOf(X7,X0)))),
+  inference(ennf_transformation,[],[f165])).
+fof(f165,plain,(
+  ! [X0] : (relator(X0) <=> (! [X1,X2] : ((! [X3] : (foundedBy(X1,X3) <=> foundedBy(X2,X3)) & existentiallyDependsOn(X2,X1) & existentiallyDependsOn(X1,X2) & quaIndividual(X2) & properPartOf(X1,X0)) => properPartOf(X2,X0)) & ! [X4,X5] : ((properPartOf(X5,X0) & properPartOf(X4,X0)) => (! [X6] : (foundedBy(X4,X6) <=> foundedBy(X5,X6)) & existentiallyDependsOn(X5,X4) & existentiallyDependsOn(X4,X5) & quaIndividual(X5) & quaIndividual(X4))) & ? [X7] : properPartOf(X7,X0)))),
+  inference(rectify,[],[f124])).
+fof(f124,axiom,(
+  ! [X23] : (relator(X23) <=> (! [X24,X25] : ((! [X18] : (foundedBy(X24,X18) <=> foundedBy(X25,X18)) & existentiallyDependsOn(X25,X24) & existentiallyDependsOn(X24,X25) & quaIndividual(X25) & properPartOf(X24,X23)) => properPartOf(X25,X23)) & ! [X1,X3] : ((properPartOf(X3,X23) & properPartOf(X1,X23)) => (! [X14] : (foundedBy(X1,X14) <=> foundedBy(X3,X14)) & existentiallyDependsOn(X3,X1) & existentiallyDependsOn(X1,X3) & quaIndividual(X3) & quaIndividual(X1))) & ? [X0] : properPartOf(X0,X23)))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_dRelator_a81)).
+fof(f896,plain,(
+  ( ! [X0,X1] : (~properPartOf(X0,X1) | partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f520])).
+fof(f520,plain,(
+  ! [X0,X1] : ((properPartOf(X0,X1) | partOf(X1,X0) | ~partOf(X0,X1)) & ((~partOf(X1,X0) & partOf(X0,X1)) | ~properPartOf(X0,X1)))),
+  inference(flattening,[],[f519])).
+fof(f519,plain,(
+  ! [X0,X1] : ((properPartOf(X0,X1) | (partOf(X1,X0) | ~partOf(X0,X1))) & ((~partOf(X1,X0) & partOf(X0,X1)) | ~properPartOf(X0,X1)))),
+  inference(nnf_transformation,[],[f91])).
+fof(f91,axiom,(
+  ! [X0,X1] : (properPartOf(X0,X1) <=> (~partOf(X1,X0) & partOf(X0,X1)))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_properPart_a52)).
+fof(f3515,plain,(
+  ( ! [X0,X1] : (~partOf(X1,X0) | overlap(X0,X1)) )),
+  inference(resolution,[],[f901,f603])).
+fof(f603,plain,(
+  ( ! [X0] : (partOf(X0,X0)) )),
+  inference(cnf_transformation,[],[f85])).
+fof(f85,axiom,(
+  ! [X0] : partOf(X0,X0)),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_reflexiveParthood)).
+fof(f901,plain,(
+  ( ! [X2,X0,X1] : (~partOf(X2,X1) | overlap(X0,X1) | ~partOf(X2,X0)) )),
+  inference(cnf_transformation,[],[f524])).
+fof(f524,plain,(
+  ! [X0,X1] : ((overlap(X0,X1) | ! [X2] : (~partOf(X2,X1) | ~partOf(X2,X0))) & ((partOf(sK58(X0,X1),X1) & partOf(sK58(X0,X1),X0)) | ~overlap(X0,X1)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK58])],[f522,f523])).
+fof(f523,plain,(
+  ! [X0,X1] : (? [X3] : (partOf(X3,X1) & partOf(X3,X0)) => (partOf(sK58(X0,X1),X1) & partOf(sK58(X0,X1),X0)))),
+  introduced(choice_axiom,[])).
+fof(f522,plain,(
+  ! [X0,X1] : ((overlap(X0,X1) | ! [X2] : (~partOf(X2,X1) | ~partOf(X2,X0))) & (? [X3] : (partOf(X3,X1) & partOf(X3,X0)) | ~overlap(X0,X1)))),
+  inference(rectify,[],[f521])).
+fof(f521,plain,(
+  ! [X0,X1] : ((overlap(X0,X1) | ! [X2] : (~partOf(X2,X1) | ~partOf(X2,X0))) & (? [X2] : (partOf(X2,X1) & partOf(X2,X0)) | ~overlap(X0,X1)))),
+  inference(nnf_transformation,[],[f181])).
+fof(f181,plain,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X2] : (partOf(X2,X1) & partOf(X2,X0)))),
+  inference(rectify,[],[f89])).
+fof(f89,axiom,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X3] : (partOf(X3,X1) & partOf(X3,X0)))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_overlappingWholes_a50)).
+fof(f4094,plain,(
+  ( ! [X1] : (sP84(sK36(X1)) | ~relator(X1)) )),
+  inference(resolution,[],[f4092,f1128])).
+fof(f1128,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | sP84(X0)) )),
+  inference(resolution,[],[f680,f1008])).
+fof(f680,plain,(
+  ( ! [X0] : (quaIndividualOf(X0,sK18(X0)) | ~quaIndividual(X0)) )),
+  inference(cnf_transformation,[],[f376])).
+fof(f376,plain,(
+  ! [X0] : ((quaIndividual(X0) | ! [X1] : ~quaIndividualOf(X0,X1)) & (quaIndividualOf(X0,sK18(X0)) | ~quaIndividual(X0)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK18])],[f374,f375])).
+fof(f375,plain,(
+  ! [X0] : (? [X2] : quaIndividualOf(X0,X2) => quaIndividualOf(X0,sK18(X0)))),
+  introduced(choice_axiom,[])).
+fof(f374,plain,(
+  ! [X0] : ((quaIndividual(X0) | ! [X1] : ~quaIndividualOf(X0,X1)) & (? [X2] : quaIndividualOf(X0,X2) | ~quaIndividual(X0)))),
+  inference(rectify,[],[f373])).
+fof(f373,plain,(
+  ! [X0] : ((quaIndividual(X0) | ! [X1] : ~quaIndividualOf(X0,X1)) & (? [X1] : quaIndividualOf(X0,X1) | ~quaIndividual(X0)))),
+  inference(nnf_transformation,[],[f122])).
+fof(f122,axiom,(
+  ! [X0] : (quaIndividual(X0) <=> ? [X1] : quaIndividualOf(X0,X1))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_dQuaIndividual_a76)).
+fof(f4092,plain,(
+  ( ! [X0] : (quaIndividual(sK36(X0)) | ~relator(X0)) )),
+  inference(subsumption_resolution,[],[f4091,f1140])).
+fof(f1140,plain,(
+  ( ! [X0] : (~relator(X0) | sP80(X0)) )),
+  inference(resolution,[],[f724,f1000])).
+fof(f1000,plain,(
+  ( ! [X0,X11] : (~properPartOf(X11,X0) | sP80(X0)) )),
+  inference(cnf_transformation,[],[f1000_D])).
+fof(f1000_D,plain,(
+  ( ! [X0] : (( ! [X11] : ~properPartOf(X11,X0) ) <=> ~sP80(X0)) )),
+  introduced(general_splitting_component_introduction,[new_symbols(naming,[sP80])])).
+fof(f4091,plain,(
+  ( ! [X0] : (quaIndividual(sK36(X0)) | ~relator(X0) | ~sP80(X0)) )),
+  inference(duplicate_literal_removal,[],[f4090])).
+fof(f4090,plain,(
+  ( ! [X0] : (quaIndividual(sK36(X0)) | ~relator(X0) | ~sP80(X0) | ~relator(X0)) )),
+  inference(resolution,[],[f1001,f724])).
+fof(f1001,plain,(
+  ( ! [X0,X12] : (~properPartOf(X12,X0) | quaIndividual(X12) | ~relator(X0) | ~sP80(X0)) )),
+  inference(general_splitting,[],[f726,f1000_D])).
+fof(f726,plain,(
+  ( ! [X0,X11,X12] : (quaIndividual(X12) | ~properPartOf(X12,X0) | ~properPartOf(X11,X0) | ~relator(X0)) )),
+  inference(cnf_transformation,[],[f423])).
+fof(f1337,plain,(
+  ~externallyDependentMode(sK10(xyz))),
+  inference(unit_resulting_resolution,[],[f1335,f607])).
+fof(f607,plain,(
+  ( ! [X0] : (~externallyDependentMode(X0) | mode(X0)) )),
+  inference(cnf_transformation,[],[f228])).
+fof(f228,plain,(
+  ! [X0] : (mode(X0) | ~externallyDependentMode(X0))),
+  inference(ennf_transformation,[],[f24])).
+fof(f24,axiom,(
+  ! [X0] : (externallyDependentMode(X0) => mode(X0))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_mode_taxonomy_externallyDependentMode)).
+fof(f1335,plain,(
+  ~mode(sK10(xyz))),
+  inference(unit_resulting_resolution,[],[f1334,f793])).
+fof(f793,plain,(
+  ( ! [X0] : (~mode(X0) | intrinsicMoment(X0)) )),
+  inference(cnf_transformation,[],[f459])).
+fof(f459,plain,(
+  ! [X0] : ((mode(X0) | quality(X0) | ~intrinsicMoment(X0)) & (intrinsicMoment(X0) | (~mode(X0) & ~quality(X0))))),
+  inference(flattening,[],[f458])).
+fof(f458,plain,(
+  ! [X0] : (((mode(X0) | quality(X0)) | ~intrinsicMoment(X0)) & (intrinsicMoment(X0) | (~mode(X0) & ~quality(X0))))),
+  inference(nnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',ax_intrinsicMoment_taxonomy)).
+fof(f1334,plain,(
+  ~intrinsicMoment(sK10(xyz))),
+  inference(unit_resulting_resolution,[],[f1025,f1023,f663])).
+fof(f663,plain,(
+  ( ! [X0] : (~intrinsicMoment(sK10(X0)) | intrinsicMomentType(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f354])).
+fof(f1201,plain,(
+  world(sK11(xyz))),
+  inference(unit_resulting_resolution,[],[f1023,f1025,f661])).
+fof(f661,plain,(
+  ( ! [X0] : (~type_(X0) | world(sK11(X0)) | intrinsicMomentType(X0)) )),
+  inference(cnf_transformation,[],[f354])).
+fof(f567,plain,(
+  relatorType(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  relatorType(xyz)),
+  file('outputs/ufo/subsumptions/type_relatorType_subsumed_to_quantity.in',axiom1)).
+% SZS output end Proof for type_relatorType_subsumed_to_quantity
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 5117
+% Time elapsed: 0.087 s
+% ------------------------------
+% ------------------------------
+% Success in time 33.037 s

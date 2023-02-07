@@ -1,0 +1,75 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_stv_subsumed_to_pd for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_stv_subsumed_to_pd
+% SZS output start Proof for type_stv_subsumed_to_pd
+fof(f859,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f667,f671,f767,f858])).
+fof(f858,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_26),
+  inference(avatar_contradiction_clause,[],[f857])).
+fof(f857,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_26)),
+  inference(subsumption_resolution,[],[f856,f666])).
+fof(f666,plain,(
+  ~pd(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f665])).
+fof(f665,plain,(
+  spl18_1 <=> pd(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f856,plain,(
+  pd(xyz) | (~spl18_2 | ~spl18_26)),
+  inference(resolution,[],[f766,f670])).
+fof(f670,plain,(
+  stv(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f669])).
+fof(f669,plain,(
+  spl18_2 <=> stv(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f766,plain,(
+  ( ! [X0] : (~stv(X0) | pd(X0)) ) | ~spl18_26),
+  inference(avatar_component_clause,[],[f765])).
+fof(f765,plain,(
+  spl18_26 <=> ! [X0] : (pd(X0) | ~stv(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_26])])).
+fof(f767,plain,(
+  spl18_26),
+  inference(avatar_split_clause,[],[f540,f765])).
+fof(f540,plain,(
+  ( ! [X0] : (pd(X0) | ~stv(X0)) )),
+  inference(cnf_transformation,[],[f192])).
+fof(f192,plain,(
+  ! [X0] : ((stv(X0) | ev(X0)) <=> pd(X0))),
+  inference(rectify,[],[f4])).
+fof(f4,axiom,(
+  ! [X3] : ((stv(X3) | ev(X3)) <=> pd(X3))),
+  file('outputs/dolce/subsumptions/type_stv_subsumed_to_pd.in',sos)).
+fof(f671,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f476,f669])).
+fof(f476,plain,(
+  stv(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  stv(xyz)),
+  file('outputs/dolce/subsumptions/type_stv_subsumed_to_pd.in',axiom1)).
+fof(f667,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f475,f665])).
+fof(f475,plain,(
+  ~pd(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~pd(xyz)),
+  file('outputs/dolce/subsumptions/type_stv_subsumed_to_pd.in',axiom2)).
+% SZS output end Proof for type_stv_subsumed_to_pd
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.007 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.014 s

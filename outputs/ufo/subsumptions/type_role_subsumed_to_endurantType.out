@@ -1,0 +1,132 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_role_subsumed_to_endurantType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_role_subsumed_to_endurantType
+% SZS output start Proof for type_role_subsumed_to_endurantType
+fof(f994,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f782,f810,f846,f983,f990,f993])).
+fof(f993,plain,(
+  spl59_1 | ~spl59_43 | ~spl59_87),
+  inference(avatar_contradiction_clause,[],[f992])).
+fof(f992,plain,(
+  $false | (spl59_1 | ~spl59_43 | ~spl59_87)),
+  inference(subsumption_resolution,[],[f991,f641])).
+fof(f641,plain,(
+  ~endurantType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f991,plain,(
+  endurantType(xyz) | (~spl59_43 | ~spl59_87)),
+  inference(resolution,[],[f989,f809])).
+fof(f809,plain,(
+  ( ! [X0] : (~sortal(X0) | endurantType(X0)) ) | ~spl59_43),
+  inference(avatar_component_clause,[],[f808])).
+fof(f808,plain,(
+  spl59_43 <=> ! [X0] : (endurantType(X0) | ~sortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_43])])).
+fof(f989,plain,(
+  sortal(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f988])).
+fof(f988,plain,(
+  spl59_87 <=> sortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f990,plain,(
+  spl59_87 | ~spl59_36 | ~spl59_86),
+  inference(avatar_split_clause,[],[f984,f981,f780,f988])).
+fof(f780,plain,(
+  spl59_36 <=> ! [X0] : (sortal(X0) | ~antiRigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_36])])).
+fof(f981,plain,(
+  spl59_86 <=> antiRigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f984,plain,(
+  sortal(xyz) | (~spl59_36 | ~spl59_86)),
+  inference(resolution,[],[f982,f781])).
+fof(f781,plain,(
+  ( ! [X0] : (~antiRigidSortal(X0) | sortal(X0)) ) | ~spl59_36),
+  inference(avatar_component_clause,[],[f780])).
+fof(f982,plain,(
+  antiRigidSortal(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f981])).
+fof(f983,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_52),
+  inference(avatar_split_clause,[],[f979,f844,f644,f981])).
+fof(f644,plain,(
+  spl59_2 <=> role(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f844,plain,(
+  spl59_52 <=> ! [X0] : (antiRigidSortal(X0) | ~role(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_52])])).
+fof(f979,plain,(
+  antiRigidSortal(xyz) | (~spl59_2 | ~spl59_52)),
+  inference(resolution,[],[f845,f645])).
+fof(f645,plain,(
+  role(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f845,plain,(
+  ( ! [X0] : (~role(X0) | antiRigidSortal(X0)) ) | ~spl59_52),
+  inference(avatar_component_clause,[],[f844])).
+fof(f846,plain,(
+  spl59_52),
+  inference(avatar_split_clause,[],[f508,f844])).
+fof(f508,plain,(
+  ( ! [X0] : (antiRigidSortal(X0) | ~role(X0)) )),
+  inference(cnf_transformation,[],[f40])).
+fof(f40,axiom,(
+  ! [X0] : ((role(X0) | phase(X0)) <=> antiRigidSortal(X0))),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_endurantType.in',ax_antiRigidSortal_taxonomy)).
+fof(f810,plain,(
+  spl59_43),
+  inference(avatar_split_clause,[],[f410,f808])).
+fof(f410,plain,(
+  ( ! [X0] : (endurantType(X0) | ~sortal(X0)) )),
+  inference(cnf_transformation,[],[f157])).
+fof(f157,plain,(
+  ! [X0] : (sortal(X0) <=> (? [X1] : (specializes(X0,X1) & kind(X1)) & endurantType(X0)))),
+  inference(rectify,[],[f62])).
+fof(f62,axiom,(
+  ! [X13] : (sortal(X13) <=> (? [X11] : (specializes(X13,X11) & kind(X11)) & endurantType(X13)))),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_endurantType.in',ax_dSortal_a23)).
+fof(f782,plain,(
+  spl59_36),
+  inference(avatar_split_clause,[],[f374,f780])).
+fof(f374,plain,(
+  ( ! [X0] : (sortal(X0) | ~antiRigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f149])).
+fof(f149,plain,(
+  ! [X0] : (antiRigidSortal(X0) <=> (sortal(X0) & antiRigid(X0)))),
+  inference(rectify,[],[f64])).
+fof(f64,axiom,(
+  ! [X8] : (antiRigidSortal(X8) <=> (sortal(X8) & antiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_endurantType.in',ax_antiRigidSortalsAreAntiRigidAndSortal_xx)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  role(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  role(xyz)),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_endurantType.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~endurantType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~endurantType(xyz)),
+  file('outputs/ufo/subsumptions/type_role_subsumed_to_endurantType.in',axiom2)).
+% SZS output end Proof for type_role_subsumed_to_endurantType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.019 s

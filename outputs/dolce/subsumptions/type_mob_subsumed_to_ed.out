@@ -1,0 +1,144 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_mob_subsumed_to_ed for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_mob_subsumed_to_ed
+% SZS output start Proof for type_mob_subsumed_to_ed
+fof(f951,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f668,f672,f736,f772,f780,f937,f946,f950])).
+fof(f950,plain,(
+  spl18_1 | ~spl18_29 | ~spl18_70),
+  inference(avatar_contradiction_clause,[],[f949])).
+fof(f949,plain,(
+  $false | (spl18_1 | ~spl18_29 | ~spl18_70)),
+  inference(subsumption_resolution,[],[f948,f667])).
+fof(f667,plain,(
+  ~ed(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f666])).
+fof(f666,plain,(
+  spl18_1 <=> ed(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f948,plain,(
+  ed(xyz) | (~spl18_29 | ~spl18_70)),
+  inference(resolution,[],[f945,f779])).
+fof(f779,plain,(
+  ( ! [X0] : (~nped(X0) | ed(X0)) ) | ~spl18_29),
+  inference(avatar_component_clause,[],[f778])).
+fof(f778,plain,(
+  spl18_29 <=> ! [X0] : (ed(X0) | ~nped(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_29])])).
+fof(f945,plain,(
+  nped(xyz) | ~spl18_70),
+  inference(avatar_component_clause,[],[f944])).
+fof(f944,plain,(
+  spl18_70 <=> nped(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_70])])).
+fof(f946,plain,(
+  spl18_70 | ~spl18_2 | ~spl18_68),
+  inference(avatar_split_clause,[],[f942,f935,f670,f944])).
+fof(f670,plain,(
+  spl18_2 <=> mob(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f935,plain,(
+  spl18_68 <=> ! [X0] : (~mob(X0) | nped(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_68])])).
+fof(f942,plain,(
+  nped(xyz) | (~spl18_2 | ~spl18_68)),
+  inference(resolution,[],[f936,f671])).
+fof(f671,plain,(
+  mob(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f670])).
+fof(f936,plain,(
+  ( ! [X0] : (~mob(X0) | nped(X0)) ) | ~spl18_68),
+  inference(avatar_component_clause,[],[f935])).
+fof(f937,plain,(
+  spl18_68 | ~spl18_18 | ~spl18_27),
+  inference(avatar_split_clause,[],[f861,f770,f734,f935])).
+fof(f734,plain,(
+  spl18_18 <=> ! [X0] : (~npob(X0) | nped(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_18])])).
+fof(f770,plain,(
+  spl18_27 <=> ! [X0] : (~mob(X0) | npob(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_27])])).
+fof(f861,plain,(
+  ( ! [X0] : (~mob(X0) | nped(X0)) ) | (~spl18_18 | ~spl18_27)),
+  inference(resolution,[],[f771,f735])).
+fof(f735,plain,(
+  ( ! [X0] : (~npob(X0) | nped(X0)) ) | ~spl18_18),
+  inference(avatar_component_clause,[],[f734])).
+fof(f771,plain,(
+  ( ! [X0] : (npob(X0) | ~mob(X0)) ) | ~spl18_27),
+  inference(avatar_component_clause,[],[f770])).
+fof(f780,plain,(
+  spl18_29),
+  inference(avatar_split_clause,[],[f549,f778])).
+fof(f549,plain,(
+  ( ! [X0] : (ed(X0) | ~nped(X0)) )),
+  inference(cnf_transformation,[],[f195])).
+fof(f195,plain,(
+  ! [X0] : ((ped(X0) | nped(X0) | as(X0)) <=> ed(X0))),
+  inference(rectify,[],[f2])).
+fof(f2,axiom,(
+  ! [X1] : ((ped(X1) | nped(X1) | as(X1)) <=> ed(X1))),
+  file('outputs/dolce/subsumptions/type_mob_subsumed_to_ed.in',sos)).
+fof(f772,plain,(
+  spl18_27),
+  inference(avatar_split_clause,[],[f542,f770])).
+fof(f542,plain,(
+  ( ! [X0] : (~mob(X0) | npob(X0)) )),
+  inference(cnf_transformation,[],[f393])).
+fof(f393,plain,(
+  ! [X0] : (npob(X0) | (~mob(X0) & ~sob(X0)))),
+  inference(ennf_transformation,[],[f339])).
+fof(f339,plain,(
+  ! [X0] : ((mob(X0) | sob(X0)) => npob(X0))),
+  inference(unused_predicate_definition_removal,[],[f192])).
+fof(f192,plain,(
+  ! [X0] : ((mob(X0) | sob(X0)) <=> npob(X0))),
+  inference(rectify,[],[f12])).
+fof(f12,axiom,(
+  ! [X11] : ((mob(X11) | sob(X11)) <=> npob(X11))),
+  file('outputs/dolce/subsumptions/type_mob_subsumed_to_ed.in',sos)).
+fof(f736,plain,(
+  spl18_18),
+  inference(avatar_split_clause,[],[f500,f734])).
+fof(f500,plain,(
+  ( ! [X0] : (~npob(X0) | nped(X0)) )),
+  inference(cnf_transformation,[],[f371])).
+fof(f371,plain,(
+  ! [X0] : (nped(X0) | ~npob(X0))),
+  inference(ennf_transformation,[],[f160])).
+fof(f160,plain,(
+  ! [X0] : (npob(X0) => nped(X0))),
+  inference(rectify,[],[f16])).
+fof(f16,axiom,(
+  ! [X15] : (npob(X15) => nped(X15))),
+  file('outputs/dolce/subsumptions/type_mob_subsumed_to_ed.in',sos)).
+fof(f672,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f475,f670])).
+fof(f475,plain,(
+  mob(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  mob(xyz)),
+  file('outputs/dolce/subsumptions/type_mob_subsumed_to_ed.in',axiom1)).
+fof(f668,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f474,f666])).
+fof(f474,plain,(
+  ~ed(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~ed(xyz)),
+  file('outputs/dolce/subsumptions/type_mob_subsumed_to_ed.in',axiom2)).
+% SZS output end Proof for type_mob_subsumed_to_ed
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6268
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.01 s

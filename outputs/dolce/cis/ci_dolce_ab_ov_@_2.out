@@ -1,0 +1,441 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on ci_dolce_ab_ov_@_2 for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_dolce_ab_ov_@_2
+% SZS output start Proof for ci_dolce_ab_ov_@_2
+fof(f10698,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f673,f677,f681,f725,f837,f901,f905,f1162,f1188,f1192,f1224,f1228,f1522,f1698,f1744,f1774,f1843,f1892,f2240,f3007,f6105,f6131,f10681,f10685,f10697])).
+fof(f10697,plain,(
+  ~spl18_1 | ~spl18_2 | ~spl18_224 | ~spl18_546 | spl18_547),
+  inference(avatar_contradiction_clause,[],[f10696])).
+fof(f10696,plain,(
+  $false | (~spl18_1 | ~spl18_2 | ~spl18_224 | ~spl18_546 | spl18_547)),
+  inference(subsumption_resolution,[],[f10695,f672])).
+fof(f672,plain,(
+  ab(xyz) | ~spl18_1),
+  inference(avatar_component_clause,[],[f671])).
+fof(f671,plain,(
+  spl18_1 <=> ab(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f10695,plain,(
+  ~ab(xyz) | (~spl18_2 | ~spl18_224 | ~spl18_546 | spl18_547)),
+  inference(subsumption_resolution,[],[f10694,f676])).
+fof(f676,plain,(
+  ab(zyx) | ~spl18_2),
+  inference(avatar_component_clause,[],[f675])).
+fof(f675,plain,(
+  spl18_2 <=> ab(zyx)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f10694,plain,(
+  ~ab(zyx) | ~ab(xyz) | (~spl18_224 | ~spl18_546 | spl18_547)),
+  inference(subsumption_resolution,[],[f10693,f10684])).
+fof(f10684,plain,(
+  ~p(xyz,zyx) | spl18_547),
+  inference(avatar_component_clause,[],[f10683])).
+fof(f10683,plain,(
+  spl18_547 <=> p(xyz,zyx)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_547])])).
+fof(f10693,plain,(
+  p(xyz,zyx) | ~ab(zyx) | ~ab(xyz) | (~spl18_224 | ~spl18_546)),
+  inference(duplicate_literal_removal,[],[f10689])).
+fof(f10689,plain,(
+  p(xyz,zyx) | ~ab(zyx) | ~ab(xyz) | p(xyz,zyx) | ~ab(zyx) | (~spl18_224 | ~spl18_546)),
+  inference(resolution,[],[f10680,f1891])).
+fof(f1891,plain,(
+  ( ! [X0,X1] : (~ov(sK13(X0,X1),X1) | ~ab(X0) | p(X0,X1) | ~ab(X1)) ) | ~spl18_224),
+  inference(avatar_component_clause,[],[f1890])).
+fof(f1890,plain,(
+  spl18_224 <=> ! [X0,X1] : (p(X0,X1) | ~ab(X0) | ~ov(sK13(X0,X1),X1) | ~ab(X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_224])])).
+fof(f10680,plain,(
+  ( ! [X2] : (ov(sK13(xyz,X2),zyx) | p(xyz,X2) | ~ab(X2)) ) | ~spl18_546),
+  inference(avatar_component_clause,[],[f10679])).
+fof(f10679,plain,(
+  spl18_546 <=> ! [X2] : (~ab(X2) | p(xyz,X2) | ov(sK13(xyz,X2),zyx))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_546])])).
+fof(f10685,plain,(
+  ~spl18_547 | spl18_3 | ~spl18_128 | ~spl18_544),
+  inference(avatar_split_clause,[],[f6150,f6129,f1186,f679,f10683])).
+fof(f679,plain,(
+  spl18_3 <=> xyz = zyx),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_3])])).
+fof(f1186,plain,(
+  spl18_128 <=> ! [X0,X1] : (~p(X0,X1) | ~p(X1,X0) | X0 = X1)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_128])])).
+fof(f6129,plain,(
+  spl18_544 <=> p(zyx,xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_544])])).
+fof(f6150,plain,(
+  ~p(xyz,zyx) | (spl18_3 | ~spl18_128 | ~spl18_544)),
+  inference(subsumption_resolution,[],[f6143,f680])).
+fof(f680,plain,(
+  xyz != zyx | spl18_3),
+  inference(avatar_component_clause,[],[f679])).
+fof(f6143,plain,(
+  ~p(xyz,zyx) | xyz = zyx | (~spl18_128 | ~spl18_544)),
+  inference(resolution,[],[f6130,f1187])).
+fof(f1187,plain,(
+  ( ! [X0,X1] : (~p(X1,X0) | ~p(X0,X1) | X0 = X1) ) | ~spl18_128),
+  inference(avatar_component_clause,[],[f1186])).
+fof(f6130,plain,(
+  p(zyx,xyz) | ~spl18_544),
+  inference(avatar_component_clause,[],[f6129])).
+fof(f10681,plain,(
+  spl18_546 | ~spl18_1 | ~spl18_59 | ~spl18_320),
+  inference(avatar_split_clause,[],[f3035,f3005,f903,f671,f10679])).
+fof(f903,plain,(
+  spl18_59 <=> ! [X0] : (ov(X0,zyx) | ~ov(X0,xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_59])])).
+fof(f3005,plain,(
+  spl18_320 <=> ! [X2,X3] : (p(X2,X3) | ~ab(X3) | ~ab(X2) | ov(sK13(X2,X3),X2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_320])])).
+fof(f3035,plain,(
+  ( ! [X2] : (~ab(X2) | p(xyz,X2) | ov(sK13(xyz,X2),zyx)) ) | (~spl18_1 | ~spl18_59 | ~spl18_320)),
+  inference(subsumption_resolution,[],[f3030,f672])).
+fof(f3030,plain,(
+  ( ! [X2] : (~ab(X2) | ~ab(xyz) | p(xyz,X2) | ov(sK13(xyz,X2),zyx)) ) | (~spl18_59 | ~spl18_320)),
+  inference(resolution,[],[f3006,f904])).
+fof(f904,plain,(
+  ( ! [X0] : (~ov(X0,xyz) | ov(X0,zyx)) ) | ~spl18_59),
+  inference(avatar_component_clause,[],[f903])).
+fof(f3006,plain,(
+  ( ! [X2,X3] : (ov(sK13(X2,X3),X2) | ~ab(X3) | ~ab(X2) | p(X2,X3)) ) | ~spl18_320),
+  inference(avatar_component_clause,[],[f3005])).
+fof(f6131,plain,(
+  spl18_544 | ~spl18_1 | ~spl18_2 | ~spl18_224 | ~spl18_542),
+  inference(avatar_split_clause,[],[f6122,f6103,f1890,f675,f671,f6129])).
+fof(f6103,plain,(
+  spl18_542 <=> ! [X1] : (~ab(X1) | p(zyx,X1) | ov(sK13(zyx,X1),xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_542])])).
+fof(f6122,plain,(
+  p(zyx,xyz) | (~spl18_1 | ~spl18_2 | ~spl18_224 | ~spl18_542)),
+  inference(subsumption_resolution,[],[f6121,f676])).
+fof(f6121,plain,(
+  p(zyx,xyz) | ~ab(zyx) | (~spl18_1 | ~spl18_224 | ~spl18_542)),
+  inference(subsumption_resolution,[],[f6120,f672])).
+fof(f6120,plain,(
+  p(zyx,xyz) | ~ab(xyz) | ~ab(zyx) | (~spl18_224 | ~spl18_542)),
+  inference(duplicate_literal_removal,[],[f6116])).
+fof(f6116,plain,(
+  p(zyx,xyz) | ~ab(xyz) | ~ab(zyx) | p(zyx,xyz) | ~ab(xyz) | (~spl18_224 | ~spl18_542)),
+  inference(resolution,[],[f6104,f1891])).
+fof(f6104,plain,(
+  ( ! [X1] : (ov(sK13(zyx,X1),xyz) | p(zyx,X1) | ~ab(X1)) ) | ~spl18_542),
+  inference(avatar_component_clause,[],[f6103])).
+fof(f6105,plain,(
+  spl18_542 | ~spl18_2 | ~spl18_58 | ~spl18_320),
+  inference(avatar_split_clause,[],[f3034,f3005,f899,f675,f6103])).
+fof(f899,plain,(
+  spl18_58 <=> ! [X0] : (~ov(X0,zyx) | ov(X0,xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_58])])).
+fof(f3034,plain,(
+  ( ! [X1] : (~ab(X1) | p(zyx,X1) | ov(sK13(zyx,X1),xyz)) ) | (~spl18_2 | ~spl18_58 | ~spl18_320)),
+  inference(subsumption_resolution,[],[f3029,f676])).
+fof(f3029,plain,(
+  ( ! [X1] : (~ab(X1) | ~ab(zyx) | p(zyx,X1) | ov(sK13(zyx,X1),xyz)) ) | (~spl18_58 | ~spl18_320)),
+  inference(resolution,[],[f3006,f900])).
+fof(f900,plain,(
+  ( ! [X0] : (~ov(X0,zyx) | ov(X0,xyz)) ) | ~spl18_58),
+  inference(avatar_component_clause,[],[f899])).
+fof(f3007,plain,(
+  spl18_320 | ~spl18_42 | ~spl18_202 | ~spl18_256),
+  inference(avatar_split_clause,[],[f2255,f2238,f1696,f835,f3005])).
+fof(f835,plain,(
+  spl18_42 <=> ! [X0] : (~ab(X0) | p(X0,X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_42])])).
+fof(f1696,plain,(
+  spl18_202 <=> ! [X6,X7] : (~ab(X6) | p(X7,X6) | ~ab(X7) | ab(sK13(X7,X6)))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_202])])).
+fof(f2238,plain,(
+  spl18_256 <=> ! [X12,X11,X10] : (~ab(X10) | p(X10,X11) | ~ab(X11) | ~p(sK13(X10,X11),X12) | ov(X12,X10))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_256])])).
+fof(f2255,plain,(
+  ( ! [X2,X3] : (p(X2,X3) | ~ab(X3) | ~ab(X2) | ov(sK13(X2,X3),X2)) ) | (~spl18_42 | ~spl18_202 | ~spl18_256)),
+  inference(subsumption_resolution,[],[f2252,f1697])).
+fof(f1697,plain,(
+  ( ! [X6,X7] : (ab(sK13(X7,X6)) | p(X7,X6) | ~ab(X7) | ~ab(X6)) ) | ~spl18_202),
+  inference(avatar_component_clause,[],[f1696])).
+fof(f2252,plain,(
+  ( ! [X2,X3] : (p(X2,X3) | ~ab(X3) | ~ab(X2) | ov(sK13(X2,X3),X2) | ~ab(sK13(X2,X3))) ) | (~spl18_42 | ~spl18_256)),
+  inference(resolution,[],[f2239,f836])).
+fof(f836,plain,(
+  ( ! [X0] : (p(X0,X0) | ~ab(X0)) ) | ~spl18_42),
+  inference(avatar_component_clause,[],[f835])).
+fof(f2239,plain,(
+  ( ! [X10,X11,X12] : (~p(sK13(X10,X11),X12) | p(X10,X11) | ~ab(X11) | ~ab(X10) | ov(X12,X10)) ) | ~spl18_256),
+  inference(avatar_component_clause,[],[f2238])).
+fof(f2240,plain,(
+  spl18_256 | ~spl18_129 | ~spl18_220),
+  inference(avatar_split_clause,[],[f1862,f1841,f1190,f2238])).
+fof(f1190,plain,(
+  spl18_129 <=> ! [X2,X0,X1] : (~p(X2,X0) | ~p(X2,X1) | ov(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_129])])).
+fof(f1841,plain,(
+  spl18_220 <=> ! [X0,X1] : (p(X0,X1) | ~ab(X0) | p(sK13(X0,X1),X0) | ~ab(X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_220])])).
+fof(f1862,plain,(
+  ( ! [X10,X11,X12] : (~ab(X10) | p(X10,X11) | ~ab(X11) | ~p(sK13(X10,X11),X12) | ov(X12,X10)) ) | (~spl18_129 | ~spl18_220)),
+  inference(resolution,[],[f1842,f1191])).
+fof(f1191,plain,(
+  ( ! [X2,X0,X1] : (~p(X2,X1) | ~p(X2,X0) | ov(X0,X1)) ) | ~spl18_129),
+  inference(avatar_component_clause,[],[f1190])).
+fof(f1842,plain,(
+  ( ! [X0,X1] : (p(sK13(X0,X1),X0) | ~ab(X0) | p(X0,X1) | ~ab(X1)) ) | ~spl18_220),
+  inference(avatar_component_clause,[],[f1841])).
+fof(f1892,plain,(
+  spl18_224 | ~spl18_42 | ~spl18_202 | ~spl18_212),
+  inference(avatar_split_clause,[],[f1785,f1772,f1696,f835,f1890])).
+fof(f1772,plain,(
+  spl18_212 <=> ! [X13,X14,X15] : (~ab(X13) | p(X14,X13) | ~ab(X14) | ~ov(X15,X13) | ~p(X15,sK13(X14,X13)))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_212])])).
+fof(f1785,plain,(
+  ( ! [X0,X1] : (p(X0,X1) | ~ab(X0) | ~ov(sK13(X0,X1),X1) | ~ab(X1)) ) | (~spl18_42 | ~spl18_202 | ~spl18_212)),
+  inference(subsumption_resolution,[],[f1784,f1697])).
+fof(f1784,plain,(
+  ( ! [X0,X1] : (p(X0,X1) | ~ab(X0) | ~ov(sK13(X0,X1),X1) | ~ab(X1) | ~ab(sK13(X0,X1))) ) | (~spl18_42 | ~spl18_212)),
+  inference(resolution,[],[f1773,f836])).
+fof(f1773,plain,(
+  ( ! [X14,X15,X13] : (~p(X15,sK13(X14,X13)) | p(X14,X13) | ~ab(X14) | ~ov(X15,X13) | ~ab(X13)) ) | ~spl18_212),
+  inference(avatar_component_clause,[],[f1772])).
+fof(f1843,plain,(
+  spl18_220 | ~spl18_42 | ~spl18_202 | ~spl18_208),
+  inference(avatar_split_clause,[],[f1764,f1742,f1696,f835,f1841])).
+fof(f1742,plain,(
+  spl18_208 <=> ! [X12,X11,X10] : (~ab(X10) | p(X11,X10) | ~ab(X11) | p(X12,X11) | ~p(X12,sK13(X11,X10)))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_208])])).
+fof(f1764,plain,(
+  ( ! [X0,X1] : (p(X0,X1) | ~ab(X0) | p(sK13(X0,X1),X0) | ~ab(X1)) ) | (~spl18_42 | ~spl18_202 | ~spl18_208)),
+  inference(subsumption_resolution,[],[f1763,f1697])).
+fof(f1763,plain,(
+  ( ! [X0,X1] : (p(X0,X1) | ~ab(X0) | p(sK13(X0,X1),X0) | ~ab(X1) | ~ab(sK13(X0,X1))) ) | (~spl18_42 | ~spl18_208)),
+  inference(resolution,[],[f1743,f836])).
+fof(f1743,plain,(
+  ( ! [X10,X11,X12] : (~p(X12,sK13(X11,X10)) | p(X11,X10) | ~ab(X11) | p(X12,X11) | ~ab(X10)) ) | ~spl18_208),
+  inference(avatar_component_clause,[],[f1742])).
+fof(f1774,plain,(
+  spl18_212 | ~spl18_138 | ~spl18_177),
+  inference(avatar_split_clause,[],[f1620,f1520,f1226,f1772])).
+fof(f1226,plain,(
+  spl18_138 <=> ! [X0,X3,X2,X1] : (~dif(X2,X0,X1) | ~ov(X3,X1) | ~p(X3,X2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_138])])).
+fof(f1520,plain,(
+  spl18_177 <=> ! [X0,X1] : (~ab(X0) | ~ab(X1) | p(X0,X1) | dif(sK13(X0,X1),X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_177])])).
+fof(f1620,plain,(
+  ( ! [X14,X15,X13] : (~ab(X13) | p(X14,X13) | ~ab(X14) | ~ov(X15,X13) | ~p(X15,sK13(X14,X13))) ) | (~spl18_138 | ~spl18_177)),
+  inference(resolution,[],[f1521,f1227])).
+fof(f1227,plain,(
+  ( ! [X2,X3,X0,X1] : (~dif(X2,X0,X1) | ~ov(X3,X1) | ~p(X3,X2)) ) | ~spl18_138),
+  inference(avatar_component_clause,[],[f1226])).
+fof(f1521,plain,(
+  ( ! [X0,X1] : (dif(sK13(X0,X1),X0,X1) | ~ab(X1) | p(X0,X1) | ~ab(X0)) ) | ~spl18_177),
+  inference(avatar_component_clause,[],[f1520])).
+fof(f1744,plain,(
+  spl18_208 | ~spl18_137 | ~spl18_177),
+  inference(avatar_split_clause,[],[f1619,f1520,f1222,f1742])).
+fof(f1222,plain,(
+  spl18_137 <=> ! [X0,X3,X2,X1] : (~dif(X2,X0,X1) | p(X3,X0) | ~p(X3,X2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_137])])).
+fof(f1619,plain,(
+  ( ! [X10,X11,X12] : (~ab(X10) | p(X11,X10) | ~ab(X11) | p(X12,X11) | ~p(X12,sK13(X11,X10))) ) | (~spl18_137 | ~spl18_177)),
+  inference(resolution,[],[f1521,f1223])).
+fof(f1223,plain,(
+  ( ! [X2,X3,X0,X1] : (~dif(X2,X0,X1) | p(X3,X0) | ~p(X3,X2)) ) | ~spl18_137),
+  inference(avatar_component_clause,[],[f1222])).
+fof(f1698,plain,(
+  spl18_202 | ~spl18_14 | ~spl18_123 | ~spl18_177),
+  inference(avatar_split_clause,[],[f1621,f1520,f1160,f723,f1696])).
+fof(f723,plain,(
+  spl18_14 <=> ! [X0] : (~ab(X0) | ~pd(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_14])])).
+fof(f1160,plain,(
+  spl18_123 <=> ! [X2,X0,X1] : (~dif(X2,X0,X1) | ab(X2) | pd(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_123])])).
+fof(f1621,plain,(
+  ( ! [X6,X7] : (~ab(X6) | p(X7,X6) | ~ab(X7) | ab(sK13(X7,X6))) ) | (~spl18_14 | ~spl18_123 | ~spl18_177)),
+  inference(subsumption_resolution,[],[f1617,f724])).
+fof(f724,plain,(
+  ( ! [X0] : (~pd(X0) | ~ab(X0)) ) | ~spl18_14),
+  inference(avatar_component_clause,[],[f723])).
+fof(f1617,plain,(
+  ( ! [X6,X7] : (~ab(X6) | p(X7,X6) | ~ab(X7) | ab(sK13(X7,X6)) | pd(X7)) ) | (~spl18_123 | ~spl18_177)),
+  inference(resolution,[],[f1521,f1161])).
+fof(f1161,plain,(
+  ( ! [X2,X0,X1] : (~dif(X2,X0,X1) | ab(X2) | pd(X0)) ) | ~spl18_123),
+  inference(avatar_component_clause,[],[f1160])).
+fof(f1522,plain,(
+  spl18_177),
+  inference(avatar_split_clause,[],[f591,f1520])).
+fof(f591,plain,(
+  ( ! [X0,X1] : (~ab(X0) | ~ab(X1) | p(X0,X1) | dif(sK13(X0,X1),X0,X1)) )),
+  inference(cnf_transformation,[],[f415])).
+fof(f415,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) | p(X0,X1) | ~ab(X1) | ~ab(X0))),
+  inference(flattening,[],[f414])).
+fof(f414,plain,(
+  ! [X0,X1] : (? [X2] : dif(X2,X0,X1) | (p(X0,X1) | ~ab(X1) | ~ab(X0)))),
+  inference(ennf_transformation,[],[f230])).
+fof(f230,plain,(
+  ! [X0,X1] : ((~p(X0,X1) & ab(X1) & ab(X0)) => ? [X2] : dif(X2,X0,X1))),
+  inference(flattening,[],[f229])).
+fof(f229,plain,(
+  ! [X0] : ! [X1] : ((~p(X0,X1) & ab(X1) & ab(X0)) => ? [X2] : dif(X2,X0,X1))),
+  inference(rectify,[],[f61])).
+fof(f61,axiom,(
+  ! [X80] : ! [X81] : ((~p(X80,X81) & ab(X81) & ab(X80)) => ? [X82] : dif(X82,X80,X81))),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',sos)).
+fof(f1228,plain,(
+  spl18_138),
+  inference(avatar_split_clause,[],[f656,f1226])).
+fof(f656,plain,(
+  ( ! [X2,X3,X0,X1] : (~dif(X2,X0,X1) | ~ov(X3,X1) | ~p(X3,X2)) )),
+  inference(cnf_transformation,[],[f471])).
+fof(f471,plain,(
+  ! [X0,X1,X2] : ((! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))) | ~dif(X2,X0,X1))),
+  inference(ennf_transformation,[],[f340])).
+fof(f340,plain,(
+  ! [X0,X1,X2] : (dif(X2,X0,X1) => (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(unused_predicate_definition_removal,[],[f332])).
+fof(f332,plain,(
+  ! [X0,X1,X2] : (dif(X2,X0,X1) <=> (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(flattening,[],[f331])).
+fof(f331,plain,(
+  ! [X0] : ! [X1] : ! [X2] : (dif(X2,X0,X1) <=> (! [X3] : (p(X3,X2) <=> (~ov(X3,X1) & p(X3,X0))) & ((pd(X1) & pd(X0) & pd(X2)) | (ab(X1) & ab(X0) & ab(X2)))))),
+  inference(rectify,[],[f60])).
+fof(f60,axiom,(
+  ! [X76] : ! [X77] : ! [X78] : (dif(X78,X76,X77) <=> (! [X79] : (p(X79,X78) <=> (~ov(X79,X77) & p(X79,X76))) & ((pd(X77) & pd(X76) & pd(X78)) | (ab(X77) & ab(X76) & ab(X78)))))),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',sos)).
+fof(f1224,plain,(
+  spl18_137),
+  inference(avatar_split_clause,[],[f655,f1222])).
+fof(f655,plain,(
+  ( ! [X2,X3,X0,X1] : (~dif(X2,X0,X1) | p(X3,X0) | ~p(X3,X2)) )),
+  inference(cnf_transformation,[],[f471])).
+fof(f1192,plain,(
+  spl18_129),
+  inference(avatar_split_clause,[],[f601,f1190])).
+fof(f601,plain,(
+  ( ! [X2,X0,X1] : (~p(X2,X0) | ~p(X2,X1) | ov(X0,X1)) )),
+  inference(cnf_transformation,[],[f254])).
+fof(f254,plain,(
+  ! [X0,X1] : (ov(X0,X1) <=> ? [X2] : (p(X2,X1) & p(X2,X0)))),
+  inference(flattening,[],[f253])).
+fof(f253,plain,(
+  ! [X0] : ! [X1] : (ov(X0,X1) <=> ? [X2] : (p(X2,X1) & p(X2,X0)))),
+  inference(rectify,[],[f56])).
+fof(f56,axiom,(
+  ! [X65] : ! [X66] : (ov(X65,X66) <=> ? [X67] : (p(X67,X66) & p(X67,X65)))),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',sos)).
+fof(f1188,plain,(
+  spl18_128),
+  inference(avatar_split_clause,[],[f596,f1186])).
+fof(f596,plain,(
+  ( ! [X0,X1] : (~p(X0,X1) | ~p(X1,X0) | X0 = X1) )),
+  inference(cnf_transformation,[],[f425])).
+fof(f425,plain,(
+  ! [X0,X1] : (X0 = X1 | ~p(X1,X0) | ~p(X0,X1))),
+  inference(flattening,[],[f424])).
+fof(f424,plain,(
+  ! [X0,X1] : (X0 = X1 | (~p(X1,X0) | ~p(X0,X1)))),
+  inference(ennf_transformation,[],[f240])).
+fof(f240,plain,(
+  ! [X0,X1] : ((p(X1,X0) & p(X0,X1)) => X0 = X1)),
+  inference(flattening,[],[f239])).
+fof(f239,plain,(
+  ! [X0] : ! [X1] : ((p(X1,X0) & p(X0,X1)) => X0 = X1)),
+  inference(rectify,[],[f53])).
+fof(f53,axiom,(
+  ! [X58] : ! [X59] : ((p(X59,X58) & p(X58,X59)) => X58 = X59)),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',sos)).
+fof(f1162,plain,(
+  spl18_123),
+  inference(avatar_split_clause,[],[f665,f1160])).
+fof(f665,plain,(
+  ( ! [X2,X0,X1] : (~dif(X2,X0,X1) | ab(X2) | pd(X0)) )),
+  inference(cnf_transformation,[],[f471])).
+fof(f905,plain,(
+  spl18_59),
+  inference(avatar_split_clause,[],[f534,f903])).
+fof(f534,plain,(
+  ( ! [X0] : (ov(X0,zyx) | ~ov(X0,xyz)) )),
+  inference(cnf_transformation,[],[f189])).
+fof(f189,plain,(
+  ! [X0] : (ov(X0,xyz) <=> ov(X0,zyx))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X1] : (ov(X1,xyz) <=> ov(X1,zyx))),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',axiom269)).
+fof(f901,plain,(
+  spl18_58),
+  inference(avatar_split_clause,[],[f533,f899])).
+fof(f533,plain,(
+  ( ! [X0] : (~ov(X0,zyx) | ov(X0,xyz)) )),
+  inference(cnf_transformation,[],[f189])).
+fof(f837,plain,(
+  spl18_42),
+  inference(avatar_split_clause,[],[f529,f835])).
+fof(f529,plain,(
+  ( ! [X0] : (~ab(X0) | p(X0,X0)) )),
+  inference(cnf_transformation,[],[f394])).
+fof(f394,plain,(
+  ! [X0] : (p(X0,X0) | (~pd(X0) & ~ab(X0)))),
+  inference(ennf_transformation,[],[f182])).
+fof(f182,plain,(
+  ! [X0] : ((pd(X0) | ab(X0)) => p(X0,X0))),
+  inference(rectify,[],[f52])).
+fof(f52,axiom,(
+  ! [X57] : ((pd(X57) | ab(X57)) => p(X57,X57))),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',sos)).
+fof(f725,plain,(
+  spl18_14),
+  inference(avatar_split_clause,[],[f500,f723])).
+fof(f500,plain,(
+  ( ! [X0] : (~ab(X0) | ~pd(X0)) )),
+  inference(cnf_transformation,[],[f371])).
+fof(f371,plain,(
+  ! [X0] : (~pd(X0) | ~ab(X0))),
+  inference(ennf_transformation,[],[f158])).
+fof(f158,plain,(
+  ~? [X0] : (pd(X0) & ab(X0))),
+  inference(rectify,[],[f22])).
+fof(f22,axiom,(
+  ~? [X21] : (pd(X21) & ab(X21))),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',sos)).
+fof(f681,plain,(
+  ~spl18_3),
+  inference(avatar_split_clause,[],[f480,f679])).
+fof(f480,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',diff233)).
+fof(f677,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f479,f675])).
+fof(f479,plain,(
+  ab(zyx)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ab(zyx)),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',axiom233)).
+fof(f673,plain,(
+  spl18_1),
+  inference(avatar_split_clause,[],[f478,f671])).
+fof(f478,plain,(
+  ab(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  ab(xyz)),
+  file('outputs/dolce/cis/ci_dolce_ab_ov_@_2.in',axiom232)).
+% SZS output end Proof for ci_dolce_ab_ov_@_2
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 14456
+% Time elapsed: 0.305 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.313 s

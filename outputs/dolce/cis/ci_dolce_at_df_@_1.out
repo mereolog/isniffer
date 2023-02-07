@@ -1,0 +1,851 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on ci_dolce_at_df_@_1 for (31ds)
+% SZS status Satisfiable for ci_dolce_at_df_@_1
+% # SZS output start Saturation.
+cnf(u680,axiom,
+    at(xyz)).
+
+cnf(u684,axiom,
+    at(zyx)).
+
+cnf(u688,axiom,
+    xyz != zyx).
+
+cnf(u692,axiom,
+    ~ds(X0) | ~c(X0)).
+
+cnf(u696,axiom,
+    ~ped(X0) | ~nped(X0)).
+
+cnf(u700,axiom,
+    ~tr(X0) | ~ar(X0)).
+
+cnf(u704,axiom,
+    ~tr(X0) | ~pr(X0)).
+
+cnf(u708,axiom,
+    ~pr(X0) | ~ar(X0)).
+
+cnf(u712,axiom,
+    ~tq(X0) | ~aq(X0)).
+
+cnf(u716,axiom,
+    ~tq(X0) | ~pq(X0)).
+
+cnf(u720,axiom,
+    ~pq(X0) | ~aq(X0)).
+
+cnf(u724,axiom,
+    ~q(X0) | ~ab(X0)).
+
+cnf(u728,axiom,
+    ~ed(X0) | ~ab(X0)).
+
+cnf(u732,axiom,
+    ~pd(X0) | ~ab(X0)).
+
+cnf(u736,axiom,
+    ~q(X0) | ~ed(X0)).
+
+cnf(u740,axiom,
+    ~pd(X0) | ~ed(X0)).
+
+cnf(u744,axiom,
+    ~q(X0) | ~pd(X0)).
+
+cnf(u748,axiom,
+    ~npob(X0) | nped(X0)).
+
+cnf(u752,axiom,
+    ~r(X0) | ab(X0)).
+
+cnf(u756,axiom,
+    ~s(X0) | pr(X0)).
+
+cnf(u760,axiom,
+    ~ds(X0) | naso(X0)).
+
+cnf(u764,axiom,
+    ~tl(X0) | tq(X0)).
+
+cnf(u768,axiom,
+    ~sl(X0) | pq(X0)).
+
+cnf(u772,axiom,
+    ~c(X0) | naso(X0)).
+
+cnf(u776,axiom,
+    ~t(X0) | tr(X0)).
+
+cnf(u780,axiom,
+    ~sob(X0) | npob(X0)).
+
+cnf(u784,axiom,
+    ~naso(X0) | sob(X0)).
+
+cnf(u788,axiom,
+    ~nped(X0) | ed(X0)).
+
+cnf(u792,axiom,
+    ~ped(X0) | ed(X0)).
+
+cnf(u796,axiom,
+    ~ar(X0) | r(X0)).
+
+cnf(u800,axiom,
+    ~pr(X0) | r(X0)).
+
+cnf(u804,axiom,
+    ~tr(X0) | r(X0)).
+
+cnf(u808,axiom,
+    ~aq(X0) | q(X0)).
+
+cnf(u812,axiom,
+    ~pq(X0) | q(X0)).
+
+cnf(u816,axiom,
+    ~tq(X0) | q(X0)).
+
+cnf(u820,axiom,
+    ~ped(X0) | sl(sK1(X0))).
+
+cnf(u824,axiom,
+    ~nped(X0) | aq(sK2(X0))).
+
+cnf(u828,axiom,
+    ~tq(X0) | pd(sK4(X0))).
+
+cnf(u832,axiom,
+    ~pq(X0) | ped(sK5(X0))).
+
+cnf(u836,axiom,
+    ~aq(X0) | nped(sK6(X0))).
+
+cnf(u840,axiom,
+    ~pd(X0) | tl(sK10(X0))).
+
+cnf(u844,axiom,
+    ~ab(X0) | p(X0,X0)).
+
+cnf(u848,axiom,
+    ~pd(X0) | p(X0,X0)).
+
+cnf(u852,axiom,
+    ~pp(X1,X0) | ~at(X0)).
+
+cnf(u856,axiom,
+    ~ql(X0,X1) | tr(X0)).
+
+cnf(u860,axiom,
+    ~us(X0,X1) | c(X0)).
+
+cnf(u864,axiom,
+    ~us(X0,X1) | ds(X1)).
+
+cnf(u868,axiom,
+    ~dqt(X0,X1) | q(X0)).
+
+cnf(u872,axiom,
+    ~pre(X0,X1) | t(X1)).
+
+cnf(u876,axiom,
+    ~ds(X0) | us(sK0(X0),X0)).
+
+cnf(u880,axiom,
+    ~ped(X0) | dqt(sK1(X0),X0)).
+
+cnf(u884,axiom,
+    ~nped(X0) | dqt(sK2(X0),X0)).
+
+cnf(u888,axiom,
+    ~tq(X0) | ql(sK3(X0),X0)).
+
+cnf(u892,axiom,
+    ~tq(X0) | dqt(X0,sK4(X0))).
+
+cnf(u896,axiom,
+    ~pq(X0) | dqt(X0,sK5(X0))).
+
+cnf(u900,axiom,
+    ~aq(X0) | dqt(X0,sK6(X0))).
+
+cnf(u904,axiom,
+    df(X0,sK7(X0)) | ~c(X0)).
+
+cnf(u908,axiom,
+    ~pd(X0) | dqt(sK10(X0),X0)).
+
+cnf(u912,axiom,
+    ~at(X0) | pd(X0) | ab(X0)).
+
+cnf(u916,axiom,
+    ~df(zyx,X0) | df(xyz,X0)).
+
+cnf(u920,axiom,
+    df(zyx,X0) | ~df(xyz,X0)).
+
+cnf(u924,axiom,
+    ~df(X0,X1) | us(X0,X1)).
+
+cnf(u928,axiom,
+    ~tql(X0,X1,X2) | t(X2)).
+
+cnf(u932,axiom,
+    ~k(X0,X1,X2) | t(X2)).
+
+cnf(u936,axiom,
+    ~pc(X0,X1,X2) | ed(X0)).
+
+cnf(u940,axiom,
+    ~pc(X0,X1,X2) | pd(X1)).
+
+cnf(u944,axiom,
+    ~pc(X0,X1,X2) | t(X2)).
+
+cnf(u948,axiom,
+    ~tp(X0,X1,X2) | ed(X0)).
+
+cnf(u952,axiom,
+    ~tp(X0,X1,X2) | ed(X1)).
+
+cnf(u956,axiom,
+    ~tp(X0,X1,X2) | t(X2)).
+
+cnf(u960,axiom,
+    ~p(X0,X1) | ab(X1) | pd(X1)).
+
+cnf(u964,axiom,
+    ~p(X0,X1) | ab(X0) | pd(X0)).
+
+cnf(u968,axiom,
+    ~s(X1) | ~p(X0,X1) | s(X0)).
+
+cnf(u972,axiom,
+    ~s(X0) | s(X1) | ~p(X0,X1)).
+
+cnf(u976,axiom,
+    ~ar(X1) | ~p(X0,X1) | ar(X0)).
+
+cnf(u980,axiom,
+    ~ar(X0) | ar(X1) | ~p(X0,X1)).
+
+cnf(u984,axiom,
+    ~ab(X1) | ~p(X0,X1) | ab(X0)).
+
+cnf(u988,axiom,
+    ~ab(X0) | ab(X1) | ~p(X0,X1)).
+
+cnf(u992,axiom,
+    ~t(X1) | ~p(X0,X1) | t(X0)).
+
+cnf(u996,axiom,
+    ~t(X0) | t(X1) | ~p(X0,X1)).
+
+cnf(u1000,axiom,
+    ~pd(X1) | ~p(X0,X1) | pd(X0)).
+
+cnf(u1004,axiom,
+    ~pd(X0) | pd(X1) | ~p(X0,X1)).
+
+cnf(u1008,axiom,
+    ~dqt(X0,X1) | ed(X1) | pd(X1)).
+
+cnf(u1012,axiom,
+    ~pd(X1) | ~dqt(X0,X1) | tq(X0)).
+
+cnf(u1016,axiom,
+    ~tq(X0) | pd(X1) | ~dqt(X0,X1)).
+
+cnf(u1020,axiom,
+    ~ped(X1) | ~dqt(X0,X1) | pq(X0)).
+
+cnf(u1024,axiom,
+    ~pq(X0) | ped(X1) | ~dqt(X0,X1)).
+
+cnf(u1028,axiom,
+    ~nped(X1) | ~dqt(X0,X1) | aq(X0)).
+
+cnf(u1032,axiom,
+    ~aq(X0) | nped(X1) | ~dqt(X0,X1)).
+
+cnf(u1036,axiom,
+    ~tl(X1) | ~ql(X0,X1) | t(X0)).
+
+cnf(u1040,axiom,
+    ~tql(X0,X1,X2) | pre(X1,X2)).
+
+cnf(u1044,axiom,
+    ~k(X0,X1,X2) | pre(X0,X2)).
+
+cnf(u1048,axiom,
+    ~k(X0,X1,X2) | pre(X1,X2)).
+
+cnf(u1052,axiom,
+    ~pc(X0,X1,X2) | pre(X0,X2)).
+
+cnf(u1056,axiom,
+    ~pc(X0,X1,X2) | pre(X1,X2)).
+
+cnf(u1060,axiom,
+    ~tp(X0,X1,X2) | pre(X0,X2)).
+
+cnf(u1064,axiom,
+    ~tp(X0,X1,X2) | pre(X1,X2)).
+
+cnf(u1070,axiom,
+    ab(xyz)).
+
+cnf(u1083,axiom,
+    ~ed(xyz)).
+
+cnf(u1090,axiom,
+    p(xyz,xyz)).
+
+cnf(u1117,axiom,
+    ~ab(zyx)).
+
+cnf(u1101,axiom,
+    pd(zyx)).
+
+cnf(u1106,axiom,
+    p(zyx,zyx)).
+
+cnf(u1115,axiom,
+    ~ed(zyx)).
+
+cnf(u1122,axiom,
+    tl(sK10(zyx))).
+
+cnf(u1127,axiom,
+    ~ed(X0) | pc(X0,sK8(X0),sK9(X0))).
+
+cnf(u1131,axiom,
+    ~q(X0) | aq(X0) | pq(X0) | tq(X0)).
+
+cnf(u1135,axiom,
+    ~ov(X0,X1) | p(sK17(X0,X1),X0)).
+
+cnf(u1139,axiom,
+    ~ov(X0,X1) | p(sK17(X0,X1),X1)).
+
+cnf(u1143,axiom,
+    ~tql(X0,X1,X2) | pq(X1) | aq(X1)).
+
+cnf(u1147,axiom,
+    ~tql(X0,X1,X2) | pr(X0) | ar(X0)).
+
+cnf(u1151,axiom,
+    ~aq(X1) | ~tql(X0,X1,X2) | ar(X0)).
+
+cnf(u1155,axiom,
+    ~ar(X0) | aq(X1) | ~tql(X0,X1,X2)).
+
+cnf(u1159,axiom,
+    ~pq(X1) | ~tql(X0,X1,X2) | pr(X0)).
+
+cnf(u1163,axiom,
+    ~pr(X0) | pq(X1) | ~tql(X0,X1,X2)).
+
+cnf(u1167,axiom,
+    ~k(X1,X0,X2) | ~k(X0,X1,X2)).
+
+cnf(u1171,axiom,
+    ~k(X0,X1,X2) | ed(X1) | pd(X1)).
+
+cnf(u1175,axiom,
+    ~k(X0,X1,X2) | ed(X0) | pd(X0)).
+
+cnf(u1179,axiom,
+    ~ped(X1) | ~k(X0,X1,X2) | ped(X0)).
+
+cnf(u1183,axiom,
+    ~ped(X0) | ped(X1) | ~k(X0,X1,X2)).
+
+cnf(u1187,axiom,
+    ~nped(X1) | ~k(X0,X1,X2) | nped(X0)).
+
+cnf(u1191,axiom,
+    ~nped(X0) | nped(X1) | ~k(X0,X1,X2)).
+
+cnf(u1195,axiom,
+    ~pd(X1) | ~k(X0,X1,X2) | pd(X0)).
+
+cnf(u1199,axiom,
+    ~pd(X0) | pd(X1) | ~k(X0,X1,X2)).
+
+cnf(u1203,axiom,
+    ~ped(X1) | ~tp(X0,X1,X2) | ped(X0)).
+
+cnf(u1207,axiom,
+    ~ped(X0) | ped(X1) | ~tp(X0,X1,X2)).
+
+cnf(u1211,axiom,
+    ~nped(X1) | ~tp(X0,X1,X2) | nped(X0)).
+
+cnf(u1215,axiom,
+    ~nped(X0) | nped(X1) | ~tp(X0,X1,X2)).
+
+cnf(u1219,axiom,
+    ~sl(X1) | ~tql(X0,X1,X2) | s(X0)).
+
+cnf(u1223,axiom,
+    ~dif(X2,X0,X1) | ab(X1) | pd(X2)).
+
+cnf(u1227,axiom,
+    ~dif(X2,X0,X1) | ab(X0) | pd(X2)).
+
+cnf(u1231,axiom,
+    ~dif(X2,X0,X1) | ab(X2) | pd(X2)).
+
+cnf(u1235,axiom,
+    ~dif(X2,X0,X1) | ab(X2) | pd(X0)).
+
+cnf(u1239,axiom,
+    ~dif(X2,X0,X1) | ab(X2) | pd(X1)).
+
+cnf(u1251,axiom,
+    ~p(X0,xyz) | ab(X0)).
+
+cnf(u1285,axiom,
+    tq(sK10(zyx))).
+
+cnf(u1293,axiom,
+    ~p(xyz,X0) | ab(X0)).
+
+cnf(u1320,axiom,
+    ~pre(X0,X1) | ed(X0) | pd(X0) | q(X0)).
+
+cnf(u1324,axiom,
+    ~c(zyx)).
+
+cnf(u1331,axiom,
+    ~c(X0) | us(X0,sK7(X0))).
+
+cnf(u1335,axiom,
+    ~ed(X0) | ~pre(X0,X1) | tp(X0,X0,X1)).
+
+cnf(u1339,axiom,
+    ~df(xyz,X1) | us(zyx,X1)).
+
+cnf(u1344,axiom,
+    ~p(X1,X0) | ~p(X0,X1) | X0 = X1).
+
+cnf(u1348,axiom,
+    ~c(xyz)).
+
+cnf(u1355,axiom,
+    pp(X0,X1) | p(X1,X0) | ~p(X0,X1)).
+
+cnf(u1359,axiom,
+    ~p(X2,X1) | ~p(X2,X0) | ov(X0,X1)).
+
+cnf(u1363,axiom,
+    ~pre(X0,X2) | ~df(X0,X1) | pre(X1,X2)).
+
+cnf(u1367,axiom,
+    ~us(X0,X1) | ~pre(X1,X2) | pre(X0,X2)).
+
+cnf(u1371,axiom,
+    ~ql(X2,X1) | ~ql(X0,X1) | X0 = X2).
+
+cnf(u1375,axiom,
+    ~df(X0,X2) | ~df(X0,X1) | X1 = X2).
+
+cnf(u1379,axiom,
+    ~p(X1,X2) | ~p(X0,X1) | p(X0,X2)).
+
+cnf(u1383,axiom,
+    ~dqt(X0,X2) | ~dqt(X0,X1) | X1 = X2).
+
+cnf(u1387,axiom,
+    ~pre(X0,X1) | ~p(X2,X1) | pre(X0,X2)).
+
+cnf(u1391,axiom,
+    ~dif(X2,X0,X1) | p(X3,X0) | ~p(X3,X2)).
+
+cnf(u1395,axiom,
+    ~dif(X2,X0,X1) | ~ov(X3,X1) | ~p(X3,X2)).
+
+cnf(u1404,axiom,
+    ~p(xyz,X0) | ov(X0,xyz)).
+
+cnf(u1409,axiom,
+    ov(xyz,xyz)).
+
+cnf(u1415,axiom,
+    p(sK17(xyz,xyz),xyz)).
+
+cnf(u1424,axiom,
+    ab(sK17(xyz,xyz))).
+
+cnf(u1431,axiom,
+    ~p(zyx,X1) | ov(X1,zyx)).
+
+cnf(u1438,axiom,
+    ov(zyx,zyx)).
+
+cnf(u1447,axiom,
+    p(sK17(zyx,zyx),zyx)).
+
+cnf(u1464,axiom,
+    ~p(sK17(xyz,xyz),X0) | ab(X0)).
+
+cnf(u1469,axiom,
+    ~p(X1,sK17(xyz,xyz)) | ab(X1)).
+
+cnf(u1473,axiom,
+    p(sK17(xyz,xyz),sK17(xyz,xyz))).
+
+cnf(u1477,axiom,
+    ~pd(X0) | ~pre(X0,X1) | pc(sK15(X0,X1),X0,X1)).
+
+cnf(u1493,axiom,
+    ~pq(X0) | ~pre(X0,X1) | tql(sK16(X0,X1),X0,X1)).
+
+cnf(u1501,axiom,
+    p(sK17(zyx,zyx),sK17(zyx,zyx))).
+
+cnf(u1505,axiom,
+    ~aq(X0) | ~pre(X0,X1) | tql(sK16(X0,X1),X0,X1)).
+
+cnf(u1516,axiom,
+    ~at(X0) | ~p(X1,X0) | p(X0,X1)).
+
+cnf(u1522,axiom,
+    ~tql(X0,X1,X2) | ~p(X3,X2) | tql(X0,X1,X3)).
+
+cnf(u1526,axiom,
+    ~p(X0,xyz) | p(xyz,X0)).
+
+cnf(u1543,axiom,
+    ~p(X1,zyx) | p(zyx,X1)).
+
+cnf(u1547,axiom,
+    ~k(X0,X1,X2) | ~p(X3,X2) | k(X0,X1,X3)).
+
+cnf(u1564,axiom,
+    xyz = sK17(xyz,xyz)).
+
+cnf(u1568,axiom,
+    ~pc(X0,X1,X2) | ~p(X3,X2) | pc(X0,X1,X3)).
+
+cnf(u1572,axiom,
+    zyx = sK17(zyx,zyx)).
+
+cnf(u1576,axiom,
+    ~tp(X0,X1,X2) | ~p(X3,X2) | tp(X0,X1,X3)).
+
+cnf(u1580,axiom,
+    ~c(X0) | sK7(X0) = X1 | ~df(X0,X1)).
+
+cnf(u1584,axiom,
+    ~k(X1,X2,X3) | ~k(X0,X1,X3) | k(X0,X2,X3)).
+
+cnf(u1588,axiom,
+    ~df(xyz,X3) | X2 = X3 | ~df(zyx,X2)).
+
+cnf(u1593,axiom,
+    ~tp(X1,X2,X3) | ~tp(X0,X1,X3) | tp(X0,X2,X3)).
+
+cnf(u1597,axiom,
+    ~ab(X1) | ~ab(X0) | p(X0,X1) | dif(sK13(X0,X1),X0,X1)).
+
+cnf(u1601,axiom,
+    ~pd(X1) | ~pd(X0) | p(X0,X1) | dif(sK14(X0,X1),X0,X1)).
+
+cnf(u1605,axiom,
+    ~sl(X1) | ~dqt(X1,X2) | ~sl(X0) | ~dqt(X0,X2) | X0 = X1).
+
+cnf(u1609,axiom,
+    ~tl(X1) | ~dqt(X1,X2) | ~tl(X0) | ~dqt(X0,X2) | X0 = X1).
+
+cnf(u1613,axiom,
+    ~dif(X2,X0,X1) | ~p(X3,X0) | ov(X3,X1) | p(X3,X2)).
+
+cnf(u1639,axiom,
+    ab(sK13(xyz,zyx))).
+
+cnf(u1648,axiom,
+    ~p(sK13(xyz,zyx),X1) | ab(X1)).
+
+cnf(u1652,axiom,
+    ~p(X2,sK13(xyz,zyx)) | ab(X2)).
+
+cnf(u1657,axiom,
+    p(sK13(xyz,zyx),sK13(xyz,zyx))).
+
+cnf(u1668,axiom,
+    ~p(X0,sK13(xyz,zyx)) | p(X0,xyz)).
+
+cnf(u1672,axiom,
+    ~ab(X1) | p(X1,xyz) | dif(sK13(X1,xyz),X1,xyz)).
+
+cnf(u1677,axiom,
+    p(sK13(xyz,zyx),xyz)).
+
+cnf(u1769,axiom,
+    ~aq(sK10(zyx))).
+
+cnf(u1773,axiom,
+    dqt(sK10(zyx),zyx)).
+
+cnf(u1780,axiom,
+    ~pq(sK10(zyx))).
+
+cnf(u1784,axiom,
+    ~p(X0,zyx) | pd(X0)).
+
+cnf(u1788,axiom,
+    q(sK10(zyx))).
+
+cnf(u1797,axiom,
+    ~pd(sK10(zyx))).
+
+cnf(u1801,axiom,
+    ~ed(sK10(zyx))).
+
+cnf(u1805,axiom,
+    ~p(zyx,X1) | pd(X1)).
+
+cnf(u1809,axiom,
+    ~ab(sK10(zyx))).
+
+cnf(u1814,axiom,
+    pd(sK4(sK10(zyx)))).
+
+cnf(u1830,axiom,
+    ~ab(sK4(sK10(zyx)))).
+
+cnf(u1834,axiom,
+    ~dqt(X2,zyx) | tq(X2)).
+
+cnf(u1839,axiom,
+    ~ed(sK4(sK10(zyx)))).
+
+cnf(u1843,axiom,
+    ~k(X3,zyx,X4) | pd(X3)).
+
+cnf(u1847,axiom,
+    tl(sK10(sK4(sK10(zyx))))).
+
+cnf(u1851,axiom,
+    ~k(zyx,X5,X6) | pd(X5)).
+
+cnf(u1858,axiom,
+    tq(sK10(sK4(sK10(zyx))))).
+
+cnf(u1862,axiom,
+    ~pre(zyx,X7) | pc(sK15(zyx,X7),zyx,X7)).
+
+cnf(u1873,axiom,
+    ~aq(sK10(sK4(sK10(zyx))))).
+
+cnf(u1877,axiom,
+    ~pq(sK10(sK4(sK10(zyx))))).
+
+cnf(u1881,axiom,
+    q(sK10(sK4(sK10(zyx))))).
+
+cnf(u1885,axiom,
+    ~pd(X8) | p(X8,zyx) | dif(sK14(X8,zyx),X8,zyx)).
+
+cnf(u1893,axiom,
+    ~pd(sK10(sK4(sK10(zyx))))).
+
+cnf(u1899,axiom,
+    ~ed(sK10(sK4(sK10(zyx))))).
+
+cnf(u1903,axiom,
+    ~ab(sK10(sK4(sK10(zyx))))).
+
+cnf(u1907,axiom,
+    ~ql(X2,sK10(zyx)) | t(X2)).
+
+cnf(u1911,axiom,
+    ql(sK3(sK10(zyx)),sK10(zyx))).
+
+cnf(u1915,axiom,
+    ~dqt(sK10(zyx),X0) | zyx = X0).
+
+cnf(u1922,axiom,
+    t(sK3(sK10(zyx)))).
+
+cnf(u1930,axiom,
+    tr(sK3(sK10(zyx)))).
+
+cnf(u1937,axiom,
+    r(sK3(sK10(zyx)))).
+
+cnf(u1941,axiom,
+    ~dqt(sK10(zyx),X0) | ~tl(X1) | ~dqt(X1,X0) | sK10(zyx) = X1).
+
+cnf(u1946,axiom,
+    ~pr(sK3(sK10(zyx)))).
+
+cnf(u1951,axiom,
+    ~ar(sK3(sK10(zyx)))).
+
+cnf(u1955,axiom,
+    ab(sK3(sK10(zyx)))).
+
+cnf(u1959,axiom,
+    dqt(sK10(zyx),sK4(sK10(zyx)))).
+
+cnf(u2011,axiom,
+    zyx = sK4(sK10(zyx))).
+
+cnf(u2015,axiom,
+    ~dqt(sK10(zyx),X0) | pd(X0)).
+
+cnf(u2020,axiom,
+    xyz = sK13(xyz,zyx)).
+
+cnf(u2024,axiom,
+    ~dqt(X0,zyx) | ~tl(X0) | sK10(zyx) = X0).
+
+cnf(u2028,axiom,
+    ~p(sK3(sK10(zyx)),X0) | t(X0)).
+
+cnf(u2033,axiom,
+    ~p(X1,sK3(sK10(zyx))) | t(X1)).
+
+cnf(u2037,axiom,
+    ~p(sK3(sK10(zyx)),X1) | ab(X1)).
+
+cnf(u2041,axiom,
+    ~ql(X0,sK10(zyx)) | sK3(sK10(zyx)) = X0).
+
+cnf(u2045,axiom,
+    ~p(X2,sK3(sK10(zyx))) | ab(X2)).
+
+cnf(u2050,axiom,
+    p(sK3(sK10(zyx)),sK3(sK10(zyx)))).
+
+cnf(u2063,axiom,
+    ~p(sK3(sK10(zyx)),X1) | ov(X1,sK3(sK10(zyx)))).
+
+cnf(u2070,axiom,
+    p(sK3(sK10(zyx)),xyz)).
+
+cnf(u2082,axiom,
+    ab(sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2091,axiom,
+    ~ab(X0) | p(X0,sK3(sK10(zyx))) | dif(sK13(X0,sK3(sK10(zyx))),X0,sK3(sK10(zyx)))).
+
+cnf(u2096,axiom,
+    ov(sK3(sK10(zyx)),sK3(sK10(zyx)))).
+
+cnf(u2105,axiom,
+    ~p(sK13(sK3(sK10(zyx)),xyz),X1) | ab(X1)).
+
+cnf(u2109,axiom,
+    ~p(X2,sK13(sK3(sK10(zyx)),xyz)) | ab(X2)).
+
+cnf(u2117,axiom,
+    p(sK13(sK3(sK10(zyx)),xyz),sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2121,axiom,
+    ~p(X0,sK13(sK3(sK10(zyx)),xyz)) | p(X0,sK3(sK10(zyx)))).
+
+cnf(u2138,axiom,
+    p(sK13(sK3(sK10(zyx)),xyz),sK3(sK10(zyx)))).
+
+cnf(u2150,axiom,
+    t(sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2154,axiom,
+    ~p(X2,sK3(sK10(zyx))) | ov(X2,xyz) | p(X2,sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2161,axiom,
+    tr(sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2170,axiom,
+    r(sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2175,axiom,
+    ~pr(sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2182,axiom,
+    p(xyz,sK3(sK10(zyx)))).
+
+cnf(u2186,axiom,
+    ~ar(sK13(sK3(sK10(zyx)),xyz))).
+
+cnf(u2208,axiom,
+    ~p(sK13(xyz,sK3(sK10(zyx))),X1) | ab(X1)).
+
+cnf(u2212,axiom,
+    ~p(X0,sK13(xyz,sK3(sK10(zyx)))) | p(X0,xyz)).
+
+cnf(u2230,axiom,
+    t(xyz)).
+
+cnf(u2237,axiom,
+    tr(xyz)).
+
+cnf(u2241,axiom,
+    ov(sK3(sK10(zyx)),xyz)).
+
+cnf(u2248,axiom,
+    r(xyz)).
+
+cnf(u2255,axiom,
+    ~pr(xyz)).
+
+cnf(u2259,axiom,
+    ~ar(xyz)).
+
+cnf(u2263,axiom,
+    ~p(X0,xyz) | p(X0,sK3(sK10(zyx)))).
+
+cnf(u2267,axiom,
+    ~p(xyz,X0) | t(X0)).
+
+cnf(u2274,axiom,
+    ~p(X1,xyz) | t(X1)).
+
+cnf(u2279,axiom,
+    p(sK17(sK3(sK10(zyx)),xyz),xyz)).
+
+cnf(u2283,axiom,
+    ov(X1,sK3(sK10(zyx))) | ~p(xyz,X1)).
+
+cnf(u2307,axiom,
+    xyz = sK17(sK3(sK10(zyx)),xyz)).
+
+cnf(u2311,axiom,
+    xyz = sK3(sK10(zyx))).
+
+cnf(u2316,axiom,
+    t(X0) | ~p(sK13(sK3(sK10(zyx)),xyz),X0)).
+
+cnf(u2323,axiom,
+    p(sK13(sK3(sK10(zyx)),xyz),xyz)).
+
+cnf(u2403,axiom,
+    ql(xyz,sK10(zyx))).
+
+cnf(u2410,axiom,
+    ~ql(X0,sK10(zyx)) | xyz = X0).
+
+cnf(u2415,axiom,
+    xyz = sK13(xyz,xyz)).
+
+cnf(u2419,axiom,
+    ~p(xyz,X0) | p(sK17(X0,xyz),xyz)).
+
+cnf(u2425,axiom,
+    ~p(xyz,X1) | p(sK17(X1,xyz),X1)).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 6908
+% Time elapsed: 0.023 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.029 s

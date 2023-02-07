@@ -1,0 +1,324 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on ci_ufo_thing_overlap_@_1 for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_ufo_thing_overlap_@_1
+% SZS output start Proof for ci_ufo_thing_overlap_@_1
+fof(f2150,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f656,f668,f1044,f1048,f1295,f1299,f1307,f1311,f1370,f1390,f1715,f1722,f1727,f2012,f2023,f2041,f2056,f2101,f2111,f2121,f2145,f2149])).
+fof(f2149,plain,(
+  ~spl59_161 | spl59_317 | ~spl59_322),
+  inference(avatar_contradiction_clause,[],[f2148])).
+fof(f2148,plain,(
+  $false | (~spl59_161 | spl59_317 | ~spl59_322)),
+  inference(subsumption_resolution,[],[f2147,f2120])).
+fof(f2120,plain,(
+  ~partOf(xyz,zyx) | spl59_317),
+  inference(avatar_component_clause,[],[f2119])).
+fof(f2119,plain,(
+  spl59_317 <=> partOf(xyz,zyx)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_317])])).
+fof(f2147,plain,(
+  partOf(xyz,zyx) | (~spl59_161 | ~spl59_322)),
+  inference(duplicate_literal_removal,[],[f2146])).
+fof(f2146,plain,(
+  partOf(xyz,zyx) | partOf(xyz,zyx) | (~spl59_161 | ~spl59_322)),
+  inference(resolution,[],[f2144,f1294])).
+fof(f1294,plain,(
+  ( ! [X0,X1] : (partOf(sK48(X0,X1),X0) | partOf(X0,X1)) ) | ~spl59_161),
+  inference(avatar_component_clause,[],[f1293])).
+fof(f1293,plain,(
+  spl59_161 <=> ! [X0,X1] : (partOf(sK48(X0,X1),X0) | partOf(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_161])])).
+fof(f2144,plain,(
+  ( ! [X0] : (~partOf(sK48(X0,zyx),xyz) | partOf(X0,zyx)) ) | ~spl59_322),
+  inference(avatar_component_clause,[],[f2143])).
+fof(f2143,plain,(
+  spl59_322 <=> ! [X0] : (~partOf(sK48(X0,zyx),xyz) | partOf(X0,zyx))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_322])])).
+fof(f2145,plain,(
+  spl59_322 | ~spl59_162 | ~spl59_309),
+  inference(avatar_split_clause,[],[f2059,f2054,f1297,f2143])).
+fof(f1297,plain,(
+  spl59_162 <=> ! [X0,X1] : (~overlap(sK48(X0,X1),X1) | partOf(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_162])])).
+fof(f2054,plain,(
+  spl59_309 <=> ! [X7] : (overlap(X7,zyx) | ~partOf(X7,xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_309])])).
+fof(f2059,plain,(
+  ( ! [X0] : (~partOf(sK48(X0,zyx),xyz) | partOf(X0,zyx)) ) | (~spl59_162 | ~spl59_309)),
+  inference(resolution,[],[f2055,f1298])).
+fof(f1298,plain,(
+  ( ! [X0,X1] : (~overlap(sK48(X0,X1),X1) | partOf(X0,X1)) ) | ~spl59_162),
+  inference(avatar_component_clause,[],[f1297])).
+fof(f2055,plain,(
+  ( ! [X7] : (overlap(X7,zyx) | ~partOf(X7,xyz)) ) | ~spl59_309),
+  inference(avatar_component_clause,[],[f2054])).
+fof(f2121,plain,(
+  ~spl59_317 | spl59_3 | ~spl59_177 | ~spl59_316),
+  inference(avatar_split_clause,[],[f2117,f2109,f1368,f654,f2119])).
+fof(f654,plain,(
+  spl59_3 <=> xyz = zyx),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_3])])).
+fof(f1368,plain,(
+  spl59_177 <=> ! [X0,X1] : (~partOf(X0,X1) | ~partOf(X1,X0) | X0 = X1)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_177])])).
+fof(f2109,plain,(
+  spl59_316 <=> partOf(zyx,xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_316])])).
+fof(f2117,plain,(
+  ~partOf(xyz,zyx) | (spl59_3 | ~spl59_177 | ~spl59_316)),
+  inference(subsumption_resolution,[],[f2116,f655])).
+fof(f655,plain,(
+  xyz != zyx | spl59_3),
+  inference(avatar_component_clause,[],[f654])).
+fof(f2116,plain,(
+  ~partOf(xyz,zyx) | xyz = zyx | (~spl59_177 | ~spl59_316)),
+  inference(resolution,[],[f2110,f1369])).
+fof(f1369,plain,(
+  ( ! [X0,X1] : (~partOf(X1,X0) | ~partOf(X0,X1) | X0 = X1) ) | ~spl59_177),
+  inference(avatar_component_clause,[],[f1368])).
+fof(f2110,plain,(
+  partOf(zyx,xyz) | ~spl59_316),
+  inference(avatar_component_clause,[],[f2109])).
+fof(f2111,plain,(
+  spl59_316 | ~spl59_161 | ~spl59_314),
+  inference(avatar_split_clause,[],[f2107,f2099,f1293,f2109])).
+fof(f2099,plain,(
+  spl59_314 <=> ! [X0] : (~partOf(sK48(X0,xyz),zyx) | partOf(X0,xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_314])])).
+fof(f2107,plain,(
+  partOf(zyx,xyz) | (~spl59_161 | ~spl59_314)),
+  inference(duplicate_literal_removal,[],[f2106])).
+fof(f2106,plain,(
+  partOf(zyx,xyz) | partOf(zyx,xyz) | (~spl59_161 | ~spl59_314)),
+  inference(resolution,[],[f2100,f1294])).
+fof(f2100,plain,(
+  ( ! [X0] : (~partOf(sK48(X0,xyz),zyx) | partOf(X0,xyz)) ) | ~spl59_314),
+  inference(avatar_component_clause,[],[f2099])).
+fof(f2101,plain,(
+  spl59_314 | ~spl59_162 | ~spl59_307),
+  inference(avatar_split_clause,[],[f2044,f2039,f1297,f2099])).
+fof(f2039,plain,(
+  spl59_307 <=> ! [X5] : (overlap(X5,xyz) | ~partOf(X5,zyx))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_307])])).
+fof(f2044,plain,(
+  ( ! [X0] : (~partOf(sK48(X0,xyz),zyx) | partOf(X0,xyz)) ) | (~spl59_162 | ~spl59_307)),
+  inference(resolution,[],[f2040,f1298])).
+fof(f2040,plain,(
+  ( ! [X5] : (overlap(X5,xyz) | ~partOf(X5,zyx)) ) | ~spl59_307),
+  inference(avatar_component_clause,[],[f2039])).
+fof(f2056,plain,(
+  spl59_309 | ~spl59_249 | ~spl59_306),
+  inference(avatar_split_clause,[],[f2030,f2021,f1725,f2054])).
+fof(f1725,plain,(
+  spl59_249 <=> ! [X1] : (~partOf(X1,xyz) | overlap(zyx,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_249])])).
+fof(f2021,plain,(
+  spl59_306 <=> ! [X4,X5] : (overlap(X4,X5) | ~overlap(X5,X4))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_306])])).
+fof(f2030,plain,(
+  ( ! [X7] : (overlap(X7,zyx) | ~partOf(X7,xyz)) ) | (~spl59_249 | ~spl59_306)),
+  inference(resolution,[],[f2022,f1726])).
+fof(f1726,plain,(
+  ( ! [X1] : (overlap(zyx,X1) | ~partOf(X1,xyz)) ) | ~spl59_249),
+  inference(avatar_component_clause,[],[f1725])).
+fof(f2022,plain,(
+  ( ! [X4,X5] : (~overlap(X5,X4) | overlap(X4,X5)) ) | ~spl59_306),
+  inference(avatar_component_clause,[],[f2021])).
+fof(f2041,plain,(
+  spl59_307 | ~spl59_248 | ~spl59_306),
+  inference(avatar_split_clause,[],[f2027,f2021,f1720,f2039])).
+fof(f1720,plain,(
+  spl59_248 <=> ! [X0] : (~partOf(X0,zyx) | overlap(xyz,X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_248])])).
+fof(f2027,plain,(
+  ( ! [X5] : (overlap(X5,xyz) | ~partOf(X5,zyx)) ) | (~spl59_248 | ~spl59_306)),
+  inference(resolution,[],[f2022,f1721])).
+fof(f1721,plain,(
+  ( ! [X0] : (overlap(xyz,X0) | ~partOf(X0,zyx)) ) | ~spl59_248),
+  inference(avatar_component_clause,[],[f1720])).
+fof(f2023,plain,(
+  spl59_306 | ~spl59_165 | ~spl59_305),
+  inference(avatar_split_clause,[],[f2018,f2010,f1309,f2021])).
+fof(f1309,plain,(
+  spl59_165 <=> ! [X0,X1] : (partOf(sK52(X0,X1),X1) | ~overlap(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_165])])).
+fof(f2010,plain,(
+  spl59_305 <=> ! [X9,X8,X7] : (~partOf(sK52(X7,X8),X9) | overlap(X9,X7) | ~overlap(X7,X8))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_305])])).
+fof(f2018,plain,(
+  ( ! [X4,X5] : (overlap(X4,X5) | ~overlap(X5,X4)) ) | (~spl59_165 | ~spl59_305)),
+  inference(duplicate_literal_removal,[],[f2017])).
+fof(f2017,plain,(
+  ( ! [X4,X5] : (overlap(X4,X5) | ~overlap(X5,X4) | ~overlap(X5,X4)) ) | (~spl59_165 | ~spl59_305)),
+  inference(resolution,[],[f2011,f1310])).
+fof(f1310,plain,(
+  ( ! [X0,X1] : (partOf(sK52(X0,X1),X1) | ~overlap(X0,X1)) ) | ~spl59_165),
+  inference(avatar_component_clause,[],[f1309])).
+fof(f2011,plain,(
+  ( ! [X8,X9,X7] : (~partOf(sK52(X7,X8),X9) | overlap(X9,X7) | ~overlap(X7,X8)) ) | ~spl59_305),
+  inference(avatar_component_clause,[],[f2010])).
+fof(f2012,plain,(
+  spl59_305 | ~spl59_164 | ~spl59_182),
+  inference(avatar_split_clause,[],[f1710,f1388,f1305,f2010])).
+fof(f1305,plain,(
+  spl59_164 <=> ! [X0,X1] : (partOf(sK52(X0,X1),X0) | ~overlap(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_164])])).
+fof(f1388,plain,(
+  spl59_182 <=> ! [X2,X0,X1] : (~partOf(X2,X0) | ~partOf(X2,X1) | overlap(X0,X1))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_182])])).
+fof(f1710,plain,(
+  ( ! [X8,X9,X7] : (~partOf(sK52(X7,X8),X9) | overlap(X9,X7) | ~overlap(X7,X8)) ) | (~spl59_164 | ~spl59_182)),
+  inference(resolution,[],[f1389,f1306])).
+fof(f1306,plain,(
+  ( ! [X0,X1] : (partOf(sK52(X0,X1),X0) | ~overlap(X0,X1)) ) | ~spl59_164),
+  inference(avatar_component_clause,[],[f1305])).
+fof(f1389,plain,(
+  ( ! [X2,X0,X1] : (~partOf(X2,X1) | ~partOf(X2,X0) | overlap(X0,X1)) ) | ~spl59_182),
+  inference(avatar_component_clause,[],[f1388])).
+fof(f1727,plain,(
+  spl59_249 | ~spl59_101 | ~spl59_247),
+  inference(avatar_split_clause,[],[f1717,f1713,f1046,f1725])).
+fof(f1046,plain,(
+  spl59_101 <=> ! [X0] : (overlap(zyx,X0) | ~overlap(xyz,X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_101])])).
+fof(f1713,plain,(
+  spl59_247 <=> ! [X0,X1] : (~partOf(X0,X1) | overlap(X1,X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_247])])).
+fof(f1717,plain,(
+  ( ! [X1] : (~partOf(X1,xyz) | overlap(zyx,X1)) ) | (~spl59_101 | ~spl59_247)),
+  inference(resolution,[],[f1714,f1047])).
+fof(f1047,plain,(
+  ( ! [X0] : (~overlap(xyz,X0) | overlap(zyx,X0)) ) | ~spl59_101),
+  inference(avatar_component_clause,[],[f1046])).
+fof(f1714,plain,(
+  ( ! [X0,X1] : (overlap(X1,X0) | ~partOf(X0,X1)) ) | ~spl59_247),
+  inference(avatar_component_clause,[],[f1713])).
+fof(f1722,plain,(
+  spl59_248 | ~spl59_100 | ~spl59_247),
+  inference(avatar_split_clause,[],[f1716,f1713,f1042,f1720])).
+fof(f1042,plain,(
+  spl59_100 <=> ! [X0] : (~overlap(zyx,X0) | overlap(xyz,X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_100])])).
+fof(f1716,plain,(
+  ( ! [X0] : (~partOf(X0,zyx) | overlap(xyz,X0)) ) | (~spl59_100 | ~spl59_247)),
+  inference(resolution,[],[f1714,f1043])).
+fof(f1043,plain,(
+  ( ! [X0] : (~overlap(zyx,X0) | overlap(xyz,X0)) ) | ~spl59_100),
+  inference(avatar_component_clause,[],[f1042])).
+fof(f1715,plain,(
+  spl59_247 | ~spl59_6 | ~spl59_182),
+  inference(avatar_split_clause,[],[f1707,f1388,f666,f1713])).
+fof(f666,plain,(
+  spl59_6 <=> ! [X0] : partOf(X0,X0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_6])])).
+fof(f1707,plain,(
+  ( ! [X0,X1] : (~partOf(X0,X1) | overlap(X1,X0)) ) | (~spl59_6 | ~spl59_182)),
+  inference(resolution,[],[f1389,f667])).
+fof(f667,plain,(
+  ( ! [X0] : (partOf(X0,X0)) ) | ~spl59_6),
+  inference(avatar_component_clause,[],[f666])).
+fof(f1390,plain,(
+  spl59_182),
+  inference(avatar_split_clause,[],[f593,f1388])).
+fof(f593,plain,(
+  ( ! [X2,X0,X1] : (~partOf(X2,X0) | ~partOf(X2,X1) | overlap(X0,X1)) )),
+  inference(cnf_transformation,[],[f184])).
+fof(f184,plain,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X2] : (partOf(X2,X1) & partOf(X2,X0)))),
+  inference(rectify,[],[f89])).
+fof(f89,axiom,(
+  ! [X0,X1] : (overlap(X0,X1) <=> ? [X3] : (partOf(X3,X1) & partOf(X3,X0)))),
+  file('outputs/ufo/cis/ci_ufo_thing_overlap_@_1.in',ax_overlappingWholes_a50)).
+fof(f1370,plain,(
+  spl59_177),
+  inference(avatar_split_clause,[],[f570,f1368])).
+fof(f570,plain,(
+  ( ! [X0,X1] : (~partOf(X0,X1) | ~partOf(X1,X0) | X0 = X1) )),
+  inference(cnf_transformation,[],[f281])).
+fof(f281,plain,(
+  ! [X0,X1] : (X0 = X1 | ~partOf(X1,X0) | ~partOf(X0,X1))),
+  inference(flattening,[],[f280])).
+fof(f280,plain,(
+  ! [X0,X1] : (X0 = X1 | (~partOf(X1,X0) | ~partOf(X0,X1)))),
+  inference(ennf_transformation,[],[f87])).
+fof(f87,axiom,(
+  ! [X0,X1] : ((partOf(X1,X0) & partOf(X0,X1)) => X0 = X1)),
+  file('outputs/ufo/cis/ci_ufo_thing_overlap_@_1.in',ax_antiSymmetricParthood_a48)).
+fof(f1311,plain,(
+  spl59_165),
+  inference(avatar_split_clause,[],[f592,f1309])).
+fof(f592,plain,(
+  ( ! [X0,X1] : (partOf(sK52(X0,X1),X1) | ~overlap(X0,X1)) )),
+  inference(cnf_transformation,[],[f184])).
+fof(f1307,plain,(
+  spl59_164),
+  inference(avatar_split_clause,[],[f591,f1305])).
+fof(f591,plain,(
+  ( ! [X0,X1] : (partOf(sK52(X0,X1),X0) | ~overlap(X0,X1)) )),
+  inference(cnf_transformation,[],[f184])).
+fof(f1299,plain,(
+  spl59_162),
+  inference(avatar_split_clause,[],[f573,f1297])).
+fof(f573,plain,(
+  ( ! [X0,X1] : (~overlap(sK48(X0,X1),X1) | partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f180])).
+fof(f180,plain,(
+  ! [X0,X1] : (~partOf(X0,X1) <=> ? [X2] : (~overlap(X2,X1) & partOf(X2,X0)))),
+  inference(rectify,[],[f90])).
+fof(f90,axiom,(
+  ! [X0,X1] : (~partOf(X0,X1) <=> ? [X3] : (~overlap(X3,X1) & partOf(X3,X0)))),
+  file('outputs/ufo/cis/ci_ufo_thing_overlap_@_1.in',ax_strongSupplementation_a51)).
+fof(f1295,plain,(
+  spl59_161),
+  inference(avatar_split_clause,[],[f572,f1293])).
+fof(f572,plain,(
+  ( ! [X0,X1] : (partOf(sK48(X0,X1),X0) | partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f180])).
+fof(f1048,plain,(
+  spl59_101),
+  inference(avatar_split_clause,[],[f506,f1046])).
+fof(f506,plain,(
+  ( ! [X0] : (overlap(zyx,X0) | ~overlap(xyz,X0)) )),
+  inference(cnf_transformation,[],[f172])).
+fof(f172,plain,(
+  ! [X0] : (overlap(xyz,X0) <=> overlap(zyx,X0))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X31] : (overlap(xyz,X31) <=> overlap(zyx,X31))),
+  file('outputs/ufo/cis/ci_ufo_thing_overlap_@_1.in',axiom26)).
+fof(f1044,plain,(
+  spl59_100),
+  inference(avatar_split_clause,[],[f505,f1042])).
+fof(f505,plain,(
+  ( ! [X0] : (~overlap(zyx,X0) | overlap(xyz,X0)) )),
+  inference(cnf_transformation,[],[f172])).
+fof(f668,plain,(
+  spl59_6),
+  inference(avatar_split_clause,[],[f346,f666])).
+fof(f346,plain,(
+  ( ! [X0] : (partOf(X0,X0)) )),
+  inference(cnf_transformation,[],[f85])).
+fof(f85,axiom,(
+  ! [X0] : partOf(X0,X0)),
+  file('outputs/ufo/cis/ci_ufo_thing_overlap_@_1.in',ax_reflexiveParthood)).
+fof(f656,plain,(
+  ~spl59_3),
+  inference(avatar_split_clause,[],[f312,f654])).
+fof(f312,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/ufo/cis/ci_ufo_thing_overlap_@_1.in',diff1)).
+% SZS output end Proof for ci_ufo_thing_overlap_@_1
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6780
+% Time elapsed: 0.024 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.033 s

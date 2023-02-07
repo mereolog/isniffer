@@ -1,0 +1,108 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_ped_subsumed_to_pt for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_ped_subsumed_to_pt
+% SZS output start Proof for type_ped_subsumed_to_pt
+fof(f887,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f673,f677,f781,f813,f878,f886])).
+fof(f886,plain,(
+  spl18_1 | ~spl18_36 | ~spl18_52),
+  inference(avatar_contradiction_clause,[],[f885])).
+fof(f885,plain,(
+  $false | (spl18_1 | ~spl18_36 | ~spl18_52)),
+  inference(subsumption_resolution,[],[f884,f877])).
+fof(f877,plain,(
+  ed(xyz) | ~spl18_52),
+  inference(avatar_component_clause,[],[f876])).
+fof(f876,plain,(
+  spl18_52 <=> ed(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_52])])).
+fof(f884,plain,(
+  ~ed(xyz) | (spl18_1 | ~spl18_36)),
+  inference(resolution,[],[f812,f672])).
+fof(f672,plain,(
+  ~pt(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f671])).
+fof(f671,plain,(
+  spl18_1 <=> pt(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f812,plain,(
+  ( ! [X0] : (pt(X0) | ~ed(X0)) ) | ~spl18_36),
+  inference(avatar_component_clause,[],[f811])).
+fof(f811,plain,(
+  spl18_36 <=> ! [X0] : (~ed(X0) | pt(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_36])])).
+fof(f878,plain,(
+  spl18_52 | ~spl18_2 | ~spl18_28),
+  inference(avatar_split_clause,[],[f874,f779,f675,f876])).
+fof(f675,plain,(
+  spl18_2 <=> ped(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f779,plain,(
+  spl18_28 <=> ! [X0] : (ed(X0) | ~ped(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_28])])).
+fof(f874,plain,(
+  ed(xyz) | (~spl18_2 | ~spl18_28)),
+  inference(resolution,[],[f780,f676])).
+fof(f676,plain,(
+  ped(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f675])).
+fof(f780,plain,(
+  ( ! [X0] : (~ped(X0) | ed(X0)) ) | ~spl18_28),
+  inference(avatar_component_clause,[],[f779])).
+fof(f813,plain,(
+  spl18_36),
+  inference(avatar_split_clause,[],[f561,f811])).
+fof(f561,plain,(
+  ( ! [X0] : (~ed(X0) | pt(X0)) )),
+  inference(cnf_transformation,[],[f398])).
+fof(f398,plain,(
+  ! [X0] : (pt(X0) | (~q(X0) & ~pd(X0) & ~ed(X0) & ~ab(X0)))),
+  inference(ennf_transformation,[],[f342])).
+fof(f342,plain,(
+  ! [X0] : ((q(X0) | pd(X0) | ed(X0) | ab(X0)) => pt(X0))),
+  inference(unused_predicate_definition_removal,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((q(X0) | pd(X0) | ed(X0) | ab(X0)) <=> pt(X0))),
+  file('outputs/dolce/subsumptions/type_ped_subsumed_to_pt.in',sos)).
+fof(f781,plain,(
+  spl18_28),
+  inference(avatar_split_clause,[],[f551,f779])).
+fof(f551,plain,(
+  ( ! [X0] : (ed(X0) | ~ped(X0)) )),
+  inference(cnf_transformation,[],[f195])).
+fof(f195,plain,(
+  ! [X0] : ((ped(X0) | nped(X0) | as(X0)) <=> ed(X0))),
+  inference(rectify,[],[f2])).
+fof(f2,axiom,(
+  ! [X1] : ((ped(X1) | nped(X1) | as(X1)) <=> ed(X1))),
+  file('outputs/dolce/subsumptions/type_ped_subsumed_to_pt.in',sos)).
+fof(f677,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f478,f675])).
+fof(f478,plain,(
+  ped(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  ped(xyz)),
+  file('outputs/dolce/subsumptions/type_ped_subsumed_to_pt.in',axiom1)).
+fof(f673,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f477,f671])).
+fof(f477,plain,(
+  ~pt(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~pt(xyz)),
+  file('outputs/dolce/subsumptions/type_ped_subsumed_to_pt.in',axiom2)).
+% SZS output end Proof for type_ped_subsumed_to_pt
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.007 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.014 s

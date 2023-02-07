@@ -1,0 +1,188 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_mode_subsumed_to_externallyDependentMode for (31ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 54625
+% Time elapsed: 3.200 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if symbol_precedence(reverse_arity) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if literal_maximality_aftercheck(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if unit_resulting_resolution(on) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if nongoal_weight_coefficient(3) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount or saturation_algorithm(fmb) is equal to inst_gen and inst_gen_with_resolution(off) is equal to on
+WARNING Broken Constraint: if avatar(off) has been set then saturation_algorithm(fmb) is equal to lrs or saturation_algorithm(fmb) is equal to otter or saturation_algorithm(fmb) is equal to discount
+% fmb+10_1_av=off:fmbsr=1.6:lma=on:nm=64:nwc=3:sp=reverse_arity:urr=on_258 on type_mode_subsumed_to_externallyDependentMode for (258ds)
+TRYING [1]
+TRYING [2]
+TRYING [3]
+TRYING [4]
+TRYING [5]
+TRYING [6]
+TRYING [7]
+TRYING [8]
+TRYING [9]
+TRYING [10]
+TRYING [11]
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Finite model building SAT solving
+
+% Memory used [KB]: 1648501
+% Time elapsed: 25.900 s
+% ------------------------------
+% ------------------------------
+% ott-4_4_awrs=decay:awrsf=64:add=off:afr=on:afp=40000:afq=1.0:amm=off:bs=on:gs=on:gsaa=from_current:gsem=on:irw=on:lma=on:nm=64:newcnf=on:nwc=1:sac=on:sp=frequency:updr=off_36 on type_mode_subsumed_to_externallyDependentMode for (36ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_mode_subsumed_to_externallyDependentMode
+% SZS output start Proof for type_mode_subsumed_to_externallyDependentMode
+fof(f1569,plain,(
+  $false),
+  inference(subsumption_resolution,[],[f1568,f759])).
+fof(f759,plain,(
+  moment(xyz)),
+  inference(resolution,[],[f735,f307])).
+fof(f307,plain,(
+  mode(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  mode(xyz)),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',axiom1)).
+fof(f735,plain,(
+  ( ! [X0] : (~mode(X0) | moment(X0)) )),
+  inference(resolution,[],[f544,f533])).
+fof(f533,plain,(
+  ( ! [X0] : (intrinsicMoment(X0) | ~mode(X0)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_intrinsicMoment_taxonomy)).
+fof(f544,plain,(
+  ( ! [X0] : (~intrinsicMoment(X0) | moment(X0)) )),
+  inference(cnf_transformation,[],[f20])).
+fof(f20,axiom,(
+  ! [X0] : ((relator(X0) | intrinsicMoment(X0)) <=> moment(X0))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_moment_taxonomy)).
+fof(f1568,plain,(
+  ~moment(xyz)),
+  inference(resolution,[],[f1562,f914])).
+fof(f914,plain,(
+  ( ! [X0] : (momentOf(X0,sK1(X0)) | ~moment(X0)) )),
+  inference(resolution,[],[f647,f349])).
+fof(f349,plain,(
+  ( ! [X0] : (ultimateBearerOf(sK1(X0),X0) | ~moment(X0)) )),
+  inference(cnf_transformation,[],[f228])).
+fof(f228,plain,(
+  ! [X0] : (? [X1] : (! [X2] : (ultimateBearerOf(X2,X0) <=> X1 = X2) & ultimateBearerOf(X1,X0)) | ~moment(X0))),
+  inference(ennf_transformation,[],[f137])).
+fof(f137,plain,(
+  ! [X0] : (moment(X0) => ? [X1] : (! [X2] : (ultimateBearerOf(X2,X0) <=> X1 = X2) & ultimateBearerOf(X1,X0)))),
+  inference(rectify,[],[f114])).
+fof(f114,axiom,(
+  ! [X19] : (moment(X19) => ? [X21] : (! [X22] : (ultimateBearerOf(X22,X19) <=> X21 = X22) & ultimateBearerOf(X21,X19)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_everyMomentHasUniqueAUltimateBearer_a70)).
+fof(f647,plain,(
+  ( ! [X0,X1] : (~ultimateBearerOf(X0,X1) | momentOf(X1,X0)) )),
+  inference(cnf_transformation,[],[f183])).
+fof(f183,plain,(
+  ! [X0,X1] : (ultimateBearerOf(X0,X1) <=> (momentOf(X1,X0) & ~moment(X0)))),
+  inference(rectify,[],[f113])).
+fof(f113,axiom,(
+  ! [X21,X19] : (ultimateBearerOf(X21,X19) <=> (momentOf(X19,X21) & ~moment(X21)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_dUltimateBearerOf_d7)).
+fof(f1562,plain,(
+  ( ! [X27] : (~momentOf(xyz,X27)) )),
+  inference(subsumption_resolution,[],[f1556,f1393])).
+fof(f1393,plain,(
+  ( ! [X1] : (~inheresIn(xyz,X1)) )),
+  inference(resolution,[],[f1259,f1110])).
+fof(f1110,plain,(
+  ( ! [X0] : (existentiallyDependsOn(X0,X0)) )),
+  inference(duplicate_literal_removal,[],[f1109])).
+fof(f1109,plain,(
+  ( ! [X0] : (existentiallyDependsOn(X0,X0) | existentiallyDependsOn(X0,X0)) )),
+  inference(resolution,[],[f651,f650])).
+fof(f650,plain,(
+  ( ! [X0,X1] : (exists(X0,sK60(X0,X1)) | existentiallyDependsOn(X0,X1)) )),
+  inference(cnf_transformation,[],[f278])).
+fof(f278,plain,(
+  ! [X0,X1] : (existentiallyDependsOn(X0,X1) <=> ! [X2] : (exists(X1,X2) | ~exists(X0,X2)))),
+  inference(ennf_transformation,[],[f104])).
+fof(f104,axiom,(
+  ! [X0,X1] : (existentiallyDependsOn(X0,X1) <=> ! [X2] : (exists(X0,X2) => exists(X1,X2)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_existentiallyDependsOn_a65)).
+fof(f651,plain,(
+  ( ! [X0,X1] : (~exists(X1,sK60(X0,X1)) | existentiallyDependsOn(X0,X1)) )),
+  inference(cnf_transformation,[],[f278])).
+fof(f1259,plain,(
+  ( ! [X0,X1] : (~inheresIn(xyz,X0) | ~existentiallyDependsOn(X0,X1)) )),
+  inference(resolution,[],[f1153,f624])).
+fof(f624,plain,(
+  ( ! [X0,X1] : (~existentiallyIndependentOf(X0,X1) | ~existentiallyDependsOn(X1,X0)) )),
+  inference(cnf_transformation,[],[f105])).
+fof(f105,axiom,(
+  ! [X0,X1] : (existentiallyIndependentOf(X0,X1) <=> (~existentiallyDependsOn(X1,X0) & ~existentiallyDependsOn(X0,X1)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_existentiallyIndependentOf_a66)).
+fof(f1153,plain,(
+  ( ! [X0,X1] : (existentiallyIndependentOf(X0,X1) | ~inheresIn(xyz,X1)) )),
+  inference(resolution,[],[f337,f1010])).
+fof(f1010,plain,(
+  ( ! [X0] : (~externallyDependsOn(xyz,X0)) )),
+  inference(subsumption_resolution,[],[f1006,f307])).
+fof(f1006,plain,(
+  ( ! [X0] : (~externallyDependsOn(xyz,X0) | ~mode(xyz)) )),
+  inference(resolution,[],[f520,f306])).
+fof(f306,plain,(
+  ~externallyDependentMode(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~externallyDependentMode(xyz)),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',axiom2)).
+fof(f520,plain,(
+  ( ! [X0,X1] : (externallyDependentMode(X0) | ~externallyDependsOn(X0,X1) | ~mode(X0)) )),
+  inference(cnf_transformation,[],[f169])).
+fof(f169,plain,(
+  ! [X0] : (externallyDependentMode(X0) <=> (? [X1] : externallyDependsOn(X0,X1) & mode(X0)))),
+  inference(rectify,[],[f117])).
+fof(f117,axiom,(
+  ! [X19] : (externallyDependentMode(X19) <=> (? [X0] : externallyDependsOn(X19,X0) & mode(X19)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_dExternallyDependentMode_a72)).
+fof(f337,plain,(
+  ( ! [X2,X0,X1] : (externallyDependsOn(X0,X1) | existentiallyIndependentOf(X1,X2) | ~inheresIn(X0,X2)) )),
+  inference(cnf_transformation,[],[f223])).
+fof(f223,plain,(
+  ! [X0,X1] : (externallyDependsOn(X0,X1) <~> (! [X2] : (existentiallyIndependentOf(X1,X2) | ~inheresIn(X0,X2)) & existentiallyDependsOn(X0,X1)))),
+  inference(ennf_transformation,[],[f135])).
+fof(f135,plain,(
+  ~? [X0,X1] : (externallyDependsOn(X0,X1) <=> (! [X2] : (inheresIn(X0,X2) => existentiallyIndependentOf(X1,X2)) & existentiallyDependsOn(X0,X1)))),
+  inference(rectify,[],[f116])).
+fof(f116,axiom,(
+  ~? [X19,X0] : (externallyDependsOn(X19,X0) <=> (! [X1] : (inheresIn(X19,X1) => existentiallyIndependentOf(X0,X1)) & existentiallyDependsOn(X19,X0)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_externallyDependsOn_a71)).
+fof(f1556,plain,(
+  ( ! [X27] : (inheresIn(xyz,X27) | ~momentOf(xyz,X27)) )),
+  inference(resolution,[],[f643,f1393])).
+fof(f643,plain,(
+  ( ! [X0,X1] : (inheresIn(X0,sK59(X0,X1)) | inheresIn(X0,X1) | ~momentOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f182])).
+fof(f182,plain,(
+  ! [X0,X1] : (momentOf(X0,X1) <=> (? [X2] : (momentOf(X2,X1) & inheresIn(X0,X2)) | inheresIn(X0,X1)))),
+  inference(rectify,[],[f112])).
+fof(f112,axiom,(
+  ! [X19,X0] : (momentOf(X19,X0) <=> (? [X20] : (momentOf(X20,X0) & inheresIn(X19,X20)) | inheresIn(X19,X0)))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_externallyDependentMode.in',ax_dMomentOf_d6)).
+% SZS output end Proof for type_mode_subsumed_to_externallyDependentMode
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 11385
+% Time elapsed: 0.032 s
+% ------------------------------
+% ------------------------------
+% Success in time 29.306 s

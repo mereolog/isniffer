@@ -1,0 +1,108 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_qualityKind_subsumed_to_intrinsicMomentType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_qualityKind_subsumed_to_intrinsicMomentType
+% SZS output start Proof for type_qualityKind_subsumed_to_intrinsicMomentType
+fof(f1001,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f842,f894,f987,f1000])).
+fof(f1000,plain,(
+  spl59_1 | ~spl59_63 | ~spl59_86),
+  inference(avatar_contradiction_clause,[],[f999])).
+fof(f999,plain,(
+  $false | (spl59_1 | ~spl59_63 | ~spl59_86)),
+  inference(subsumption_resolution,[],[f998,f645])).
+fof(f645,plain,(
+  ~intrinsicMomentType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> intrinsicMomentType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f998,plain,(
+  intrinsicMomentType(xyz) | (~spl59_63 | ~spl59_86)),
+  inference(resolution,[],[f893,f986])).
+fof(f986,plain,(
+  qualityType(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f985])).
+fof(f985,plain,(
+  spl59_86 <=> qualityType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f893,plain,(
+  ( ! [X0] : (~qualityType(X0) | intrinsicMomentType(X0)) ) | ~spl59_63),
+  inference(avatar_component_clause,[],[f892])).
+fof(f892,plain,(
+  spl59_63 <=> ! [X0] : (intrinsicMomentType(X0) | ~qualityType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_63])])).
+fof(f987,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_50),
+  inference(avatar_split_clause,[],[f983,f840,f648,f985])).
+fof(f648,plain,(
+  spl59_2 <=> qualityKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f840,plain,(
+  spl59_50 <=> ! [X0] : (~qualityKind(X0) | qualityType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_50])])).
+fof(f983,plain,(
+  qualityType(xyz) | (~spl59_2 | ~spl59_50)),
+  inference(resolution,[],[f841,f649])).
+fof(f649,plain,(
+  qualityKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f841,plain,(
+  ( ! [X0] : (~qualityKind(X0) | qualityType(X0)) ) | ~spl59_50),
+  inference(avatar_component_clause,[],[f840])).
+fof(f894,plain,(
+  spl59_63),
+  inference(avatar_split_clause,[],[f532,f892])).
+fof(f532,plain,(
+  ( ! [X0] : (intrinsicMomentType(X0) | ~qualityType(X0)) )),
+  inference(cnf_transformation,[],[f32])).
+fof(f32,axiom,(
+  ! [X0] : ((modeType(X0) | qualityType(X0)) <=> intrinsicMomentType(X0))),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_intrinsicMomentType.in',ax_intrinsicMomentType_taxonomy)).
+fof(f842,plain,(
+  spl59_50),
+  inference(avatar_split_clause,[],[f486,f840])).
+fof(f486,plain,(
+  ( ! [X0] : (~qualityKind(X0) | qualityType(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & qualityType(X0)) | ~qualityKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (qualityKind(X0) => (kind(X0) & qualityType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (qualityKind(X0) <=> (kind(X0) & qualityType(X0)))),
+  inference(rectify,[],[f83])).
+fof(f83,axiom,(
+  ! [X8] : (qualityKind(X8) <=> (kind(X8) & qualityType(X8)))),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_intrinsicMomentType.in',ax_qualityKindDefinition_a45)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  qualityKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  qualityKind(xyz)),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_intrinsicMomentType.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~intrinsicMomentType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~intrinsicMomentType(xyz)),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_intrinsicMomentType.in',axiom2)).
+% SZS output end Proof for type_qualityKind_subsumed_to_intrinsicMomentType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.014 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.024 s

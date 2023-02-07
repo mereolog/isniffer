@@ -1,0 +1,135 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_quantityKind_subsumed_to_endurantType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_quantityKind_subsumed_to_endurantType
+% SZS output start Proof for type_quantityKind_subsumed_to_endurantType
+fof(f1017,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f842,f886,f930,f987,f1012,f1016])).
+fof(f1016,plain,(
+  spl59_1 | ~spl59_61 | ~spl59_91),
+  inference(avatar_contradiction_clause,[],[f1015])).
+fof(f1015,plain,(
+  $false | (spl59_1 | ~spl59_61 | ~spl59_91)),
+  inference(subsumption_resolution,[],[f1013,f645])).
+fof(f645,plain,(
+  ~endurantType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1013,plain,(
+  endurantType(xyz) | (~spl59_61 | ~spl59_91)),
+  inference(resolution,[],[f1011,f885])).
+fof(f885,plain,(
+  ( ! [X0] : (~substantialType(X0) | endurantType(X0)) ) | ~spl59_61),
+  inference(avatar_component_clause,[],[f884])).
+fof(f884,plain,(
+  spl59_61 <=> ! [X0] : (endurantType(X0) | ~substantialType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_61])])).
+fof(f1011,plain,(
+  substantialType(xyz) | ~spl59_91),
+  inference(avatar_component_clause,[],[f1010])).
+fof(f1010,plain,(
+  spl59_91 <=> substantialType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_91])])).
+fof(f1012,plain,(
+  spl59_91 | ~spl59_72 | ~spl59_86),
+  inference(avatar_split_clause,[],[f1008,f985,f928,f1010])).
+fof(f928,plain,(
+  spl59_72 <=> ! [X0] : (substantialType(X0) | ~quantityType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f985,plain,(
+  spl59_86 <=> quantityType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f1008,plain,(
+  substantialType(xyz) | (~spl59_72 | ~spl59_86)),
+  inference(resolution,[],[f929,f986])).
+fof(f986,plain,(
+  quantityType(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f985])).
+fof(f929,plain,(
+  ( ! [X0] : (~quantityType(X0) | substantialType(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f928])).
+fof(f987,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_50),
+  inference(avatar_split_clause,[],[f983,f840,f648,f985])).
+fof(f648,plain,(
+  spl59_2 <=> quantityKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f840,plain,(
+  spl59_50 <=> ! [X0] : (~quantityKind(X0) | quantityType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_50])])).
+fof(f983,plain,(
+  quantityType(xyz) | (~spl59_2 | ~spl59_50)),
+  inference(resolution,[],[f841,f649])).
+fof(f649,plain,(
+  quantityKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f841,plain,(
+  ( ! [X0] : (~quantityKind(X0) | quantityType(X0)) ) | ~spl59_50),
+  inference(avatar_component_clause,[],[f840])).
+fof(f930,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f547,f928])).
+fof(f547,plain,(
+  ( ! [X0] : (substantialType(X0) | ~quantityType(X0)) )),
+  inference(cnf_transformation,[],[f28])).
+fof(f28,axiom,(
+  ! [X0] : ((quantityType(X0) | collectiveType(X0) | objectType(X0)) <=> substantialType(X0))),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_endurantType.in',ax_substantialType_taxonomy)).
+fof(f886,plain,(
+  spl59_61),
+  inference(avatar_split_clause,[],[f529,f884])).
+fof(f529,plain,(
+  ( ! [X0] : (endurantType(X0) | ~substantialType(X0)) )),
+  inference(cnf_transformation,[],[f26])).
+fof(f26,axiom,(
+  ! [X0] : ((momentType(X0) | substantialType(X0)) <=> endurantType(X0))),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_endurantType.in',ax_endurantType_taxonomy_nature)).
+fof(f842,plain,(
+  spl59_50),
+  inference(avatar_split_clause,[],[f486,f840])).
+fof(f486,plain,(
+  ( ! [X0] : (~quantityKind(X0) | quantityType(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & quantityType(X0)) | ~quantityKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (quantityKind(X0) => (kind(X0) & quantityType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (quantityKind(X0) <=> (kind(X0) & quantityType(X0)))),
+  inference(rectify,[],[f81])).
+fof(f81,axiom,(
+  ! [X8] : (quantityKind(X8) <=> (kind(X8) & quantityType(X8)))),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_endurantType.in',ax_quantityKindDefinition_a45)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  quantityKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quantityKind(xyz)),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_endurantType.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~endurantType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~endurantType(xyz)),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_endurantType.in',axiom2)).
+% SZS output end Proof for type_quantityKind_subsumed_to_endurantType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.016 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.026 s

@@ -1,0 +1,213 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_quaIndividual_subsumed_to_concreteIndividual for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_quaIndividual_subsumed_to_concreteIndividual
+% SZS output start Proof for type_quaIndividual_subsumed_to_concreteIndividual
+fof(f1009,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f742,f746,f846,f858,f878,f926,f975,f980,f990,f995,f1005,f1008])).
+fof(f1008,plain,(
+  spl59_1 | ~spl59_72 | ~spl59_90),
+  inference(avatar_contradiction_clause,[],[f1007])).
+fof(f1007,plain,(
+  $false | (spl59_1 | ~spl59_72 | ~spl59_90)),
+  inference(subsumption_resolution,[],[f1006,f641])).
+fof(f641,plain,(
+  ~concreteIndividual(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> concreteIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1006,plain,(
+  concreteIndividual(xyz) | (~spl59_72 | ~spl59_90)),
+  inference(resolution,[],[f925,f1004])).
+fof(f1004,plain,(
+  endurant(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f1003])).
+fof(f1003,plain,(
+  spl59_90 <=> endurant(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f925,plain,(
+  ( ! [X0] : (~endurant(X0) | concreteIndividual(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f924])).
+fof(f924,plain,(
+  spl59_72 <=> ! [X0] : (concreteIndividual(X0) | ~endurant(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f1005,plain,(
+  spl59_90 | ~spl59_60 | ~spl59_88),
+  inference(avatar_split_clause,[],[f1001,f993,f876,f1003])).
+fof(f876,plain,(
+  spl59_60 <=> ! [X0] : (endurant(X0) | ~moment(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_60])])).
+fof(f993,plain,(
+  spl59_88 <=> moment(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f1001,plain,(
+  endurant(xyz) | (~spl59_60 | ~spl59_88)),
+  inference(resolution,[],[f877,f994])).
+fof(f994,plain,(
+  moment(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f993])).
+fof(f877,plain,(
+  ( ! [X0] : (~moment(X0) | endurant(X0)) ) | ~spl59_60),
+  inference(avatar_component_clause,[],[f876])).
+fof(f995,plain,(
+  spl59_88 | ~spl59_55 | ~spl59_87),
+  inference(avatar_split_clause,[],[f991,f988,f856,f993])).
+fof(f856,plain,(
+  spl59_55 <=> ! [X0] : (moment(X0) | ~intrinsicMoment(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_55])])).
+fof(f988,plain,(
+  spl59_87 <=> intrinsicMoment(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f991,plain,(
+  moment(xyz) | (~spl59_55 | ~spl59_87)),
+  inference(resolution,[],[f857,f989])).
+fof(f989,plain,(
+  intrinsicMoment(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f988])).
+fof(f857,plain,(
+  ( ! [X0] : (~intrinsicMoment(X0) | moment(X0)) ) | ~spl59_55),
+  inference(avatar_component_clause,[],[f856])).
+fof(f990,plain,(
+  spl59_87 | ~spl59_52 | ~spl59_85),
+  inference(avatar_split_clause,[],[f986,f978,f844,f988])).
+fof(f844,plain,(
+  spl59_52 <=> ! [X0] : (intrinsicMoment(X0) | ~mode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_52])])).
+fof(f978,plain,(
+  spl59_85 <=> mode(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_85])])).
+fof(f986,plain,(
+  intrinsicMoment(xyz) | (~spl59_52 | ~spl59_85)),
+  inference(resolution,[],[f845,f979])).
+fof(f979,plain,(
+  mode(xyz) | ~spl59_85),
+  inference(avatar_component_clause,[],[f978])).
+fof(f845,plain,(
+  ( ! [X0] : (~mode(X0) | intrinsicMoment(X0)) ) | ~spl59_52),
+  inference(avatar_component_clause,[],[f844])).
+fof(f980,plain,(
+  spl59_85 | ~spl59_27 | ~spl59_84),
+  inference(avatar_split_clause,[],[f976,f973,f744,f978])).
+fof(f744,plain,(
+  spl59_27 <=> ! [X0] : (~externallyDependentMode(X0) | mode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_27])])).
+fof(f973,plain,(
+  spl59_84 <=> externallyDependentMode(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_84])])).
+fof(f976,plain,(
+  mode(xyz) | (~spl59_27 | ~spl59_84)),
+  inference(resolution,[],[f974,f745])).
+fof(f745,plain,(
+  ( ! [X0] : (~externallyDependentMode(X0) | mode(X0)) ) | ~spl59_27),
+  inference(avatar_component_clause,[],[f744])).
+fof(f974,plain,(
+  externallyDependentMode(xyz) | ~spl59_84),
+  inference(avatar_component_clause,[],[f973])).
+fof(f975,plain,(
+  spl59_84 | ~spl59_2 | ~spl59_26),
+  inference(avatar_split_clause,[],[f971,f740,f644,f973])).
+fof(f644,plain,(
+  spl59_2 <=> quaIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f740,plain,(
+  spl59_26 <=> ! [X0] : (~quaIndividual(X0) | externallyDependentMode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_26])])).
+fof(f971,plain,(
+  externallyDependentMode(xyz) | (~spl59_2 | ~spl59_26)),
+  inference(resolution,[],[f741,f645])).
+fof(f645,plain,(
+  quaIndividual(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f741,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | externallyDependentMode(X0)) ) | ~spl59_26),
+  inference(avatar_component_clause,[],[f740])).
+fof(f926,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f552,f924])).
+fof(f552,plain,(
+  ( ! [X0] : (concreteIndividual(X0) | ~endurant(X0)) )),
+  inference(cnf_transformation,[],[f5])).
+fof(f5,axiom,(
+  ! [X0] : ((perdurant(X0) | endurant(X0)) <=> concreteIndividual(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',ax_concreteIndividual_taxonomy)).
+fof(f878,plain,(
+  spl59_60),
+  inference(avatar_split_clause,[],[f526,f876])).
+fof(f526,plain,(
+  ( ! [X0] : (endurant(X0) | ~moment(X0)) )),
+  inference(cnf_transformation,[],[f16])).
+fof(f16,axiom,(
+  ! [X0] : ((moment(X0) | substantial(X0)) <=> endurant(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',ax_endurant_taxonomy)).
+fof(f858,plain,(
+  spl59_55),
+  inference(avatar_split_clause,[],[f519,f856])).
+fof(f519,plain,(
+  ( ! [X0] : (moment(X0) | ~intrinsicMoment(X0)) )),
+  inference(cnf_transformation,[],[f20])).
+fof(f20,axiom,(
+  ! [X0] : ((relator(X0) | intrinsicMoment(X0)) <=> moment(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',ax_moment_taxonomy)).
+fof(f846,plain,(
+  spl59_52),
+  inference(avatar_split_clause,[],[f511,f844])).
+fof(f511,plain,(
+  ( ! [X0] : (intrinsicMoment(X0) | ~mode(X0)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',ax_intrinsicMoment_taxonomy)).
+fof(f746,plain,(
+  spl59_27),
+  inference(avatar_split_clause,[],[f345,f744])).
+fof(f345,plain,(
+  ( ! [X0] : (~externallyDependentMode(X0) | mode(X0)) )),
+  inference(cnf_transformation,[],[f236])).
+fof(f236,plain,(
+  ! [X0] : (mode(X0) | ~externallyDependentMode(X0))),
+  inference(ennf_transformation,[],[f24])).
+fof(f24,axiom,(
+  ! [X0] : (externallyDependentMode(X0) => mode(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',ax_mode_taxonomy_externallyDependentMode)).
+fof(f742,plain,(
+  spl59_26),
+  inference(avatar_split_clause,[],[f344,f740])).
+fof(f344,plain,(
+  ( ! [X0] : (~quaIndividual(X0) | externallyDependentMode(X0)) )),
+  inference(cnf_transformation,[],[f235])).
+fof(f235,plain,(
+  ! [X0] : (externallyDependentMode(X0) | ~quaIndividual(X0))),
+  inference(ennf_transformation,[],[f25])).
+fof(f25,axiom,(
+  ! [X0] : (quaIndividual(X0) => externallyDependentMode(X0))),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',ax_externallyDependentMode_taxonomy_quaIndividual)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  quaIndividual(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quaIndividual(xyz)),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~concreteIndividual(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~concreteIndividual(xyz)),
+  file('outputs/ufo/subsumptions/type_quaIndividual_subsumed_to_concreteIndividual.in',axiom2)).
+% SZS output end Proof for type_quaIndividual_subsumed_to_concreteIndividual
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.016 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.024 s

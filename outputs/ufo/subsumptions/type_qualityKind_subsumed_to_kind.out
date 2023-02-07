@@ -1,0 +1,81 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_qualityKind_subsumed_to_kind for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_qualityKind_subsumed_to_kind
+% SZS output start Proof for type_qualityKind_subsumed_to_kind
+fof(f992,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f846,f991])).
+fof(f991,plain,(
+  spl59_1 | ~spl59_2 | ~spl59_51),
+  inference(avatar_contradiction_clause,[],[f990])).
+fof(f990,plain,(
+  $false | (spl59_1 | ~spl59_2 | ~spl59_51)),
+  inference(subsumption_resolution,[],[f989,f645])).
+fof(f645,plain,(
+  ~kind(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> kind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f989,plain,(
+  kind(xyz) | (~spl59_2 | ~spl59_51)),
+  inference(resolution,[],[f845,f649])).
+fof(f649,plain,(
+  qualityKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f648,plain,(
+  spl59_2 <=> qualityKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f845,plain,(
+  ( ! [X0] : (~qualityKind(X0) | kind(X0)) ) | ~spl59_51),
+  inference(avatar_component_clause,[],[f844])).
+fof(f844,plain,(
+  spl59_51 <=> ! [X0] : (~qualityKind(X0) | kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_51])])).
+fof(f846,plain,(
+  spl59_51),
+  inference(avatar_split_clause,[],[f487,f844])).
+fof(f487,plain,(
+  ( ! [X0] : (~qualityKind(X0) | kind(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & qualityType(X0)) | ~qualityKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (qualityKind(X0) => (kind(X0) & qualityType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (qualityKind(X0) <=> (kind(X0) & qualityType(X0)))),
+  inference(rectify,[],[f83])).
+fof(f83,axiom,(
+  ! [X8] : (qualityKind(X8) <=> (kind(X8) & qualityType(X8)))),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_kind.in',ax_qualityKindDefinition_a45)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  qualityKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  qualityKind(xyz)),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_kind.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~kind(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~kind(xyz)),
+  file('outputs/ufo/subsumptions/type_qualityKind_subsumed_to_kind.in',axiom2)).
+% SZS output end Proof for type_qualityKind_subsumed_to_kind
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.013 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.021 s

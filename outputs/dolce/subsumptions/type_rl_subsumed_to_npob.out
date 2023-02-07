@@ -1,0 +1,225 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_rl_subsumed_to_npob for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_rl_subsumed_to_npob
+% SZS output start Proof for type_rl_subsumed_to_npob
+fof(f904,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f679,f683,f747,f771,f779,f787,f791,f880,f890,f895,f900,f903])).
+fof(f903,plain,(
+  spl22_1 | ~spl22_28 | ~spl22_55),
+  inference(avatar_contradiction_clause,[],[f902])).
+fof(f902,plain,(
+  $false | (spl22_1 | ~spl22_28 | ~spl22_55)),
+  inference(subsumption_resolution,[],[f901,f678])).
+fof(f678,plain,(
+  ~npob(xyz) | spl22_1),
+  inference(avatar_component_clause,[],[f677])).
+fof(f677,plain,(
+  spl22_1 <=> npob(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_1])])).
+fof(f901,plain,(
+  npob(xyz) | (~spl22_28 | ~spl22_55)),
+  inference(resolution,[],[f899,f786])).
+fof(f786,plain,(
+  ( ! [X0] : (~sob(X0) | npob(X0)) ) | ~spl22_28),
+  inference(avatar_component_clause,[],[f785])).
+fof(f785,plain,(
+  spl22_28 <=> ! [X0] : (~sob(X0) | npob(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_28])])).
+fof(f899,plain,(
+  sob(xyz) | ~spl22_55),
+  inference(avatar_component_clause,[],[f898])).
+fof(f898,plain,(
+  spl22_55 <=> sob(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_55])])).
+fof(f900,plain,(
+  spl22_55 | ~spl22_29 | ~spl22_54),
+  inference(avatar_split_clause,[],[f896,f893,f789,f898])).
+fof(f789,plain,(
+  spl22_29 <=> ! [X0] : (~naso(X0) | sob(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_29])])).
+fof(f893,plain,(
+  spl22_54 <=> naso(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_54])])).
+fof(f896,plain,(
+  sob(xyz) | (~spl22_29 | ~spl22_54)),
+  inference(resolution,[],[f894,f790])).
+fof(f790,plain,(
+  ( ! [X0] : (~naso(X0) | sob(X0)) ) | ~spl22_29),
+  inference(avatar_component_clause,[],[f789])).
+fof(f894,plain,(
+  naso(xyz) | ~spl22_54),
+  inference(avatar_component_clause,[],[f893])).
+fof(f895,plain,(
+  spl22_54 | ~spl22_24 | ~spl22_53),
+  inference(avatar_split_clause,[],[f891,f888,f769,f893])).
+fof(f769,plain,(
+  spl22_24 <=> ! [X0] : (~c(X0) | naso(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_24])])).
+fof(f888,plain,(
+  spl22_53 <=> c(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_53])])).
+fof(f891,plain,(
+  naso(xyz) | (~spl22_24 | ~spl22_53)),
+  inference(resolution,[],[f889,f770])).
+fof(f770,plain,(
+  ( ! [X0] : (~c(X0) | naso(X0)) ) | ~spl22_24),
+  inference(avatar_component_clause,[],[f769])).
+fof(f889,plain,(
+  c(xyz) | ~spl22_53),
+  inference(avatar_component_clause,[],[f888])).
+fof(f890,plain,(
+  spl22_53 | ~spl22_18 | ~spl22_51),
+  inference(avatar_split_clause,[],[f882,f878,f745,f888])).
+fof(f745,plain,(
+  spl22_18 <=> ! [X0] : (~arc(X0) | c(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_18])])).
+fof(f878,plain,(
+  spl22_51 <=> arc(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_51])])).
+fof(f882,plain,(
+  c(xyz) | (~spl22_18 | ~spl22_51)),
+  inference(resolution,[],[f879,f746])).
+fof(f746,plain,(
+  ( ! [X0] : (~arc(X0) | c(X0)) ) | ~spl22_18),
+  inference(avatar_component_clause,[],[f745])).
+fof(f879,plain,(
+  arc(xyz) | ~spl22_51),
+  inference(avatar_component_clause,[],[f878])).
+fof(f880,plain,(
+  spl22_51 | ~spl22_2 | ~spl22_26),
+  inference(avatar_split_clause,[],[f876,f777,f681,f878])).
+fof(f681,plain,(
+  spl22_2 <=> rl(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_2])])).
+fof(f777,plain,(
+  spl22_26 <=> ! [X0] : (~rl(X0) | arc(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_26])])).
+fof(f876,plain,(
+  arc(xyz) | (~spl22_2 | ~spl22_26)),
+  inference(resolution,[],[f778,f682])).
+fof(f682,plain,(
+  rl(xyz) | ~spl22_2),
+  inference(avatar_component_clause,[],[f681])).
+fof(f778,plain,(
+  ( ! [X0] : (~rl(X0) | arc(X0)) ) | ~spl22_26),
+  inference(avatar_component_clause,[],[f777])).
+fof(f791,plain,(
+  spl22_29),
+  inference(avatar_split_clause,[],[f554,f789])).
+fof(f554,plain,(
+  ( ! [X0] : (~naso(X0) | sob(X0)) )),
+  inference(cnf_transformation,[],[f397])).
+fof(f397,plain,(
+  ! [X0] : (sob(X0) | ~naso(X0))),
+  inference(ennf_transformation,[],[f347])).
+fof(f347,plain,(
+  ! [X0] : (naso(X0) => sob(X0))),
+  inference(pure_predicate_removal,[],[f341])).
+fof(f341,plain,(
+  ! [X0] : ((naso(X0) | aso(X0)) => sob(X0))),
+  inference(unused_predicate_definition_removal,[],[f193])).
+fof(f193,plain,(
+  ! [X0] : ((naso(X0) | aso(X0)) <=> sob(X0))),
+  inference(rectify,[],[f9])).
+fof(f9,axiom,(
+  ! [X8] : ((naso(X8) | aso(X8)) <=> sob(X8))),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',sos)).
+fof(f787,plain,(
+  spl22_28),
+  inference(avatar_split_clause,[],[f550,f785])).
+fof(f550,plain,(
+  ( ! [X0] : (~sob(X0) | npob(X0)) )),
+  inference(cnf_transformation,[],[f396])).
+fof(f396,plain,(
+  ! [X0] : (npob(X0) | ~sob(X0))),
+  inference(ennf_transformation,[],[f348])).
+fof(f348,plain,(
+  ! [X0] : (sob(X0) => npob(X0))),
+  inference(pure_predicate_removal,[],[f340])).
+fof(f340,plain,(
+  ! [X0] : ((mob(X0) | sob(X0)) => npob(X0))),
+  inference(unused_predicate_definition_removal,[],[f191])).
+fof(f191,plain,(
+  ! [X0] : ((mob(X0) | sob(X0)) <=> npob(X0))),
+  inference(rectify,[],[f12])).
+fof(f12,axiom,(
+  ! [X11] : ((mob(X11) | sob(X11)) <=> npob(X11))),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',sos)).
+fof(f779,plain,(
+  spl22_26),
+  inference(avatar_split_clause,[],[f539,f777])).
+fof(f539,plain,(
+  ( ! [X0] : (~rl(X0) | arc(X0)) )),
+  inference(cnf_transformation,[],[f395])).
+fof(f395,plain,(
+  ! [X0] : ((fd(X0) & arc(X0)) | ~rl(X0))),
+  inference(ennf_transformation,[],[f336])).
+fof(f336,plain,(
+  ! [X0] : (rl(X0) => (fd(X0) & arc(X0)))),
+  inference(unused_predicate_definition_removal,[],[f186])).
+fof(f186,plain,(
+  ! [X0] : (rl(X0) <=> (fd(X0) & arc(X0)))),
+  inference(rectify,[],[f131])).
+fof(f131,axiom,(
+  ! [X283] : (rl(X283) <=> (fd(X283) & arc(X283)))),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',sos)).
+fof(f771,plain,(
+  spl22_24),
+  inference(avatar_split_clause,[],[f521,f769])).
+fof(f521,plain,(
+  ( ! [X0] : (~c(X0) | naso(X0)) )),
+  inference(cnf_transformation,[],[f387])).
+fof(f387,plain,(
+  ! [X0] : (naso(X0) | ~c(X0))),
+  inference(ennf_transformation,[],[f174])).
+fof(f174,plain,(
+  ! [X0] : (c(X0) => naso(X0))),
+  inference(rectify,[],[f10])).
+fof(f10,axiom,(
+  ! [X9] : (c(X9) => naso(X9))),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',sos)).
+fof(f747,plain,(
+  spl22_18),
+  inference(avatar_split_clause,[],[f503,f745])).
+fof(f503,plain,(
+  ( ! [X0] : (~arc(X0) | c(X0)) )),
+  inference(cnf_transformation,[],[f374])).
+fof(f374,plain,(
+  ! [X0] : (c(X0) | ~arc(X0))),
+  inference(ennf_transformation,[],[f161])).
+fof(f161,plain,(
+  ! [X0] : (arc(X0) => c(X0))),
+  inference(rectify,[],[f11])).
+fof(f11,axiom,(
+  ! [X10] : (arc(X10) => c(X10))),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',sos)).
+fof(f683,plain,(
+  spl22_2),
+  inference(avatar_split_clause,[],[f478,f681])).
+fof(f478,plain,(
+  rl(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  rl(xyz)),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',axiom1)).
+fof(f679,plain,(
+  ~spl22_1),
+  inference(avatar_split_clause,[],[f477,f677])).
+fof(f477,plain,(
+  ~npob(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~npob(xyz)),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_npob.in',axiom2)).
+% SZS output end Proof for type_rl_subsumed_to_npob
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6268
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.011 s

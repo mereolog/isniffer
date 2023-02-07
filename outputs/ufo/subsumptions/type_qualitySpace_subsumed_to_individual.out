@@ -1,0 +1,159 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_qualitySpace_subsumed_to_individual for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_qualitySpace_subsumed_to_individual
+% SZS output start Proof for type_qualitySpace_subsumed_to_individual
+fof(f1018,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f746,f758,f854,f870,f999,f1004,f1009,f1017])).
+fof(f1017,plain,(
+  spl59_1 | ~spl59_58 | ~spl59_92),
+  inference(avatar_contradiction_clause,[],[f1016])).
+fof(f1016,plain,(
+  $false | (spl59_1 | ~spl59_58 | ~spl59_92)),
+  inference(subsumption_resolution,[],[f1015,f641])).
+fof(f641,plain,(
+  ~individual(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> individual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1015,plain,(
+  individual(xyz) | (~spl59_58 | ~spl59_92)),
+  inference(resolution,[],[f869,f1008])).
+fof(f1008,plain,(
+  abstractIndividual(xyz) | ~spl59_92),
+  inference(avatar_component_clause,[],[f1007])).
+fof(f1007,plain,(
+  spl59_92 <=> abstractIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_92])])).
+fof(f869,plain,(
+  ( ! [X0] : (~abstractIndividual(X0) | individual(X0)) ) | ~spl59_58),
+  inference(avatar_component_clause,[],[f868])).
+fof(f868,plain,(
+  spl59_58 <=> ! [X0] : (individual(X0) | ~abstractIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_58])])).
+fof(f1009,plain,(
+  spl59_92 | ~spl59_30 | ~spl59_91),
+  inference(avatar_split_clause,[],[f1005,f1002,f756,f1007])).
+fof(f756,plain,(
+  spl59_30 <=> ! [X0] : (~set_(X0) | abstractIndividual(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_30])])).
+fof(f1002,plain,(
+  spl59_91 <=> set_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_91])])).
+fof(f1005,plain,(
+  abstractIndividual(xyz) | (~spl59_30 | ~spl59_91)),
+  inference(resolution,[],[f1003,f757])).
+fof(f757,plain,(
+  ( ! [X0] : (~set_(X0) | abstractIndividual(X0)) ) | ~spl59_30),
+  inference(avatar_component_clause,[],[f756])).
+fof(f1003,plain,(
+  set_(xyz) | ~spl59_91),
+  inference(avatar_component_clause,[],[f1002])).
+fof(f1004,plain,(
+  spl59_91 | ~spl59_27 | ~spl59_90),
+  inference(avatar_split_clause,[],[f1000,f997,f744,f1002])).
+fof(f744,plain,(
+  spl59_27 <=> ! [X0] : (~qualityStructure(X0) | set_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_27])])).
+fof(f997,plain,(
+  spl59_90 <=> qualityStructure(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f1000,plain,(
+  set_(xyz) | (~spl59_27 | ~spl59_90)),
+  inference(resolution,[],[f998,f745])).
+fof(f745,plain,(
+  ( ! [X0] : (~qualityStructure(X0) | set_(X0)) ) | ~spl59_27),
+  inference(avatar_component_clause,[],[f744])).
+fof(f998,plain,(
+  qualityStructure(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f997])).
+fof(f999,plain,(
+  spl59_90 | ~spl59_2 | ~spl59_54),
+  inference(avatar_split_clause,[],[f995,f852,f644,f997])).
+fof(f644,plain,(
+  spl59_2 <=> qualitySpace(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f852,plain,(
+  spl59_54 <=> ! [X0] : (qualityStructure(X0) | ~qualitySpace(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_54])])).
+fof(f995,plain,(
+  qualityStructure(xyz) | (~spl59_2 | ~spl59_54)),
+  inference(resolution,[],[f853,f645])).
+fof(f645,plain,(
+  qualitySpace(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f853,plain,(
+  ( ! [X0] : (~qualitySpace(X0) | qualityStructure(X0)) ) | ~spl59_54),
+  inference(avatar_component_clause,[],[f852])).
+fof(f870,plain,(
+  spl59_58),
+  inference(avatar_split_clause,[],[f514,f868])).
+fof(f514,plain,(
+  ( ! [X0] : (individual(X0) | ~abstractIndividual(X0)) )),
+  inference(cnf_transformation,[],[f3])).
+fof(f3,axiom,(
+  ! [X0] : ((abstractIndividual(X0) | concreteIndividual(X0)) <=> individual(X0))),
+  file('outputs/ufo/subsumptions/type_qualitySpace_subsumed_to_individual.in',ax_individual_taxonomy)).
+fof(f854,plain,(
+  spl59_54),
+  inference(avatar_split_clause,[],[f508,f852])).
+fof(f508,plain,(
+  ( ! [X0] : (qualityStructure(X0) | ~qualitySpace(X0)) )),
+  inference(cnf_transformation,[],[f14])).
+fof(f14,axiom,(
+  ! [X0] : ((qualitySpace(X0) | qualityDimension(X0)) <=> qualityStructure(X0))),
+  file('outputs/ufo/subsumptions/type_qualitySpace_subsumed_to_individual.in',ax_qualityStructure_taxonomy)).
+fof(f758,plain,(
+  spl59_30),
+  inference(avatar_split_clause,[],[f349,f756])).
+fof(f349,plain,(
+  ( ! [X0] : (~set_(X0) | abstractIndividual(X0)) )),
+  inference(cnf_transformation,[],[f238])).
+fof(f238,plain,(
+  ! [X0] : (abstractIndividual(X0) | ~set_(X0))),
+  inference(ennf_transformation,[],[f10])).
+fof(f10,axiom,(
+  ! [X0] : (set_(X0) => abstractIndividual(X0))),
+  file('outputs/ufo/subsumptions/type_qualitySpace_subsumed_to_individual.in',ax_abstractIndividual_taxonomy_set)).
+fof(f746,plain,(
+  spl59_27),
+  inference(avatar_split_clause,[],[f343,f744])).
+fof(f343,plain,(
+  ( ! [X0] : (~qualityStructure(X0) | set_(X0)) )),
+  inference(cnf_transformation,[],[f234])).
+fof(f234,plain,(
+  ! [X0] : (set_(X0) | ~qualityStructure(X0))),
+  inference(ennf_transformation,[],[f13])).
+fof(f13,axiom,(
+  ! [X0] : (qualityStructure(X0) => set_(X0))),
+  file('outputs/ufo/subsumptions/type_qualitySpace_subsumed_to_individual.in',ax_set_taxonomy_qualityStructure)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  qualitySpace(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  qualitySpace(xyz)),
+  file('outputs/ufo/subsumptions/type_qualitySpace_subsumed_to_individual.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~individual(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~individual(xyz)),
+  file('outputs/ufo/subsumptions/type_qualitySpace_subsumed_to_individual.in',axiom2)).
+% SZS output end Proof for type_qualitySpace_subsumed_to_individual
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.043 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.03 s

@@ -1,0 +1,135 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on ci_ufo_thing_partOf_@_2 for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_ufo_thing_partOf_@_2
+% SZS output start Proof for ci_ufo_thing_partOf_@_2
+fof(f1695,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f656,f668,f1044,f1048,f1246,f1376,f1691,f1694])).
+fof(f1694,plain,(
+  ~spl59_6 | ~spl59_101 | spl59_245),
+  inference(avatar_contradiction_clause,[],[f1693])).
+fof(f1693,plain,(
+  $false | (~spl59_6 | ~spl59_101 | spl59_245)),
+  inference(subsumption_resolution,[],[f1692,f667])).
+fof(f667,plain,(
+  ( ! [X0] : (partOf(X0,X0)) ) | ~spl59_6),
+  inference(avatar_component_clause,[],[f666])).
+fof(f666,plain,(
+  spl59_6 <=> ! [X0] : partOf(X0,X0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_6])])).
+fof(f1692,plain,(
+  ~partOf(xyz,xyz) | (~spl59_101 | spl59_245)),
+  inference(resolution,[],[f1690,f1047])).
+fof(f1047,plain,(
+  ( ! [X0] : (partOf(X0,zyx) | ~partOf(X0,xyz)) ) | ~spl59_101),
+  inference(avatar_component_clause,[],[f1046])).
+fof(f1046,plain,(
+  spl59_101 <=> ! [X0] : (partOf(X0,zyx) | ~partOf(X0,xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_101])])).
+fof(f1690,plain,(
+  ~partOf(xyz,zyx) | spl59_245),
+  inference(avatar_component_clause,[],[f1689])).
+fof(f1689,plain,(
+  spl59_245 <=> partOf(xyz,zyx)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_245])])).
+fof(f1691,plain,(
+  ~spl59_245 | spl59_3 | ~spl59_150 | ~spl59_178),
+  inference(avatar_split_clause,[],[f1687,f1374,f1244,f654,f1689])).
+fof(f654,plain,(
+  spl59_3 <=> xyz = zyx),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_3])])).
+fof(f1244,plain,(
+  spl59_150 <=> partOf(zyx,xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_150])])).
+fof(f1374,plain,(
+  spl59_178 <=> ! [X0,X1] : (~partOf(X0,X1) | ~partOf(X1,X0) | X0 = X1)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_178])])).
+fof(f1687,plain,(
+  ~partOf(xyz,zyx) | (spl59_3 | ~spl59_150 | ~spl59_178)),
+  inference(subsumption_resolution,[],[f1685,f655])).
+fof(f655,plain,(
+  xyz != zyx | spl59_3),
+  inference(avatar_component_clause,[],[f654])).
+fof(f1685,plain,(
+  ~partOf(xyz,zyx) | xyz = zyx | (~spl59_150 | ~spl59_178)),
+  inference(resolution,[],[f1375,f1245])).
+fof(f1245,plain,(
+  partOf(zyx,xyz) | ~spl59_150),
+  inference(avatar_component_clause,[],[f1244])).
+fof(f1375,plain,(
+  ( ! [X0,X1] : (~partOf(X1,X0) | ~partOf(X0,X1) | X0 = X1) ) | ~spl59_178),
+  inference(avatar_component_clause,[],[f1374])).
+fof(f1376,plain,(
+  spl59_178),
+  inference(avatar_split_clause,[],[f570,f1374])).
+fof(f570,plain,(
+  ( ! [X0,X1] : (~partOf(X0,X1) | ~partOf(X1,X0) | X0 = X1) )),
+  inference(cnf_transformation,[],[f281])).
+fof(f281,plain,(
+  ! [X0,X1] : (X0 = X1 | ~partOf(X1,X0) | ~partOf(X0,X1))),
+  inference(flattening,[],[f280])).
+fof(f280,plain,(
+  ! [X0,X1] : (X0 = X1 | (~partOf(X1,X0) | ~partOf(X0,X1)))),
+  inference(ennf_transformation,[],[f87])).
+fof(f87,axiom,(
+  ! [X0,X1] : ((partOf(X1,X0) & partOf(X0,X1)) => X0 = X1)),
+  file('outputs/ufo/cis/ci_ufo_thing_partOf_@_2.in',ax_antiSymmetricParthood_a48)).
+fof(f1246,plain,(
+  spl59_150 | ~spl59_6 | ~spl59_100),
+  inference(avatar_split_clause,[],[f1241,f1042,f666,f1244])).
+fof(f1042,plain,(
+  spl59_100 <=> ! [X0] : (~partOf(X0,zyx) | partOf(X0,xyz))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_100])])).
+fof(f1241,plain,(
+  partOf(zyx,xyz) | (~spl59_6 | ~spl59_100)),
+  inference(resolution,[],[f1043,f667])).
+fof(f1043,plain,(
+  ( ! [X0] : (~partOf(X0,zyx) | partOf(X0,xyz)) ) | ~spl59_100),
+  inference(avatar_component_clause,[],[f1042])).
+fof(f1048,plain,(
+  spl59_101),
+  inference(avatar_split_clause,[],[f506,f1046])).
+fof(f506,plain,(
+  ( ! [X0] : (partOf(X0,zyx) | ~partOf(X0,xyz)) )),
+  inference(cnf_transformation,[],[f172])).
+fof(f172,plain,(
+  ! [X0] : (partOf(X0,xyz) <=> partOf(X0,zyx))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X31] : (partOf(X31,xyz) <=> partOf(X31,zyx))),
+  file('outputs/ufo/cis/ci_ufo_thing_partOf_@_2.in',axiom29)).
+fof(f1044,plain,(
+  spl59_100),
+  inference(avatar_split_clause,[],[f505,f1042])).
+fof(f505,plain,(
+  ( ! [X0] : (~partOf(X0,zyx) | partOf(X0,xyz)) )),
+  inference(cnf_transformation,[],[f172])).
+fof(f668,plain,(
+  spl59_6),
+  inference(avatar_split_clause,[],[f346,f666])).
+fof(f346,plain,(
+  ( ! [X0] : (partOf(X0,X0)) )),
+  inference(cnf_transformation,[],[f85])).
+fof(f85,axiom,(
+  ! [X0] : partOf(X0,X0)),
+  file('outputs/ufo/cis/ci_ufo_thing_partOf_@_2.in',ax_reflexiveParthood)).
+fof(f656,plain,(
+  ~spl59_3),
+  inference(avatar_split_clause,[],[f312,f654])).
+fof(f312,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/ufo/cis/ci_ufo_thing_partOf_@_2.in',diff1)).
+% SZS output end Proof for ci_ufo_thing_partOf_@_2
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6524
+% Time elapsed: 0.018 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.025 s

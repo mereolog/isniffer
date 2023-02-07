@@ -1,0 +1,162 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_semiRigidNonSortal_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_semiRigidNonSortal_subsumed_to_thing
+% SZS output start Proof for type_semiRigidNonSortal_subsumed_to_thing
+fof(f1029,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f757,f761,f841,f945,f994,f1015,f1024,f1028])).
+fof(f1028,plain,(
+  spl59_1 | ~spl59_77 | ~spl59_95),
+  inference(avatar_contradiction_clause,[],[f1027])).
+fof(f1027,plain,(
+  $false | (spl59_1 | ~spl59_77 | ~spl59_95)),
+  inference(subsumption_resolution,[],[f1026,f1023])).
+fof(f1023,plain,(
+  type_(xyz) | ~spl59_95),
+  inference(avatar_component_clause,[],[f1022])).
+fof(f1022,plain,(
+  spl59_95 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_95])])).
+fof(f1026,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_77)),
+  inference(resolution,[],[f944,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f944,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_77),
+  inference(avatar_component_clause,[],[f943])).
+fof(f943,plain,(
+  spl59_77 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_77])])).
+fof(f1024,plain,(
+  spl59_95 | ~spl59_30 | ~spl59_93),
+  inference(avatar_split_clause,[],[f1016,f1013,f755,f1022])).
+fof(f755,plain,(
+  spl59_30 <=> ! [X0] : (~endurantType(X0) | type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_30])])).
+fof(f1013,plain,(
+  spl59_93 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_93])])).
+fof(f1016,plain,(
+  type_(xyz) | (~spl59_30 | ~spl59_93)),
+  inference(resolution,[],[f1014,f756])).
+fof(f756,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) ) | ~spl59_30),
+  inference(avatar_component_clause,[],[f755])).
+fof(f1014,plain,(
+  endurantType(xyz) | ~spl59_93),
+  inference(avatar_component_clause,[],[f1013])).
+fof(f1015,plain,(
+  spl59_93 | ~spl59_31 | ~spl59_89),
+  inference(avatar_split_clause,[],[f997,f992,f759,f1013])).
+fof(f759,plain,(
+  spl59_31 <=> ! [X0] : (endurantType(X0) | ~semiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_31])])).
+fof(f992,plain,(
+  spl59_89 <=> semiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_89])])).
+fof(f997,plain,(
+  endurantType(xyz) | (~spl59_31 | ~spl59_89)),
+  inference(resolution,[],[f993,f760])).
+fof(f760,plain,(
+  ( ! [X0] : (~semiRigid(X0) | endurantType(X0)) ) | ~spl59_31),
+  inference(avatar_component_clause,[],[f759])).
+fof(f993,plain,(
+  semiRigid(xyz) | ~spl59_89),
+  inference(avatar_component_clause,[],[f992])).
+fof(f994,plain,(
+  spl59_89 | ~spl59_2 | ~spl59_51),
+  inference(avatar_split_clause,[],[f990,f839,f643,f992])).
+fof(f643,plain,(
+  spl59_2 <=> semiRigidNonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f839,plain,(
+  spl59_51 <=> ! [X0] : (semiRigid(X0) | ~semiRigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_51])])).
+fof(f990,plain,(
+  semiRigid(xyz) | (~spl59_2 | ~spl59_51)),
+  inference(resolution,[],[f840,f644])).
+fof(f644,plain,(
+  semiRigidNonSortal(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f840,plain,(
+  ( ! [X0] : (~semiRigidNonSortal(X0) | semiRigid(X0)) ) | ~spl59_51),
+  inference(avatar_component_clause,[],[f839])).
+fof(f945,plain,(
+  spl59_77),
+  inference(avatar_split_clause,[],[f552,f943])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_semiRigidNonSortal_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f841,plain,(
+  spl59_51),
+  inference(avatar_split_clause,[],[f485,f839])).
+fof(f485,plain,(
+  ( ! [X0] : (semiRigid(X0) | ~semiRigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f167])).
+fof(f167,plain,(
+  ! [X0] : (semiRigidNonSortal(X0) <=> (nonSortal(X0) & semiRigid(X0)))),
+  inference(rectify,[],[f67])).
+fof(f67,axiom,(
+  ! [X8] : (semiRigidNonSortal(X8) <=> (nonSortal(X8) & semiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_semiRigidNonSortal_subsumed_to_thing.in',ax_semiRigidNonSortalsAreSemiRigidAndNonSortal_xx)).
+fof(f761,plain,(
+  spl59_31),
+  inference(avatar_split_clause,[],[f354,f759])).
+fof(f354,plain,(
+  ( ! [X0] : (endurantType(X0) | ~semiRigid(X0)) )),
+  inference(cnf_transformation,[],[f146])).
+fof(f146,plain,(
+  ! [X0] : (semiRigid(X0) <=> (~antiRigid(X0) & ~rigid(X0) & endurantType(X0)))),
+  inference(rectify,[],[f59])).
+fof(f59,axiom,(
+  ! [X8] : (semiRigid(X8) <=> (~antiRigid(X8) & ~rigid(X8) & endurantType(X8)))),
+  file('outputs/ufo/subsumptions/type_semiRigidNonSortal_subsumed_to_thing.in',ax_dSemiRigid_a20)).
+fof(f757,plain,(
+  spl59_30),
+  inference(avatar_split_clause,[],[f352,f755])).
+fof(f352,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f241])).
+fof(f241,plain,(
+  ! [X0] : (type_(X0) | (~perdurantType(X0) & ~endurantType(X0)))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0] : ((perdurantType(X0) | endurantType(X0)) => type_(X0))),
+  file('outputs/ufo/subsumptions/type_semiRigidNonSortal_subsumed_to_thing.in',ax_type_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  semiRigidNonSortal(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  semiRigidNonSortal(xyz)),
+  file('outputs/ufo/subsumptions/type_semiRigidNonSortal_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_semiRigidNonSortal_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_semiRigidNonSortal_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.013 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.02 s

@@ -1,0 +1,132 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_mixin_subsumed_to_endurantType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_mixin_subsumed_to_endurantType
+% SZS output start Proof for type_mixin_subsumed_to_endurantType
+fof(f1003,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f762,f818,f822,f991,f997,f1002])).
+fof(f1002,plain,(
+  spl59_1 | ~spl59_31 | ~spl59_89),
+  inference(avatar_contradiction_clause,[],[f1001])).
+fof(f1001,plain,(
+  $false | (spl59_1 | ~spl59_31 | ~spl59_89)),
+  inference(subsumption_resolution,[],[f1000,f641])).
+fof(f641,plain,(
+  ~endurantType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1000,plain,(
+  endurantType(xyz) | (~spl59_31 | ~spl59_89)),
+  inference(resolution,[],[f996,f761])).
+fof(f761,plain,(
+  ( ! [X0] : (~semiRigid(X0) | endurantType(X0)) ) | ~spl59_31),
+  inference(avatar_component_clause,[],[f760])).
+fof(f760,plain,(
+  spl59_31 <=> ! [X0] : (endurantType(X0) | ~semiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_31])])).
+fof(f996,plain,(
+  semiRigid(xyz) | ~spl59_89),
+  inference(avatar_component_clause,[],[f995])).
+fof(f995,plain,(
+  spl59_89 <=> semiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_89])])).
+fof(f997,plain,(
+  spl59_89 | ~spl59_46 | ~spl59_88),
+  inference(avatar_split_clause,[],[f992,f989,f820,f995])).
+fof(f820,plain,(
+  spl59_46 <=> ! [X0] : (semiRigid(X0) | ~semiRigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_46])])).
+fof(f989,plain,(
+  spl59_88 <=> semiRigidNonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f992,plain,(
+  semiRigid(xyz) | (~spl59_46 | ~spl59_88)),
+  inference(resolution,[],[f990,f821])).
+fof(f821,plain,(
+  ( ! [X0] : (~semiRigidNonSortal(X0) | semiRigid(X0)) ) | ~spl59_46),
+  inference(avatar_component_clause,[],[f820])).
+fof(f990,plain,(
+  semiRigidNonSortal(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f989])).
+fof(f991,plain,(
+  spl59_88 | ~spl59_2 | ~spl59_45),
+  inference(avatar_split_clause,[],[f987,f816,f644,f989])).
+fof(f644,plain,(
+  spl59_2 <=> mixin(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f816,plain,(
+  spl59_45 <=> ! [X0] : (~mixin(X0) | semiRigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_45])])).
+fof(f987,plain,(
+  semiRigidNonSortal(xyz) | (~spl59_2 | ~spl59_45)),
+  inference(resolution,[],[f817,f645])).
+fof(f645,plain,(
+  mixin(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f817,plain,(
+  ( ! [X0] : (~mixin(X0) | semiRigidNonSortal(X0)) ) | ~spl59_45),
+  inference(avatar_component_clause,[],[f816])).
+fof(f822,plain,(
+  spl59_46),
+  inference(avatar_split_clause,[],[f423,f820])).
+fof(f423,plain,(
+  ( ! [X0] : (semiRigid(X0) | ~semiRigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f160])).
+fof(f160,plain,(
+  ! [X0] : (semiRigidNonSortal(X0) <=> (nonSortal(X0) & semiRigid(X0)))),
+  inference(rectify,[],[f67])).
+fof(f67,axiom,(
+  ! [X8] : (semiRigidNonSortal(X8) <=> (nonSortal(X8) & semiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_mixin_subsumed_to_endurantType.in',ax_semiRigidNonSortalsAreSemiRigidAndNonSortal_xx)).
+fof(f818,plain,(
+  spl59_45),
+  inference(avatar_split_clause,[],[f421,f816])).
+fof(f421,plain,(
+  ( ! [X0] : (~mixin(X0) | semiRigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f45])).
+fof(f45,axiom,(
+  ! [X0] : (semiRigidNonSortal(X0) <=> mixin(X0))),
+  file('outputs/ufo/subsumptions/type_mixin_subsumed_to_endurantType.in',ax_semiRigidNonSortal_taxonomy)).
+fof(f762,plain,(
+  spl59_31),
+  inference(avatar_split_clause,[],[f357,f760])).
+fof(f357,plain,(
+  ( ! [X0] : (endurantType(X0) | ~semiRigid(X0)) )),
+  inference(cnf_transformation,[],[f146])).
+fof(f146,plain,(
+  ! [X0] : (semiRigid(X0) <=> (~antiRigid(X0) & ~rigid(X0) & endurantType(X0)))),
+  inference(rectify,[],[f59])).
+fof(f59,axiom,(
+  ! [X8] : (semiRigid(X8) <=> (~antiRigid(X8) & ~rigid(X8) & endurantType(X8)))),
+  file('outputs/ufo/subsumptions/type_mixin_subsumed_to_endurantType.in',ax_dSemiRigid_a20)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  mixin(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  mixin(xyz)),
+  file('outputs/ufo/subsumptions/type_mixin_subsumed_to_endurantType.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~endurantType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~endurantType(xyz)),
+  file('outputs/ufo/subsumptions/type_mixin_subsumed_to_endurantType.in',axiom2)).
+% SZS output end Proof for type_mixin_subsumed_to_endurantType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.018 s

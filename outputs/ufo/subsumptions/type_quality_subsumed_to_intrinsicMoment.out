@@ -1,0 +1,72 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_quality_subsumed_to_intrinsicMoment for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_quality_subsumed_to_intrinsicMoment
+% SZS output start Proof for type_quality_subsumed_to_intrinsicMoment
+fof(f974,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f914,f973])).
+fof(f973,plain,(
+  spl59_1 | ~spl59_2 | ~spl59_69),
+  inference(avatar_contradiction_clause,[],[f972])).
+fof(f972,plain,(
+  $false | (spl59_1 | ~spl59_2 | ~spl59_69)),
+  inference(subsumption_resolution,[],[f971,f641])).
+fof(f641,plain,(
+  ~intrinsicMoment(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> intrinsicMoment(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f971,plain,(
+  intrinsicMoment(xyz) | (~spl59_2 | ~spl59_69)),
+  inference(resolution,[],[f913,f645])).
+fof(f645,plain,(
+  quality(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_2 <=> quality(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f913,plain,(
+  ( ! [X0] : (~quality(X0) | intrinsicMoment(X0)) ) | ~spl59_69),
+  inference(avatar_component_clause,[],[f912])).
+fof(f912,plain,(
+  spl59_69 <=> ! [X0] : (intrinsicMoment(X0) | ~quality(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_69])])).
+fof(f914,plain,(
+  spl59_69),
+  inference(avatar_split_clause,[],[f546,f912])).
+fof(f546,plain,(
+  ( ! [X0] : (intrinsicMoment(X0) | ~quality(X0)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_quality_subsumed_to_intrinsicMoment.in',ax_intrinsicMoment_taxonomy)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  quality(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quality(xyz)),
+  file('outputs/ufo/subsumptions/type_quality_subsumed_to_intrinsicMoment.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~intrinsicMoment(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~intrinsicMoment(xyz)),
+  file('outputs/ufo/subsumptions/type_quality_subsumed_to_intrinsicMoment.in',axiom2)).
+% SZS output end Proof for type_quality_subsumed_to_intrinsicMoment
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.02 s

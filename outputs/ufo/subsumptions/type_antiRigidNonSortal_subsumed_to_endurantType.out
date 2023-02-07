@@ -1,0 +1,102 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_antiRigidNonSortal_subsumed_to_endurantType for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_antiRigidNonSortal_subsumed_to_endurantType
+% SZS output start Proof for type_antiRigidNonSortal_subsumed_to_endurantType
+fof(f997,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f846,f906,f988,f996])).
+fof(f996,plain,(
+  spl59_1 | ~spl59_67 | ~spl59_87),
+  inference(avatar_contradiction_clause,[],[f995])).
+fof(f995,plain,(
+  $false | (spl59_1 | ~spl59_67 | ~spl59_87)),
+  inference(subsumption_resolution,[],[f994,f641])).
+fof(f641,plain,(
+  ~endurantType(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f994,plain,(
+  endurantType(xyz) | (~spl59_67 | ~spl59_87)),
+  inference(resolution,[],[f905,f987])).
+fof(f987,plain,(
+  nonSortal(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f986])).
+fof(f986,plain,(
+  spl59_87 <=> nonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f905,plain,(
+  ( ! [X0] : (~nonSortal(X0) | endurantType(X0)) ) | ~spl59_67),
+  inference(avatar_component_clause,[],[f904])).
+fof(f904,plain,(
+  spl59_67 <=> ! [X0] : (endurantType(X0) | ~nonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_67])])).
+fof(f988,plain,(
+  spl59_87 | ~spl59_2 | ~spl59_52),
+  inference(avatar_split_clause,[],[f984,f844,f644,f986])).
+fof(f644,plain,(
+  spl59_2 <=> antiRigidNonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f844,plain,(
+  spl59_52 <=> ! [X0] : (nonSortal(X0) | ~antiRigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_52])])).
+fof(f984,plain,(
+  nonSortal(xyz) | (~spl59_2 | ~spl59_52)),
+  inference(resolution,[],[f845,f645])).
+fof(f645,plain,(
+  antiRigidNonSortal(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f845,plain,(
+  ( ! [X0] : (~antiRigidNonSortal(X0) | nonSortal(X0)) ) | ~spl59_52),
+  inference(avatar_component_clause,[],[f844])).
+fof(f906,plain,(
+  spl59_67),
+  inference(avatar_split_clause,[],[f535,f904])).
+fof(f535,plain,(
+  ( ! [X0] : (endurantType(X0) | ~nonSortal(X0)) )),
+  inference(cnf_transformation,[],[f34])).
+fof(f34,axiom,(
+  ! [X0] : ((nonSortal(X0) | sortal(X0)) <=> endurantType(X0))),
+  file('outputs/ufo/subsumptions/type_antiRigidNonSortal_subsumed_to_endurantType.in',ax_endurantType_taxonomy_properties)).
+fof(f846,plain,(
+  spl59_52),
+  inference(avatar_split_clause,[],[f489,f844])).
+fof(f489,plain,(
+  ( ! [X0] : (nonSortal(X0) | ~antiRigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f167])).
+fof(f167,plain,(
+  ! [X0] : (antiRigidNonSortal(X0) <=> (nonSortal(X0) & antiRigid(X0)))),
+  inference(rectify,[],[f66])).
+fof(f66,axiom,(
+  ! [X8] : (antiRigidNonSortal(X8) <=> (nonSortal(X8) & antiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_antiRigidNonSortal_subsumed_to_endurantType.in',ax_antiRigidNonSortalsAreAntiRigidAndNonSortal_xx)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  antiRigidNonSortal(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  antiRigidNonSortal(xyz)),
+  file('outputs/ufo/subsumptions/type_antiRigidNonSortal_subsumed_to_endurantType.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~endurantType(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~endurantType(xyz)),
+  file('outputs/ufo/subsumptions/type_antiRigidNonSortal_subsumed_to_endurantType.in',axiom2)).
+% SZS output end Proof for type_antiRigidNonSortal_subsumed_to_endurantType
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.016 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.023 s

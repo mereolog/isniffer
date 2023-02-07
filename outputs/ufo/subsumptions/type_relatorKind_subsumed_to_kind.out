@@ -1,0 +1,81 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_relatorKind_subsumed_to_kind for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_relatorKind_subsumed_to_kind
+% SZS output start Proof for type_relatorKind_subsumed_to_kind
+fof(f993,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f846,f992])).
+fof(f992,plain,(
+  spl59_1 | ~spl59_2 | ~spl59_51),
+  inference(avatar_contradiction_clause,[],[f991])).
+fof(f991,plain,(
+  $false | (spl59_1 | ~spl59_2 | ~spl59_51)),
+  inference(subsumption_resolution,[],[f990,f645])).
+fof(f645,plain,(
+  ~kind(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> kind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f990,plain,(
+  kind(xyz) | (~spl59_2 | ~spl59_51)),
+  inference(resolution,[],[f845,f649])).
+fof(f649,plain,(
+  relatorKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f648,plain,(
+  spl59_2 <=> relatorKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f845,plain,(
+  ( ! [X0] : (~relatorKind(X0) | kind(X0)) ) | ~spl59_51),
+  inference(avatar_component_clause,[],[f844])).
+fof(f844,plain,(
+  spl59_51 <=> ! [X0] : (~relatorKind(X0) | kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_51])])).
+fof(f846,plain,(
+  spl59_51),
+  inference(avatar_split_clause,[],[f487,f844])).
+fof(f487,plain,(
+  ( ! [X0] : (~relatorKind(X0) | kind(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & relatorType(X0)) | ~relatorKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (relatorKind(X0) => (kind(X0) & relatorType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (relatorKind(X0) <=> (kind(X0) & relatorType(X0)))),
+  inference(rectify,[],[f84])).
+fof(f84,axiom,(
+  ! [X8] : (relatorKind(X8) <=> (kind(X8) & relatorType(X8)))),
+  file('outputs/ufo/subsumptions/type_relatorKind_subsumed_to_kind.in',ax_relatorKindDefinition_a45)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  relatorKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  relatorKind(xyz)),
+  file('outputs/ufo/subsumptions/type_relatorKind_subsumed_to_kind.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~kind(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~kind(xyz)),
+  file('outputs/ufo/subsumptions/type_relatorKind_subsumed_to_kind.in',axiom2)).
+% SZS output end Proof for type_relatorKind_subsumed_to_kind
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.019 s

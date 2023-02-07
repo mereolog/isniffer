@@ -1,0 +1,144 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_objectKind_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_objectKind_subsumed_to_thing
+% SZS output start Proof for type_objectKind_subsumed_to_thing
+fof(f1037,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f645,f649,f829,f841,f945,f995,f1004,f1036])).
+fof(f1036,plain,(
+  spl59_1 | ~spl59_76 | ~spl59_90),
+  inference(avatar_contradiction_clause,[],[f1035])).
+fof(f1035,plain,(
+  $false | (spl59_1 | ~spl59_76 | ~spl59_90)),
+  inference(subsumption_resolution,[],[f1034,f1003])).
+fof(f1003,plain,(
+  type_(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f1002])).
+fof(f1002,plain,(
+  spl59_90 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f1034,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_76)),
+  inference(resolution,[],[f944,f644])).
+fof(f644,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f643])).
+fof(f643,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f944,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_76),
+  inference(avatar_component_clause,[],[f943])).
+fof(f943,plain,(
+  spl59_76 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_76])])).
+fof(f1004,plain,(
+  spl59_90 | ~spl59_47 | ~spl59_88),
+  inference(avatar_split_clause,[],[f996,f993,f827,f1002])).
+fof(f827,plain,(
+  spl59_47 <=> ! [X0] : (type_(X0) | ~objectType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_47])])).
+fof(f993,plain,(
+  spl59_88 <=> objectType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f996,plain,(
+  type_(xyz) | (~spl59_47 | ~spl59_88)),
+  inference(resolution,[],[f994,f828])).
+fof(f828,plain,(
+  ( ! [X0] : (~objectType(X0) | type_(X0)) ) | ~spl59_47),
+  inference(avatar_component_clause,[],[f827])).
+fof(f994,plain,(
+  objectType(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f993])).
+fof(f995,plain,(
+  spl59_88 | ~spl59_2 | ~spl59_50),
+  inference(avatar_split_clause,[],[f990,f839,f647,f993])).
+fof(f647,plain,(
+  spl59_2 <=> objectKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f839,plain,(
+  spl59_50 <=> ! [X0] : (~objectKind(X0) | objectType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_50])])).
+fof(f990,plain,(
+  objectType(xyz) | (~spl59_2 | ~spl59_50)),
+  inference(resolution,[],[f840,f648])).
+fof(f648,plain,(
+  objectKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f647])).
+fof(f840,plain,(
+  ( ! [X0] : (~objectKind(X0) | objectType(X0)) ) | ~spl59_50),
+  inference(avatar_component_clause,[],[f839])).
+fof(f945,plain,(
+  spl59_76),
+  inference(avatar_split_clause,[],[f556,f943])).
+fof(f556,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f841,plain,(
+  spl59_50),
+  inference(avatar_split_clause,[],[f483,f839])).
+fof(f483,plain,(
+  ( ! [X0] : (~objectKind(X0) | objectType(X0)) )),
+  inference(cnf_transformation,[],[f265])).
+fof(f265,plain,(
+  ! [X0] : ((kind(X0) & objectType(X0)) | ~objectKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (objectKind(X0) => (kind(X0) & objectType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (objectKind(X0) <=> (kind(X0) & objectType(X0)))),
+  inference(rectify,[],[f79])).
+fof(f79,axiom,(
+  ! [X8] : (objectKind(X8) <=> (kind(X8) & objectType(X8)))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_thing.in',ax_objectKindDefinition_a45)).
+fof(f829,plain,(
+  spl59_47),
+  inference(avatar_split_clause,[],[f435,f827])).
+fof(f435,plain,(
+  ( ! [X0] : (type_(X0) | ~objectType(X0)) )),
+  inference(cnf_transformation,[],[f258])).
+fof(f258,plain,(
+  ! [X0] : (objectType(X0) <=> (! [X1,X2] : (object(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)))),
+  inference(flattening,[],[f257])).
+fof(f257,plain,(
+  ! [X0] : (objectType(X0) <=> (! [X1,X2] : (object(X1) | (~iof(X1,X0,X2) | ~world(X2))) & type_(X0)))),
+  inference(ennf_transformation,[],[f162])).
+fof(f162,plain,(
+  ! [X0] : (objectType(X0) <=> (! [X1,X2] : ((iof(X1,X0,X2) & world(X2)) => object(X1)) & type_(X0)))),
+  inference(rectify,[],[f72])).
+fof(f72,axiom,(
+  ! [X8] : (objectType(X8) <=> (! [X6,X2] : ((iof(X6,X8,X2) & world(X2)) => object(X6)) & type_(X8)))),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_thing.in',ax_objectTypeDefinition_a44)).
+fof(f649,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f307,f647])).
+fof(f307,plain,(
+  objectKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  objectKind(xyz)),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_thing.in',axiom1)).
+fof(f645,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f306,f643])).
+fof(f306,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_objectKind_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_objectKind_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.018 s

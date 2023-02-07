@@ -1,0 +1,135 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_antiRigid_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_antiRigid_subsumed_to_thing
+% SZS output start Proof for type_antiRigid_subsumed_to_thing
+fof(f993,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f753,f833,f933,f984,f989,f992])).
+fof(f992,plain,(
+  spl59_1 | ~spl59_74 | ~spl59_87),
+  inference(avatar_contradiction_clause,[],[f991])).
+fof(f991,plain,(
+  $false | (spl59_1 | ~spl59_74 | ~spl59_87)),
+  inference(subsumption_resolution,[],[f990,f988])).
+fof(f988,plain,(
+  type_(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f987])).
+fof(f987,plain,(
+  spl59_87 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f990,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_74)),
+  inference(resolution,[],[f932,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f932,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_74),
+  inference(avatar_component_clause,[],[f931])).
+fof(f931,plain,(
+  spl59_74 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_74])])).
+fof(f989,plain,(
+  spl59_87 | ~spl59_29 | ~spl59_86),
+  inference(avatar_split_clause,[],[f985,f982,f751,f987])).
+fof(f751,plain,(
+  spl59_29 <=> ! [X0] : (~endurantType(X0) | type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_29])])).
+fof(f982,plain,(
+  spl59_86 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f985,plain,(
+  type_(xyz) | (~spl59_29 | ~spl59_86)),
+  inference(resolution,[],[f983,f752])).
+fof(f752,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) ) | ~spl59_29),
+  inference(avatar_component_clause,[],[f751])).
+fof(f983,plain,(
+  endurantType(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f982])).
+fof(f984,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_49),
+  inference(avatar_split_clause,[],[f978,f831,f643,f982])).
+fof(f643,plain,(
+  spl59_2 <=> antiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f831,plain,(
+  spl59_49 <=> ! [X0] : (endurantType(X0) | ~antiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_49])])).
+fof(f978,plain,(
+  endurantType(xyz) | (~spl59_2 | ~spl59_49)),
+  inference(resolution,[],[f832,f644])).
+fof(f644,plain,(
+  antiRigid(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f832,plain,(
+  ( ! [X0] : (~antiRigid(X0) | endurantType(X0)) ) | ~spl59_49),
+  inference(avatar_component_clause,[],[f831])).
+fof(f933,plain,(
+  spl59_74),
+  inference(avatar_split_clause,[],[f552,f931])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f833,plain,(
+  spl59_49),
+  inference(avatar_split_clause,[],[f480,f831])).
+fof(f480,plain,(
+  ( ! [X0] : (endurantType(X0) | ~antiRigid(X0)) )),
+  inference(cnf_transformation,[],[f263])).
+fof(f263,plain,(
+  ! [X0] : (antiRigid(X0) <=> (! [X1] : (? [X3] : (~iof(X1,X0,X3) & world(X3)) | ! [X2] : (~iof(X1,X0,X2) | ~world(X2))) & endurantType(X0)))),
+  inference(ennf_transformation,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (antiRigid(X0) <=> (! [X1] : (? [X2] : (iof(X1,X0,X2) & world(X2)) => ? [X3] : (~iof(X1,X0,X3) & world(X3))) & endurantType(X0)))),
+  inference(rectify,[],[f58])).
+fof(f58,axiom,(
+  ! [X8] : (antiRigid(X8) <=> (! [X0] : (? [X9] : (iof(X0,X8,X9) & world(X9)) => ? [X10] : (~iof(X0,X8,X10) & world(X10))) & endurantType(X8)))),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_thing.in',ax_dAntiRigid_a19)).
+fof(f753,plain,(
+  spl59_29),
+  inference(avatar_split_clause,[],[f352,f751])).
+fof(f352,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f241])).
+fof(f241,plain,(
+  ! [X0] : (type_(X0) | (~perdurantType(X0) & ~endurantType(X0)))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0] : ((perdurantType(X0) | endurantType(X0)) => type_(X0))),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_thing.in',ax_type_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  antiRigid(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  antiRigid(xyz)),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_antiRigid_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_antiRigid_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.019 s

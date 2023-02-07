@@ -1,0 +1,192 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_roleMixin_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_roleMixin_subsumed_to_thing
+% SZS output start Proof for type_roleMixin_subsumed_to_thing
+fof(f1038,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f757,f777,f825,f849,f949,f998,f1011,f1028,f1033,f1037])).
+fof(f1037,plain,(
+  spl59_1 | ~spl59_78 | ~spl59_97),
+  inference(avatar_contradiction_clause,[],[f1036])).
+fof(f1036,plain,(
+  $false | (spl59_1 | ~spl59_78 | ~spl59_97)),
+  inference(subsumption_resolution,[],[f1035,f1032])).
+fof(f1032,plain,(
+  type_(xyz) | ~spl59_97),
+  inference(avatar_component_clause,[],[f1031])).
+fof(f1031,plain,(
+  spl59_97 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_97])])).
+fof(f1035,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_78)),
+  inference(resolution,[],[f948,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f948,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_78),
+  inference(avatar_component_clause,[],[f947])).
+fof(f947,plain,(
+  spl59_78 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_78])])).
+fof(f1033,plain,(
+  spl59_97 | ~spl59_30 | ~spl59_96),
+  inference(avatar_split_clause,[],[f1029,f1026,f755,f1031])).
+fof(f755,plain,(
+  spl59_30 <=> ! [X0] : (~endurantType(X0) | type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_30])])).
+fof(f1026,plain,(
+  spl59_96 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_96])])).
+fof(f1029,plain,(
+  type_(xyz) | (~spl59_30 | ~spl59_96)),
+  inference(resolution,[],[f1027,f756])).
+fof(f756,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) ) | ~spl59_30),
+  inference(avatar_component_clause,[],[f755])).
+fof(f1027,plain,(
+  endurantType(xyz) | ~spl59_96),
+  inference(avatar_component_clause,[],[f1026])).
+fof(f1028,plain,(
+  spl59_96 | ~spl59_35 | ~spl59_92),
+  inference(avatar_split_clause,[],[f1012,f1009,f775,f1026])).
+fof(f775,plain,(
+  spl59_35 <=> ! [X0] : (endurantType(X0) | ~antiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_35])])).
+fof(f1009,plain,(
+  spl59_92 <=> antiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_92])])).
+fof(f1012,plain,(
+  endurantType(xyz) | (~spl59_35 | ~spl59_92)),
+  inference(resolution,[],[f1010,f776])).
+fof(f776,plain,(
+  ( ! [X0] : (~antiRigid(X0) | endurantType(X0)) ) | ~spl59_35),
+  inference(avatar_component_clause,[],[f775])).
+fof(f1010,plain,(
+  antiRigid(xyz) | ~spl59_92),
+  inference(avatar_component_clause,[],[f1009])).
+fof(f1011,plain,(
+  spl59_92 | ~spl59_47 | ~spl59_90),
+  inference(avatar_split_clause,[],[f1000,f996,f823,f1009])).
+fof(f823,plain,(
+  spl59_47 <=> ! [X0] : (antiRigid(X0) | ~antiRigidNonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_47])])).
+fof(f996,plain,(
+  spl59_90 <=> antiRigidNonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_90])])).
+fof(f1000,plain,(
+  antiRigid(xyz) | (~spl59_47 | ~spl59_90)),
+  inference(resolution,[],[f997,f824])).
+fof(f824,plain,(
+  ( ! [X0] : (~antiRigidNonSortal(X0) | antiRigid(X0)) ) | ~spl59_47),
+  inference(avatar_component_clause,[],[f823])).
+fof(f997,plain,(
+  antiRigidNonSortal(xyz) | ~spl59_90),
+  inference(avatar_component_clause,[],[f996])).
+fof(f998,plain,(
+  spl59_90 | ~spl59_2 | ~spl59_53),
+  inference(avatar_split_clause,[],[f994,f847,f643,f996])).
+fof(f643,plain,(
+  spl59_2 <=> roleMixin(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f847,plain,(
+  spl59_53 <=> ! [X0] : (antiRigidNonSortal(X0) | ~roleMixin(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_53])])).
+fof(f994,plain,(
+  antiRigidNonSortal(xyz) | (~spl59_2 | ~spl59_53)),
+  inference(resolution,[],[f848,f644])).
+fof(f644,plain,(
+  roleMixin(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f848,plain,(
+  ( ! [X0] : (~roleMixin(X0) | antiRigidNonSortal(X0)) ) | ~spl59_53),
+  inference(avatar_component_clause,[],[f847])).
+fof(f949,plain,(
+  spl59_78),
+  inference(avatar_split_clause,[],[f552,f947])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f849,plain,(
+  spl59_53),
+  inference(avatar_split_clause,[],[f505,f847])).
+fof(f505,plain,(
+  ( ! [X0] : (antiRigidNonSortal(X0) | ~roleMixin(X0)) )),
+  inference(cnf_transformation,[],[f46])).
+fof(f46,axiom,(
+  ! [X0] : ((roleMixin(X0) | phaseMixin(X0)) <=> antiRigidNonSortal(X0))),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',ax_antiRigidNonSortal_taxonomy)).
+fof(f825,plain,(
+  spl59_47),
+  inference(avatar_split_clause,[],[f426,f823])).
+fof(f426,plain,(
+  ( ! [X0] : (antiRigid(X0) | ~antiRigidNonSortal(X0)) )),
+  inference(cnf_transformation,[],[f162])).
+fof(f162,plain,(
+  ! [X0] : (antiRigidNonSortal(X0) <=> (nonSortal(X0) & antiRigid(X0)))),
+  inference(rectify,[],[f66])).
+fof(f66,axiom,(
+  ! [X8] : (antiRigidNonSortal(X8) <=> (nonSortal(X8) & antiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',ax_antiRigidNonSortalsAreAntiRigidAndNonSortal_xx)).
+fof(f777,plain,(
+  spl59_35),
+  inference(avatar_split_clause,[],[f369,f775])).
+fof(f369,plain,(
+  ( ! [X0] : (endurantType(X0) | ~antiRigid(X0)) )),
+  inference(cnf_transformation,[],[f243])).
+fof(f243,plain,(
+  ! [X0] : (antiRigid(X0) <=> (! [X1] : (? [X3] : (~iof(X1,X0,X3) & world(X3)) | ! [X2] : (~iof(X1,X0,X2) | ~world(X2))) & endurantType(X0)))),
+  inference(ennf_transformation,[],[f148])).
+fof(f148,plain,(
+  ! [X0] : (antiRigid(X0) <=> (! [X1] : (? [X2] : (iof(X1,X0,X2) & world(X2)) => ? [X3] : (~iof(X1,X0,X3) & world(X3))) & endurantType(X0)))),
+  inference(rectify,[],[f58])).
+fof(f58,axiom,(
+  ! [X8] : (antiRigid(X8) <=> (! [X0] : (? [X9] : (iof(X0,X8,X9) & world(X9)) => ? [X10] : (~iof(X0,X8,X10) & world(X10))) & endurantType(X8)))),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',ax_dAntiRigid_a19)).
+fof(f757,plain,(
+  spl59_30),
+  inference(avatar_split_clause,[],[f352,f755])).
+fof(f352,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f241])).
+fof(f241,plain,(
+  ! [X0] : (type_(X0) | (~perdurantType(X0) & ~endurantType(X0)))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0] : ((perdurantType(X0) | endurantType(X0)) => type_(X0))),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',ax_type_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  roleMixin(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  roleMixin(xyz)),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_roleMixin_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_roleMixin_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.017 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.025 s

@@ -1,0 +1,108 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_objectType_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_objectType_subsumed_to_thing
+% SZS output start Proof for type_objectType_subsumed_to_thing
+fof(f998,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f837,f933,f982,f997])).
+fof(f997,plain,(
+  spl59_1 | ~spl59_74 | ~spl59_86),
+  inference(avatar_contradiction_clause,[],[f996])).
+fof(f996,plain,(
+  $false | (spl59_1 | ~spl59_74 | ~spl59_86)),
+  inference(subsumption_resolution,[],[f995,f981])).
+fof(f981,plain,(
+  type_(xyz) | ~spl59_86),
+  inference(avatar_component_clause,[],[f980])).
+fof(f980,plain,(
+  spl59_86 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_86])])).
+fof(f995,plain,(
+  ~type_(xyz) | (spl59_1 | ~spl59_74)),
+  inference(resolution,[],[f932,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f932,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) ) | ~spl59_74),
+  inference(avatar_component_clause,[],[f931])).
+fof(f931,plain,(
+  spl59_74 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_74])])).
+fof(f982,plain,(
+  spl59_86 | ~spl59_2 | ~spl59_50),
+  inference(avatar_split_clause,[],[f978,f835,f643,f980])).
+fof(f643,plain,(
+  spl59_2 <=> objectType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f835,plain,(
+  spl59_50 <=> ! [X0] : (type_(X0) | ~objectType(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_50])])).
+fof(f978,plain,(
+  type_(xyz) | (~spl59_2 | ~spl59_50)),
+  inference(resolution,[],[f836,f644])).
+fof(f644,plain,(
+  objectType(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f836,plain,(
+  ( ! [X0] : (~objectType(X0) | type_(X0)) ) | ~spl59_50),
+  inference(avatar_component_clause,[],[f835])).
+fof(f933,plain,(
+  spl59_74),
+  inference(avatar_split_clause,[],[f552,f931])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_objectType_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f837,plain,(
+  spl59_50),
+  inference(avatar_split_clause,[],[f490,f835])).
+fof(f490,plain,(
+  ( ! [X0] : (type_(X0) | ~objectType(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : (objectType(X0) <=> (! [X1,X2] : (object(X1) | ~iof(X1,X0,X2) | ~world(X2)) & type_(X0)))),
+  inference(flattening,[],[f265])).
+fof(f265,plain,(
+  ! [X0] : (objectType(X0) <=> (! [X1,X2] : (object(X1) | (~iof(X1,X0,X2) | ~world(X2))) & type_(X0)))),
+  inference(ennf_transformation,[],[f168])).
+fof(f168,plain,(
+  ! [X0] : (objectType(X0) <=> (! [X1,X2] : ((iof(X1,X0,X2) & world(X2)) => object(X1)) & type_(X0)))),
+  inference(rectify,[],[f72])).
+fof(f72,axiom,(
+  ! [X8] : (objectType(X8) <=> (! [X6,X2] : ((iof(X6,X8,X2) & world(X2)) => object(X6)) & type_(X8)))),
+  file('outputs/ufo/subsumptions/type_objectType_subsumed_to_thing.in',ax_objectTypeDefinition_a44)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  objectType(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  objectType(xyz)),
+  file('outputs/ufo/subsumptions/type_objectType_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_objectType_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_objectType_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.019 s

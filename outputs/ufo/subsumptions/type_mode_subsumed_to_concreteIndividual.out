@@ -1,0 +1,153 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_mode_subsumed_to_concreteIndividual for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_mode_subsumed_to_concreteIndividual
+% SZS output start Proof for type_mode_subsumed_to_concreteIndividual
+fof(f994,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f846,f858,f878,f926,f975,f980,f990,f993])).
+fof(f993,plain,(
+  spl59_1 | ~spl59_72 | ~spl59_87),
+  inference(avatar_contradiction_clause,[],[f992])).
+fof(f992,plain,(
+  $false | (spl59_1 | ~spl59_72 | ~spl59_87)),
+  inference(subsumption_resolution,[],[f991,f641])).
+fof(f641,plain,(
+  ~concreteIndividual(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f640,plain,(
+  spl59_1 <=> concreteIndividual(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f991,plain,(
+  concreteIndividual(xyz) | (~spl59_72 | ~spl59_87)),
+  inference(resolution,[],[f925,f989])).
+fof(f989,plain,(
+  endurant(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f988])).
+fof(f988,plain,(
+  spl59_87 <=> endurant(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f925,plain,(
+  ( ! [X0] : (~endurant(X0) | concreteIndividual(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f924])).
+fof(f924,plain,(
+  spl59_72 <=> ! [X0] : (concreteIndividual(X0) | ~endurant(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f990,plain,(
+  spl59_87 | ~spl59_60 | ~spl59_85),
+  inference(avatar_split_clause,[],[f986,f978,f876,f988])).
+fof(f876,plain,(
+  spl59_60 <=> ! [X0] : (endurant(X0) | ~moment(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_60])])).
+fof(f978,plain,(
+  spl59_85 <=> moment(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_85])])).
+fof(f986,plain,(
+  endurant(xyz) | (~spl59_60 | ~spl59_85)),
+  inference(resolution,[],[f877,f979])).
+fof(f979,plain,(
+  moment(xyz) | ~spl59_85),
+  inference(avatar_component_clause,[],[f978])).
+fof(f877,plain,(
+  ( ! [X0] : (~moment(X0) | endurant(X0)) ) | ~spl59_60),
+  inference(avatar_component_clause,[],[f876])).
+fof(f980,plain,(
+  spl59_85 | ~spl59_55 | ~spl59_84),
+  inference(avatar_split_clause,[],[f976,f973,f856,f978])).
+fof(f856,plain,(
+  spl59_55 <=> ! [X0] : (moment(X0) | ~intrinsicMoment(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_55])])).
+fof(f973,plain,(
+  spl59_84 <=> intrinsicMoment(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_84])])).
+fof(f976,plain,(
+  moment(xyz) | (~spl59_55 | ~spl59_84)),
+  inference(resolution,[],[f857,f974])).
+fof(f974,plain,(
+  intrinsicMoment(xyz) | ~spl59_84),
+  inference(avatar_component_clause,[],[f973])).
+fof(f857,plain,(
+  ( ! [X0] : (~intrinsicMoment(X0) | moment(X0)) ) | ~spl59_55),
+  inference(avatar_component_clause,[],[f856])).
+fof(f975,plain,(
+  spl59_84 | ~spl59_2 | ~spl59_52),
+  inference(avatar_split_clause,[],[f971,f844,f644,f973])).
+fof(f644,plain,(
+  spl59_2 <=> mode(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f844,plain,(
+  spl59_52 <=> ! [X0] : (intrinsicMoment(X0) | ~mode(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_52])])).
+fof(f971,plain,(
+  intrinsicMoment(xyz) | (~spl59_2 | ~spl59_52)),
+  inference(resolution,[],[f845,f645])).
+fof(f645,plain,(
+  mode(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f845,plain,(
+  ( ! [X0] : (~mode(X0) | intrinsicMoment(X0)) ) | ~spl59_52),
+  inference(avatar_component_clause,[],[f844])).
+fof(f926,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f552,f924])).
+fof(f552,plain,(
+  ( ! [X0] : (concreteIndividual(X0) | ~endurant(X0)) )),
+  inference(cnf_transformation,[],[f5])).
+fof(f5,axiom,(
+  ! [X0] : ((perdurant(X0) | endurant(X0)) <=> concreteIndividual(X0))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_concreteIndividual.in',ax_concreteIndividual_taxonomy)).
+fof(f878,plain,(
+  spl59_60),
+  inference(avatar_split_clause,[],[f526,f876])).
+fof(f526,plain,(
+  ( ! [X0] : (endurant(X0) | ~moment(X0)) )),
+  inference(cnf_transformation,[],[f16])).
+fof(f16,axiom,(
+  ! [X0] : ((moment(X0) | substantial(X0)) <=> endurant(X0))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_concreteIndividual.in',ax_endurant_taxonomy)).
+fof(f858,plain,(
+  spl59_55),
+  inference(avatar_split_clause,[],[f519,f856])).
+fof(f519,plain,(
+  ( ! [X0] : (moment(X0) | ~intrinsicMoment(X0)) )),
+  inference(cnf_transformation,[],[f20])).
+fof(f20,axiom,(
+  ! [X0] : ((relator(X0) | intrinsicMoment(X0)) <=> moment(X0))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_concreteIndividual.in',ax_moment_taxonomy)).
+fof(f846,plain,(
+  spl59_52),
+  inference(avatar_split_clause,[],[f511,f844])).
+fof(f511,plain,(
+  ( ! [X0] : (intrinsicMoment(X0) | ~mode(X0)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,axiom,(
+  ! [X0] : ((mode(X0) | quality(X0)) <=> intrinsicMoment(X0))),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_concreteIndividual.in',ax_intrinsicMoment_taxonomy)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  mode(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  mode(xyz)),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_concreteIndividual.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~concreteIndividual(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~concreteIndividual(xyz)),
+  file('outputs/ufo/subsumptions/type_mode_subsumed_to_concreteIndividual.in',axiom2)).
+% SZS output end Proof for type_mode_subsumed_to_concreteIndividual
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.014 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.023 s

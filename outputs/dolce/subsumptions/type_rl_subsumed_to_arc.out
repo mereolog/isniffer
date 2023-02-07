@@ -1,0 +1,81 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_rl_subsumed_to_arc for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_rl_subsumed_to_arc
+% SZS output start Proof for type_rl_subsumed_to_arc
+fof(f879,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f679,f683,f779,f878])).
+fof(f878,plain,(
+  spl22_1 | ~spl22_2 | ~spl22_26),
+  inference(avatar_contradiction_clause,[],[f877])).
+fof(f877,plain,(
+  $false | (spl22_1 | ~spl22_2 | ~spl22_26)),
+  inference(subsumption_resolution,[],[f876,f678])).
+fof(f678,plain,(
+  ~arc(xyz) | spl22_1),
+  inference(avatar_component_clause,[],[f677])).
+fof(f677,plain,(
+  spl22_1 <=> arc(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_1])])).
+fof(f876,plain,(
+  arc(xyz) | (~spl22_2 | ~spl22_26)),
+  inference(resolution,[],[f778,f682])).
+fof(f682,plain,(
+  rl(xyz) | ~spl22_2),
+  inference(avatar_component_clause,[],[f681])).
+fof(f681,plain,(
+  spl22_2 <=> rl(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_2])])).
+fof(f778,plain,(
+  ( ! [X0] : (~rl(X0) | arc(X0)) ) | ~spl22_26),
+  inference(avatar_component_clause,[],[f777])).
+fof(f777,plain,(
+  spl22_26 <=> ! [X0] : (~rl(X0) | arc(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl22_26])])).
+fof(f779,plain,(
+  spl22_26),
+  inference(avatar_split_clause,[],[f539,f777])).
+fof(f539,plain,(
+  ( ! [X0] : (~rl(X0) | arc(X0)) )),
+  inference(cnf_transformation,[],[f395])).
+fof(f395,plain,(
+  ! [X0] : ((fd(X0) & arc(X0)) | ~rl(X0))),
+  inference(ennf_transformation,[],[f336])).
+fof(f336,plain,(
+  ! [X0] : (rl(X0) => (fd(X0) & arc(X0)))),
+  inference(unused_predicate_definition_removal,[],[f186])).
+fof(f186,plain,(
+  ! [X0] : (rl(X0) <=> (fd(X0) & arc(X0)))),
+  inference(rectify,[],[f131])).
+fof(f131,axiom,(
+  ! [X283] : (rl(X283) <=> (fd(X283) & arc(X283)))),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_arc.in',sos)).
+fof(f683,plain,(
+  spl22_2),
+  inference(avatar_split_clause,[],[f478,f681])).
+fof(f478,plain,(
+  rl(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  rl(xyz)),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_arc.in',axiom1)).
+fof(f679,plain,(
+  ~spl22_1),
+  inference(avatar_split_clause,[],[f477,f677])).
+fof(f477,plain,(
+  ~arc(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~arc(xyz)),
+  file('outputs/dolce/subsumptions/type_rl_subsumed_to_arc.in',axiom2)).
+% SZS output end Proof for type_rl_subsumed_to_arc
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.007 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.014 s

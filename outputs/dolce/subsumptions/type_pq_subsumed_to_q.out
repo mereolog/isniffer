@@ -1,0 +1,75 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_pq_subsumed_to_q for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_pq_subsumed_to_q
+% SZS output start Proof for type_pq_subsumed_to_q
+fof(f855,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f667,f671,f795,f854])).
+fof(f854,plain,(
+  spl18_1 | ~spl18_2 | ~spl18_33),
+  inference(avatar_contradiction_clause,[],[f853])).
+fof(f853,plain,(
+  $false | (spl18_1 | ~spl18_2 | ~spl18_33)),
+  inference(subsumption_resolution,[],[f852,f666])).
+fof(f666,plain,(
+  ~q(xyz) | spl18_1),
+  inference(avatar_component_clause,[],[f665])).
+fof(f665,plain,(
+  spl18_1 <=> q(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_1])])).
+fof(f852,plain,(
+  q(xyz) | (~spl18_2 | ~spl18_33)),
+  inference(resolution,[],[f794,f670])).
+fof(f670,plain,(
+  pq(xyz) | ~spl18_2),
+  inference(avatar_component_clause,[],[f669])).
+fof(f669,plain,(
+  spl18_2 <=> pq(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_2])])).
+fof(f794,plain,(
+  ( ! [X0] : (~pq(X0) | q(X0)) ) | ~spl18_33),
+  inference(avatar_component_clause,[],[f793])).
+fof(f793,plain,(
+  spl18_33 <=> ! [X0] : (q(X0) | ~pq(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl18_33])])).
+fof(f795,plain,(
+  spl18_33),
+  inference(avatar_split_clause,[],[f555,f793])).
+fof(f555,plain,(
+  ( ! [X0] : (q(X0) | ~pq(X0)) )),
+  inference(cnf_transformation,[],[f197])).
+fof(f197,plain,(
+  ! [X0] : ((tq(X0) | pq(X0) | aq(X0)) <=> q(X0))),
+  inference(rectify,[],[f5])).
+fof(f5,axiom,(
+  ! [X4] : ((tq(X4) | pq(X4) | aq(X4)) <=> q(X4))),
+  file('outputs/dolce/subsumptions/type_pq_subsumed_to_q.in',sos)).
+fof(f671,plain,(
+  spl18_2),
+  inference(avatar_split_clause,[],[f476,f669])).
+fof(f476,plain,(
+  pq(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  pq(xyz)),
+  file('outputs/dolce/subsumptions/type_pq_subsumed_to_q.in',axiom1)).
+fof(f667,plain,(
+  ~spl18_1),
+  inference(avatar_split_clause,[],[f475,f665])).
+fof(f475,plain,(
+  ~q(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~q(xyz)),
+  file('outputs/dolce/subsumptions/type_pq_subsumed_to_q.in',axiom2)).
+% SZS output end Proof for type_pq_subsumed_to_q
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.010 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.017 s

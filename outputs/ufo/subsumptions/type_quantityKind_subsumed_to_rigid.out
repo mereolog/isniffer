@@ -1,0 +1,138 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_quantityKind_subsumed_to_rigid for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_quantityKind_subsumed_to_rigid
+% SZS output start Proof for type_quantityKind_subsumed_to_rigid
+fof(f1024,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f646,f650,f782,f846,f934,f995,f1019,f1023])).
+fof(f1023,plain,(
+  spl59_1 | ~spl59_35 | ~spl59_92),
+  inference(avatar_contradiction_clause,[],[f1022])).
+fof(f1022,plain,(
+  $false | (spl59_1 | ~spl59_35 | ~spl59_92)),
+  inference(subsumption_resolution,[],[f1021,f645])).
+fof(f645,plain,(
+  ~rigid(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_1 <=> rigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1021,plain,(
+  rigid(xyz) | (~spl59_35 | ~spl59_92)),
+  inference(resolution,[],[f1018,f781])).
+fof(f781,plain,(
+  ( ! [X0] : (~rigidSortal(X0) | rigid(X0)) ) | ~spl59_35),
+  inference(avatar_component_clause,[],[f780])).
+fof(f780,plain,(
+  spl59_35 <=> ! [X0] : (rigid(X0) | ~rigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_35])])).
+fof(f1018,plain,(
+  rigidSortal(xyz) | ~spl59_92),
+  inference(avatar_component_clause,[],[f1017])).
+fof(f1017,plain,(
+  spl59_92 <=> rigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_92])])).
+fof(f1019,plain,(
+  spl59_92 | ~spl59_73 | ~spl59_87),
+  inference(avatar_split_clause,[],[f1015,f993,f932,f1017])).
+fof(f932,plain,(
+  spl59_73 <=> ! [X0] : (rigidSortal(X0) | ~kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_73])])).
+fof(f993,plain,(
+  spl59_87 <=> kind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_87])])).
+fof(f1015,plain,(
+  rigidSortal(xyz) | (~spl59_73 | ~spl59_87)),
+  inference(resolution,[],[f933,f994])).
+fof(f994,plain,(
+  kind(xyz) | ~spl59_87),
+  inference(avatar_component_clause,[],[f993])).
+fof(f933,plain,(
+  ( ! [X0] : (~kind(X0) | rigidSortal(X0)) ) | ~spl59_73),
+  inference(avatar_component_clause,[],[f932])).
+fof(f995,plain,(
+  spl59_87 | ~spl59_2 | ~spl59_51),
+  inference(avatar_split_clause,[],[f991,f844,f648,f993])).
+fof(f648,plain,(
+  spl59_2 <=> quantityKind(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f844,plain,(
+  spl59_51 <=> ! [X0] : (~quantityKind(X0) | kind(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_51])])).
+fof(f991,plain,(
+  kind(xyz) | (~spl59_2 | ~spl59_51)),
+  inference(resolution,[],[f845,f649])).
+fof(f649,plain,(
+  quantityKind(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f648])).
+fof(f845,plain,(
+  ( ! [X0] : (~quantityKind(X0) | kind(X0)) ) | ~spl59_51),
+  inference(avatar_component_clause,[],[f844])).
+fof(f934,plain,(
+  spl59_73),
+  inference(avatar_split_clause,[],[f553,f932])).
+fof(f553,plain,(
+  ( ! [X0] : (rigidSortal(X0) | ~kind(X0)) )),
+  inference(cnf_transformation,[],[f38])).
+fof(f38,axiom,(
+  ! [X0] : ((subkind(X0) | kind(X0)) <=> rigidSortal(X0))),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_rigid.in',ax_rigidSortal_taxonomy)).
+fof(f846,plain,(
+  spl59_51),
+  inference(avatar_split_clause,[],[f487,f844])).
+fof(f487,plain,(
+  ( ! [X0] : (~quantityKind(X0) | kind(X0)) )),
+  inference(cnf_transformation,[],[f266])).
+fof(f266,plain,(
+  ! [X0] : ((kind(X0) & quantityType(X0)) | ~quantityKind(X0))),
+  inference(ennf_transformation,[],[f202])).
+fof(f202,plain,(
+  ! [X0] : (quantityKind(X0) => (kind(X0) & quantityType(X0)))),
+  inference(unused_predicate_definition_removal,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (quantityKind(X0) <=> (kind(X0) & quantityType(X0)))),
+  inference(rectify,[],[f81])).
+fof(f81,axiom,(
+  ! [X8] : (quantityKind(X8) <=> (kind(X8) & quantityType(X8)))),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_rigid.in',ax_quantityKindDefinition_a45)).
+fof(f782,plain,(
+  spl59_35),
+  inference(avatar_split_clause,[],[f372,f780])).
+fof(f372,plain,(
+  ( ! [X0] : (rigid(X0) | ~rigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f148])).
+fof(f148,plain,(
+  ! [X0] : (rigidSortal(X0) <=> (sortal(X0) & rigid(X0)))),
+  inference(rectify,[],[f63])).
+fof(f63,axiom,(
+  ! [X8] : (rigidSortal(X8) <=> (sortal(X8) & rigid(X8)))),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_rigid.in',ax_rigidSortalsAreRigidAndSortal_xx)).
+fof(f650,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f310,f648])).
+fof(f310,plain,(
+  quantityKind(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quantityKind(xyz)),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_rigid.in',axiom1)).
+fof(f646,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f309,f644])).
+fof(f309,plain,(
+  ~rigid(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~rigid(xyz)),
+  file('outputs/ufo/subsumptions/type_quantityKind_subsumed_to_rigid.in',axiom2)).
+% SZS output end Proof for type_quantityKind_subsumed_to_rigid
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.023 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.032 s

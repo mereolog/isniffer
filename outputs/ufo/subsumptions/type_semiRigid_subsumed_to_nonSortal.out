@@ -1,0 +1,243 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_semiRigid_subsumed_to_nonSortal for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_semiRigid_subsumed_to_nonSortal
+% SZS output start Proof for type_semiRigid_subsumed_to_nonSortal
+fof(f1341,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f642,f646,f766,f774,f826,f830,f834,f976,f1049,f1073,f1253,f1312,f1319,f1325,f1331,f1340])).
+fof(f1340,plain,(
+  ~spl59_2 | ~spl59_49 | ~spl59_163),
+  inference(avatar_contradiction_clause,[],[f1339])).
+fof(f1339,plain,(
+  $false | (~spl59_2 | ~spl59_49 | ~spl59_163)),
+  inference(subsumption_resolution,[],[f1337,f645])).
+fof(f645,plain,(
+  semiRigid(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f644])).
+fof(f644,plain,(
+  spl59_2 <=> semiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f1337,plain,(
+  ~semiRigid(xyz) | (~spl59_49 | ~spl59_163)),
+  inference(resolution,[],[f1318,f833])).
+fof(f833,plain,(
+  ( ! [X0] : (~antiRigid(X0) | ~semiRigid(X0)) ) | ~spl59_49),
+  inference(avatar_component_clause,[],[f832])).
+fof(f832,plain,(
+  spl59_49 <=> ! [X0] : (~antiRigid(X0) | ~semiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_49])])).
+fof(f1318,plain,(
+  antiRigid(xyz) | ~spl59_163),
+  inference(avatar_component_clause,[],[f1317])).
+fof(f1317,plain,(
+  spl59_163 <=> antiRigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_163])])).
+fof(f1331,plain,(
+  ~spl59_2 | ~spl59_48 | ~spl59_164),
+  inference(avatar_contradiction_clause,[],[f1330])).
+fof(f1330,plain,(
+  $false | (~spl59_2 | ~spl59_48 | ~spl59_164)),
+  inference(subsumption_resolution,[],[f1328,f645])).
+fof(f1328,plain,(
+  ~semiRigid(xyz) | (~spl59_48 | ~spl59_164)),
+  inference(resolution,[],[f1324,f829])).
+fof(f829,plain,(
+  ( ! [X0] : (~rigid(X0) | ~semiRigid(X0)) ) | ~spl59_48),
+  inference(avatar_component_clause,[],[f828])).
+fof(f828,plain,(
+  spl59_48 <=> ! [X0] : (~rigid(X0) | ~semiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_48])])).
+fof(f1324,plain,(
+  rigid(xyz) | ~spl59_164),
+  inference(avatar_component_clause,[],[f1323])).
+fof(f1323,plain,(
+  spl59_164 <=> rigid(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_164])])).
+fof(f1325,plain,(
+  spl59_164 | ~spl59_32 | ~spl59_162),
+  inference(avatar_split_clause,[],[f1321,f1310,f764,f1323])).
+fof(f764,plain,(
+  spl59_32 <=> ! [X0] : (rigid(X0) | ~rigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_32])])).
+fof(f1310,plain,(
+  spl59_162 <=> rigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_162])])).
+fof(f1321,plain,(
+  rigid(xyz) | (~spl59_32 | ~spl59_162)),
+  inference(resolution,[],[f1311,f765])).
+fof(f765,plain,(
+  ( ! [X0] : (~rigidSortal(X0) | rigid(X0)) ) | ~spl59_32),
+  inference(avatar_component_clause,[],[f764])).
+fof(f1311,plain,(
+  rigidSortal(xyz) | ~spl59_162),
+  inference(avatar_component_clause,[],[f1310])).
+fof(f1319,plain,(
+  spl59_163 | ~spl59_34 | ~spl59_161),
+  inference(avatar_split_clause,[],[f1314,f1307,f772,f1317])).
+fof(f772,plain,(
+  spl59_34 <=> ! [X0] : (antiRigid(X0) | ~antiRigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_34])])).
+fof(f1307,plain,(
+  spl59_161 <=> antiRigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_161])])).
+fof(f1314,plain,(
+  antiRigid(xyz) | (~spl59_34 | ~spl59_161)),
+  inference(resolution,[],[f1308,f773])).
+fof(f773,plain,(
+  ( ! [X0] : (~antiRigidSortal(X0) | antiRigid(X0)) ) | ~spl59_34),
+  inference(avatar_component_clause,[],[f772])).
+fof(f1308,plain,(
+  antiRigidSortal(xyz) | ~spl59_161),
+  inference(avatar_component_clause,[],[f1307])).
+fof(f1312,plain,(
+  spl59_161 | spl59_162 | ~spl59_102 | ~spl59_152),
+  inference(avatar_split_clause,[],[f1254,f1251,f1047,f1310,f1307])).
+fof(f1047,plain,(
+  spl59_102 <=> ! [X0] : (~sortal(X0) | rigidSortal(X0) | antiRigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_102])])).
+fof(f1251,plain,(
+  spl59_152 <=> sortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_152])])).
+fof(f1254,plain,(
+  rigidSortal(xyz) | antiRigidSortal(xyz) | (~spl59_102 | ~spl59_152)),
+  inference(resolution,[],[f1252,f1048])).
+fof(f1048,plain,(
+  ( ! [X0] : (~sortal(X0) | rigidSortal(X0) | antiRigidSortal(X0)) ) | ~spl59_102),
+  inference(avatar_component_clause,[],[f1047])).
+fof(f1252,plain,(
+  sortal(xyz) | ~spl59_152),
+  inference(avatar_component_clause,[],[f1251])).
+fof(f1253,plain,(
+  spl59_152 | spl59_1 | ~spl59_84 | ~spl59_108),
+  inference(avatar_split_clause,[],[f1249,f1071,f974,f640,f1251])).
+fof(f640,plain,(
+  spl59_1 <=> nonSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f974,plain,(
+  spl59_84 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_84])])).
+fof(f1071,plain,(
+  spl59_108 <=> ! [X0] : (~endurantType(X0) | sortal(X0) | nonSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_108])])).
+fof(f1249,plain,(
+  sortal(xyz) | (spl59_1 | ~spl59_84 | ~spl59_108)),
+  inference(subsumption_resolution,[],[f1248,f641])).
+fof(f641,plain,(
+  ~nonSortal(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f640])).
+fof(f1248,plain,(
+  sortal(xyz) | nonSortal(xyz) | (~spl59_84 | ~spl59_108)),
+  inference(resolution,[],[f1072,f975])).
+fof(f975,plain,(
+  endurantType(xyz) | ~spl59_84),
+  inference(avatar_component_clause,[],[f974])).
+fof(f1072,plain,(
+  ( ! [X0] : (~endurantType(X0) | sortal(X0) | nonSortal(X0)) ) | ~spl59_108),
+  inference(avatar_component_clause,[],[f1071])).
+fof(f1073,plain,(
+  spl59_108),
+  inference(avatar_split_clause,[],[f536,f1071])).
+fof(f536,plain,(
+  ( ! [X0] : (~endurantType(X0) | sortal(X0) | nonSortal(X0)) )),
+  inference(cnf_transformation,[],[f34])).
+fof(f34,axiom,(
+  ! [X0] : ((nonSortal(X0) | sortal(X0)) <=> endurantType(X0))),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',ax_endurantType_taxonomy_properties)).
+fof(f1049,plain,(
+  spl59_102),
+  inference(avatar_split_clause,[],[f518,f1047])).
+fof(f518,plain,(
+  ( ! [X0] : (~sortal(X0) | rigidSortal(X0) | antiRigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f36])).
+fof(f36,axiom,(
+  ! [X0] : ((antiRigidSortal(X0) | rigidSortal(X0)) <=> sortal(X0))),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',ax_sortal_taxonomy)).
+fof(f976,plain,(
+  spl59_84 | ~spl59_2 | ~spl59_47),
+  inference(avatar_split_clause,[],[f971,f824,f644,f974])).
+fof(f824,plain,(
+  spl59_47 <=> ! [X0] : (endurantType(X0) | ~semiRigid(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_47])])).
+fof(f971,plain,(
+  endurantType(xyz) | (~spl59_2 | ~spl59_47)),
+  inference(resolution,[],[f825,f645])).
+fof(f825,plain,(
+  ( ! [X0] : (~semiRigid(X0) | endurantType(X0)) ) | ~spl59_47),
+  inference(avatar_component_clause,[],[f824])).
+fof(f834,plain,(
+  spl59_49),
+  inference(avatar_split_clause,[],[f482,f832])).
+fof(f482,plain,(
+  ( ! [X0] : (~antiRigid(X0) | ~semiRigid(X0)) )),
+  inference(cnf_transformation,[],[f166])).
+fof(f166,plain,(
+  ! [X0] : (semiRigid(X0) <=> (~antiRigid(X0) & ~rigid(X0) & endurantType(X0)))),
+  inference(rectify,[],[f59])).
+fof(f59,axiom,(
+  ! [X8] : (semiRigid(X8) <=> (~antiRigid(X8) & ~rigid(X8) & endurantType(X8)))),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',ax_dSemiRigid_a20)).
+fof(f830,plain,(
+  spl59_48),
+  inference(avatar_split_clause,[],[f481,f828])).
+fof(f481,plain,(
+  ( ! [X0] : (~rigid(X0) | ~semiRigid(X0)) )),
+  inference(cnf_transformation,[],[f166])).
+fof(f826,plain,(
+  spl59_47),
+  inference(avatar_split_clause,[],[f480,f824])).
+fof(f480,plain,(
+  ( ! [X0] : (endurantType(X0) | ~semiRigid(X0)) )),
+  inference(cnf_transformation,[],[f166])).
+fof(f774,plain,(
+  spl59_34),
+  inference(avatar_split_clause,[],[f372,f772])).
+fof(f372,plain,(
+  ( ! [X0] : (antiRigid(X0) | ~antiRigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f149])).
+fof(f149,plain,(
+  ! [X0] : (antiRigidSortal(X0) <=> (sortal(X0) & antiRigid(X0)))),
+  inference(rectify,[],[f64])).
+fof(f64,axiom,(
+  ! [X8] : (antiRigidSortal(X8) <=> (sortal(X8) & antiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',ax_antiRigidSortalsAreAntiRigidAndSortal_xx)).
+fof(f766,plain,(
+  spl59_32),
+  inference(avatar_split_clause,[],[f369,f764])).
+fof(f369,plain,(
+  ( ! [X0] : (rigid(X0) | ~rigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f148])).
+fof(f148,plain,(
+  ! [X0] : (rigidSortal(X0) <=> (sortal(X0) & rigid(X0)))),
+  inference(rectify,[],[f63])).
+fof(f63,axiom,(
+  ! [X8] : (rigidSortal(X8) <=> (sortal(X8) & rigid(X8)))),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',ax_rigidSortalsAreRigidAndSortal_xx)).
+fof(f646,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f308,f644])).
+fof(f308,plain,(
+  semiRigid(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  semiRigid(xyz)),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',axiom1)).
+fof(f642,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f307,f640])).
+fof(f307,plain,(
+  ~nonSortal(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~nonSortal(xyz)),
+  file('outputs/ufo/subsumptions/type_semiRigid_subsumed_to_nonSortal.in',axiom2)).
+% SZS output end Proof for type_semiRigid_subsumed_to_nonSortal
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6268
+% Time elapsed: 0.017 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.025 s

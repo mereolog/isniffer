@@ -1,0 +1,437 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_2:1_add=large:afp=40000:afq=2.0:amm=sco:anc=none:br=off:cond=on:irw=on:nwc=1:sd=2:ss=axioms:st=2.0:sos=all:urr=on:updr=off_3 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (3ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 5884
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% dis+1010_10_afr=on:afp=100000:afq=2.0:amm=sco:anc=none:ep=RS:fde=unused:gs=on:nwc=1:sos=on:sac=on:sp=occurrence_2 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10746
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+% ott+1010_5:4_av=off:bd=off:fde=none:irw=on:lma=on:nm=32:nwc=2.5:sd=2:ss=axioms:st=3.0:urr=on_5 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (5ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 1407
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+4_2_av=off:gs=on:gsem=on:lma=on:nm=16:nwc=1:sas=z3:stl=30:sos=on:urr=on_3 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (3ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6396
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_3:1_add=off:afr=on:afp=10000:afq=1.1:amm=off:bce=on:cond=on:ep=R:fsr=off:nm=16:nwc=1:stl=30:sos=all:sp=reverse_arity:updr=off_2 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6652
+% Time elapsed: 0.007 s
+% ------------------------------
+% ------------------------------
+% dis+1011_10_aac=none:add=large:afp=10000:afq=1.1:amm=off:anc=none:fsr=off:gs=on:gsem=off:irw=on:nm=6:newcnf=on:nwc=2.5:sp=reverse_arity:updr=off_2 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (2ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 22131
+% Time elapsed: 0.300 s
+% ------------------------------
+% ------------------------------
+% ott+1002_2_av=off:bd=preordered:irw=on:lma=on:nm=64:nwc=10:sp=reverse_arity:updr=off_22 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (22ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 19061
+% Time elapsed: 2.300 s
+% ------------------------------
+% ------------------------------
+% lrs+1_2:3_aac=none:afr=on:afp=100000:afq=1.0:amm=sco:bd=off:fde=none:gs=on:gsem=on:irw=on:nm=4:nwc=1:stl=30:sos=on:sac=on:sp=occurrence:urr=ec_only:updr=off:uhcvi=on_16 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (16ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 11001
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+% dis+1011_24_add=large:afr=on:afp=4000:afq=1.0:anc=none:bs=unit_only:bce=on:cond=fast:gs=on:nm=32:nwc=2.5:nicw=on:sp=occurrence:updr=off_4 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (4ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 31086
+% Time elapsed: 0.500 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if lrs_weight_limit_only(on) has been set then saturation_algorithm(discount) is equal to lrs
+% dis+11_4_afr=on:afp=1000:afq=1.4:amm=off:anc=none:lcm=reverse:lma=on:lwlo=on:nm=6:newcnf=on:nwc=1:sd=2:ss=axioms:st=2.0:sp=reverse_arity_2 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 5884
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% dis-3_5_av=off:cond=on:gs=on:gsem=off:lcm=predicate:nm=0:nwc=1:sos=on:sp=reverse_arity_3 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (3ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6396
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_3:2_av=off:er=known:lma=on:nm=2:newcnf=on:nwc=2:stl=30:sd=2:ss=axioms:st=3.0:urr=on:updr=off_5 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (5ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 1407
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% lrs+1003_2_acc=on:afp=4000:afq=2.0:amm=sco:bd=off:ccuc=small_ones:fsr=off:fde=unused:gsp=on:nm=64:newcnf=on:nwc=2.5:nicw=on:stl=30:urr=ec_only_8 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (8ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 24690
+% Time elapsed: 0.900 s
+% ------------------------------
+% ------------------------------
+% lrs+2_1_add=large:afp=100000:afq=1.0:amm=off:anc=none:bd=off:bs=unit_only:bsr=on:gsp=on:lma=on:lwlo=on:newcnf=on:nwc=1:stl=30:sos=theory:sp=reverse_arity:updr=off_14 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (14ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 27632
+% Time elapsed: 1.500 s
+% ------------------------------
+% ------------------------------
+WARNING Broken Constraint: if lrs_weight_limit_only(on) has been set then saturation_algorithm(otter) is equal to lrs
+% ott+1_8_av=off:bd=off:bs=on:cond=on:gsp=on:gs=on:gsem=off:irw=on:lcm=predicate:lwlo=on:nwc=1:sos=on_10 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (10ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6396
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% dis+1010_3:2_acc=on:afr=on:afp=1000:afq=1.2:amm=sco:bs=on:ccuc=first:fde=none:nm=0:nwc=4:sd=3:ss=axioms:st=5.0:urr=ec_only_4 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (4ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 5884
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% dis+11_3:1_add=off:afr=on:afp=100000:afq=1.2:amm=off:anc=none:bd=off:bs=unit_only:irw=on:lcm=predicate:lma=on:nm=2:nwc=1:sd=2:ss=axioms:sos=all:sp=occurrence:updr=off_1 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (1ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 5884
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% lrs+1002_3_aac=none:acc=on:add=off:afp=4000:afq=1.1:amm=sco:anc=none:cond=on:fsr=off:gs=on:irw=on:nm=32:newcnf=on:nwc=1.1:nicw=on:stl=30:sd=2:ss=axioms:st=5.0:sos=on:sp=occurrence:updr=off_24 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (24ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10362
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% dis+1010_4_afp=10000:afq=1.2:anc=none:irw=on:lma=on:nm=64:nwc=10:sas=z3:sac=on:sp=reverse_arity:updr=off_2 on ci_ufo_quaIndividual_quaIndividualOf_@_1 for (2ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for ci_ufo_quaIndividual_quaIndividualOf_@_1
+% SZS output start Proof for ci_ufo_quaIndividual_quaIndividualOf_@_1
+fof(f10226,plain,(
+  $false),
+  inference(subsumption_resolution,[],[f10225,f9993])).
+fof(f9993,plain,(
+  ~partOf(zyx,xyz)),
+  inference(subsumption_resolution,[],[f9984,f572])).
+fof(f572,plain,(
+  xyz != zyx),
+  inference(cnf_transformation,[],[f135])).
+fof(f135,axiom,(
+  xyz != zyx),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',diff3516)).
+fof(f9984,plain,(
+  xyz = zyx | ~partOf(zyx,xyz)),
+  inference(resolution,[],[f9982,f871])).
+fof(f871,plain,(
+  ( ! [X0,X1] : (~partOf(X1,X0) | X0 = X1 | ~partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f276])).
+fof(f276,plain,(
+  ! [X0,X1] : (X0 = X1 | ~partOf(X1,X0) | ~partOf(X0,X1))),
+  inference(flattening,[],[f275])).
+fof(f275,plain,(
+  ! [X0,X1] : (X0 = X1 | (~partOf(X1,X0) | ~partOf(X0,X1)))),
+  inference(ennf_transformation,[],[f87])).
+fof(f87,axiom,(
+  ! [X0,X1] : ((partOf(X1,X0) & partOf(X0,X1)) => X0 = X1)),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',ax_antiSymmetricParthood_a48)).
+fof(f9982,plain,(
+  partOf(xyz,zyx)),
+  inference(duplicate_literal_removal,[],[f9973])).
+fof(f9973,plain,(
+  partOf(xyz,zyx) | partOf(xyz,zyx)),
+  inference(resolution,[],[f9938,f874])).
+fof(f874,plain,(
+  ( ! [X0,X1] : (~overlap(sK50(X0,X1),X1) | partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f500])).
+fof(f500,plain,(
+  ! [X0,X1] : ((~partOf(X0,X1) | ! [X2] : (overlap(X2,X1) | ~partOf(X2,X0))) & ((~overlap(sK50(X0,X1),X1) & partOf(sK50(X0,X1),X0)) | partOf(X0,X1)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK50])],[f498,f499])).
+fof(f499,plain,(
+  ! [X0,X1] : (? [X3] : (~overlap(X3,X1) & partOf(X3,X0)) => (~overlap(sK50(X0,X1),X1) & partOf(sK50(X0,X1),X0)))),
+  introduced(choice_axiom,[])).
+fof(f498,plain,(
+  ! [X0,X1] : ((~partOf(X0,X1) | ! [X2] : (overlap(X2,X1) | ~partOf(X2,X0))) & (? [X3] : (~overlap(X3,X1) & partOf(X3,X0)) | partOf(X0,X1)))),
+  inference(rectify,[],[f497])).
+fof(f497,plain,(
+  ! [X0,X1] : ((~partOf(X0,X1) | ! [X2] : (overlap(X2,X1) | ~partOf(X2,X0))) & (? [X2] : (~overlap(X2,X1) & partOf(X2,X0)) | partOf(X0,X1)))),
+  inference(nnf_transformation,[],[f180])).
+fof(f180,plain,(
+  ! [X0,X1] : (~partOf(X0,X1) <=> ? [X2] : (~overlap(X2,X1) & partOf(X2,X0)))),
+  inference(rectify,[],[f90])).
+fof(f90,axiom,(
+  ! [X0,X1] : (~partOf(X0,X1) <=> ? [X3] : (~overlap(X3,X1) & partOf(X3,X0)))),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',ax_strongSupplementation_a51)).
+fof(f9938,plain,(
+  ( ! [X0] : (overlap(sK50(xyz,X0),zyx) | partOf(xyz,X0)) )),
+  inference(resolution,[],[f9933,f1361])).
+fof(f1361,plain,(
+  ( ! [X2,X3] : (overlap(sK50(X2,X3),X2) | partOf(X2,X3)) )),
+  inference(resolution,[],[f1353,f873])).
+fof(f873,plain,(
+  ( ! [X0,X1] : (partOf(sK50(X0,X1),X0) | partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f500])).
+fof(f1353,plain,(
+  ( ! [X0,X1] : (~partOf(X0,X1) | overlap(X0,X1)) )),
+  inference(resolution,[],[f875,f608])).
+fof(f608,plain,(
+  ( ! [X0] : (partOf(X0,X0)) )),
+  inference(cnf_transformation,[],[f85])).
+fof(f85,axiom,(
+  ! [X0] : partOf(X0,X0)),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',ax_reflexiveParthood)).
+fof(f875,plain,(
+  ( ! [X2,X0,X1] : (~partOf(X2,X0) | overlap(X2,X1) | ~partOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f500])).
+fof(f9933,plain,(
+  ( ! [X2] : (~overlap(X2,xyz) | overlap(X2,zyx)) )),
+  inference(subsumption_resolution,[],[f9932,f1234])).
+fof(f1234,plain,(
+  ( ! [X4] : (~overlap(X4,xyz) | externallyDependentMode(X4)) )),
+  inference(resolution,[],[f893,f1077])).
+fof(f1077,plain,(
+  quaIndividualOf(xyz,sK45(zyx))),
+  inference(subsumption_resolution,[],[f1076,f570])).
+fof(f570,plain,(
+  quaIndividual(zyx)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  quaIndividual(zyx)),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',axiom3516)).
+fof(f1076,plain,(
+  quaIndividualOf(xyz,sK45(zyx)) | ~quaIndividual(zyx)),
+  inference(resolution,[],[f789,f784])).
+fof(f784,plain,(
+  ( ! [X0] : (quaIndividualOf(X0,sK45(X0)) | ~quaIndividual(X0)) )),
+  inference(cnf_transformation,[],[f450])).
+fof(f450,plain,(
+  ! [X0] : ((quaIndividual(X0) | ! [X1] : ~quaIndividualOf(X0,X1)) & (quaIndividualOf(X0,sK45(X0)) | ~quaIndividual(X0)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK45])],[f448,f449])).
+fof(f449,plain,(
+  ! [X0] : (? [X2] : quaIndividualOf(X0,X2) => quaIndividualOf(X0,sK45(X0)))),
+  introduced(choice_axiom,[])).
+fof(f448,plain,(
+  ! [X0] : ((quaIndividual(X0) | ! [X1] : ~quaIndividualOf(X0,X1)) & (? [X2] : quaIndividualOf(X0,X2) | ~quaIndividual(X0)))),
+  inference(rectify,[],[f447])).
+fof(f447,plain,(
+  ! [X0] : ((quaIndividual(X0) | ! [X1] : ~quaIndividualOf(X0,X1)) & (? [X1] : quaIndividualOf(X0,X1) | ~quaIndividual(X0)))),
+  inference(nnf_transformation,[],[f122])).
+fof(f122,axiom,(
+  ! [X0] : (quaIndividual(X0) <=> ? [X1] : quaIndividualOf(X0,X1))),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',ax_dQuaIndividual_a76)).
+fof(f789,plain,(
+  ( ! [X0] : (~quaIndividualOf(zyx,X0) | quaIndividualOf(xyz,X0)) )),
+  inference(cnf_transformation,[],[f455])).
+fof(f455,plain,(
+  ! [X0] : ((quaIndividualOf(xyz,X0) | ~quaIndividualOf(zyx,X0)) & (quaIndividualOf(zyx,X0) | ~quaIndividualOf(xyz,X0)))),
+  inference(nnf_transformation,[],[f172])).
+fof(f172,plain,(
+  ! [X0] : (quaIndividualOf(xyz,X0) <=> quaIndividualOf(zyx,X0))),
+  inference(rectify,[],[f134])).
+fof(f134,axiom,(
+  ! [X31] : (quaIndividualOf(xyz,X31) <=> quaIndividualOf(zyx,X31))),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',axiom3545)).
+fof(f893,plain,(
+  ( ! [X0,X1,X5] : (~quaIndividualOf(X0,X1) | ~overlap(X5,X0) | externallyDependentMode(X5)) )),
+  inference(cnf_transformation,[],[f522])).
+fof(f522,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | (((~foundedBy(sK55(X0,X1),sK56(X0,X1)) & foundedBy(X0,sK56(X0,X1))) | ~inheresIn(sK55(X0,X1),X1) | ~externallyDependentMode(sK55(X0,X1)) | ~overlap(sK55(X0,X1),X0)) & ((! [X4] : (foundedBy(sK55(X0,X1),X4) | ~foundedBy(X0,X4)) & inheresIn(sK55(X0,X1),X1) & externallyDependentMode(sK55(X0,X1))) | overlap(sK55(X0,X1),X0)))) & (! [X5] : ((overlap(X5,X0) | (~foundedBy(X5,sK57(X0,X5)) & foundedBy(X0,sK57(X0,X5))) | ~inheresIn(X5,X1) | ~externallyDependentMode(X5)) & ((! [X7] : (foundedBy(X5,X7) | ~foundedBy(X0,X7)) & inheresIn(X5,X1) & externallyDependentMode(X5)) | ~overlap(X5,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK55,sK56,sK57])],[f518,f521,f520,f519])).
+fof(f519,plain,(
+  ! [X0,X1] : (? [X2] : ((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2) | ~overlap(X2,X0)) & ((! [X4] : (foundedBy(X2,X4) | ~foundedBy(X0,X4)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0))) => ((? [X3] : (~foundedBy(sK55(X0,X1),X3) & foundedBy(X0,X3)) | ~inheresIn(sK55(X0,X1),X1) | ~externallyDependentMode(sK55(X0,X1)) | ~overlap(sK55(X0,X1),X0)) & ((! [X4] : (foundedBy(sK55(X0,X1),X4) | ~foundedBy(X0,X4)) & inheresIn(sK55(X0,X1),X1) & externallyDependentMode(sK55(X0,X1))) | overlap(sK55(X0,X1),X0))))),
+  introduced(choice_axiom,[])).
+fof(f520,plain,(
+  ! [X0,X1] : (? [X3] : (~foundedBy(sK55(X0,X1),X3) & foundedBy(X0,X3)) => (~foundedBy(sK55(X0,X1),sK56(X0,X1)) & foundedBy(X0,sK56(X0,X1))))),
+  introduced(choice_axiom,[])).
+fof(f521,plain,(
+  ! [X0,X5] : (? [X6] : (~foundedBy(X5,X6) & foundedBy(X0,X6)) => (~foundedBy(X5,sK57(X0,X5)) & foundedBy(X0,sK57(X0,X5))))),
+  introduced(choice_axiom,[])).
+fof(f518,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | ? [X2] : ((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2) | ~overlap(X2,X0)) & ((! [X4] : (foundedBy(X2,X4) | ~foundedBy(X0,X4)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0)))) & (! [X5] : ((overlap(X5,X0) | ? [X6] : (~foundedBy(X5,X6) & foundedBy(X0,X6)) | ~inheresIn(X5,X1) | ~externallyDependentMode(X5)) & ((! [X7] : (foundedBy(X5,X7) | ~foundedBy(X0,X7)) & inheresIn(X5,X1) & externallyDependentMode(X5)) | ~overlap(X5,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(rectify,[],[f517])).
+fof(f517,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | ? [X2] : ((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2) | ~overlap(X2,X0)) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0)))) & (! [X2] : ((overlap(X2,X0) | ? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2)) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | ~overlap(X2,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(flattening,[],[f516])).
+fof(f516,plain,(
+  ! [X0,X1] : ((quaIndividualOf(X0,X1) | ? [X2] : (((? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2)) | ~overlap(X2,X0)) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | overlap(X2,X0)))) & (! [X2] : ((overlap(X2,X0) | (? [X3] : (~foundedBy(X2,X3) & foundedBy(X0,X3)) | ~inheresIn(X2,X1) | ~externallyDependentMode(X2))) & ((! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2)) | ~overlap(X2,X0))) | ~quaIndividualOf(X0,X1)))),
+  inference(nnf_transformation,[],[f280])).
+fof(f280,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X2,X3) | ~foundedBy(X0,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(ennf_transformation,[],[f183])).
+fof(f183,plain,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X2] : (overlap(X2,X0) <=> (! [X3] : (foundedBy(X0,X3) => foundedBy(X2,X3)) & inheresIn(X2,X1) & externallyDependentMode(X2))))),
+  inference(rectify,[],[f121])).
+fof(f121,axiom,(
+  ! [X0,X1] : (quaIndividualOf(X0,X1) <=> ! [X3] : (overlap(X3,X0) <=> (! [X14] : (foundedBy(X0,X14) => foundedBy(X3,X14)) & inheresIn(X3,X1) & externallyDependentMode(X3))))),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',ax_dQuaIndividualOf_a75)).
+fof(f9932,plain,(
+  ( ! [X2] : (~externallyDependentMode(X2) | overlap(X2,zyx) | ~overlap(X2,xyz)) )),
+  inference(subsumption_resolution,[],[f9927,f571])).
+fof(f571,plain,(
+  quaIndividual(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  quaIndividual(xyz)),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',axiom3515)).
+fof(f9927,plain,(
+  ( ! [X2] : (~externallyDependentMode(X2) | overlap(X2,zyx) | ~overlap(X2,xyz) | ~quaIndividual(xyz)) )),
+  inference(resolution,[],[f9809,f1398])).
+fof(f1398,plain,(
+  ( ! [X0,X1] : (inheresIn(X0,sK45(X1)) | ~overlap(X0,X1) | ~quaIndividual(X1)) )),
+  inference(resolution,[],[f894,f784])).
+fof(f894,plain,(
+  ( ! [X0,X1,X5] : (~quaIndividualOf(X0,X1) | ~overlap(X5,X0) | inheresIn(X5,X1)) )),
+  inference(cnf_transformation,[],[f522])).
+fof(f9809,plain,(
+  ( ! [X2] : (~inheresIn(X2,sK45(xyz)) | ~externallyDependentMode(X2) | overlap(X2,zyx)) )),
+  inference(resolution,[],[f9782,f1073])).
+fof(f1073,plain,(
+  quaIndividualOf(zyx,sK45(xyz))),
+  inference(subsumption_resolution,[],[f1072,f571])).
+fof(f1072,plain,(
+  quaIndividualOf(zyx,sK45(xyz)) | ~quaIndividual(xyz)),
+  inference(resolution,[],[f788,f784])).
+fof(f788,plain,(
+  ( ! [X0] : (~quaIndividualOf(xyz,X0) | quaIndividualOf(zyx,X0)) )),
+  inference(cnf_transformation,[],[f455])).
+fof(f9782,plain,(
+  ( ! [X8,X6,X7] : (~quaIndividualOf(X7,X8) | ~inheresIn(X6,X8) | ~externallyDependentMode(X6) | overlap(X6,X7)) )),
+  inference(subsumption_resolution,[],[f2945,f2934])).
+fof(f2934,plain,(
+  ( ! [X18,X16,X17] : (perdurant(sK57(X17,X16)) | ~inheresIn(X16,X18) | ~externallyDependentMode(X16) | ~quaIndividualOf(X17,X18) | overlap(X16,X17)) )),
+  inference(resolution,[],[f896,f920])).
+fof(f920,plain,(
+  ( ! [X0,X1] : (~foundedBy(X0,X1) | perdurant(X1)) )),
+  inference(cnf_transformation,[],[f541])).
+fof(f541,plain,(
+  ! [X0,X1] : ((foundedBy(X0,X1) | ~perdurant(X1) | (~relator(X0) & ~externallyDependentMode(X0))) & ((perdurant(X1) & (relator(X0) | externallyDependentMode(X0))) | ~foundedBy(X0,X1)))),
+  inference(flattening,[],[f540])).
+fof(f540,plain,(
+  ! [X0,X1] : ((foundedBy(X0,X1) | (~perdurant(X1) | (~relator(X0) & ~externallyDependentMode(X0)))) & ((perdurant(X1) & (relator(X0) | externallyDependentMode(X0))) | ~foundedBy(X0,X1)))),
+  inference(nnf_transformation,[],[f187])).
+fof(f187,plain,(
+  ! [X0,X1] : (foundedBy(X0,X1) <=> (perdurant(X1) & (relator(X0) | externallyDependentMode(X0))))),
+  inference(rectify,[],[f118])).
+fof(f118,axiom,(
+  ! [X19,X14] : (foundedBy(X19,X14) <=> (perdurant(X14) & (relator(X19) | externallyDependentMode(X19))))),
+  file('outputs/ufo/cis/ci_ufo_quaIndividual_quaIndividualOf_@_1.in',ax_foundedByInvolvedThings_a73)).
+fof(f896,plain,(
+  ( ! [X0,X1,X5] : (foundedBy(X0,sK57(X0,X5)) | overlap(X5,X0) | ~inheresIn(X5,X1) | ~externallyDependentMode(X5) | ~quaIndividualOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f522])).
+fof(f2945,plain,(
+  ( ! [X8,X6,X7] : (overlap(X6,X7) | ~inheresIn(X6,X8) | ~externallyDependentMode(X6) | ~quaIndividualOf(X7,X8) | ~perdurant(sK57(X7,X6))) )),
+  inference(duplicate_literal_removal,[],[f2944])).
+fof(f2944,plain,(
+  ( ! [X8,X6,X7] : (overlap(X6,X7) | ~inheresIn(X6,X8) | ~externallyDependentMode(X6) | ~quaIndividualOf(X7,X8) | ~perdurant(sK57(X7,X6)) | ~externallyDependentMode(X6)) )),
+  inference(resolution,[],[f897,f921])).
+fof(f921,plain,(
+  ( ! [X0,X1] : (foundedBy(X0,X1) | ~perdurant(X1) | ~externallyDependentMode(X0)) )),
+  inference(cnf_transformation,[],[f541])).
+fof(f897,plain,(
+  ( ! [X0,X1,X5] : (~foundedBy(X5,sK57(X0,X5)) | overlap(X5,X0) | ~inheresIn(X5,X1) | ~externallyDependentMode(X5) | ~quaIndividualOf(X0,X1)) )),
+  inference(cnf_transformation,[],[f522])).
+fof(f10225,plain,(
+  partOf(zyx,xyz)),
+  inference(duplicate_literal_removal,[],[f10214])).
+fof(f10214,plain,(
+  partOf(zyx,xyz) | partOf(zyx,xyz)),
+  inference(resolution,[],[f10199,f874])).
+fof(f10199,plain,(
+  ( ! [X4] : (overlap(sK50(zyx,X4),xyz) | partOf(zyx,X4)) )),
+  inference(resolution,[],[f10187,f1361])).
+fof(f10187,plain,(
+  ( ! [X2] : (~overlap(X2,zyx) | overlap(X2,xyz)) )),
+  inference(subsumption_resolution,[],[f10186,f1232])).
+fof(f1232,plain,(
+  ( ! [X2] : (~overlap(X2,zyx) | externallyDependentMode(X2)) )),
+  inference(resolution,[],[f893,f1073])).
+fof(f10186,plain,(
+  ( ! [X2] : (~externallyDependentMode(X2) | overlap(X2,xyz) | ~overlap(X2,zyx)) )),
+  inference(subsumption_resolution,[],[f10181,f570])).
+fof(f10181,plain,(
+  ( ! [X2] : (~externallyDependentMode(X2) | overlap(X2,xyz) | ~overlap(X2,zyx) | ~quaIndividual(zyx)) )),
+  inference(resolution,[],[f9811,f1398])).
+fof(f9811,plain,(
+  ( ! [X4] : (~inheresIn(X4,sK45(zyx)) | ~externallyDependentMode(X4) | overlap(X4,xyz)) )),
+  inference(resolution,[],[f9782,f1077])).
+% SZS output end Proof for ci_ufo_quaIndividual_quaIndividualOf_@_1
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 9850
+% Time elapsed: 0.174 s
+% ------------------------------
+% ------------------------------
+% Success in time 5.726 s

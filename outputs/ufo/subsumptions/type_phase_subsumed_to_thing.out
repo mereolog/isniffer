@@ -1,0 +1,189 @@
+% Running in auto input_syntax mode. Trying TPTP
+% ott+11_3_aac=none:afr=on:afp=4000:afq=1.4:amm=off:anc=all:bs=unit_only:bsr=on:bce=on:fde=unused:irw=on:nm=64:newcnf=on:nwc=1:nicw=on:sac=on:sp=reverse_arity:uhcvi=on_31 on type_phase_subsumed_to_thing for (31ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for type_phase_subsumed_to_thing
+% SZS output start Proof for type_phase_subsumed_to_thing
+fof(f1020,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f641,f645,f753,f781,f809,f925,f941,f990,f997,f1011,f1016,f1019])).
+fof(f1019,plain,(
+  spl59_1 | ~spl59_76 | ~spl59_93),
+  inference(avatar_contradiction_clause,[],[f1018])).
+fof(f1018,plain,(
+  $false | (spl59_1 | ~spl59_76 | ~spl59_93)),
+  inference(subsumption_resolution,[],[f1017,f640])).
+fof(f640,plain,(
+  ~thing(xyz) | spl59_1),
+  inference(avatar_component_clause,[],[f639])).
+fof(f639,plain,(
+  spl59_1 <=> thing(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_1])])).
+fof(f1017,plain,(
+  thing(xyz) | (~spl59_76 | ~spl59_93)),
+  inference(resolution,[],[f1015,f940])).
+fof(f940,plain,(
+  ( ! [X0] : (~type_(X0) | thing(X0)) ) | ~spl59_76),
+  inference(avatar_component_clause,[],[f939])).
+fof(f939,plain,(
+  spl59_76 <=> ! [X0] : (thing(X0) | ~type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_76])])).
+fof(f1015,plain,(
+  type_(xyz) | ~spl59_93),
+  inference(avatar_component_clause,[],[f1014])).
+fof(f1014,plain,(
+  spl59_93 <=> type_(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_93])])).
+fof(f1016,plain,(
+  spl59_93 | ~spl59_29 | ~spl59_92),
+  inference(avatar_split_clause,[],[f1012,f1009,f751,f1014])).
+fof(f751,plain,(
+  spl59_29 <=> ! [X0] : (~endurantType(X0) | type_(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_29])])).
+fof(f1009,plain,(
+  spl59_92 <=> endurantType(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_92])])).
+fof(f1012,plain,(
+  type_(xyz) | (~spl59_29 | ~spl59_92)),
+  inference(resolution,[],[f1010,f752])).
+fof(f752,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) ) | ~spl59_29),
+  inference(avatar_component_clause,[],[f751])).
+fof(f1010,plain,(
+  endurantType(xyz) | ~spl59_92),
+  inference(avatar_component_clause,[],[f1009])).
+fof(f1011,plain,(
+  spl59_92 | ~spl59_43 | ~spl59_89),
+  inference(avatar_split_clause,[],[f998,f995,f807,f1009])).
+fof(f807,plain,(
+  spl59_43 <=> ! [X0] : (endurantType(X0) | ~sortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_43])])).
+fof(f995,plain,(
+  spl59_89 <=> sortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_89])])).
+fof(f998,plain,(
+  endurantType(xyz) | (~spl59_43 | ~spl59_89)),
+  inference(resolution,[],[f996,f808])).
+fof(f808,plain,(
+  ( ! [X0] : (~sortal(X0) | endurantType(X0)) ) | ~spl59_43),
+  inference(avatar_component_clause,[],[f807])).
+fof(f996,plain,(
+  sortal(xyz) | ~spl59_89),
+  inference(avatar_component_clause,[],[f995])).
+fof(f997,plain,(
+  spl59_89 | ~spl59_36 | ~spl59_88),
+  inference(avatar_split_clause,[],[f991,f988,f779,f995])).
+fof(f779,plain,(
+  spl59_36 <=> ! [X0] : (sortal(X0) | ~antiRigidSortal(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_36])])).
+fof(f988,plain,(
+  spl59_88 <=> antiRigidSortal(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_88])])).
+fof(f991,plain,(
+  sortal(xyz) | (~spl59_36 | ~spl59_88)),
+  inference(resolution,[],[f989,f780])).
+fof(f780,plain,(
+  ( ! [X0] : (~antiRigidSortal(X0) | sortal(X0)) ) | ~spl59_36),
+  inference(avatar_component_clause,[],[f779])).
+fof(f989,plain,(
+  antiRigidSortal(xyz) | ~spl59_88),
+  inference(avatar_component_clause,[],[f988])).
+fof(f990,plain,(
+  spl59_88 | ~spl59_2 | ~spl59_72),
+  inference(avatar_split_clause,[],[f986,f923,f643,f988])).
+fof(f643,plain,(
+  spl59_2 <=> phase(xyz)),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_2])])).
+fof(f923,plain,(
+  spl59_72 <=> ! [X0] : (antiRigidSortal(X0) | ~phase(X0))),
+  introduced(avatar_definition,[new_symbols(naming,[spl59_72])])).
+fof(f986,plain,(
+  antiRigidSortal(xyz) | (~spl59_2 | ~spl59_72)),
+  inference(resolution,[],[f924,f644])).
+fof(f644,plain,(
+  phase(xyz) | ~spl59_2),
+  inference(avatar_component_clause,[],[f643])).
+fof(f924,plain,(
+  ( ! [X0] : (~phase(X0) | antiRigidSortal(X0)) ) | ~spl59_72),
+  inference(avatar_component_clause,[],[f923])).
+fof(f941,plain,(
+  spl59_76),
+  inference(avatar_split_clause,[],[f552,f939])).
+fof(f552,plain,(
+  ( ! [X0] : (thing(X0) | ~type_(X0)) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : ((individual(X0) | type_(X0)) <=> thing(X0))),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',ax_thing_taxonomy)).
+fof(f925,plain,(
+  spl59_72),
+  inference(avatar_split_clause,[],[f543,f923])).
+fof(f543,plain,(
+  ( ! [X0] : (antiRigidSortal(X0) | ~phase(X0)) )),
+  inference(cnf_transformation,[],[f40])).
+fof(f40,axiom,(
+  ! [X0] : ((role(X0) | phase(X0)) <=> antiRigidSortal(X0))),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',ax_antiRigidSortal_taxonomy)).
+fof(f809,plain,(
+  spl59_43),
+  inference(avatar_split_clause,[],[f407,f807])).
+fof(f407,plain,(
+  ( ! [X0] : (endurantType(X0) | ~sortal(X0)) )),
+  inference(cnf_transformation,[],[f157])).
+fof(f157,plain,(
+  ! [X0] : (sortal(X0) <=> (? [X1] : (specializes(X0,X1) & kind(X1)) & endurantType(X0)))),
+  inference(rectify,[],[f62])).
+fof(f62,axiom,(
+  ! [X13] : (sortal(X13) <=> (? [X11] : (specializes(X13,X11) & kind(X11)) & endurantType(X13)))),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',ax_dSortal_a23)).
+fof(f781,plain,(
+  spl59_36),
+  inference(avatar_split_clause,[],[f371,f779])).
+fof(f371,plain,(
+  ( ! [X0] : (sortal(X0) | ~antiRigidSortal(X0)) )),
+  inference(cnf_transformation,[],[f149])).
+fof(f149,plain,(
+  ! [X0] : (antiRigidSortal(X0) <=> (sortal(X0) & antiRigid(X0)))),
+  inference(rectify,[],[f64])).
+fof(f64,axiom,(
+  ! [X8] : (antiRigidSortal(X8) <=> (sortal(X8) & antiRigid(X8)))),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',ax_antiRigidSortalsAreAntiRigidAndSortal_xx)).
+fof(f753,plain,(
+  spl59_29),
+  inference(avatar_split_clause,[],[f352,f751])).
+fof(f352,plain,(
+  ( ! [X0] : (~endurantType(X0) | type_(X0)) )),
+  inference(cnf_transformation,[],[f241])).
+fof(f241,plain,(
+  ! [X0] : (type_(X0) | (~perdurantType(X0) & ~endurantType(X0)))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0] : ((perdurantType(X0) | endurantType(X0)) => type_(X0))),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',ax_type_taxonomy)).
+fof(f645,plain,(
+  spl59_2),
+  inference(avatar_split_clause,[],[f305,f643])).
+fof(f305,plain,(
+  phase(xyz)),
+  inference(cnf_transformation,[],[f132])).
+fof(f132,axiom,(
+  phase(xyz)),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',axiom1)).
+fof(f641,plain,(
+  ~spl59_1),
+  inference(avatar_split_clause,[],[f304,f639])).
+fof(f304,plain,(
+  ~thing(xyz)),
+  inference(cnf_transformation,[],[f133])).
+fof(f133,axiom,(
+  ~thing(xyz)),
+  file('outputs/ufo/subsumptions/type_phase_subsumed_to_thing.in',axiom2)).
+% SZS output end Proof for type_phase_subsumed_to_thing
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+% Success in time 0.018 s
