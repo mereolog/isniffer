@@ -1,0 +1,1633 @@
+% Running in auto input_syntax mode. Trying TPTP
+% lrs-11_12_av=off:nm=32:nwc=1.3:stl=30:sd=3:ss=axioms:sos=all_2 on tupper.all for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 1791
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+2_3:1_add=large:afr=on:afp=10000:afq=1.1:amm=off:anc=none:er=known:fde=unused:gs=on:gsaa=from_current:gsem=on:lma=on:nm=32:newcnf=on:nwc=4:sas=z3:stl=30:sd=1:ss=axioms:st=5.0:sac=on:sp=occurrence:updr=off_2 on tupper.all for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10618
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% dis+2_2:1_aac=none:afp=100000:afq=1.1:amm=sco:anc=none:bsr=on:fsr=off:gs=on:gsem=on:lcm=reverse:lma=on:nm=64:nwc=1:sos=on_6 on tupper.all for (6ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 11897
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+% dis+1011_24_add=large:afr=on:afp=4000:afq=1.0:anc=none:bs=unit_only:bce=on:cond=fast:gs=on:nm=32:nwc=2.5:nicw=on:sp=occurrence:updr=off_39 on tupper.all for (39ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 96075
+% Time elapsed: 4.0000 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_5_add=large:afp=1000:afq=1.2:anc=none:fsr=off:irw=on:lma=on:nm=64:newcnf=on:nwc=1:stl=30:sd=3:ss=axioms:st=2.0:sos=on:sac=on:sp=reverse_arity:urr=on:updr=off_10 on tupper.all for (10ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% lrs+11_128_av=off:bsr=on:cond=on:gs=on:lcm=reverse:lma=on:nm=32:nwc=1:stl=30:sd=5:ss=axioms:st=3.0_1 on tupper.all for (1ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6268
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% ott+11_16_av=off:gs=on:gsem=on:irw=on:lma=on:nm=64:newcnf=on:nwc=1.3:sas=z3:sp=reverse_arity_14 on tupper.all for (14ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 34924
+% Time elapsed: 1.500 s
+% ------------------------------
+% ------------------------------
+% lrs+11_20_av=off:bs=unit_only:bsr=on:bce=on:cond=on:fde=none:gs=on:gsem=on:irw=on:nm=4:nwc=1:stl=30:sos=theory:sp=reverse_arity:uhcvi=on_3 on tupper.all for (3ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 16758
+% Time elapsed: 0.400 s
+% ------------------------------
+% ------------------------------
+% ott+2_2_afp=10000:afq=1.4:amm=off:anc=none:gsp=on:gs=on:gsem=off:irw=on:lcm=predicate:nm=32:nwc=1.5:sos=on:sp=reverse_arity_18 on tupper.all for (18ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 11769
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+% lrs+11_1_add=large:afr=on:afp=100000:afq=2.0:amm=off:anc=none:bd=off:gs=on:gsem=on:irw=on:nm=32:newcnf=on:nwc=2.5:nicw=on:stl=30:sd=3:ss=axioms:sos=all:urr=on_34 on tupper.all for (34ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10746
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% lrs+1003_3_awrs=decay:awrsf=4:add=large:afr=on:afp=100000:afq=2.0:amm=sco:bd=off:cond=fast:fsr=off:fde=unused:gs=on:gsem=on:nm=6:nwc=1:stl=30:sd=1:ss=axioms:st=1.2:sos=on:sac=on:sp=frequency:urr=on:updr=off_2 on tupper.all for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10618
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% lrs-3_4:1_afp=1000:afq=1.4:amm=sco:fde=none:gs=on:lcm=reverse:lma=on:nwc=1.5:stl=30:sd=1:ss=axioms:sp=reverse_arity:urr=on:updr=off:uhcvi=on_11 on tupper.all for (11ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10618
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_7_add=large:afr=on:afp=40000:afq=1.4:amm=off:anc=none:cond=on:er=known:fsr=off:lma=on:nm=4:nwc=2.5:stl=30:sp=reverse_arity:updr=off_2 on tupper.all for (2ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 13560
+% Time elapsed: 0.300 s
+% ------------------------------
+% ------------------------------
+% lrs+10_4:1_add=large:afp=100000:afq=1.1:anc=none:ep=RST:fde=unused:gsp=on:nm=6:newcnf=on:nwc=1:stl=30:sos=all:sac=on:sp=reverse_arity:urr=ec_only_22 on tupper.all for (22ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 7547
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+1010_8_add=off:afp=100000:afq=1.0:amm=off:anc=none:bce=on:irw=on:nm=16:newcnf=on:nwc=1.1:nicw=on:sas=z3:stl=30:sp=reverse_arity:urr=on_13 on tupper.all for (13ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 78292
+% Time elapsed: 1.400 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_3:1_add=off:afr=on:afp=10000:afq=1.1:amm=off:bce=on:cond=on:ep=R:fsr=off:nm=16:nwc=1:stl=30:sos=all:sp=reverse_arity:updr=off_9 on tupper.all for (9ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 7675
+% Time elapsed: 0.020 s
+% ------------------------------
+% ------------------------------
+% dis+1_2:3_acc=on:add=large:afp=40000:afq=2.0:amm=sco:anc=none:er=filter:fsr=off:gsp=on:gs=on:gsem=off:nm=64:newcnf=on:nwc=1_3 on tupper.all for (3ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 22771
+% Time elapsed: 0.400 s
+% ------------------------------
+% ------------------------------
+% ott+11_4_afp=100000:afq=1.2:amm=sco:anc=none:cond=fast:ep=R:fde=none:gs=on:gsaa=from_current:gsem=off:lma=on:nm=16:nwc=1:sd=3:ss=axioms:updr=off_2 on tupper.all for (2ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10618
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% ott+1002_8:1_add=off:afr=on:afp=100000:afq=1.1:amm=off:anc=none:bd=off:bs=unit_only:fsr=off:gs=on:gsem=off:nm=32:nwc=10:sas=z3:sp=occurrence:urr=on:updr=off_14 on tupper.all for (14ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 83538
+% Time elapsed: 1.500 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_10_aac=none:acc=model:add=large:afp=40000:afq=2.0:anc=none:bd=off:bsr=on:fsr=off:gs=on:gsem=off:irw=on:lcm=reverse:lwlo=on:nm=64:nwc=3:nicw=on:stl=30_19 on tupper.all for (19ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 52195
+% Time elapsed: 2.0000 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_5:4_acc=on:add=large:afr=on:afp=10000:afq=2.0:amm=sco:anc=none:bsr=on:ccuc=first:cond=on:fde=unused:gs=on:gsaa=from_current:gsem=off:irw=on:nm=2:newcnf=on:nwc=1.2:stl=30:sos=on:sac=on:sp=reverse_arity:updr=off_126 on tupper.all for (126ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 12025
+% Time elapsed: 0.017 s
+% ------------------------------
+% ------------------------------
+% dis+1011_10_av=off:cond=on:lma=on:nm=0:newcnf=on:nwc=1:sos=on:sp=occurrence:updr=off_4 on tupper.all for (4ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 2942
+% Time elapsed: 0.015 s
+% ------------------------------
+% ------------------------------
+% dis+1002_7_acc=on:afp=4000:afq=2.0:amm=sco:anc=none:cond=fast:fsr=off:gsp=on:gs=on:gsem=on:lma=on:nm=6:newcnf=on:nwc=1.1:nicw=on:sos=on:sac=on:sp=reverse_arity:urr=ec_only:updr=off_8 on tupper.all for (8ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 12153
+% Time elapsed: 0.015 s
+% ------------------------------
+% ------------------------------
+% ott+4_40_av=off:bce=on:cond=fast:fde=none:nm=0:nwc=1:sos=all:updr=off_197 on tupper.all for (197ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 3326
+% Time elapsed: 0.016 s
+% ------------------------------
+% ------------------------------
+% lrs+1010_3_av=off:fsr=off:gs=on:gsem=off:nm=2:newcnf=on:nwc=2:stl=30:sp=reverse_arity:urr=on:updr=off_9 on tupper.all for (9ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 76885
+% Time elapsed: 1.0000 s
+% ------------------------------
+% ------------------------------
+% dis+1_3:2_acc=on:add=off:afr=on:afp=40000:afq=1.0:amm=sco:anc=none:ccuc=small_ones:cond=on:lma=on:nm=64:nwc=1.3:sos=all:urr=on_111 on tupper.all for (111ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 7547
+% Time elapsed: 0.013 s
+% ------------------------------
+% ------------------------------
+% lrs+1011_8:1_afr=on:afp=1000:afq=2.0:br=off:gsp=on:gs=on:nm=16:nwc=1:stl=30:sos=all:sp=occurrence:urr=on_8 on tupper.all for (8ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 11897
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+% dis+1002_6_add=large:afp=40000:afq=2.0:bsr=on:cond=on:irw=on:lma=on:nm=2:nwc=2.5:nicw=on:sp=reverse_arity:updr=off_10 on tupper.all for (10ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 19445
+% Time elapsed: 1.100 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+11_4:1_aac=none:add=large:afr=on:afp=10000:afq=1.0:amm=sco:anc=none:cond=on:er=filter:fsr=off:gsp=on:gs=on:gsem=on:lma=on:nm=6:newcnf=on:nwc=1.1:sas=z3:stl=30:sos=theory:sp=reverse_arity:updr=off_3 on tupper.all for (3ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 23794
+% Time elapsed: 0.400 s
+% ------------------------------
+% ------------------------------
+% dis+1010_3:2_av=off:gsp=on:nm=2:nwc=1:sp=reverse_arity:urr=ec_only_29 on tupper.all for (29ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 71000
+% Time elapsed: 3.0000 s
+% ------------------------------
+% ------------------------------
+% lrs+11_1_av=off:bsr=on:gsp=on:gs=on:lcm=predicate:nm=64:nwc=1:stl=30:sd=2:ss=axioms:st=1.5:sos=all:sp=occurrence:updr=off_245 on tupper.all for (245ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6140
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+1010_4_awrs=decay:awrsf=64:add=large:afp=4000:afq=1.2:amm=off:anc=none:bs=on:bsr=on:fde=none:gs=on:gsaa=from_current:gsem=on:lma=on:newcnf=on:nwc=1.7:sas=z3:stl=30:sd=10:ss=axioms:s2a=on:st=1.2:sp=frequency:updr=off:uhcvi=on_20 on tupper.all for (20ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10618
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% dis+1010_3:2_acc=on:afr=on:afp=1000:afq=1.2:amm=sco:bs=on:ccuc=first:fde=none:nm=0:nwc=4:sd=3:ss=axioms:st=5.0:urr=ec_only_12 on tupper.all for (12ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 6268
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% ott+11_20_afp=10000:afq=1.1:anc=none:bs=unit_only:bsr=on:bce=on:fsr=off:gs=on:gsem=on:nwc=2.5:sas=z3:sp=occurrence:updr=off:uhcvi=on_1 on tupper.all for (1ds)
+% Time limit reached!
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Time limit
+% Termination phase: Saturation
+
+% Memory used [KB]: 17014
+% Time elapsed: 0.200 s
+% ------------------------------
+% ------------------------------
+% dis+1010_8_acc=model:afp=4000:afq=1.0:anc=none:bd=off:bs=unit_only:bce=on:cond=fast:fde=unused:gs=on:gsem=off:lma=on:nm=0:nwc=4:sd=3:ss=axioms:st=2.0:sac=on:sp=occurrence:urr=ec_only_1 on tupper.all for (1ds)
+% Refutation not found, incomplete strategy% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation not found, incomplete strategy
+
+% Memory used [KB]: 10746
+% Time elapsed: 0.003 s
+% ------------------------------
+% ------------------------------
+% WARNING: value z3 for option sas not known
+% lrs+11_3:2_add=large:afp=1000:afq=1.1:amm=sco:anc=none:bd=off:er=filter:irw=on:lcm=predicate:lma=on:nm=6:nwc=1:sas=z3:stl=30:sp=occurrence:urr=on:updr=off_100 on tupper.all for (100ds)
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tupper.all
+% SZS output start Proof for tupper.all
+fof(f436108,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f191984,f196395,f197651,f258478,f275611,f275885,f275896,f275932,f293658,f406025,f410211,f413811,f430516,f432501,f435848,f436090])).
+fof(f436090,plain,(
+  spl130_71 | ~spl130_218 | ~spl130_302),
+  inference(avatar_contradiction_clause,[],[f436089])).
+fof(f436089,plain,(
+  $false | (spl130_71 | ~spl130_218 | ~spl130_302)),
+  inference(subsumption_resolution,[],[f436088,f196394])).
+fof(f196394,plain,(
+  before('INF-',sK129) | ~spl130_218),
+  inference(avatar_component_clause,[],[f196392])).
+fof(f196392,plain,(
+  spl130_218 <=> before('INF-',sK129)),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_218])])).
+fof(f436088,plain,(
+  ~before('INF-',sK129) | (spl130_71 | ~spl130_302)),
+  inference(forward_demodulation,[],[f297411,f237156])).
+fof(f237156,plain,(
+  'INF-' = sK126 | ~spl130_302),
+  inference(avatar_component_clause,[],[f237154])).
+fof(f237154,plain,(
+  spl130_302 <=> 'INF-' = sK126),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_302])])).
+fof(f297411,plain,(
+  ~before(sK126,sK129) | spl130_71),
+  inference(unit_resulting_resolution,[],[f1743,f196763,f2498])).
+fof(f2498,plain,(
+  ( ! [X2,X0,X1] : (~before(X0,X1) | ~before(X1,X2) | before(X0,X2)) )),
+  inference(subsumption_resolution,[],[f2497,f1984])).
+fof(f1984,plain,(
+  ( ! [X0,X1] : (~before(X0,X1) | timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1032])).
+fof(f1032,plain,(
+  ! [X0,X1] : ((timepoint(X1) & timepoint(X0)) | ~before(X0,X1))),
+  inference(ennf_transformation,[],[f491])).
+fof(f491,plain,(
+  ! [X0,X1] : (before(X0,X1) => (timepoint(X1) & timepoint(X0)))),
+  inference(flattening,[],[f490])).
+fof(f490,plain,(
+  ! [X0] : ! [X1] : (before(X0,X1) => (timepoint(X1) & timepoint(X0)))),
+  inference(rectify,[],[f266])).
+fof(f266,axiom,(
+  ! [X40] : ! [X41] : (before(X40,X41) => (timepoint(X41) & timepoint(X40)))),
+  file('tupper.all.tptp',axiom280)).
+fof(f2497,plain,(
+  ( ! [X2,X0,X1] : (before(X0,X2) | ~before(X1,X2) | ~before(X0,X1) | ~timepoint(X0)) )),
+  inference(subsumption_resolution,[],[f2496,f1985])).
+fof(f1985,plain,(
+  ( ! [X0,X1] : (~before(X0,X1) | timepoint(X1)) )),
+  inference(cnf_transformation,[],[f1032])).
+fof(f2496,plain,(
+  ( ! [X2,X0,X1] : (before(X0,X2) | ~before(X1,X2) | ~before(X0,X1) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(subsumption_resolution,[],[f2287,f1985])).
+fof(f2287,plain,(
+  ( ! [X2,X0,X1] : (before(X0,X2) | ~before(X1,X2) | ~before(X0,X1) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1261])).
+fof(f1261,plain,(
+  ! [X0,X1,X2] : (before(X0,X2) | ~before(X1,X2) | ~before(X0,X1) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(flattening,[],[f1260])).
+fof(f1260,plain,(
+  ! [X0,X1,X2] : (before(X0,X2) | (~before(X1,X2) | ~before(X0,X1) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f778])).
+fof(f778,plain,(
+  ! [X0,X1,X2] : ((before(X1,X2) & before(X0,X1) & timepoint(X2) & timepoint(X1) & timepoint(X0)) => before(X0,X2))),
+  inference(flattening,[],[f777])).
+fof(f777,plain,(
+  ! [X0] : ! [X1] : ! [X2] : ((before(X1,X2) & before(X0,X1) & timepoint(X2) & timepoint(X1) & timepoint(X0)) => before(X0,X2))),
+  inference(rectify,[],[f262])).
+fof(f262,axiom,(
+  ! [X0] : ! [X1] : ! [X8] : ((before(X1,X8) & before(X0,X1) & timepoint(X8) & timepoint(X1) & timepoint(X0)) => before(X0,X8))),
+  file('tupper.all.tptp',axiom1330)).
+fof(f196763,plain,(
+  before(sK129,sK126) | spl130_71),
+  inference(unit_resulting_resolution,[],[f2688,f191978,f2435])).
+fof(f2435,plain,(
+  ( ! [X3] : (before(X3,sK126) | sK126 = X3 | ~timepoint(X3)) )),
+  inference(cnf_transformation,[],[f1734])).
+fof(f1734,plain,(
+  ! [X1] : ((before(sK127(X1),sK126) & before(X1,sK127(X1))) | sK126 = X1 | ~timepoint(X1)) & ! [X3] : (before(X3,sK126) | sK126 = X3 | ~timepoint(X3)) & timepoint(sK126)),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK126,sK127])],[f1368,f1733,f1732])).
+fof(f1732,plain,(
+  ? [X0] : (! [X1] : (? [X2] : (before(X2,X0) & before(X1,X2)) | X0 = X1 | ~timepoint(X1)) & ! [X3] : (before(X3,X0) | X0 = X3 | ~timepoint(X3)) & timepoint(X0)) => (! [X1] : (? [X2] : (before(X2,sK126) & before(X1,X2)) | sK126 = X1 | ~timepoint(X1)) & ! [X3] : (before(X3,sK126) | sK126 = X3 | ~timepoint(X3)) & timepoint(sK126))),
+  introduced(choice_axiom,[])).
+fof(f1733,plain,(
+  ! [X1] : (? [X2] : (before(X2,sK126) & before(X1,X2)) => (before(sK127(X1),sK126) & before(X1,sK127(X1))))),
+  introduced(choice_axiom,[])).
+fof(f1368,plain,(
+  ? [X0] : (! [X1] : (? [X2] : (before(X2,X0) & before(X1,X2)) | X0 = X1 | ~timepoint(X1)) & ! [X3] : (before(X3,X0) | X0 = X3 | ~timepoint(X3)) & timepoint(X0))),
+  inference(flattening,[],[f1367])).
+fof(f1367,plain,(
+  ? [X0] : (! [X1] : (? [X2] : (before(X2,X0) & before(X1,X2)) | (X0 = X1 | ~timepoint(X1))) & ! [X3] : (before(X3,X0) | (X0 = X3 | ~timepoint(X3))) & timepoint(X0))),
+  inference(ennf_transformation,[],[f902])).
+fof(f902,plain,(
+  ? [X0] : (! [X1] : ((X0 != X1 & timepoint(X1)) => ? [X2] : (before(X2,X0) & before(X1,X2))) & ! [X3] : ((X0 != X3 & timepoint(X3)) => before(X3,X0)) & timepoint(X0))),
+  inference(rectify,[],[f259])).
+fof(f259,axiom,(
+  ? [X40] : (! [X42] : ((X40 != X42 & timepoint(X42)) => ? [X43] : (before(X43,X40) & before(X42,X43))) & ! [X41] : ((X40 != X41 & timepoint(X41)) => before(X41,X40)) & timepoint(X40))),
+  file('tupper.all.tptp',axiom1300)).
+fof(f191978,plain,(
+  sK126 != sK129 | spl130_71),
+  inference(avatar_component_clause,[],[f191977])).
+fof(f191977,plain,(
+  spl130_71 <=> sK126 = sK129),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_71])])).
+fof(f2688,plain,(
+  timepoint(sK129)),
+  inference(unit_resulting_resolution,[],[f2438,f1985])).
+fof(f2438,plain,(
+  before(sK128,sK129)),
+  inference(cnf_transformation,[],[f1736])).
+fof(f1736,plain,(
+  before(sK128,sK129)),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK128,sK129])],[f904,f1735])).
+fof(f1735,plain,(
+  ? [X0,X1] : before(X0,X1) => before(sK128,sK129)),
+  introduced(choice_axiom,[])).
+fof(f904,plain,(
+  ? [X0,X1] : before(X0,X1)),
+  inference(flattening,[],[f903])).
+fof(f903,plain,(
+  ? [X0] : ? [X1] : before(X0,X1)),
+  inference(rectify,[],[f261])).
+fof(f261,axiom,(
+  ? [X40] : ? [X41] : before(X40,X41)),
+  file('tupper.all.tptp',axiom1320)).
+fof(f1743,plain,(
+  ( ! [X0] : (~before(X0,X0)) )),
+  inference(cnf_transformation,[],[f370])).
+fof(f370,plain,(
+  ! [X0] : ~before(X0,X0)),
+  inference(rectify,[],[f268])).
+fof(f268,axiom,(
+  ! [X40] : ~before(X40,X40)),
+  file('tupper.all.tptp',axiom300)).
+fof(f435848,plain,(
+  ~spl130_127 | ~spl130_281 | ~spl130_359),
+  inference(avatar_contradiction_clause,[],[f435847])).
+fof(f435847,plain,(
+  $false | (~spl130_127 | ~spl130_281 | ~spl130_359)),
+  inference(subsumption_resolution,[],[f435846,f5997])).
+fof(f5997,plain,(
+  ~lesser(zero,zero)),
+  inference(forward_demodulation,[],[f5995,f3172])).
+fof(f3172,plain,(
+  zero = duration(sK129,sK129)),
+  inference(unit_resulting_resolution,[],[f2688,f2469])).
+fof(f2469,plain,(
+  ( ! [X1] : (~timepoint(X1) | zero = duration(X1,X1)) )),
+  inference(duplicate_literal_removal,[],[f2439])).
+fof(f2439,plain,(
+  ( ! [X1] : (zero = duration(X1,X1) | ~timepoint(X1) | ~timepoint(X1)) )),
+  inference(equality_resolution,[],[f2032])).
+fof(f2032,plain,(
+  ( ! [X0,X1] : (zero = duration(X0,X1) | X0 != X1 | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1525])).
+fof(f1525,plain,(
+  ! [X0,X1] : (((zero = duration(X0,X1) | X0 != X1) & (X0 = X1 | zero != duration(X0,X1))) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(nnf_transformation,[],[f1104])).
+fof(f1104,plain,(
+  ! [X0,X1] : ((zero = duration(X0,X1) <=> X0 = X1) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(flattening,[],[f1103])).
+fof(f1103,plain,(
+  ! [X0,X1] : ((zero = duration(X0,X1) <=> X0 = X1) | (~timepoint(X1) | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f556])).
+fof(f556,plain,(
+  ! [X0,X1] : ((timepoint(X1) & timepoint(X0)) => (zero = duration(X0,X1) <=> X0 = X1))),
+  inference(flattening,[],[f555])).
+fof(f555,plain,(
+  ! [X0] : ! [X1] : ((timepoint(X1) & timepoint(X0)) => (zero = duration(X0,X1) <=> X0 = X1))),
+  inference(rectify,[],[f239])).
+fof(f239,axiom,(
+  ! [X40] : ! [X41] : ((timepoint(X41) & timepoint(X40)) => (duration(X40,X41) = zero <=> X40 = X41))),
+  file('tupper.all.tptp',axiom1250)).
+fof(f5995,plain,(
+  ~lesser(zero,duration(sK129,sK129))),
+  inference(unit_resulting_resolution,[],[f2688,f2688,f1743,f2033])).
+fof(f2033,plain,(
+  ( ! [X0,X1] : (~lesser(zero,duration(X0,X1)) | before(X0,X1) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1526])).
+fof(f1526,plain,(
+  ! [X0,X1] : (((lesser(zero,duration(X0,X1)) | ~before(X0,X1)) & (before(X0,X1) | ~lesser(zero,duration(X0,X1)))) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(nnf_transformation,[],[f1106])).
+fof(f1106,plain,(
+  ! [X0,X1] : ((lesser(zero,duration(X0,X1)) <=> before(X0,X1)) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(flattening,[],[f1105])).
+fof(f1105,plain,(
+  ! [X0,X1] : ((lesser(zero,duration(X0,X1)) <=> before(X0,X1)) | (~timepoint(X1) | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f558])).
+fof(f558,plain,(
+  ! [X0,X1] : ((timepoint(X1) & timepoint(X0)) => (lesser(zero,duration(X0,X1)) <=> before(X0,X1)))),
+  inference(flattening,[],[f557])).
+fof(f557,plain,(
+  ! [X0] : ! [X1] : ((timepoint(X1) & timepoint(X0)) => (lesser(zero,duration(X0,X1)) <=> before(X0,X1)))),
+  inference(rectify,[],[f242])).
+fof(f242,axiom,(
+  ! [X40] : ! [X41] : ((timepoint(X41) & timepoint(X40)) => (lesser(zero,duration(X40,X41)) <=> before(X40,X41)))),
+  file('tupper.all.tptp',axiom1280)).
+fof(f435846,plain,(
+  lesser(zero,zero) | (~spl130_127 | ~spl130_281 | ~spl130_359)),
+  inference(forward_demodulation,[],[f414790,f426450])).
+fof(f426450,plain,(
+  zero = duration('INF-',sK126) | (~spl130_127 | ~spl130_359)),
+  inference(forward_demodulation,[],[f426449,f401880])).
+fof(f401880,plain,(
+  zero = add(duration(sK126,'INF-'),duration('INF-',sK126)) | ~spl130_127),
+  inference(forward_demodulation,[],[f311445,f293802])).
+fof(f293802,plain,(
+  duration(sK126,'INF-') = duration(sK126,sK104(sK126,'INF-',sK126)) | ~spl130_127),
+  inference(superposition,[],[f7734,f195620])).
+fof(f195620,plain,(
+  'INF-' = sK124 | ~spl130_127),
+  inference(avatar_component_clause,[],[f195618])).
+fof(f195618,plain,(
+  spl130_127 <=> 'INF-' = sK124),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_127])])).
+fof(f7734,plain,(
+  duration(sK126,sK124) = duration(sK126,sK104(sK126,sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f2430,f2434,f2290])).
+fof(f2290,plain,(
+  ( ! [X2,X0,X1] : (~timepoint(X2) | duration(X0,X1) = duration(X2,sK104(X0,X1,X2)) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1668])).
+fof(f1668,plain,(
+  ! [X0,X1,X2] : ((duration(X0,X1) = duration(X2,sK104(X0,X1,X2)) & timepoint(sK104(X0,X1,X2))) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK104])],[f1265,f1667])).
+fof(f1667,plain,(
+  ! [X0,X1,X2] : (? [X3] : (duration(X0,X1) = duration(X2,X3) & timepoint(X3)) => (duration(X0,X1) = duration(X2,sK104(X0,X1,X2)) & timepoint(sK104(X0,X1,X2))))),
+  introduced(choice_axiom,[])).
+fof(f1265,plain,(
+  ! [X0,X1,X2] : (? [X3] : (duration(X0,X1) = duration(X2,X3) & timepoint(X3)) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(flattening,[],[f1264])).
+fof(f1264,plain,(
+  ! [X0,X1,X2] : (? [X3] : (duration(X0,X1) = duration(X2,X3) & timepoint(X3)) | (~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f782])).
+fof(f782,plain,(
+  ! [X0,X1,X2] : ((timepoint(X2) & timepoint(X1) & timepoint(X0)) => ? [X3] : (duration(X0,X1) = duration(X2,X3) & timepoint(X3)))),
+  inference(flattening,[],[f781])).
+fof(f781,plain,(
+  ! [X0] : ! [X1] : ! [X2] : ((timepoint(X2) & timepoint(X1) & timepoint(X0)) => ? [X3] : (duration(X0,X1) = duration(X2,X3) & timepoint(X3)))),
+  inference(rectify,[],[f243])).
+fof(f243,axiom,(
+  ! [X40] : ! [X41] : ! [X42] : ((timepoint(X42) & timepoint(X41) & timepoint(X40)) => ? [X43] : (duration(X40,X41) = duration(X42,X43) & timepoint(X43)))),
+  file('tupper.all.tptp',axiom1290)).
+fof(f2430,plain,(
+  timepoint(sK124)),
+  inference(cnf_transformation,[],[f1731])).
+fof(f1731,plain,(
+  ! [X1] : ((before(sK124,sK125(X1)) & before(sK125(X1),X1)) | sK124 = X1 | ~timepoint(X1)) & ! [X3] : (before(sK124,X3) | sK124 = X3 | ~timepoint(X3)) & timepoint(sK124)),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK124,sK125])],[f1366,f1730,f1729])).
+fof(f1729,plain,(
+  ? [X0] : (! [X1] : (? [X2] : (before(X0,X2) & before(X2,X1)) | X0 = X1 | ~timepoint(X1)) & ! [X3] : (before(X0,X3) | X0 = X3 | ~timepoint(X3)) & timepoint(X0)) => (! [X1] : (? [X2] : (before(sK124,X2) & before(X2,X1)) | sK124 = X1 | ~timepoint(X1)) & ! [X3] : (before(sK124,X3) | sK124 = X3 | ~timepoint(X3)) & timepoint(sK124))),
+  introduced(choice_axiom,[])).
+fof(f1730,plain,(
+  ! [X1] : (? [X2] : (before(sK124,X2) & before(X2,X1)) => (before(sK124,sK125(X1)) & before(sK125(X1),X1)))),
+  introduced(choice_axiom,[])).
+fof(f1366,plain,(
+  ? [X0] : (! [X1] : (? [X2] : (before(X0,X2) & before(X2,X1)) | X0 = X1 | ~timepoint(X1)) & ! [X3] : (before(X0,X3) | X0 = X3 | ~timepoint(X3)) & timepoint(X0))),
+  inference(flattening,[],[f1365])).
+fof(f1365,plain,(
+  ? [X0] : (! [X1] : (? [X2] : (before(X0,X2) & before(X2,X1)) | (X0 = X1 | ~timepoint(X1))) & ! [X3] : (before(X0,X3) | (X0 = X3 | ~timepoint(X3))) & timepoint(X0))),
+  inference(ennf_transformation,[],[f901])).
+fof(f901,plain,(
+  ? [X0] : (! [X1] : ((X0 != X1 & timepoint(X1)) => ? [X2] : (before(X0,X2) & before(X2,X1))) & ! [X3] : ((X0 != X3 & timepoint(X3)) => before(X0,X3)) & timepoint(X0))),
+  inference(rectify,[],[f260])).
+fof(f260,axiom,(
+  ? [X40] : (! [X42] : ((X40 != X42 & timepoint(X42)) => ? [X43] : (before(X40,X43) & before(X43,X42))) & ! [X41] : ((X40 != X41 & timepoint(X41)) => before(X40,X41)) & timepoint(X40))),
+  file('tupper.all.tptp',axiom1310)).
+fof(f2434,plain,(
+  timepoint(sK126)),
+  inference(cnf_transformation,[],[f1734])).
+fof(f311445,plain,(
+  zero = add(duration(sK126,sK104(sK126,'INF-',sK126)),duration('INF-',sK126)) | ~spl130_127),
+  inference(forward_demodulation,[],[f286269,f195620])).
+fof(f286269,plain,(
+  zero = add(duration(sK126,sK104(sK126,sK124,sK126)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f286225,f126787])).
+fof(f126787,plain,(
+  duration(sK124,sK126) = duration(sK104(sK126,sK124,sK126),sK126)),
+  inference(forward_demodulation,[],[f126786,f126779])).
+fof(f126779,plain,(
+  duration(sK124,sK126) = add(zero,duration(sK104(sK126,sK124,sK126),sK126))),
+  inference(forward_demodulation,[],[f126778,f126201])).
+fof(f126201,plain,(
+  zero = duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126))),
+  inference(forward_demodulation,[],[f126200,f125990])).
+fof(f125990,plain,(
+  zero = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f125989,f77118])).
+fof(f77118,plain,(
+  zero = duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124))),
+  inference(forward_demodulation,[],[f77117,f77116])).
+fof(f77116,plain,(
+  zero = add(zero,duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)))),
+  inference(forward_demodulation,[],[f77115,f7972])).
+fof(f7972,plain,(
+  zero = duration(sK124,sK104(sK124,sK124,sK124))),
+  inference(forward_demodulation,[],[f7652,f3169])).
+fof(f3169,plain,(
+  zero = duration(sK124,sK124)),
+  inference(unit_resulting_resolution,[],[f2430,f2469])).
+fof(f7652,plain,(
+  duration(sK124,sK124) = duration(sK124,sK104(sK124,sK124,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f2430,f2290])).
+fof(f77115,plain,(
+  duration(sK124,sK104(sK124,sK124,sK124)) = add(zero,duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)))),
+  inference(forward_demodulation,[],[f39992,f7971])).
+fof(f7971,plain,(
+  zero = duration(sK124,sK104(sK126,sK126,sK124))),
+  inference(forward_demodulation,[],[f7662,f3170])).
+fof(f3170,plain,(
+  zero = duration(sK126,sK126)),
+  inference(unit_resulting_resolution,[],[f2434,f2469])).
+fof(f7662,plain,(
+  duration(sK126,sK126) = duration(sK124,sK104(sK126,sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2434,f2434,f2430,f2290])).
+fof(f39992,plain,(
+  duration(sK124,sK104(sK124,sK124,sK124)) = add(duration(sK124,sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f2430,f5482,f5492,f2288])).
+fof(f2288,plain,(
+  ( ! [X2,X0,X1] : (~timepoint(X2) | add(duration(X0,X1),duration(X1,X2)) = duration(X0,X2) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1263])).
+fof(f1263,plain,(
+  ! [X0,X1,X2] : (add(duration(X0,X1),duration(X1,X2)) = duration(X0,X2) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(flattening,[],[f1262])).
+fof(f1262,plain,(
+  ! [X0,X1,X2] : (add(duration(X0,X1),duration(X1,X2)) = duration(X0,X2) | (~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f780])).
+fof(f780,plain,(
+  ! [X0,X1,X2] : ((timepoint(X2) & timepoint(X1) & timepoint(X0)) => add(duration(X0,X1),duration(X1,X2)) = duration(X0,X2))),
+  inference(flattening,[],[f779])).
+fof(f779,plain,(
+  ! [X0] : ! [X1] : ! [X2] : ((timepoint(X2) & timepoint(X1) & timepoint(X0)) => add(duration(X0,X1),duration(X1,X2)) = duration(X0,X2))),
+  inference(rectify,[],[f241])).
+fof(f241,axiom,(
+  ! [X40] : ! [X41] : ! [X42] : ((timepoint(X42) & timepoint(X41) & timepoint(X40)) => add(duration(X40,X41),duration(X41,X42)) = duration(X40,X42))),
+  file('tupper.all.tptp',axiom1270)).
+fof(f5492,plain,(
+  timepoint(sK104(sK126,sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2434,f2434,f2430,f2289])).
+fof(f2289,plain,(
+  ( ! [X2,X0,X1] : (timepoint(sK104(X0,X1,X2)) | ~timepoint(X2) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1668])).
+fof(f5482,plain,(
+  timepoint(sK104(sK124,sK124,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f2430,f2289])).
+fof(f77117,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)) = add(zero,duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)))),
+  inference(forward_demodulation,[],[f39991,f71919])).
+fof(f71919,plain,(
+  zero = duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK124))),
+  inference(forward_demodulation,[],[f57416,f57090])).
+fof(f57090,plain,(
+  zero = add(duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK126,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5492,f5563,f2028])).
+fof(f2028,plain,(
+  ( ! [X0,X1] : (~timepoint(X0) | ~timepoint(X1) | zero = add(duration(X0,X1),duration(X1,X0))) )),
+  inference(cnf_transformation,[],[f1098])).
+fof(f1098,plain,(
+  ! [X0,X1] : (zero = add(duration(X0,X1),duration(X1,X0)) | ~timepoint(X1) | ~timepoint(X0))),
+  inference(flattening,[],[f1097])).
+fof(f1097,plain,(
+  ! [X0,X1] : (zero = add(duration(X0,X1),duration(X1,X0)) | (~timepoint(X1) | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f551])).
+fof(f551,plain,(
+  ! [X0,X1] : ((timepoint(X1) & timepoint(X0)) => zero = add(duration(X0,X1),duration(X1,X0)))),
+  inference(flattening,[],[f550])).
+fof(f550,plain,(
+  ! [X0] : ! [X1] : ((timepoint(X1) & timepoint(X0)) => zero = add(duration(X0,X1),duration(X1,X0)))),
+  inference(rectify,[],[f240])).
+fof(f240,axiom,(
+  ! [X40] : ! [X41] : ((timepoint(X41) & timepoint(X40)) => zero = add(duration(X40,X41),duration(X41,X40)))),
+  file('tupper.all.tptp',axiom1260)).
+fof(f5563,plain,(
+  timepoint(sK104(sK124,sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f2434,f2289])).
+fof(f57416,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK126,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5492,f5492,f5563,f2288])).
+fof(f39991,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5492,f5482,f5492,f2288])).
+fof(f125989,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f125988,f125779])).
+fof(f125779,plain,(
+  duration(sK126,sK124) = duration(sK104(sK126,sK126,sK126),sK124)),
+  inference(forward_demodulation,[],[f125778,f9026])).
+fof(f9026,plain,(
+  duration(sK126,sK124) = add(zero,duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f8730,f3170])).
+fof(f8730,plain,(
+  duration(sK126,sK124) = add(duration(sK126,sK126),duration(sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2434,f2434,f2430,f2288])).
+fof(f125778,plain,(
+  add(zero,duration(sK126,sK124)) = duration(sK104(sK126,sK126,sK126),sK124)),
+  inference(forward_demodulation,[],[f112298,f125751])).
+fof(f125751,plain,(
+  zero = duration(sK104(sK126,sK126,sK126),sK126)),
+  inference(forward_demodulation,[],[f125750,f125671])).
+fof(f125671,plain,(
+  zero = add(zero,duration(sK104(sK126,sK126,sK126),sK126))),
+  inference(forward_demodulation,[],[f112071,f7960])).
+fof(f7960,plain,(
+  zero = duration(sK126,sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f7743,f3170])).
+fof(f7743,plain,(
+  duration(sK126,sK126) = duration(sK126,sK104(sK126,sK126,sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f2434,f2434,f2290])).
+fof(f112071,plain,(
+  zero = add(duration(sK126,sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f5573,f2028])).
+fof(f5573,plain,(
+  timepoint(sK104(sK126,sK126,sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f2434,f2434,f2289])).
+fof(f125750,plain,(
+  duration(sK104(sK126,sK126,sK126),sK126) = add(zero,duration(sK104(sK126,sK126,sK126),sK126))),
+  inference(forward_demodulation,[],[f112267,f114390])).
+fof(f114390,plain,(
+  zero = duration(sK104(sK126,sK126,sK126),sK104(sK126,sK126,sK126))),
+  inference(resolution,[],[f5573,f2469])).
+fof(f112267,plain,(
+  duration(sK104(sK126,sK126,sK126),sK126) = add(duration(sK104(sK126,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f5573,f5573,f2288])).
+fof(f112298,plain,(
+  duration(sK104(sK126,sK126,sK126),sK124) = add(duration(sK104(sK126,sK126,sK126),sK126),duration(sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2434,f5573,f2288])).
+fof(f125988,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK124))),
+  inference(forward_demodulation,[],[f125987,f124210])).
+fof(f124210,plain,(
+  duration(sK104(sK126,sK126,sK126),sK124) = add(duration(sK104(sK126,sK126,sK126),sK124),zero)),
+  inference(forward_demodulation,[],[f112282,f3169])).
+fof(f112282,plain,(
+  duration(sK104(sK126,sK126,sK126),sK124) = add(duration(sK104(sK126,sK126,sK126),sK124),duration(sK124,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f5573,f2288])).
+fof(f125987,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),add(duration(sK104(sK126,sK126,sK126),sK124),zero))),
+  inference(forward_demodulation,[],[f112405,f124250])).
+fof(f124250,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK126),sK124),zero)),
+  inference(forward_demodulation,[],[f112274,f7972])).
+fof(f112274,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK126),sK124),duration(sK124,sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5482,f2430,f5573,f2288])).
+fof(f112405,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5492,f5482,f5573,f2288])).
+fof(f126200,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f112485,f125774])).
+fof(f125774,plain,(
+  duration(sK126,sK124) = duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126))),
+  inference(forward_demodulation,[],[f125773,f9026])).
+fof(f125773,plain,(
+  add(zero,duration(sK126,sK124)) = duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126))),
+  inference(forward_demodulation,[],[f124138,f125751])).
+fof(f124138,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK126,sK126,sK126),sK126),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f112295,f7734])).
+fof(f112295,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK126,sK126,sK126),sK126),duration(sK126,sK104(sK126,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5564,f2434,f5573,f2288])).
+fof(f5564,plain,(
+  timepoint(sK104(sK126,sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f2430,f2434,f2289])).
+fof(f112485,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5492,f5564,f5573,f2288])).
+fof(f126778,plain,(
+  duration(sK124,sK126) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK126))),
+  inference(forward_demodulation,[],[f126777,f126643])).
+fof(f126643,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)) = duration(sK104(sK126,sK124,sK126),sK126)),
+  inference(forward_demodulation,[],[f126642,f126308])).
+fof(f126308,plain,(
+  duration(sK104(sK126,sK124,sK126),sK126) = add(duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)),zero)),
+  inference(forward_demodulation,[],[f126307,f126255])).
+fof(f126255,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)) = duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f126254,f126069])).
+fof(f126069,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112439,f125769])).
+fof(f125769,plain,(
+  zero = duration(sK104(sK126,sK126,sK126),sK104(sK124,sK126,sK124))),
+  inference(forward_demodulation,[],[f124155,f125454])).
+fof(f125454,plain,(
+  zero = add(duration(sK104(sK126,sK126,sK126),sK126),zero)),
+  inference(forward_demodulation,[],[f112055,f7960])).
+fof(f112055,plain,(
+  zero = add(duration(sK104(sK126,sK126,sK126),sK126),duration(sK126,sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f2434,f5573,f2028])).
+fof(f124155,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK126),sK126),zero)),
+  inference(forward_demodulation,[],[f112292,f73648])).
+fof(f73648,plain,(
+  zero = duration(sK126,sK104(sK124,sK126,sK124))),
+  inference(forward_demodulation,[],[f73647,f6168])).
+fof(f6168,plain,(
+  zero = add(duration(sK126,sK124),duration(sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f2430,f2028])).
+fof(f73647,plain,(
+  add(duration(sK126,sK124),duration(sK124,sK126)) = duration(sK126,sK104(sK124,sK126,sK124))),
+  inference(forward_demodulation,[],[f73646,f71931])).
+fof(f71931,plain,(
+  duration(sK126,sK124) = duration(sK126,sK104(sK126,sK126,sK124))),
+  inference(forward_demodulation,[],[f71930,f9026])).
+fof(f71930,plain,(
+  add(zero,duration(sK126,sK124)) = duration(sK126,sK104(sK126,sK126,sK124))),
+  inference(forward_demodulation,[],[f71929,f7961])).
+fof(f7961,plain,(
+  zero = duration(sK126,sK104(sK124,sK124,sK126))),
+  inference(forward_demodulation,[],[f7733,f3169])).
+fof(f7733,plain,(
+  duration(sK124,sK124) = duration(sK126,sK104(sK124,sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f2434,f2290])).
+fof(f71929,plain,(
+  duration(sK126,sK104(sK126,sK126,sK124)) = add(duration(sK126,sK104(sK124,sK124,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f71928,f71637])).
+fof(f71637,plain,(
+  duration(sK126,sK124) = duration(sK104(sK124,sK124,sK126),sK124)),
+  inference(forward_demodulation,[],[f71636,f9026])).
+fof(f71636,plain,(
+  add(zero,duration(sK126,sK124)) = duration(sK104(sK124,sK124,sK126),sK124)),
+  inference(forward_demodulation,[],[f57264,f71616])).
+fof(f71616,plain,(
+  zero = duration(sK104(sK124,sK124,sK126),sK126)),
+  inference(forward_demodulation,[],[f71615,f71572])).
+fof(f71572,plain,(
+  zero = add(zero,duration(sK104(sK124,sK124,sK126),sK126))),
+  inference(forward_demodulation,[],[f57093,f7961])).
+fof(f57093,plain,(
+  zero = add(duration(sK126,sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f5563,f2028])).
+fof(f71615,plain,(
+  duration(sK104(sK124,sK124,sK126),sK126) = add(zero,duration(sK104(sK124,sK124,sK126),sK126))),
+  inference(forward_demodulation,[],[f57237,f58872])).
+fof(f58872,plain,(
+  zero = duration(sK104(sK124,sK124,sK126),sK104(sK124,sK124,sK126))),
+  inference(resolution,[],[f5563,f2469])).
+fof(f57237,plain,(
+  duration(sK104(sK124,sK124,sK126),sK126) = add(duration(sK104(sK124,sK124,sK126),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f5563,f5563,f2288])).
+fof(f57264,plain,(
+  duration(sK104(sK124,sK124,sK126),sK124) = add(duration(sK104(sK124,sK124,sK126),sK126),duration(sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2434,f5563,f2288])).
+fof(f71928,plain,(
+  duration(sK126,sK104(sK126,sK126,sK124)) = add(duration(sK126,sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK124))),
+  inference(forward_demodulation,[],[f71927,f70113])).
+fof(f70113,plain,(
+  duration(sK104(sK124,sK124,sK126),sK124) = add(duration(sK104(sK124,sK124,sK126),sK124),zero)),
+  inference(forward_demodulation,[],[f57250,f3169])).
+fof(f57250,plain,(
+  duration(sK104(sK124,sK124,sK126),sK124) = add(duration(sK104(sK124,sK124,sK126),sK124),duration(sK124,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f5563,f2288])).
+fof(f71927,plain,(
+  duration(sK126,sK104(sK126,sK126,sK124)) = add(duration(sK126,sK104(sK124,sK124,sK126)),add(duration(sK104(sK124,sK124,sK126),sK124),zero))),
+  inference(forward_demodulation,[],[f57419,f70124])).
+fof(f70124,plain,(
+  duration(sK104(sK124,sK124,sK126),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK124,sK126),sK124),zero)),
+  inference(forward_demodulation,[],[f57248,f7971])).
+fof(f57248,plain,(
+  duration(sK104(sK124,sK124,sK126),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK124,sK126),sK124),duration(sK124,sK104(sK126,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5492,f2430,f5563,f2288])).
+fof(f57419,plain,(
+  duration(sK126,sK104(sK126,sK126,sK124)) = add(duration(sK126,sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK126,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f2434,f5492,f5563,f2288])).
+fof(f73646,plain,(
+  duration(sK126,sK104(sK124,sK126,sK124)) = add(duration(sK126,sK104(sK126,sK126,sK124)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f40017,f73363])).
+fof(f73363,plain,(
+  duration(sK124,sK126) = duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124))),
+  inference(forward_demodulation,[],[f73362,f9011])).
+fof(f9011,plain,(
+  duration(sK124,sK126) = add(zero,duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f8785,f3169])).
+fof(f8785,plain,(
+  duration(sK124,sK126) = add(duration(sK124,sK124),duration(sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2430,f2430,f2434,f2288])).
+fof(f73362,plain,(
+  add(zero,duration(sK124,sK126)) = duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124))),
+  inference(forward_demodulation,[],[f46828,f73346])).
+fof(f73346,plain,(
+  zero = duration(sK104(sK126,sK126,sK124),sK124)),
+  inference(forward_demodulation,[],[f73345,f73271])).
+fof(f73271,plain,(
+  zero = add(zero,duration(sK104(sK126,sK126,sK124),sK124))),
+  inference(forward_demodulation,[],[f39784,f7971])).
+fof(f39784,plain,(
+  zero = add(duration(sK124,sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f5492,f2028])).
+fof(f73345,plain,(
+  duration(sK104(sK126,sK126,sK124),sK124) = add(zero,duration(sK104(sK126,sK126,sK124),sK124))),
+  inference(forward_demodulation,[],[f39884,f71919])).
+fof(f39884,plain,(
+  duration(sK104(sK126,sK126,sK124),sK124) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f5492,f5492,f2288])).
+fof(f46828,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK124),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f39894,f7661])).
+fof(f7661,plain,(
+  duration(sK124,sK126) = duration(sK124,sK104(sK124,sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2434,f2430,f2290])).
+fof(f39894,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK124),duration(sK124,sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f2430,f5492,f2288])).
+fof(f5491,plain,(
+  timepoint(sK104(sK124,sK126,sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f2434,f2430,f2289])).
+fof(f40017,plain,(
+  duration(sK126,sK104(sK124,sK126,sK124)) = add(duration(sK126,sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f2434,f5491,f5492,f2288])).
+fof(f112292,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK126),sK126),duration(sK126,sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f2434,f5573,f2288])).
+fof(f112439,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5564,f5491,f5573,f2288])).
+fof(f126254,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112519,f114390])).
+fof(f112519,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5564,f5573,f5573,f2288])).
+fof(f126307,plain,(
+  duration(sK104(sK126,sK124,sK126),sK126) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112551,f125751])).
+fof(f112551,plain,(
+  duration(sK104(sK126,sK124,sK126),sK126) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK126))),
+  inference(unit_resulting_resolution,[],[f5564,f2434,f5573,f2288])).
+fof(f126642,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)),zero)),
+  inference(forward_demodulation,[],[f126641,f126255])).
+fof(f126641,plain,(
+  add(duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)),zero) = duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f112695,f126249])).
+fof(f126249,plain,(
+  zero = duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f126248,f126170])).
+fof(f126170,plain,(
+  zero = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f126169,f6208])).
+fof(f6208,plain,(
+  zero = add(zero,zero)),
+  inference(forward_demodulation,[],[f6197,f3172])).
+fof(f6197,plain,(
+  zero = add(duration(sK129,sK129),duration(sK129,sK129))),
+  inference(unit_resulting_resolution,[],[f2688,f2688,f2028])).
+fof(f126169,plain,(
+  add(zero,zero) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f126168,f73717])).
+fof(f73717,plain,(
+  zero = duration(sK104(sK124,sK126,sK124),sK126)),
+  inference(forward_demodulation,[],[f73716,f73640])).
+fof(f73640,plain,(
+  zero = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f73639,f71878])).
+fof(f71878,plain,(
+  zero = duration(sK104(sK124,sK126,sK124),sK104(sK124,sK126,sK124))),
+  inference(forward_demodulation,[],[f57401,f57089])).
+fof(f57089,plain,(
+  zero = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f5563,f2028])).
+fof(f57401,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f5491,f5563,f2288])).
+fof(f73639,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f73638,f71918])).
+fof(f71918,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)) = duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124))),
+  inference(forward_demodulation,[],[f71917,f71832])).
+fof(f71832,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f71831,f71637])).
+fof(f71831,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK124))),
+  inference(forward_demodulation,[],[f71830,f70113])).
+fof(f71830,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),add(duration(sK104(sK124,sK124,sK126),sK124),zero))),
+  inference(forward_demodulation,[],[f57373,f70144])).
+fof(f70144,plain,(
+  duration(sK104(sK124,sK124,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK124,sK126),sK124),zero)),
+  inference(forward_demodulation,[],[f57245,f7972])).
+fof(f57245,plain,(
+  duration(sK104(sK124,sK124,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK124,sK126),sK124),duration(sK124,sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5482,f2430,f5563,f2288])).
+fof(f57373,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f5482,f5563,f2288])).
+fof(f71917,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f71916,f71637])).
+fof(f71916,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK124))),
+  inference(forward_demodulation,[],[f71915,f70113])).
+fof(f71915,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),add(duration(sK104(sK124,sK124,sK126),sK124),zero))),
+  inference(forward_demodulation,[],[f57415,f70124])).
+fof(f57415,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)),duration(sK104(sK124,sK124,sK126),sK104(sK126,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f5492,f5563,f2288])).
+fof(f73638,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f40014,f73363])).
+fof(f40014,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f5491,f5492,f2288])).
+fof(f73716,plain,(
+  duration(sK104(sK124,sK126,sK124),sK126) = add(duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f73715,f71918])).
+fof(f73715,plain,(
+  duration(sK104(sK124,sK126,sK124),sK126) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)),duration(sK124,sK126))),
+  inference(forward_demodulation,[],[f40050,f73367])).
+fof(f73367,plain,(
+  duration(sK124,sK126) = duration(sK104(sK126,sK126,sK124),sK126)),
+  inference(forward_demodulation,[],[f73366,f9011])).
+fof(f73366,plain,(
+  add(zero,duration(sK124,sK126)) = duration(sK104(sK126,sK126,sK124),sK126)),
+  inference(forward_demodulation,[],[f39897,f73346])).
+fof(f39897,plain,(
+  duration(sK104(sK126,sK126,sK124),sK126) = add(duration(sK104(sK126,sK126,sK124),sK124),duration(sK124,sK126))),
+  inference(unit_resulting_resolution,[],[f2434,f2430,f5492,f2288])).
+fof(f40050,plain,(
+  duration(sK104(sK124,sK126,sK124),sK126) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)),duration(sK104(sK126,sK126,sK124),sK126))),
+  inference(unit_resulting_resolution,[],[f5491,f2434,f5492,f2288])).
+fof(f126168,plain,(
+  add(duration(sK104(sK124,sK126,sK124),sK126),zero) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f126167,f66878])).
+fof(f66878,plain,(
+  add(duration(sK104(sK124,sK126,sK124),sK126),zero) = duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126))),
+  inference(forward_demodulation,[],[f57653,f7961])).
+fof(f57653,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)) = add(duration(sK104(sK124,sK126,sK124),sK126),duration(sK126,sK104(sK124,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5491,f2434,f5563,f2288])).
+fof(f126167,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112468,f125772])).
+fof(f125772,plain,(
+  zero = duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK126))),
+  inference(forward_demodulation,[],[f124144,f125454])).
+fof(f124144,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK126)) = add(duration(sK104(sK126,sK126,sK126),sK126),zero)),
+  inference(forward_demodulation,[],[f112294,f7961])).
+fof(f112294,plain,(
+  duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK126)) = add(duration(sK104(sK126,sK126,sK126),sK126),duration(sK126,sK104(sK124,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5563,f2434,f5573,f2288])).
+fof(f112468,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK126)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5491,f5563,f5573,f2288])).
+fof(f126248,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112516,f114390])).
+fof(f112516,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5491,f5573,f5573,f2288])).
+fof(f112695,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)),duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5564,f5491,f5573,f2288])).
+fof(f126777,plain,(
+  duration(sK124,sK126) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)))),
+  inference(forward_demodulation,[],[f126776,f126251])).
+fof(f126251,plain,(
+  duration(sK124,sK126) = duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f126250,f126064])).
+fof(f126064,plain,(
+  duration(sK124,sK126) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f126063,f73363])).
+fof(f126063,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112437,f125769])).
+fof(f112437,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5492,f5491,f5573,f2288])).
+fof(f126250,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112517,f114390])).
+fof(f112517,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5492,f5573,f5573,f2288])).
+fof(f126776,plain,(
+  add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124))) = duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f112741,f126255])).
+fof(f112741,plain,(
+  duration(sK104(sK126,sK126,sK124),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK126,sK124),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5492,f5564,f5573,f2288])).
+fof(f126786,plain,(
+  duration(sK104(sK126,sK124,sK126),sK126) = add(zero,duration(sK104(sK126,sK124,sK126),sK126))),
+  inference(forward_demodulation,[],[f126785,f126204])).
+fof(f126204,plain,(
+  zero = duration(sK104(sK126,sK124,sK126),sK104(sK126,sK124,sK126))),
+  inference(forward_demodulation,[],[f112487,f112067])).
+fof(f112067,plain,(
+  zero = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5564,f5573,f2028])).
+fof(f112487,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5564,f5564,f5573,f2288])).
+fof(f126785,plain,(
+  duration(sK104(sK126,sK124,sK126),sK126) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK126))),
+  inference(forward_demodulation,[],[f126784,f126643])).
+fof(f126784,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK104(sK124,sK126,sK124)))),
+  inference(forward_demodulation,[],[f112743,f126255])).
+fof(f112743,plain,(
+  duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK126,sK124,sK126),sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5564,f5564,f5573,f2288])).
+fof(f286225,plain,(
+  zero = add(duration(sK126,sK104(sK126,sK124,sK126)),duration(sK104(sK126,sK124,sK126),sK126))),
+  inference(resolution,[],[f6205,f5564])).
+fof(f6205,plain,(
+  ( ! [X10] : (~timepoint(X10) | zero = add(duration(sK126,X10),duration(X10,sK126))) )),
+  inference(resolution,[],[f2028,f2434])).
+fof(f426449,plain,(
+  duration('INF-',sK126) = add(duration(sK126,'INF-'),duration('INF-',sK126)) | (~spl130_127 | ~spl130_359)),
+  inference(forward_demodulation,[],[f414449,f404053])).
+fof(f404053,plain,(
+  'INF-' = sK104(sK126,'INF-','INF-') | (~spl130_127 | ~spl130_359)),
+  inference(forward_demodulation,[],[f275895,f195620])).
+fof(f275895,plain,(
+  'INF-' = sK104(sK126,sK124,sK124) | ~spl130_359),
+  inference(avatar_component_clause,[],[f275893])).
+fof(f275893,plain,(
+  spl130_359 <=> 'INF-' = sK104(sK126,sK124,sK124)),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_359])])).
+fof(f414449,plain,(
+  duration('INF-',sK126) = add(duration(sK126,'INF-'),duration(sK104(sK126,'INF-','INF-'),sK126)) | ~spl130_127),
+  inference(forward_demodulation,[],[f411522,f293800])).
+fof(f293800,plain,(
+  duration(sK126,'INF-') = duration('INF-',sK104(sK126,'INF-','INF-')) | ~spl130_127),
+  inference(superposition,[],[f7653,f195620])).
+fof(f7653,plain,(
+  duration(sK126,sK124) = duration(sK124,sK104(sK126,sK124,sK124))),
+  inference(unit_resulting_resolution,[],[f2434,f2430,f2430,f2290])).
+fof(f411522,plain,(
+  duration('INF-',sK126) = add(duration('INF-',sK104(sK126,'INF-','INF-')),duration(sK104(sK126,'INF-','INF-'),sK126)) | ~spl130_127),
+  inference(forward_demodulation,[],[f365851,f195620])).
+fof(f365851,plain,(
+  duration(sK124,sK126) = add(duration(sK124,sK104(sK126,sK124,sK124)),duration(sK104(sK126,sK124,sK124),sK126))),
+  inference(unit_resulting_resolution,[],[f2430,f5483,f8947])).
+fof(f8947,plain,(
+  ( ! [X16,X15] : (~timepoint(X15) | ~timepoint(X16) | add(duration(X15,X16),duration(X16,sK126)) = duration(X15,sK126)) )),
+  inference(resolution,[],[f2288,f2434])).
+fof(f5483,plain,(
+  timepoint(sK104(sK126,sK124,sK124))),
+  inference(unit_resulting_resolution,[],[f2434,f2430,f2430,f2289])).
+fof(f414790,plain,(
+  lesser(zero,duration('INF-',sK126)) | (~spl130_127 | ~spl130_281 | ~spl130_359)),
+  inference(forward_demodulation,[],[f197650,f404053])).
+fof(f197650,plain,(
+  lesser(zero,duration(sK104(sK126,'INF-','INF-'),sK126)) | ~spl130_281),
+  inference(avatar_component_clause,[],[f197648])).
+fof(f197648,plain,(
+  spl130_281 <=> lesser(zero,duration(sK104(sK126,'INF-','INF-'),sK126))),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_281])])).
+fof(f432501,plain,(
+  ~spl130_127 | ~spl130_302 | ~spl130_349),
+  inference(avatar_contradiction_clause,[],[f432500])).
+fof(f432500,plain,(
+  $false | (~spl130_127 | ~spl130_302 | ~spl130_349)),
+  inference(subsumption_resolution,[],[f432499,f5997])).
+fof(f432499,plain,(
+  lesser(zero,zero) | (~spl130_127 | ~spl130_302 | ~spl130_349)),
+  inference(forward_demodulation,[],[f432498,f293781])).
+fof(f293781,plain,(
+  zero = duration('INF-','INF-') | ~spl130_127),
+  inference(superposition,[],[f3169,f195620])).
+fof(f432498,plain,(
+  lesser(zero,duration('INF-','INF-')) | (~spl130_127 | ~spl130_302 | ~spl130_349)),
+  inference(forward_demodulation,[],[f432497,f195620])).
+fof(f432497,plain,(
+  lesser(zero,duration(sK124,'INF-')) | (~spl130_302 | ~spl130_349)),
+  inference(forward_demodulation,[],[f275591,f237156])).
+fof(f275591,plain,(
+  lesser(zero,duration(sK124,sK126)) | ~spl130_349),
+  inference(avatar_component_clause,[],[f275590])).
+fof(f275590,plain,(
+  spl130_349 <=> lesser(zero,duration(sK124,sK126))),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_349])])).
+fof(f430516,plain,(
+  ~spl130_71 | ~spl130_127 | ~spl130_350),
+  inference(avatar_contradiction_clause,[],[f430515])).
+fof(f430515,plain,(
+  $false | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(subsumption_resolution,[],[f430514,f5997])).
+fof(f430514,plain,(
+  lesser(zero,zero) | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(forward_demodulation,[],[f430513,f293781])).
+fof(f430513,plain,(
+  lesser(zero,duration('INF-','INF-')) | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(forward_demodulation,[],[f430512,f430488])).
+fof(f430488,plain,(
+  'INF-' = sK128 | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(forward_demodulation,[],[f430487,f195620])).
+fof(f430487,plain,(
+  sK124 = sK128 | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(subsumption_resolution,[],[f430486,f1743])).
+fof(f430486,plain,(
+  before('INF-','INF-') | sK124 = sK128 | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(forward_demodulation,[],[f403866,f430481])).
+fof(f430481,plain,(
+  'INF-' = sK126 | (~spl130_127 | ~spl130_350)),
+  inference(forward_demodulation,[],[f430473,f195620])).
+fof(f430473,plain,(
+  sK124 = sK126 | ~spl130_350),
+  inference(forward_demodulation,[],[f275597,f275965])).
+fof(f275965,plain,(
+  sK124 = sK104(sK126,sK124,sK126)),
+  inference(subsumption_resolution,[],[f275964,f5997])).
+fof(f275964,plain,(
+  lesser(zero,zero) | sK124 = sK104(sK126,sK124,sK126)),
+  inference(forward_demodulation,[],[f212501,f128317])).
+fof(f128317,plain,(
+  zero = duration(sK124,sK104(sK126,sK124,sK126))),
+  inference(forward_demodulation,[],[f128316,f100070])).
+fof(f100070,plain,(
+  zero = add(duration(sK124,sK104(sK124,sK126,sK126)),duration(sK104(sK124,sK126,sK126),sK124))),
+  inference(unit_resulting_resolution,[],[f2430,f5572,f2028])).
+fof(f5572,plain,(
+  timepoint(sK104(sK124,sK126,sK126))),
+  inference(unit_resulting_resolution,[],[f2430,f2434,f2434,f2289])).
+fof(f128316,plain,(
+  duration(sK124,sK104(sK126,sK124,sK126)) = add(duration(sK124,sK104(sK124,sK126,sK126)),duration(sK104(sK124,sK126,sK126),sK124))),
+  inference(forward_demodulation,[],[f128315,f127949])).
+fof(f127949,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = duration(sK104(sK124,sK126,sK126),sK124)),
+  inference(forward_demodulation,[],[f111074,f126285])).
+fof(f126285,plain,(
+  duration(sK104(sK124,sK126,sK126),sK124) = add(duration(sK104(sK124,sK126,sK126),sK104(sK124,sK126,sK124)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f126284,f126257])).
+fof(f126257,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK126,sK124)) = duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126))),
+  inference(forward_demodulation,[],[f126256,f126070])).
+fof(f126070,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112440,f125769])).
+fof(f112440,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK124,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5572,f5491,f5573,f2288])).
+fof(f126256,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),zero)),
+  inference(forward_demodulation,[],[f112520,f114390])).
+fof(f112520,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK126,sK126)))),
+  inference(unit_resulting_resolution,[],[f5572,f5573,f5573,f2288])).
+fof(f126284,plain,(
+  duration(sK104(sK124,sK126,sK126),sK124) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f112536,f125779])).
+fof(f112536,plain,(
+  duration(sK104(sK124,sK126,sK126),sK124) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK124))),
+  inference(unit_resulting_resolution,[],[f5572,f2430,f5573,f2288])).
+fof(f111074,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK124,sK126,sK124)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f100172,f74044])).
+fof(f74044,plain,(
+  duration(sK126,sK124) = duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124))),
+  inference(forward_demodulation,[],[f74043,f9026])).
+fof(f74043,plain,(
+  add(zero,duration(sK126,sK124)) = duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124))),
+  inference(forward_demodulation,[],[f74042,f73717])).
+fof(f74042,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK126),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f74041,f71918])).
+fof(f74041,plain,(
+  add(duration(sK104(sK124,sK126,sK124),sK126),duration(sK126,sK124)) = duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124))),
+  inference(forward_demodulation,[],[f40194,f71931])).
+fof(f40194,plain,(
+  duration(sK104(sK124,sK126,sK124),sK104(sK126,sK126,sK124)) = add(duration(sK104(sK124,sK126,sK124),sK126),duration(sK126,sK104(sK126,sK126,sK124)))),
+  inference(unit_resulting_resolution,[],[f5491,f2434,f5492,f2288])).
+fof(f100172,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK124,sK126,sK124)),duration(sK104(sK124,sK126,sK124),sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5482,f5491,f5572,f2288])).
+fof(f128315,plain,(
+  duration(sK124,sK104(sK126,sK124,sK126)) = add(duration(sK124,sK104(sK124,sK126,sK126)),duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)))),
+  inference(forward_demodulation,[],[f100449,f126206])).
+fof(f126206,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = duration(sK104(sK124,sK126,sK126),sK104(sK126,sK124,sK126))),
+  inference(forward_demodulation,[],[f126205,f126002])).
+fof(f126002,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f126001,f125779])).
+fof(f126001,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK124))),
+  inference(forward_demodulation,[],[f126000,f124210])).
+fof(f126000,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),add(duration(sK104(sK126,sK126,sK126),sK124),zero))),
+  inference(forward_demodulation,[],[f112408,f124250])).
+fof(f112408,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK124,sK124,sK124)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK124,sK124,sK124)))),
+  inference(unit_resulting_resolution,[],[f5572,f5482,f5573,f2288])).
+fof(f126205,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK126,sK124))),
+  inference(forward_demodulation,[],[f112488,f125774])).
+fof(f112488,plain,(
+  duration(sK104(sK124,sK126,sK126),sK104(sK126,sK124,sK126)) = add(duration(sK104(sK124,sK126,sK126),sK104(sK126,sK126,sK126)),duration(sK104(sK126,sK126,sK126),sK104(sK126,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f5572,f5564,f5573,f2288])).
+fof(f100449,plain,(
+  duration(sK124,sK104(sK126,sK124,sK126)) = add(duration(sK124,sK104(sK124,sK126,sK126)),duration(sK104(sK124,sK126,sK126),sK104(sK126,sK124,sK126)))),
+  inference(unit_resulting_resolution,[],[f2430,f5564,f5572,f2288])).
+fof(f212501,plain,(
+  sK124 = sK104(sK126,sK124,sK126) | lesser(zero,duration(sK124,sK104(sK126,sK124,sK126)))),
+  inference(resolution,[],[f3664,f5564])).
+fof(f3664,plain,(
+  ( ! [X3] : (~timepoint(X3) | sK124 = X3 | lesser(zero,duration(sK124,X3))) )),
+  inference(resolution,[],[f2484,f2431])).
+fof(f2431,plain,(
+  ( ! [X3] : (before(sK124,X3) | sK124 = X3 | ~timepoint(X3)) )),
+  inference(cnf_transformation,[],[f1731])).
+fof(f2484,plain,(
+  ( ! [X0,X1] : (~before(X0,X1) | lesser(zero,duration(X0,X1))) )),
+  inference(subsumption_resolution,[],[f2483,f1984])).
+fof(f2483,plain,(
+  ( ! [X0,X1] : (lesser(zero,duration(X0,X1)) | ~before(X0,X1) | ~timepoint(X0)) )),
+  inference(subsumption_resolution,[],[f2034,f1985])).
+fof(f2034,plain,(
+  ( ! [X0,X1] : (lesser(zero,duration(X0,X1)) | ~before(X0,X1) | ~timepoint(X1) | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f1526])).
+fof(f275597,plain,(
+  sK126 = sK104(sK126,sK124,sK126) | ~spl130_350),
+  inference(avatar_component_clause,[],[f275595])).
+fof(f275595,plain,(
+  spl130_350 <=> sK126 = sK104(sK126,sK124,sK126)),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_350])])).
+fof(f403866,plain,(
+  before('INF-',sK126) | sK124 = sK128 | (~spl130_71 | ~spl130_127)),
+  inference(forward_demodulation,[],[f403865,f195620])).
+fof(f403865,plain,(
+  before(sK124,sK126) | sK124 = sK128 | ~spl130_71),
+  inference(forward_demodulation,[],[f196487,f191979])).
+fof(f191979,plain,(
+  sK126 = sK129 | ~spl130_71),
+  inference(avatar_component_clause,[],[f191977])).
+fof(f196487,plain,(
+  before(sK124,sK129) | sK124 = sK128),
+  inference(resolution,[],[f4305,f2438])).
+fof(f4305,plain,(
+  ( ! [X8,X9] : (~before(X8,X9) | before(sK124,X9) | sK124 = X8) )),
+  inference(subsumption_resolution,[],[f4299,f1984])).
+fof(f4299,plain,(
+  ( ! [X8,X9] : (~before(X8,X9) | before(sK124,X9) | sK124 = X8 | ~timepoint(X8)) )),
+  inference(resolution,[],[f2498,f2431])).
+fof(f430512,plain,(
+  lesser(zero,duration(sK128,'INF-')) | (~spl130_71 | ~spl130_127 | ~spl130_350)),
+  inference(forward_demodulation,[],[f429903,f430481])).
+fof(f429903,plain,(
+  lesser(zero,duration(sK128,sK126)) | ~spl130_71),
+  inference(superposition,[],[f3660,f191979])).
+fof(f3660,plain,(
+  lesser(zero,duration(sK128,sK129))),
+  inference(unit_resulting_resolution,[],[f2438,f2484])).
+fof(f413811,plain,(
+  ~spl130_127 | spl130_302 | ~spl130_352),
+  inference(avatar_contradiction_clause,[],[f413810])).
+fof(f413810,plain,(
+  $false | (~spl130_127 | spl130_302 | ~spl130_352)),
+  inference(subsumption_resolution,[],[f353269,f413789])).
+fof(f413789,plain,(
+  before(sK126,'INF-') | (~spl130_127 | ~spl130_352)),
+  inference(forward_demodulation,[],[f413788,f195620])).
+fof(f413788,plain,(
+  before(sK126,sK124) | ~spl130_352),
+  inference(forward_demodulation,[],[f275606,f275965])).
+fof(f275606,plain,(
+  before(sK126,sK104(sK126,sK124,sK126)) | ~spl130_352),
+  inference(avatar_component_clause,[],[f275604])).
+fof(f275604,plain,(
+  spl130_352 <=> before(sK126,sK104(sK126,sK124,sK126))),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_352])])).
+fof(f353269,plain,(
+  ~before(sK126,'INF-') | (~spl130_127 | spl130_302)),
+  inference(unit_resulting_resolution,[],[f1743,f237155,f293742,f4296])).
+fof(f4296,plain,(
+  ( ! [X2,X3] : (~before(sK126,X2) | before(X3,X2) | sK126 = X3 | ~timepoint(X3)) )),
+  inference(resolution,[],[f2498,f2435])).
+fof(f293742,plain,(
+  timepoint('INF-') | ~spl130_127),
+  inference(superposition,[],[f2430,f195620])).
+fof(f237155,plain,(
+  'INF-' != sK126 | spl130_302),
+  inference(avatar_component_clause,[],[f237154])).
+fof(f410211,plain,(
+  ~spl130_127 | ~spl130_356 | ~spl130_358),
+  inference(avatar_contradiction_clause,[],[f410210])).
+fof(f410210,plain,(
+  $false | (~spl130_127 | ~spl130_356 | ~spl130_358)),
+  inference(subsumption_resolution,[],[f410209,f5997])).
+fof(f410209,plain,(
+  lesser(zero,zero) | (~spl130_127 | ~spl130_356 | ~spl130_358)),
+  inference(forward_demodulation,[],[f410208,f293781])).
+fof(f410208,plain,(
+  lesser(zero,duration('INF-','INF-')) | (~spl130_127 | ~spl130_356 | ~spl130_358)),
+  inference(forward_demodulation,[],[f410207,f195620])).
+fof(f410207,plain,(
+  lesser(zero,duration('INF-',sK124)) | (~spl130_356 | ~spl130_358)),
+  inference(forward_demodulation,[],[f275891,f275627])).
+fof(f275627,plain,(
+  sK124 = sK104(sK126,sK124,sK124) | ~spl130_356),
+  inference(avatar_component_clause,[],[f275625])).
+fof(f275625,plain,(
+  spl130_356 <=> sK124 = sK104(sK126,sK124,sK124)),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_356])])).
+fof(f275891,plain,(
+  lesser(zero,duration('INF-',sK104(sK126,sK124,sK124))) | ~spl130_358),
+  inference(avatar_component_clause,[],[f275889])).
+fof(f275889,plain,(
+  spl130_358 <=> lesser(zero,duration('INF-',sK104(sK126,sK124,sK124)))),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_358])])).
+fof(f406025,plain,(
+  ~spl130_127 | ~spl130_280 | spl130_302 | ~spl130_359),
+  inference(avatar_contradiction_clause,[],[f406024])).
+fof(f406024,plain,(
+  $false | (~spl130_127 | ~spl130_280 | spl130_302 | ~spl130_359)),
+  inference(subsumption_resolution,[],[f237155,f404195])).
+fof(f404195,plain,(
+  'INF-' = sK126 | (~spl130_127 | ~spl130_280 | ~spl130_359)),
+  inference(forward_demodulation,[],[f197646,f404053])).
+fof(f197646,plain,(
+  sK126 = sK104(sK126,'INF-','INF-') | ~spl130_280),
+  inference(avatar_component_clause,[],[f197644])).
+fof(f197644,plain,(
+  spl130_280 <=> sK126 = sK104(sK126,'INF-','INF-')),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_280])])).
+fof(f293658,plain,(
+  spl130_127),
+  inference(avatar_contradiction_clause,[],[f293657])).
+fof(f293657,plain,(
+  $false | spl130_127),
+  inference(subsumption_resolution,[],[f293412,f293444])).
+fof(f293444,plain,(
+  ~before('INF-',sK124) | spl130_127),
+  inference(unit_resulting_resolution,[],[f1743,f195619,f4305])).
+fof(f195619,plain,(
+  'INF-' != sK124 | spl130_127),
+  inference(avatar_component_clause,[],[f195618])).
+fof(f293412,plain,(
+  before('INF-',sK124) | spl130_127),
+  inference(unit_resulting_resolution,[],[f2430,f195619,f1844])).
+fof(f1844,plain,(
+  ( ! [X0] : (before('INF-',X0) | 'INF-' = X0 | ~timepoint(X0)) )),
+  inference(cnf_transformation,[],[f972])).
+fof(f972,plain,(
+  ! [X0] : (before('INF-',X0) | 'INF-' = X0 | ~timepoint(X0))),
+  inference(flattening,[],[f971])).
+fof(f971,plain,(
+  ! [X0] : (before('INF-',X0) | ('INF-' = X0 | ~timepoint(X0)))),
+  inference(ennf_transformation,[],[f407])).
+fof(f407,plain,(
+  ! [X0] : (('INF-' != X0 & timepoint(X0)) => before('INF-',X0))),
+  inference(rectify,[],[f270])).
+fof(f270,axiom,(
+  ! [X44] : (('INF-' != X44 & timepoint(X44)) => before('INF-',X44))),
+  file('tupper.all.tptp',axiom320)).
+fof(f275932,plain,(
+  spl130_350 | spl130_349),
+  inference(avatar_split_clause,[],[f275931,f275590,f275595])).
+fof(f275931,plain,(
+  lesser(zero,duration(sK124,sK126)) | sK126 = sK104(sK126,sK124,sK126)),
+  inference(forward_demodulation,[],[f197590,f126787])).
+fof(f197590,plain,(
+  sK126 = sK104(sK126,sK124,sK126) | lesser(zero,duration(sK104(sK126,sK124,sK126),sK126))),
+  inference(resolution,[],[f3662,f5564])).
+fof(f3662,plain,(
+  ( ! [X1] : (~timepoint(X1) | sK126 = X1 | lesser(zero,duration(X1,sK126))) )),
+  inference(resolution,[],[f2484,f2435])).
+fof(f275896,plain,(
+  spl130_358 | spl130_359),
+  inference(avatar_split_clause,[],[f212435,f275893,f275889])).
+fof(f212435,plain,(
+  'INF-' = sK104(sK126,sK124,sK124) | lesser(zero,duration('INF-',sK104(sK126,sK124,sK124)))),
+  inference(resolution,[],[f3663,f5483])).
+fof(f3663,plain,(
+  ( ! [X2] : (~timepoint(X2) | 'INF-' = X2 | lesser(zero,duration('INF-',X2))) )),
+  inference(resolution,[],[f2484,f1844])).
+fof(f275885,plain,(
+  spl130_356 | spl130_353),
+  inference(avatar_split_clause,[],[f275884,f275608,f275625])).
+fof(f275608,plain,(
+  spl130_353 <=> lesser(zero,duration(sK126,sK124))),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_353])])).
+fof(f275884,plain,(
+  lesser(zero,duration(sK126,sK124)) | sK124 = sK104(sK126,sK124,sK124)),
+  inference(forward_demodulation,[],[f212499,f7653])).
+fof(f212499,plain,(
+  sK124 = sK104(sK126,sK124,sK124) | lesser(zero,duration(sK124,sK104(sK126,sK124,sK124)))),
+  inference(resolution,[],[f3664,f5483])).
+fof(f275611,plain,(
+  spl130_352 | ~spl130_353),
+  inference(avatar_split_clause,[],[f268038,f275608,f275604])).
+fof(f268038,plain,(
+  ~lesser(zero,duration(sK126,sK124)) | before(sK126,sK104(sK126,sK124,sK126))),
+  inference(subsumption_resolution,[],[f268037,f2434])).
+fof(f268037,plain,(
+  ~lesser(zero,duration(sK126,sK124)) | before(sK126,sK104(sK126,sK124,sK126)) | ~timepoint(sK126)),
+  inference(subsumption_resolution,[],[f268034,f5564])).
+fof(f268034,plain,(
+  ~lesser(zero,duration(sK126,sK124)) | before(sK126,sK104(sK126,sK124,sK126)) | ~timepoint(sK104(sK126,sK124,sK126)) | ~timepoint(sK126)),
+  inference(superposition,[],[f2033,f7734])).
+fof(f258478,plain,(
+  ~spl130_72 | ~spl130_127 | ~spl130_131 | ~spl130_302),
+  inference(avatar_contradiction_clause,[],[f258477])).
+fof(f258477,plain,(
+  $false | (~spl130_72 | ~spl130_127 | ~spl130_131 | ~spl130_302)),
+  inference(subsumption_resolution,[],[f258476,f5997])).
+fof(f258476,plain,(
+  lesser(zero,zero) | (~spl130_72 | ~spl130_127 | ~spl130_131 | ~spl130_302)),
+  inference(forward_demodulation,[],[f258475,f200663])).
+fof(f200663,plain,(
+  zero = duration('INF-','INF-') | ~spl130_127),
+  inference(unit_resulting_resolution,[],[f197088,f2469])).
+fof(f197088,plain,(
+  timepoint('INF-') | ~spl130_127),
+  inference(superposition,[],[f2430,f195620])).
+fof(f258475,plain,(
+  lesser(zero,duration('INF-','INF-')) | (~spl130_72 | ~spl130_131 | ~spl130_302)),
+  inference(forward_demodulation,[],[f258474,f195640])).
+fof(f195640,plain,(
+  'INF-' = sK128 | ~spl130_131),
+  inference(avatar_component_clause,[],[f195638])).
+fof(f195638,plain,(
+  spl130_131 <=> 'INF-' = sK128),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_131])])).
+fof(f258474,plain,(
+  lesser(zero,duration(sK128,'INF-')) | (~spl130_72 | ~spl130_302)),
+  inference(forward_demodulation,[],[f197033,f237156])).
+fof(f197033,plain,(
+  lesser(zero,duration(sK128,sK126)) | ~spl130_72),
+  inference(unit_resulting_resolution,[],[f191983,f2484])).
+fof(f191983,plain,(
+  before(sK128,sK126) | ~spl130_72),
+  inference(avatar_component_clause,[],[f191981])).
+fof(f191981,plain,(
+  spl130_72 <=> before(sK128,sK126)),
+  introduced(avatar_definition,[new_symbols(naming,[spl130_72])])).
+fof(f197651,plain,(
+  spl130_280 | spl130_281 | ~spl130_127),
+  inference(avatar_split_clause,[],[f197642,f195618,f197648,f197644])).
+fof(f197642,plain,(
+  lesser(zero,duration(sK104(sK126,'INF-','INF-'),sK126)) | sK126 = sK104(sK126,'INF-','INF-') | ~spl130_127),
+  inference(forward_demodulation,[],[f197641,f195620])).
+fof(f197641,plain,(
+  sK126 = sK104(sK126,'INF-','INF-') | lesser(zero,duration(sK104(sK126,sK124,sK124),sK126)) | ~spl130_127),
+  inference(forward_demodulation,[],[f197588,f195620])).
+fof(f197588,plain,(
+  sK126 = sK104(sK126,sK124,sK124) | lesser(zero,duration(sK104(sK126,sK124,sK124),sK126))),
+  inference(resolution,[],[f3662,f5483])).
+fof(f196395,plain,(
+  spl130_131 | spl130_218),
+  inference(avatar_split_clause,[],[f195604,f196392,f195638])).
+fof(f195604,plain,(
+  before('INF-',sK129) | 'INF-' = sK128),
+  inference(resolution,[],[f4304,f2438])).
+fof(f4304,plain,(
+  ( ! [X6,X7] : (~before(X6,X7) | before('INF-',X7) | 'INF-' = X6) )),
+  inference(subsumption_resolution,[],[f4298,f1984])).
+fof(f4298,plain,(
+  ( ! [X6,X7] : (~before(X6,X7) | before('INF-',X7) | 'INF-' = X6 | ~timepoint(X6)) )),
+  inference(resolution,[],[f2498,f1844])).
+fof(f191984,plain,(
+  spl130_71 | spl130_72),
+  inference(avatar_split_clause,[],[f191975,f191981,f191977])).
+fof(f191975,plain,(
+  before(sK128,sK126) | sK126 = sK129),
+  inference(subsumption_resolution,[],[f191963,f2688])).
+fof(f191963,plain,(
+  before(sK128,sK126) | sK126 = sK129 | ~timepoint(sK129)),
+  inference(resolution,[],[f4303,f2435])).
+fof(f4303,plain,(
+  ( ! [X16] : (~before(sK129,X16) | before(sK128,X16)) )),
+  inference(resolution,[],[f2498,f2438])).
+% SZS output end Proof for tupper.all
+% ------------------------------
+% Version: Vampire 4.7 (commit af7d05f97 on 2022-09-30 11:01:41 +0200)
+% Termination reason: Refutation
+
+% Memory used [KB]: 89806
+% Time elapsed: 6.589 s
+% ------------------------------
+% ------------------------------
+% Success in time 24.123 s
