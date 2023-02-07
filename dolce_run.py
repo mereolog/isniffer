@@ -44,35 +44,35 @@ logging_file_name = os.path.join('outputs/dolce/', 'logging' + timestr + '.log')
 #     timestr=timestr)
 
 
-# dolce_recognition_config_1 = \
-#     IdentityCriterionRecognitionConfig(
-#         non_tautologicity=False,
-#         type_maximality=False,
-#         uniqueness=False,
-#         partial_exclusivity=False)
-#
-# dolce_criteria_of_identity = \
-#     recognize_criteria_of_identity_in_theory(
-#         theory_file_name='inputs/dolce.tptp',
-#         temp_file_path='outputs/dolce/cis/',
-#         theory_id='dolce',
-#         keep_temp_files=True,
-#         type_subsumptions_in_theory_file_name='outputs/dolce/dolce_type_subsumptions_20230131-172945.json',
-#         tautological_ici_candidates_file_name='outputs/dolce/dolce_tautological_i_identity_criteria_candidates_20230201-083045.json',
-#         recognition_config=dolce_recognition_config_1,
-#         logging_file_name=logging_file_name)
-#
-# adorned_dolce_criteria_of_identity = \
-#     adorn_results_dict_with_metadata(
-#         results_dict=dolce_criteria_of_identity,
-#         recognition_config=dolce_recognition_config_1)
-#
-# write_python_object_to_json_file(
-#     python_object=adorned_dolce_criteria_of_identity,
-#     json_file_path='outputs/dolce/',
-#     json_generic_file_name='dolce_identity_criteria',
-#     timestr=timestr)
+dolce_recognition_config_1 = \
+    IdentityCriterionRecognitionConfig(
+        non_tautologicity=False,
+        type_maximality=False,
+        uniqueness=False,
+        partial_exclusivity=False)
 
-tablify_identity_criteria(
-    json_file_location='outputs/dolce/dolce_identity_criteria_20230201-085854.json',
-    table_location='outputs/dolce/dolce_identity_criteria_20230201-085854.xlsx')
+dolce_criteria_of_identity = \
+    recognize_criteria_of_identity_in_theory(
+        theory_file_name='inputs/dolce.tptp',
+        temp_file_path='outputs/dolce/cis/',
+        theory_id='dolce',
+        keep_temp_files=True,
+        type_subsumptions_in_theory_file_name='outputs/dolce/dolce_type_subsumptions_20230131-172945.json',
+        tautological_ici_candidates_file_name='outputs/dolce/dolce_tautological_i_identity_criteria_candidates_20230201-083045.json',
+        recognition_config=dolce_recognition_config_1,
+        logging_file_name=logging_file_name)
+
+adorned_dolce_criteria_of_identity = \
+    adorn_results_dict_with_metadata(
+        results_dict=dolce_criteria_of_identity,
+        recognition_config=dolce_recognition_config_1)
+
+write_python_object_to_json_file(
+    python_object=adorned_dolce_criteria_of_identity,
+    json_file_path='outputs/dolce/',
+    json_generic_file_name='dolce_identity_criteria',
+    timestr=timestr)
+
+# tablify_identity_criteria(
+#     json_file_location='outputs/dolce/dolce_identity_criteria_20230201-085854.json',
+#     table_location='outputs/dolce/dolce_identity_criteria_20230201-085854.xlsx')
